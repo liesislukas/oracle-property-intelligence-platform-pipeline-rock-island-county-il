@@ -1,6 +1,4 @@
-# oracle-property-intelligence-platform-pipeline-rock-island-county-il
-
-# Oracle Property Intelligence Platform Pipeline - Hillsborough County, FL
+# Oracle Property Intelligence Platform Pipeline - Rock Island County, IL
 
 ## Context
 
