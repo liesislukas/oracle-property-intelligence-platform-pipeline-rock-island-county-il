@@ -1,0 +1,200 @@
+[
+  {
+    "id": "parcels-featureserver",
+    "category": "parcels",
+    "url": "https://services9.arcgis.com/6FnscPPlUa9DXXOk/arcgis/rest/services/Parcels/FeatureServer/0?f=json",
+    "host": "services9.arcgis.com",
+    "http_status": 200,
+    "ms": 546,
+    "dns_a": [
+      "150.171.109.197"
+    ],
+    "dns_aaaa": [
+      "2603:1061:14:c4::1"
+    ],
+    "bytes": 23466,
+    "redirect_to": null,
+    "error": null,
+    "verdict": "reachable",
+    "expect": "reachable",
+    "probed_at": "2026-08-12T09:16:38.382Z"
+  },
+  {
+    "id": "county-cms",
+    "category": "county",
+    "url": "https://www.rockislandcountyil.gov/176/Assessment-Search",
+    "host": "www.rockislandcountyil.gov",
+    "http_status": 200,
+    "ms": 1192,
+    "dns_a": [
+      "207.38.78.66"
+    ],
+    "dns_aaaa": [],
+    "bytes": 111335,
+    "redirect_to": null,
+    "error": null,
+    "verdict": "reachable",
+    "expect": "reachable",
+    "probed_at": "2026-08-12T09:16:39.657Z"
+  },
+  {
+    "id": "netr-directory",
+    "category": "directory",
+    "url": "https://publicrecords.netronline.com/state/IL/county/rock_island",
+    "host": "publicrecords.netronline.com",
+    "http_status": 200,
+    "ms": 1143,
+    "dns_a": [
+      "5.78.98.197"
+    ],
+    "dns_aaaa": [],
+    "bytes": 56955,
+    "redirect_to": null,
+    "error": null,
+    "verdict": "reachable",
+    "expect": "reachable",
+    "probed_at": "2026-08-12T09:16:40.902Z"
+  },
+  {
+    "id": "assessor-devnet-wedge",
+    "category": "appraisal",
+    "url": "https://rockislandil.devnetwedge.com/",
+    "host": "rockislandil.devnetwedge.com",
+    "http_status": 0,
+    "ms": 10210,
+    "dns_a": [
+      "184.105.34.17"
+    ],
+    "dns_aaaa": [],
+    "bytes": 0,
+    "redirect_to": null,
+    "error": "fetch failed",
+    "verdict": "tcp-blocked",
+    "expect": "reachable",
+    "probed_at": "2026-08-12T09:16:51.402Z"
+  },
+  {
+    "id": "county-zoning-building",
+    "category": "permits",
+    "url": "https://www.rockislandcountyil.gov/QuickLinks.aspx?CID=47",
+    "host": "www.rockislandcountyil.gov",
+    "http_status": 200,
+    "ms": 1089,
+    "dns_a": [
+      "207.38.78.66"
+    ],
+    "dns_aaaa": [],
+    "bytes": 107308,
+    "redirect_to": null,
+    "error": null,
+    "verdict": "reachable",
+    "expect": "reachable",
+    "probed_at": "2026-08-12T09:16:52.565Z"
+  },
+  {
+    "id": "recorder-landrecords",
+    "category": "recorder",
+    "url": "https://www.landrecords.com",
+    "host": "www.landrecords.com",
+    "http_status": 301,
+    "ms": 286,
+    "dns_a": [
+      "172.67.217.58",
+      "104.21.78.61"
+    ],
+    "dns_aaaa": [
+      "2606:4700:3033::6815:4e3d",
+      "2606:4700:3035::ac43:d93a"
+    ],
+    "bytes": 167,
+    "redirect_to": null,
+    "error": null,
+    "verdict": "reachable",
+    "expect": "reachable",
+    "probed_at": "2026-08-12T09:16:52.900Z"
+  },
+  {
+    "id": "il-sos-corporate",
+    "category": "business_registration",
+    "url": "https://www.ilsos.gov/corporatellc/",
+    "host": "www.ilsos.gov",
+    "http_status": 403,
+    "ms": 235,
+    "dns_a": [
+      "2.22.145.90",
+      "2.22.145.86"
+    ],
+    "dns_aaaa": [
+      "2a02:26f0:3780:13::172f:7c14",
+      "2a02:26f0:3780:13::172f:7c1d"
+    ],
+    "bytes": 384,
+    "redirect_to": null,
+    "error": null,
+    "verdict": "http-denied",
+    "expect": "reachable",
+    "probed_at": "2026-08-12T09:16:53.287Z"
+  },
+  {
+    "id": "hifld-transmission",
+    "category": "power_infrastructure",
+    "url": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/US_Electric_Power_Transmission_Lines/FeatureServer/0?f=json",
+    "host": "services2.arcgis.com",
+    "http_status": 200,
+    "ms": 491,
+    "dns_a": [
+      "150.171.109.198"
+    ],
+    "dns_aaaa": [
+      "2603:1061:14:c3::1"
+    ],
+    "bytes": 16448,
+    "redirect_to": null,
+    "error": null,
+    "verdict": "reachable",
+    "expect": "reachable",
+    "probed_at": "2026-08-12T09:16:53.977Z"
+  },
+  {
+    "id": "hifld-power-plants",
+    "category": "power_infrastructure",
+    "url": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/Power_Plants_in_the_US/FeatureServer/0?f=json",
+    "host": "services2.arcgis.com",
+    "http_status": 200,
+    "ms": 178,
+    "dns_a": [
+      "150.171.109.198"
+    ],
+    "dns_aaaa": [
+      "2603:1061:14:c3::1"
+    ],
+    "bytes": 79107,
+    "redirect_to": null,
+    "error": null,
+    "verdict": "reachable",
+    "expect": "reachable",
+    "probed_at": "2026-08-12T09:16:54.240Z"
+  },
+  {
+    "id": "overpass-api",
+    "category": "power_infrastructure",
+    "url": "https://overpass-api.de/api/status",
+    "host": "overpass-api.de",
+    "http_status": 200,
+    "ms": 194,
+    "dns_a": [
+      "65.109.112.52",
+      "162.55.144.139"
+    ],
+    "dns_aaaa": [
+      "2a01:4f9:3051:3e48::2",
+      "2a01:4f8:261:3c4f::2"
+    ],
+    "bytes": 212,
+    "redirect_to": null,
+    "error": null,
+    "verdict": "reachable",
+    "expect": "reachable",
+    "probed_at": "2026-08-12T09:16:54.520Z"
+  }
+]
