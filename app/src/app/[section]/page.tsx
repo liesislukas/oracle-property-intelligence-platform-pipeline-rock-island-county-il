@@ -7,8 +7,15 @@ import { getSection, sections } from "@/lib/sections";
 
 export const dynamicParams = false;
 
+// Section slugs that have their own page.tsx under app/src/app/ and must NOT be prerendered by
+// this dynamic segment. APPEND your slug here — never replace this array.
+// Owners: "sources" ISSUE-033 · "query" ISSUE-023 · "runs" ISSUE-028.
+export const DEDICATED_ROUTES = ["sources"] as const;
+
 export function generateStaticParams() {
-  return sections.map((s) => ({ section: s.slug }));
+  return sections
+    .filter((s) => !DEDICATED_ROUTES.includes(s.slug as (typeof DEDICATED_ROUTES)[number]))
+    .map((s) => ({ section: s.slug }));
 }
 
 export async function generateMetadata({
