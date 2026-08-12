@@ -1,0 +1,38 @@
+# Rock Island County, IL — machine-readable source catalog
+#
+# Produced by driving elephant-xyz/skills skills/county-discovery.
+# Consumed by county-seed-data, county-permit-adapter and validate-county-transform, which read
+# the filename <county>-sources.yaml back. Filename is fixed; do not rename.
+#
+# Every source row carries exactly these keys:
+#   name, url, publisher, access_method, status, record_count, throughput, constraints,
+#   licence, feasibility, verified_at, evidence
+# status:      available | geo-blocked | unreachable | restricted | no-public-source-found
+# feasibility: download | ingest | runtime-fetch | not-feasible | undetermined-unreachable
+# A value that was not measured is the literal string "not-measured" — never blank, never N/A,
+# never 0. record_count is an integer when counted and null when not counted.
+#
+# permits[] rows use the key set county-discovery/SKILL.md specifies verbatim:
+#   jurisdiction, url, vendor, search, probe, throughput, status
+
+county: rock-island
+generated_at: 2026-08-12T09:12:50Z
+egress_country: LT
+
+appraisal: {}
+
+parcels: {}
+
+permits: []
+
+business_registration: {}
+
+recorder: {}
+
+contractor_reputation: {}
+
+power_infrastructure: []
+
+zoning: {}
+
+unavailable_signals: []
