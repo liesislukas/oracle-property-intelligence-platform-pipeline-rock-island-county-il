@@ -1,0 +1,9 @@
+{
+  "name": "geo-signals",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@turf/turf": "7.4.0",
+    "postgres": "3.4.9"
+  }
+}
