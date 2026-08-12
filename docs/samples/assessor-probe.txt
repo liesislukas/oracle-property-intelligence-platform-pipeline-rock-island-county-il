@@ -1,0 +1,25 @@
+# dig +short A rockislandil.devnetwedge.com
+wedge-3.devnetwedge.com.
+184.105.34.17
+
+# dig +short AAAA rockislandil.devnetwedge.com
+wedge-3.devnetwedge.com.
+(no AAAA record returned)
+
+# curl -4 -sv --max-time 20 https://rockislandil.devnetwedge.com/
+* Host rockislandil.devnetwedge.com:443 was resolved.
+* IPv6: (none)
+* IPv4: 184.105.34.17
+*   Trying 184.105.34.17:443...
+* Connection timed out after 20004 milliseconds
+* Closing connection
+
+# curl -6 -sv --max-time 20 https://rockislandil.devnetwedge.com/
+* Host rockislandil.devnetwedge.com:443 was resolved.
+* IPv6: ::ffff:184.105.34.17
+* IPv4: (none)
+*   Trying [::ffff:184.105.34.17]:443...
+* Connection timed out after 20003 milliseconds
+* Closing connection
+
+# probed_at: 2026-08-12T09:20:40Z from egress country LT

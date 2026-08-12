@@ -19,7 +19,30 @@ county: rock-island
 generated_at: 2026-08-12T09:12:50Z
 egress_country: LT
 
-appraisal: {}
+appraisal:
+  name: Rock Island County Assessment Search (DEVNET Wedge)
+  url: https://rockislandil.devnetwedge.com/
+  publisher: Rock Island County Supervisor of Assessments, on the DEVNET Wedge platform
+  access_method: >-
+    not-measured — the host is unreachable from this egress. Vendor is identified as DEVNET Wedge
+    from two signals that do not require loading the portal: the county's own published link at
+    https://www.rockislandcountyil.gov/176/Assessment-Search, and the vendor hostname pattern
+    <county><state>.devnetwedge.com confirmed by DNS (CNAME to wedge-3.devnetwedge.com, a shared
+    DEVNET Wedge tenant node).
+  status: unreachable
+  record_count: null
+  throughput: not-measured
+  constraints: >-
+    DNS A record 184.105.34.17 resolves; TCP connect times out after 20 s on IPv4 and IPv6 from
+    egress LT. This proves the host is not accepting connections from this egress. It does not
+    prove the portal is down, bot-protected, or unusable from a US exit. Consequently unknown and
+    NOT assumed: search mechanism, per-parcel detail URL pattern, parcel-id format, hidden JSON
+    API, session bootstrap, CAPTCHA/Cloudflare posture, safe concurrency, per-record latency.
+    Re-probe from a US exit with `node scripts/probe-sources.mjs` to upgrade this row.
+  licence: not-measured
+  feasibility: undetermined-unreachable
+  verified_at: "2026-08-12"
+  evidence: docs/samples/assessor-probe.txt
 
 parcels:
   name: Rock Island County GIS — Parcels (parcel_layer)
@@ -59,6 +82,31 @@ contractor_reputation: {}
 
 power_infrastructure: []
 
-zoning: {}
+zoning:
+  name: Rock Island County zoning and property-class codes (attributes of the GIS parcel layer)
+  url: https://services9.arcgis.com/6FnscPPlUa9DXXOk/arcgis/rest/services/Parcels/FeatureServer/0
+  publisher: Rock Island County GIS
+  access_method: >-
+    Anonymous ArcGIS REST. Zoning and class arrive as attributes of the parcel layer; there is no
+    separate zoning FeatureServer. Distinct values read with returnDistinctValues, counts with
+    groupByFieldsForStatistics.
+  status: available
+  record_count: 65955
+  throughput: p50 0.46 s per query, same layer as the parcels row
+  constraints: >-
+    NOT a countywide zoning classification. For 51,039 parcels (77.4%) the Zoning field holds a
+    three-letter MUNICIPALITY code (MOL, RI, EM, SIL, MIL, CV, CCL, HAM, PB, AND, COR, OAK, REY),
+    not a zoning class — the county records zoning only for the unincorporated area it governs.
+    Only 13,770 parcels (20.9%) carry a real county zoning class (AG1, AG2, B1-B4, I1, I2, R1, R2,
+    R5, R7, SE1, SE2, RC, PUD); 1,146 (1.7%) are empty or null. Municipal zoning for Moline, Rock
+    Island, East Moline and Silvis (43,531 parcels, two-thirds of the county) must be sourced from
+    each municipality separately and was not attempted in this run. 3,152 parcels carry an
+    undocumented "!" or "?" suffix on the zoning code whose meaning is unknown. The class field has
+    23 distinct 4-digit codes whose code->label table lives on the unreachable assessor portal, so
+    commercial/industrial eligibility is NOT YET MAPPED.
+  licence: For use by the general public
+  feasibility: download
+  verified_at: "2026-08-12"
+  evidence: docs/rock-island-county-findings.md#5-usage-type-vocabulary
 
 unavailable_signals: []

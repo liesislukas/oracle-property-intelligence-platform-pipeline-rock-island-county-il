@@ -22,7 +22,60 @@ Machine-readable companion: [`rock-island-sources.yaml`](./rock-island-sources.y
 
 ## 1. Appraiser portal
 
-_Filled by W2–W8._
+| Property | Value |
+|---|---|
+| Landing page | `https://www.rockislandcountyil.gov/176/Assessment-Search` (HTTP 200 from this egress) |
+| **Portal** | **`https://rockislandil.devnetwedge.com/`** |
+| **Vendor** | **DEVNET Wedge** |
+| Status | **`unreachable` from this egress** — `tcp-blocked` |
+| Access mode | **not-measured** (portal unreachable) |
+| Parcel-id format on portal | **unconfirmed** — see `## 2` |
+| Anti-bot posture | **not-measured** — see the diagnostic below |
+| Throughput | **not-measured** |
+| Feasibility | `undetermined-unreachable` |
+| Evidence | [`samples/assessor-probe.txt`](./samples/assessor-probe.txt) |
+
+**How the vendor was identified, and why that identification stands regardless of reachability.**
+Two independent signals, neither of which requires loading the portal:
+
+1. The county's own published link. `https://www.rockislandcountyil.gov/176/Assessment-Search` — the
+   Assessment Search page on the county's CivicPlus CMS, reachable and read from this egress —
+   points at `rockislandil.devnetwedge.com`.
+2. The vendor's hostname pattern. DEVNET Wedge deploys per-county at
+   `<county><state>.devnetwedge.com`, and `rockislandil` fits it exactly. DNS confirms the host is
+   real and vendor-operated: `rockislandil.devnetwedge.com` is a **CNAME to
+   `wedge-3.devnetwedge.com`** — a shared DEVNET Wedge tenant node, not a county-hosted machine.
+
+DEVNET Wedge is the common assessment-portal product across Illinois counties. The vendor question
+(AC3's counterpart for the appraiser side) is therefore **answered**; only the measurement of it is
+not.
+
+**Diagnostic — verbatim, and what it does and does not prove:**
+
+> DNS A record 184.105.34.17 resolves; TCP connect times out after 20 s on IPv4 and IPv6 from egress
+> LT. This proves the host is not accepting connections from this egress. It does not prove the
+> portal is down, bot-protected, or unusable from a US exit.
+
+Raw capture in [`samples/assessor-probe.txt`](./samples/assessor-probe.txt): the `dig` output (A
+record via CNAME `wedge-3.devnetwedge.com` → `184.105.34.17`, no AAAA record), and two `curl -sv`
+transcripts — `-4` and `-6` — each ending `Connection timed out after 20004 milliseconds`. The
+connection fails at the TCP layer: there is no TLS handshake, no HTTP response, no challenge page
+and no block page. That failure shape is **not** what a bot challenge looks like — a bot challenge
+completes the connection and answers with a page. It is consistent with a network-level filter, and
+this egress cannot determine whose filter it is.
+
+**What is consequently unknown, and must not be assumed:** the portal's search mechanism, its
+per-parcel detail URL pattern, its parcel-id format, whether it exposes a hidden JSON API, whether
+it requires a session bootstrap, its CAPTCHA/Cloudflare posture, its safe concurrency, and its
+per-record latency. Every one of these is a `county-discovery` required field for section 1, and
+every one of them stays unfilled rather than guessed. Re-probing from a US exit is the single action
+that fills them — see `## 10`.
+
+**What is reachable in the meantime.** The county GIS parcel layer (`## 4`) independently carries
+owner name, mailing address, situs address, EAV/EMV assessed values, acreage, last-sale date and
+sale price, year built, square footage, zoning and class — for 65,955 parcels, with no auth. It is
+**not** a substitute for the assessor portal and is catalogued separately, but it means the
+unreachable portal does **not** block property-level work.
 
 ## 2. Parcel identifier
 
@@ -206,7 +259,62 @@ than a state aggregate would be.
 
 ## 5. Usage-type vocabulary
 
-_Filled by W2–W8._
+The authoritative property-use code → label table lives on the DEVNET Wedge assessor portal, which
+is unreachable from this egress. **The code→label mapping is therefore NOT YET MAPPED, and no
+mapping is invented here.** What follows is the vocabulary that is measurable from the reachable GIS
+layer: the code values and their real distributions, without labels.
+
+### `class` — assessor property-class code
+
+`esriFieldTypeString`, 4-digit zero-padded. **23 distinct values** measured live 2026-08-12
+(`returnDistinctValues`), including `null`:
+
+```
+0010  0011  0020  0021  0026  0028  0029  0030  0032  0040  0050  0052
+0060  0062  0065  0070  0080  0081  0082  0085  0090  4600  (+ null)
+```
+
+Illinois assessment practice groups these by leading digits (farm, residential, commercial,
+industrial), and the observed values are consistent with that shape — but **which specific code maps
+to commercial or industrial is not established here**, because the label table is on the unreachable
+portal. `county-discovery` uses this mapping to decide **commercial/industrial eligibility for
+permit harvesting**, so:
+
+> **Commercial/industrial eligibility cannot be derived until the `class` code→label table is read
+> off the assessor portal from a US exit.** Any permit-harvest scoping that depends on it is blocked
+> on that one action — not on any missing dataset.
+
+### `Zoning` — and a structural finding worth more than the codes
+
+`esriFieldTypeString`. **56 distinct values** measured live 2026-08-12. Grouped counts over all
+65,955 parcels:
+
+| Group | Parcels | % | Values |
+|---|---|---|---|
+| **Municipality code, not a zoning class** | **51,039** | **77.4%** | `MOL` 17,261 · `RI` 15,502 · `EM` 7,648 · `SIL` 3,120 · `MIL` 2,410 · `CV` 1,531 · `HAM` 898 · `PB` 831 · `CCL` 787 · plus `AND`, `COR`, `OAK`, `REY` |
+| **County zoning class** | **13,770** | **20.9%** | `R1` 3,097 · `AG2` 2,845 · `AG1` 2,153 · `SE2` 1,086 · `RC` 574 · `SE1` 385 · plus `B1`–`B4`, `I1`, `I2`, `R2`, `R5`, `R7`, `PUD` |
+| **Empty or null** | **1,146** | **1.7%** | `""` 957, plus nulls |
+
+**The finding:** for 77.4% of parcels the county's `Zoning` field does **not** contain a zoning
+class at all — it contains a three-letter code for the municipality the parcel sits in
+(`MOL` = Moline, `RI` = Rock Island, `EM` = East Moline, `SIL` = Silvis, `MIL` = Milan,
+`CV` = Coal Valley, `CCL` = Carbon Cliff, `HAM` = Hampton, `PB` = Port Byron, `AND` = Andalusia,
+`COR` = Cordova, `OAK` = Oak Grove, `REY` = Reynolds). The county records zoning only where it is
+the zoning authority — the unincorporated area — and defers to the municipality everywhere else.
+
+This is the same fragmentation that governs permits (`## 3`), showing up in the zoning data:
+**there is no countywide zoning classification for incorporated parcels in this layer.** Municipal
+zoning for Moline, Rock Island, East Moline and Silvis — 43,531 parcels between them, two-thirds of
+the county — would have to be sourced from each municipality separately. That is a direct answer to
+the assignment's "ingest or link any publicly available zoning, land-use, or utility-related data"
+criterion: the county layer covers the unincorporated fifth, and the rest is per-municipality work
+that this run did not attempt.
+
+**Undocumented suffixes.** 3,152 parcels carry a `!` or `?` suffix on the zoning code (`R1!` 910,
+`R1?` 561, `AG1!` 466, `AG1?` 441, and others). The layer metadata carries no domain and no
+description for these, so **their meaning is unknown** — plausibly a pending/verify data-entry
+convention, but that is a guess and is not recorded as a finding. Strip or preserve them
+deliberately; do not let them silently fragment a `GROUP BY`.
 
 ## 6. Additional data sources
 
