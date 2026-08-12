@@ -1,7 +1,173 @@
 {
-  "stage": "geo-signals",
-  "status": "not-run",
+  "stage": "geo-signals-ingest",
+  "status": "ready",
   "county_slug": "rock-island",
-  "sources": [],
-  "run": { "started_at": null, "finished_at": null }
+  "sources": [
+    {
+      "id": "hifld-transmission-lines",
+      "name": "HIFLD electric power transmission lines — Homeland Infrastructure Foundation-Level Data (HIFLD)",
+      "url": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/US_Electric_Power_Transmission_Lines/FeatureServer/0",
+      "licence": "This work is licensed under the Esri Master License Agreement.",
+      "retrieved_at": "2026-08-12T18:20:44.229Z",
+      "record_count": 60,
+      "bbox_count": 113,
+      "duration_s": 1.221,
+      "decision": "download",
+      "gaps": [
+        "HIFLD's INFERRED field marks a route that was inferred from imagery and open data rather than surveyed. These lines are approximately where the grid is, not authoritatively where it is, and any distance computed from them inherits that uncertainty: 55 of 60 in-county lines (92%) are INFERRED=Y.",
+        "VOLTAGE = -999999 is a missing-value sentinel, not a voltage. Rows carrying it are stored with voltage_kv NULL and are excluded from every numeric comparison.",
+        "The ArcGIS Online item behind this layer is titled \"U.S. Electric Power Transmission Lines (Archive)\". It is public and live, but it is published as an archived snapshot, and the newest source date in this county is 2018-11-29 — 8 years old.",
+        "MISO generator interconnection queue — named, not evaluated. MISO is the regional grid operator for northwestern Illinois and publishes a generator interconnection queue. It was not evaluated in this run. It is not claimed to be unavailable; it is the next place to look for interconnection feasibility.",
+        "Distribution-level (sub-transmission) infrastructure — no public source located. HIFLD covers bulk transmission only, and distribution networks are generally utility-confidential. No utility was contacted."
+      ],
+      "notes": [
+        "Three measured counts, none typed: 60 inside the county polygon (the county figure, record_count), 113 in the fetch bounding box -91.08,41.32,-90.15,41.79 (bbox_count — a rectangle that crosses the Mississippi into Scott, Muscatine and Cedar counties, Iowa), and 78 in the ISSUE-001 source-discovery bounding box -90.79,41.36,-90.25,41.65. The discovery rectangle holds 93.1% of the county's parcels and misses its two largest generators; its count is kept for reproducibility and is not a county figure.",
+        "Clipped to the US Census TIGERweb county polygon (State_County/MapServer layer 1, GEOID 17161, 2471 vertices, ring area 1167.16 km² against the feature's own AREALAND+AREAWATER of 1168.84 km²). The county's own GIS \"Boundaries\" service was rejected: it is 15 municipal polygons and excludes unincorporated county, so clipping against it would silently delete every rural feature.",
+        "Measured over the 60 in-county lines: 55 are marked INFERRED=Y (92%), 5 are INFERRED=N and 0 read \"NOT AVAILABLE\". The route was inferred from imagery and open data, not surveyed.",
+        "SOURCEDATE on the in-county lines runs 2015-03-31 to 2018-11-29. The newest line in this county is 8 years old. SOURCEDATE is epoch milliseconds in the source and is converted once, at load time.",
+        "3 in-county lines carry VOLTAGE = -999999, a missing-value sentinel rather than a voltage. They are stored with voltage_kv NULL and are excluded from every numeric comparison; the raw -999999 is kept verbatim in voltage_raw. Real voltages present in county: 69 kV, 161 kV, 345 kV.",
+        "Owners of the in-county lines, counted: MIDAMERICAN ENERGY CO 54; COMMONWEALTH EDISON CO 3; NOT AVAILABLE 3. \"NOT AVAILABLE\" is stored verbatim — it is what the source says, and it is not the same fact as NULL.",
+        "Licence provenance: ArcGIS Online item d4090758322c4d32a4cd002ffaa0aa12 (\"U.S. Electric Power Transmission Lines (Archive)\"), licenseInfo. Both HIFLD FeatureServers return an empty licenseInfo and an empty copyrightText; the licence exists only on the ArcGIS Online item. Attribution: U.S. Government."
+      ]
+    },
+    {
+      "id": "hifld-power-plants",
+      "name": "HIFLD power plants — Homeland Infrastructure Foundation-Level Data (HIFLD) / U.S. EIA",
+      "url": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/Power_Plants_in_the_US/FeatureServer/0",
+      "licence": "This work is licensed under the Esri Master License Agreement.",
+      "retrieved_at": "2026-08-12T18:20:45.618Z",
+      "record_count": 3,
+      "bbox_count": 9,
+      "duration_s": 0.655,
+      "decision": "download",
+      "gaps": [
+        "Bounding-box counts are not county counts. The fetch rectangle crosses the Mississippi into Scott, Muscatine and Cedar counties, Iowa. The clipped count is the county figure.",
+        "The clip is cross-checked against the layer's own County and State attributes: every plant kept by the polygon also reads Rock Island, Illinois.",
+        "MISO generator interconnection queue — named, not evaluated. MISO is the regional grid operator for northwestern Illinois and publishes a generator interconnection queue. It was not evaluated in this run. It is not claimed to be unavailable; it is the next place to look for interconnection feasibility."
+      ],
+      "notes": [
+        "Three measured counts, none typed: 3 inside the county polygon (the county figure, record_count), 9 in the fetch bounding box -91.08,41.32,-90.15,41.79 (bbox_count — a rectangle that crosses the Mississippi into Scott, Muscatine and Cedar counties, Iowa), and 2 in the ISSUE-001 source-discovery bounding box -90.79,41.36,-90.25,41.65. The discovery rectangle holds 93.1% of the county's parcels and misses its two largest generators; its count is kept for reproducibility and is not a county figure.",
+        "Clipped to the US Census TIGERweb county polygon (State_County/MapServer layer 1, GEOID 17161, 2471 vertices, ring area 1167.16 km² against the feature's own AREALAND+AREAWATER of 1168.84 km²). The county's own GIS \"Boundaries\" service was rejected: it is 15 municipal polygons and excludes unincorporated county, so clipping against it would silently delete every rural feature.",
+        "The clip's proof is by name, not by count. Kept in county: Quad Cities Generating Station (1819 MW, Rock Island, Illinois); Cordova Energy (521.2 MW, Rock Island, Illinois); Moline (63.2 MW, Rock Island, Illinois). Dropped as out-of-county: Muscatine Plant #1 (248.9 MW, Muscatine, Iowa); Wilton (9.2 MW, Muscatine, Iowa); Durant (4.4 MW, Cedar, Iowa); Eastern Iowa Solar (1.8 MW, Muscatine, Iowa); Davenport Water Pollution Control Plant (1.6 MW, Scott, Iowa); AgriReNew (1 MW, Scott, Iowa).",
+        "Independent cross-check: every plant the polygon kept also reads County \"Rock Island\" and State \"Illinois\" in the layer's own attributes. Two methods, same answer.",
+        "The discovery bounding box found only 2 plants in the rectangle and 1 in county — it misses Quad Cities Generating Station (nuclear, 1819 MW) and Cordova Energy (521.2 MW). That is why this stage fetches over the county envelope.",
+        "Licence provenance: ArcGIS Online item b063316fac7345dba4bae96eaa813b2f (\"Power Plants in the U.S.\"), licenseInfo. Attribution: Energy Information Administration (EIA)."
+      ]
+    },
+    {
+      "id": "osm-substations",
+      "name": "OpenStreetMap electric substations — OpenStreetMap contributors (via Overpass API)",
+      "url": "https://overpass-api.de/api/interpreter",
+      "licence": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+      "retrieved_at": "2026-08-12T18:22:58.534Z",
+      "record_count": 36,
+      "bbox_count": 109,
+      "duration_s": 17.765,
+      "decision": "download",
+      "gaps": [
+        "OpenStreetMap data, licensed ODbL, © OpenStreetMap contributors. Crowd-sourced and not authoritative: completeness is unknown and unwarranted. Nobody guarantees that every feature here is real, and nobody guarantees there are no others.",
+        "HIFLD publishes no public electric substations layer. Listing all 222 services in the HIFLD ArcGIS organisation and filtering for substation|transmission|power|electric|energy matched exactly four services, none of them substations. OpenStreetMap is the public substitute, and its provenance character is fundamentally different from HIFLD's.",
+        "Distribution-level (sub-transmission) infrastructure — no public source located. HIFLD covers bulk transmission only, and distribution networks are generally utility-confidential. No utility was contacted."
+      ],
+      "notes": [
+        "Three measured counts, none typed: 36 inside the county polygon (the county figure, record_count), 109 in the fetch bounding box -91.08,41.32,-90.15,41.79 (bbox_count — a rectangle that crosses the Mississippi into Scott, Muscatine and Cedar counties, Iowa), and 66 in the ISSUE-001 source-discovery bounding box -90.79,41.36,-90.25,41.65. The discovery rectangle holds 93.1% of the county's parcels and misses its two largest generators; its count is kept for reproducibility and is not a county figure.",
+        "Clipped to the US Census TIGERweb county polygon (State_County/MapServer layer 1, GEOID 17161, 2471 vertices, ring area 1167.16 km² against the feature's own AREALAND+AREAWATER of 1168.84 km²). The county's own GIS \"Boundaries\" service was rejected: it is 15 municipal polygons and excludes unincorporated county, so clipping against it would silently delete every rural feature.",
+        "Overpass query, verbatim: undefined",
+        "Licence read from the live response's osm3s.copyright field, not hardcoded. This dataset is a Derivative Database of OpenStreetMap and is offered under the same Open Database License (ODbL) v1.0. Attribution: © OpenStreetMap contributors (https://www.openstreetmap.org/copyright).",
+        "Overpass politeness, measured: at 5-second spacing the API returned three 504s and two 429s in ten requests. This run used sequential requests at ≥15 s spacing with 4 attempts and 30/60/120 s backoff, and would have exited rather than record a rate-limited failure as a count."
+      ]
+    },
+    {
+      "id": "osm-power-lines",
+      "name": "OpenStreetMap power lines — OpenStreetMap contributors (via Overpass API)",
+      "url": "https://overpass-api.de/api/interpreter",
+      "licence": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+      "retrieved_at": "2026-08-12T18:23:33.071Z",
+      "record_count": 153,
+      "bbox_count": 321,
+      "duration_s": 17.842,
+      "decision": "download",
+      "gaps": [
+        "OpenStreetMap data, licensed ODbL, © OpenStreetMap contributors. Crowd-sourced and not authoritative: completeness is unknown and unwarranted. Nobody guarantees that every feature here is real, and nobody guarantees there are no others.",
+        "Distribution-level (sub-transmission) infrastructure — no public source located. HIFLD covers bulk transmission only, and distribution networks are generally utility-confidential. No utility was contacted."
+      ],
+      "notes": [
+        "Three measured counts, none typed: 153 inside the county polygon (the county figure, record_count), 321 in the fetch bounding box -91.08,41.32,-90.15,41.79 (bbox_count — a rectangle that crosses the Mississippi into Scott, Muscatine and Cedar counties, Iowa), and 176 in the ISSUE-001 source-discovery bounding box -90.79,41.36,-90.25,41.65. The discovery rectangle holds 93.1% of the county's parcels and misses its two largest generators; its count is kept for reproducibility and is not a county figure.",
+        "Clipped to the US Census TIGERweb county polygon (State_County/MapServer layer 1, GEOID 17161, 2471 vertices, ring area 1167.16 km² against the feature's own AREALAND+AREAWATER of 1168.84 km²). The county's own GIS \"Boundaries\" service was rejected: it is 15 municipal polygons and excludes unincorporated county, so clipping against it would silently delete every rural feature.",
+        "Overpass query, verbatim: undefined",
+        "Licence read from the live response's osm3s.copyright field, not hardcoded. This dataset is a Derivative Database of OpenStreetMap and is offered under the same Open Database License (ODbL) v1.0. Attribution: © OpenStreetMap contributors (https://www.openstreetmap.org/copyright).",
+        "power=minor_line and power=tower are deliberately excluded: neither is transmission infrastructure. OSM voltage tags are volts as a string and may be multi-valued (\"161000;69000\"); a multi-valued tag yields voltage_kv NULL and stays intact in the raw property bag."
+      ]
+    },
+    {
+      "id": "osm-bus-stops",
+      "name": "OpenStreetMap bus stops — OpenStreetMap contributors (via Overpass API)",
+      "url": "https://overpass-api.de/api/interpreter",
+      "licence": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+      "retrieved_at": "2026-08-12T18:24:08.793Z",
+      "record_count": 103,
+      "bbox_count": 119,
+      "duration_s": 19.307,
+      "decision": "download",
+      "gaps": [
+        "OpenStreetMap data, licensed ODbL, © OpenStreetMap contributors. Crowd-sourced and not authoritative: completeness is unknown and unwarranted. Nobody guarantees that every feature here is real, and nobody guarantees there are no others.",
+        "No authoritative GTFS feed was located for the Quad Cities operator. MetroLINK/MetroQC publishes none, transitfeeds returns 403 from our egress, transit.land returns 401 without a key, and the Mobility Database requires authentication. A feed may exist behind those keyed APIs — it is \"not located\", not \"does not exist\".",
+        "A stop location is not a service. Without a timetable, near a stop does not establish served frequently, or at all.",
+        "Bi-State Regional Commission — named, not evaluated. Recorded as an unevaluated regional source, not as an absent one."
+      ],
+      "notes": [
+        "Three measured counts, none typed: 103 inside the county polygon (the county figure, record_count), 119 in the fetch bounding box -91.08,41.32,-90.15,41.79 (bbox_count — a rectangle that crosses the Mississippi into Scott, Muscatine and Cedar counties, Iowa), and 119 in the ISSUE-001 source-discovery bounding box -90.79,41.36,-90.25,41.65. The discovery rectangle holds 93.1% of the county's parcels and misses its two largest generators; its count is kept for reproducibility and is not a county figure.",
+        "Clipped to the US Census TIGERweb county polygon (State_County/MapServer layer 1, GEOID 17161, 2471 vertices, ring area 1167.16 km² against the feature's own AREALAND+AREAWATER of 1168.84 km²). The county's own GIS \"Boundaries\" service was rejected: it is 15 municipal polygons and excludes unincorporated county, so clipping against it would silently delete every rural feature.",
+        "Overpass query, verbatim: undefined",
+        "Licence read from the live response's osm3s.copyright field, not hardcoded. This dataset is a Derivative Database of OpenStreetMap and is offered under the same Open Database License (ODbL) v1.0. Attribution: © OpenStreetMap contributors (https://www.openstreetmap.org/copyright)."
+      ]
+    },
+    {
+      "id": "osm-starbucks",
+      "name": "OpenStreetMap Starbucks features — OpenStreetMap contributors (via Overpass API)",
+      "url": "https://overpass-api.de/api/interpreter",
+      "licence": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+      "retrieved_at": "2026-08-12T18:25:32.301Z",
+      "record_count": 5,
+      "bbox_count": 12,
+      "duration_s": 23.961,
+      "decision": "download",
+      "gaps": [
+        "OpenStreetMap data, licensed ODbL, © OpenStreetMap contributors. Crowd-sourced and not authoritative: completeness is unknown and unwarranted. Nobody guarantees that every feature here is real, and nobody guarantees there are no others.",
+        "A count of OpenStreetMap features matching the name Starbucks, not a verified count of operating stores. A licensed in-store Starbucks inside a grocery store or hotel may be tagged under the host business and missed, and a closed location may persist in the data.",
+        "The brand:wikidata=Q37158 cross-check was attempted during source discovery and did not complete. This count rests on the name match alone."
+      ],
+      "notes": [
+        "Three measured counts, none typed: 5 inside the county polygon (the county figure, record_count), 12 in the fetch bounding box -91.08,41.32,-90.15,41.79 (bbox_count — a rectangle that crosses the Mississippi into Scott, Muscatine and Cedar counties, Iowa), and 12 in the ISSUE-001 source-discovery bounding box -90.79,41.36,-90.25,41.65. The discovery rectangle holds 93.1% of the county's parcels and misses its two largest generators; its count is kept for reproducibility and is not a county figure.",
+        "Clipped to the US Census TIGERweb county polygon (State_County/MapServer layer 1, GEOID 17161, 2471 vertices, ring area 1167.16 km² against the feature's own AREALAND+AREAWATER of 1168.84 km²). The county's own GIS \"Boundaries\" service was rejected: it is 15 municipal polygons and excludes unincorporated county, so clipping against it would silently delete every rural feature.",
+        "Overpass query, verbatim: undefined",
+        "Licence read from the live response's osm3s.copyright field, not hardcoded. This dataset is a Derivative Database of OpenStreetMap and is offered under the same Open Database License (ODbL) v1.0. Attribution: © OpenStreetMap contributors (https://www.openstreetmap.org/copyright)."
+      ]
+    },
+    {
+      "id": "usgs-nhd-waterbodies",
+      "name": "USGS National Hydrography Dataset waterbodies — U.S. Geological Survey — The National Map",
+      "url": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+      "licence": "USGS TNM – National Hydrography Dataset.  Data Refreshed July, 2026.",
+      "retrieved_at": "2026-08-12T18:20:52.456Z",
+      "record_count": 834,
+      "bbox_count": 2505,
+      "duration_s": 7.06,
+      "decision": "download",
+      "gaps": [
+        "This is water location, not water view. A view is a line-of-sight computation requiring terrain elevation and structure heights, and no public structure-height source was found for this county. Anything derived from this layer is distance-to-water and must be labelled as such.",
+        "A parcel 50 m from the Mississippi behind a levee and a warehouse has no view. This data cannot tell the difference."
+      ],
+      "notes": [
+        "Three measured counts, none typed: 834 inside the county polygon (the county figure, record_count), 2505 in the fetch bounding box -91.08,41.32,-90.15,41.79 (bbox_count — a rectangle that crosses the Mississippi into Scott, Muscatine and Cedar counties, Iowa), and 962 in the ISSUE-001 source-discovery bounding box -90.79,41.36,-90.25,41.65. The discovery rectangle holds 93.1% of the county's parcels and misses its two largest generators; its count is kept for reproducibility and is not a county figure.",
+        "Clipped to the US Census TIGERweb county polygon (State_County/MapServer layer 1, GEOID 17161, 2471 vertices, ring area 1167.16 km² against the feature's own AREALAND+AREAWATER of 1168.84 km²). The county's own GIS \"Boundaries\" service was rejected: it is 15 municipal polygons and excludes unincorporated county, so clipping against it would silently delete every rural feature.",
+        "Fetched in 2 pages of 2000 (the layer reports exceededTransferLimit on page 1); paging is by resultOffset with orderByFields=OBJECTID, and the loop stops only on a short page with no transfer-limit flag.",
+        "Licence provenance: MapServer copyrightText (service root); layer 12 copyrightText is \"U.S. Geological Survey\". Attribution: U.S. Geological Survey — a United States Government work, public domain."
+      ]
+    }
+  ],
+  "run": {
+    "started_at": "2026-08-12T18:20:44.229Z",
+    "finished_at": "2026-08-12T18:30:13.231Z"
+  }
 }
