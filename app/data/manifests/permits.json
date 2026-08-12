@@ -1,7 +1,124 @@
 {
   "stage": "permits",
-  "status": "not-run",
+  "status": "ready",
   "county_slug": "rock-island",
-  "sources": [],
-  "run": { "started_at": null, "finished_at": null }
+  "sources": [
+    {
+      "id": "rock-island-city-permit-reports",
+      "name": "City of Rock Island — monthly permit reports (PDF archive)",
+      "url": "https://rigov.org/1276/Permit-Reports",
+      "licence": null,
+      "retrieved_at": "2026-08-12T18:26:37.736Z",
+      "record_count": 25354,
+      "duration_s": 309.5,
+      "decision": "download",
+      "gaps": [
+        "Permits in Rock Island County are not county-level: sixteen jurisdictions each run their own permitting and only this one publishes a bulk-shaped source. The other fifteen were not harvested — four of them are listed as their own sources in this stage, and the eleven that publish nothing online at all are listed below. A parcel with no permits found here is not a parcel with no permits.",
+        "Andalusia — no online permit lookup exists. No permit page exists on the village site. The site carries Ordinances, Zoning Ordinances, Public Works and Contact only.",
+        "Coal Valley — no online permit lookup exists. No online permit lookup exists. PDF application submitted by mail, email or in person. Coal Valley issues its own permits but directs inspections to Rock Island County at 309-558-3771.",
+        "Cordova — no online permit lookup exists. No online permit lookup exists. PDF application submitted by mail, email or in person.",
+        "Hampton — no online permit lookup exists. No online permit lookup exists. PDF application submitted by mail, email or in person.",
+        "Hillsdale — no online permit lookup exists. No village website exists. Candidate domains villageofhillsdale.org, hillsdaleil.org, hillsdaleillinois.org and villageofhillsdaleil.org were all probed and all failed to connect. Permits are handled at the village clerk's counter.",
+        "Oak Grove — no online permit lookup exists. No village website exists. Its only web presence is Facebook pages and directory listings. Permits are handled at the village clerk's counter.",
+        "Port Byron — no online permit lookup exists. No online permit lookup exists. PDF application submitted by mail, email or in person.",
+        "Rapids City — no online permit lookup exists. Counter-only by explicit policy: \"A permit will need to be purchased in person at the Village of Rapids City Office... No permits or payments for permits will be accepted via email, fax, or mail!\" Rapids City adopts the county fee schedule but runs its own counter-only permitting.",
+        "Reynolds — no online permit lookup exists. No village website exists. Its only web presence is Facebook pages and directory listings. Permits are handled at the village clerk's counter.",
+        "Silvis — no online permit lookup exists. No online permit lookup exists. PDF application submitted by mail, email or in person.",
+        "Unincorporated Rock Island County — no online permit lookup exists. No online permit lookup exists. Commercial and Residential PDF applications, submitted by mail, email or in person; 309-558-3771. Absence of records here is absence of a public source, not absence of permits.",
+        "The city's archive ends at 2026-04. Coverage is stated through 2026-04, not through the current month.",
+        "March 2021 has no report of its own. The city's index links document 15854 under both October 2020 and March 2021, and that document's own records are October 2020 permits, so 2021-03 is absent from the archive rather than empty. 111 distinct documents cover 111 of the 112 index entries, and every month from 2017-01 to 2026-04 except 2021-03.",
+        "425 of 25,354 permit records did not resolve to a parcel: 88 source-sentinel-not-a-parcel-reference; 297 legacy-key-not-in-current-parcel-layer; 40 address-ambiguous-or-absent. A permit that did not match is not a permit without a parcel. Unmatched records fall into stated categories, including source sentinel values such as 000000 and RIGHT-OF-WAY that are not parcel references at all, and legacy keys for parcels that appear to have since been split or retired. Matching is to the parcel layer as it stands today, not as it stood when the permit was issued.",
+        "The reports carry no permit status, no inspection outcome and no issued-vs-applied distinction beyond the printed date, so none of those is claimed here."
+      ],
+      "notes": [
+        "111 monthly PDF reports harvested from https://rigov.org/1276/Permit-Reports, covering 2017-01 to 2026-04. 25,354 permit records extracted, one per printed permit block. A permit spanning several parcels prints one block per parcel and every block is kept, so distinct permit numbers are fewer than records; nothing is de-duplicated away.",
+        "Two report layouts, detected per document from the header row: legacy-tabular (110 reports, 2017-01 to 2026-03, columns Permit # / Permit Date / Owner and Contractor / PURPOSE / TAX_MAP / Address / TOTALCOST) and energov-tabular (1 report, 2026-04 onward, the Tyler EnerGov output, which adds a Parcel Number column and prints no owner or contractor). A document matching neither header would be recorded as unknown-layout and left unclaimed; none was.",
+        "Provenance is per record, not per file: every extracted record carries the source report URL, its document id, the SHA-256 of the exact PDF bytes it was read from, the report month, the layout and the page number. 1 index entry was a duplicate link to an already-downloaded document and is recorded as such rather than downloaded twice.",
+        "Permit-to-parcel linkage: 24,929 of 25,354 records matched a parcel (98.32%) — 24,688 on the legacy TAX_MAP key against the parcel layer's RICO_PARCE, 139 on the 10-digit PIN the EnerGov report prints, 102 on a normalised site address. Permits are joined to parcels on the identifier the source printed, in three tiers. Tier 1: the EnerGov reports (2026-04 onward) print the 10-digit county PIN, matched exactly after left-padding a dropped leading zero. Tier 2: the legacy reports (2017-01 to 2026-03) print a TAX_MAP number, matched exactly against the parcel layer's RICO_PARCE legacy identifier. Tier 3: remaining records are matched on a normalised site address. Address matching is the fallback, not the method, and the parcel layer's site_address is itself only 88.91% populated.",
+        "Records are loaded into the pipeline Postgres table permits_rock_island_city, keyed on a deterministic id of <document id>:<permit number>:<occurrence>, so a re-run refreshes rather than duplicates. Valuations preserve the distinction the source makes: a printed $0.00 loads as 0.00 and an unprinted valuation loads as NULL.",
+        "Politeness: rigov.org/robots.txt disallows neither /DocumentCenter nor /1276 and imposes no Crawl-delay on a generic client. The harvest was strictly sequential with a 1500 ms courtesy delay, identified itself by User-Agent, and was never parallelised. 111 of 112 index entries downloaded, 0 failures. Measured document latency this run: p50 1108 ms, p95 2596 ms, max 4674 ms; 46.8% of fetches came back under a second. Full harvest wall time 309.5 s. A 15-document sample taken before the run measured p50 2724 ms / p95 5977 ms and projected about 9.3 minutes; the live run was faster. Both measurements are recorded rather than one replacing the other — this source's latency varies by a factor of two between sittings, which is itself the constraint worth knowing.",
+        "Correction to discovery: The monthly reports are record-level. Each prints one row per permit with permit number, date, parties, description, parcel key, address and valuation. Verified against 15 reports spanning 2017-01 to 2026-04.",
+        "Correction to discovery: True of the live portals, not of the published reports. The legacy reports print a TAX_MAP legacy parcel key that matched the parcel layer's RICO_PARCE for 98.50% of a 1,200-record sample, and the 2026-04 EnerGov report prints the 10-digit county PIN directly.",
+        "Correction to discovery: 1365 ms is the index page. Document fetches measured p50 2724 ms and p95 5977 ms over 15 sequential downloads, so a polite full harvest of 111 reports takes about 9.3 minutes, not the ~190 s the feasibility table estimated.",
+        "The city's own Tyler EnerGov Civic Access portal (https://cityofrockislandil-energovweb.tylerhost.net/apps/selfservice) returns HTTP 403 from this egress and was not used. The city's Tyler EnerGov Civic Access portal returns HTTP 403 from this egress and was not used. Permits here were ingested from the city's own monthly PDF permit reports at https://rigov.org/1276/Permit-Reports, covering 2017-01 through 2026-04. This is the only bulk-shaped permit source in the county.",
+        "Full artifacts on the branch: data/artifacts/permits/rock-island/rock-island-city-permits-v1/ — inventory.json (the 112 index entries), status/<month>.json (per-document HTTP status, byte length, SHA-256, timing), extracted/<month>.json (every record), linkage.json (the match rates) and coverage.json (all 16 jurisdictions). The raw PDFs are excluded from git as ~11 MB of binaries the inventory already identifies by URL, byte length and hash."
+      ]
+    },
+    {
+      "id": "moline-etrakit-permit-search",
+      "name": "Moline — CentralSquare eTRAKiT permit search (not harvested)",
+      "url": "https://moli.csqrcloud.com/community-etrakit/Search/permit.aspx",
+      "licence": null,
+      "retrieved_at": null,
+      "record_count": null,
+      "duration_s": null,
+      "decision": "runtime-fetch",
+      "gaps": [
+        "Moline — not harvested. CentralSquare eTRAKiT portal is runtime lookup only. It searches Permit Number and Site Address, exposes no date-range filter and offers no browse-all, so it cannot be enumerated and was not harvested.",
+        "No permit record from Moline is present in this pipeline. That is a limit of what the source exposes, not a statement that Moline issued no permits."
+      ],
+      "notes": [
+        "Vendor: CentralSquare eTRAKiT. Search capability as observed: by-address. Discovery status: certified.",
+        "Measured latency: p50 981 ms, p95 1129 ms over 10 sequential requests (ISSUE-001 discovery, 2026-08-12)."
+      ]
+    },
+    {
+      "id": "east-moline-iworq-permit-search",
+      "name": "East Moline — iWorQ permit search (not harvested)",
+      "url": "https://eastmolinepermit.portal.iworq.net/EASTMOLINE/permits/600",
+      "licence": null,
+      "retrieved_at": null,
+      "record_count": null,
+      "duration_s": null,
+      "decision": "runtime-fetch",
+      "gaps": [
+        "East Moline — not harvested. iWorQ portal is runtime lookup only. Its result table renders zero rows until an exact permit number or primary contractor is supplied, and it offers no browse-all and no date filter, so it cannot be enumerated and was not harvested.",
+        "No permit record from East Moline is present in this pipeline. That is a limit of what the source exposes, not a statement that East Moline issued no permits."
+      ],
+      "notes": [
+        "Vendor: iWorQ. Search capability as observed: by-permit-number. Discovery status: certified.",
+        "Measured latency: p50 1834 ms, p95 2457 ms over 10 sequential requests (ISSUE-001 discovery, 2026-08-12)."
+      ]
+    },
+    {
+      "id": "milan-govbuilt-permit-portal",
+      "name": "Milan — GovBuilt permit portal (not harvested)",
+      "url": "https://www.milanil.org/building-and-inspections",
+      "licence": null,
+      "retrieved_at": null,
+      "record_count": null,
+      "duration_s": null,
+      "decision": "undetermined-unreachable",
+      "gaps": [
+        "Milan — not harvested. GovBuilt portal returned a 403 Cloudflare challenge and its search capability could not be observed. Out of scope by the standing no-US-egress decision; nothing about its contents is asserted.",
+        "No permit record from Milan is present in this pipeline. That is a limit of what the source exposes, not a statement that Milan issued no permits."
+      ],
+      "notes": [
+        "Vendor: GovBuilt. Search capability as observed: browse-only. Discovery status: discovered.",
+        "Latency: not measured. The portal could not be exercised from this egress, so no timing is asserted."
+      ]
+    },
+    {
+      "id": "carbon-cliff-permits-delegated",
+      "name": "Carbon Cliff — permitting contracted to East Moline (not harvested)",
+      "url": "https://carboncliff.gov/permits-zoning-and-floodplain",
+      "licence": null,
+      "retrieved_at": null,
+      "record_count": null,
+      "duration_s": null,
+      "decision": "delegated-records-unconfirmed",
+      "gaps": [
+        "Carbon Cliff — not harvested. Permitting is contracted to the City of East Moline for all Plumbing, Mechanical, Building and Electrical work. Whether Carbon Cliff permit records live inside the East Moline iWorQ instance could not be confirmed, because that instance returns nothing without an exact permit number. Recorded as unconfirmed rather than guessed.",
+        "No permit record from Carbon Cliff is present in this pipeline. That is a limit of what the source exposes, not a statement that Carbon Cliff issued no permits."
+      ],
+      "notes": [
+        "Vendor: unknown. Search capability as observed: none. Discovery status: discovered.",
+        "Latency: not measured. The portal could not be exercised from this egress, so no timing is asserted."
+      ]
+    }
+  ],
+  "run": {
+    "started_at": "2026-08-12T18:21:27.843Z",
+    "finished_at": "2026-08-12T18:31:21.786Z"
+  }
 }
