@@ -453,6 +453,125 @@ deliberately; do not let them silently fragment a `GROUP BY`.
 
 ## 6. Additional data sources
 
+### Business registration — the Sunbiz replacement
+
+**`sunbiz-corporate-ingest` does not apply to this county.** That skill is Florida-only, by its own
+text and by `use-elephant-skills` ("skip `sunbiz-corporate-ingest` — Florida only"). Sunbiz is the
+Florida Division of Corporations; there is no Sunbiz outside Florida. This is the substantive answer
+to the business-registration criterion, not a footnote: **the skill is inapplicable and the Illinois
+equivalent is a first-run source with no kit precedent.**
+
+The Illinois equivalent is the **Illinois Secretary of State, Business Services** corporate/LLC
+search at **`https://www.ilsos.gov/corporatellc/`**, which NETR lists as the county's
+business-registration source.
+
+**Status from this egress: `geo-blocked`.** Measured 2026-08-12 — **HTTP 403 on every path tried**,
+on both IPv4 and IPv6, and also with a full browser `User-Agent`, `Accept` and `Accept-Language`:
+
+| Path | IPv4 | IPv6 |
+|---|---|---|
+| `https://www.ilsos.gov/corporatellc/` | 403 | 403 |
+| `https://apps.ilsos.gov/corporatellc/` | 403 | 403 |
+| `https://apps.ilsos.gov/businessentitysearch/` | 403 | 403 |
+| `https://www.ilsos.gov/data/` | 403 | 403 |
+| `https://www.ilsos.gov/departments/business_services/home.html` | 403 | 403 |
+
+The 403 is served by an **Akamai** edge (the response carries Akamai's `x-reference-error` header
+and no application content — 384 bytes of generic HTML).
+
+**What this is recorded as: `geo-block-or-bot-block, undistinguished from a non-US egress.`**
+Uniform 403 across an entire domain — including plain static content pages that have no search
+function and nothing to protect — is *characteristic of* an edge geo-rule rather than a per-request
+bot challenge, because a bot challenge normally targets the interactive endpoint and lets static
+pages through. **That is the strongest statement this evidence supports, and this document makes no
+stronger one.** It is not recorded as "no public source", and it is not recorded as "bot-protected".
+
+**Illinois bulk corporate data was NOT evaluated.** Illinois publishes a paid bulk corporate-data
+purchase channel separate from the free search. It could not be assessed because the entire domain
+is blocked from this egress. It is named here as an **unevaluated option**, not as unavailable — and
+it is the more likely path for any real ingestion, since a free per-entity search would not survive
+the 48-hour gate at county scale anyway.
+
+### Recorder / official records, and ownership history
+
+The county Recorder's land-record search is **Fidlar Tapestry**, reached from
+`https://www.rockislandcountyil.gov/QuickLinks.aspx?CID=42` → `https://www.landrecords.com` →
+**301** → `https://tapestry.fidlar.com/TapestryEON`.
+
+**Status: `unreachable`.** Measured 2026-08-12: `www.landrecords.com` answers the 301 normally
+(HTTP 301 in 0.30 s, so that host is alive), and **`tapestry.fidlar.com` returns no A record and no
+AAAA record from this resolver** — verdict `dns-unresolved`.
+
+**This is a different failure mode from the assessor portal's and must not be conflated with it.**
+The assessor host resolves and refuses the connection (`tcp-blocked`); the recorder host does not
+resolve at all (`dns-unresolved`). A DNS failure does not prove the service is retired — a
+split-horizon or geo-aware DNS answer is equally consistent with the observation.
+
+Tapestry is additionally a **pay-per-search commercial product** in most counties. Even reachable,
+it would not be a free bulk source, and that bears directly on the assignment's ownership-tenure
+question (*properties that have not exchanged ownership in more than 10 years*).
+
+**The reachable substitute for ownership tenure — and it is a good one.** The county GIS parcel
+layer carries sale data directly, with no recorder involved:
+
+- **`date_last_sale`** — `esriFieldTypeDate`, epoch milliseconds. This is the field that answers the
+  10-year-tenure question.
+- `gross_sale_price` and `net_sale_price` — sale amounts.
+
+**Measured caveats, which must travel with any tenure claim:** `date_last_sale` is **null for some
+parcels** (observed null on 1 of 3 sampled records, and it is not one of the fields with a measured
+coverage percentage), and **`date_of_sale` is null for every parcel sampled** — it is a dead field,
+redundant with `date_last_sale`. Sale prices of `10` appear in the samples, which is the classic
+nominal-consideration value for a non-arm's-length transfer, so **`gross_sale_price` is not a market
+value** and must not be treated as one.
+
+So: ownership *tenure* is answerable from a reachable, free, no-auth source. Full ownership
+*history* — the chain of deeds, mortgages and liens — is not, because that lives in the recorder's
+unreachable, paid system. The parcel layer gives the **last** sale, not the sequence of them.
+
+### Contractor reputation
+
+The kit's contractor-reputation stage is `skills/skills/bbb-harvest/SKILL.md`, whose source is the
+**Better Business Bureau** — a **national** source, not a county one. Nothing county-specific needs
+discovering: the same BBB covers Rock Island as covers everywhere else.
+
+**Status from this egress: `geo-blocked`.** Measured 2026-08-12 — `https://www.bbb.org/us/il/rock-island`
+returns **HTTP 403**, on IPv4 and IPv6, and so does `https://www.bbb.org/` itself. The block is at
+the site's edge and applies to the whole domain from here.
+
+The plan for this issue anticipated recording BBB as plainly available; **the measurement says
+otherwise and the measurement wins.** It is recorded as `geo-blocked`, with the same
+undistinguished-from-a-non-US-egress caveat as the Illinois SOS. BBB was **not** harvested and
+`bbb-harvest` was **not** run — that is a later stage, out of scope here.
+
+### Tax collector
+
+**Rock Island County Treasurer** — `https://www.rockislandcountyil.gov/332/Treasurers-Office`.
+On the reachable county CMS. Tax-roll bulk availability was **not evaluated** in this run. Note that
+the parcel layer already carries `tax_code`, `taxbill_year`, `taxbill_name`, `taxbill_addr`,
+`taxbill_csz` and the full set of taxing-district names (fire, school, library, park, sanitary, TIF
+and more), so a large part of what a tax roll would provide is already reachable without it.
+
+### GIS / parcel geometry
+
+Fully documented in [`## 4`](#4-bulk-data-sources): county-published ArcGIS polygons, 65,955
+parcels, no auth, `download`. Cross-referenced here because `county-discovery` lists GIS under
+additional sources; it is the single strongest source in this county.
+
+### Historic aerials
+
+`https://www.historicaerials.com/` — listed by the NETR directory for this county. **Not evaluated**
+in this run: no probe, no licence check, no coverage check. Named because it is the only historic
+imagery source the directory surfaces, and imagery is the only plausible public route to
+roof-condition questions (see `## 9`).
+
+### Code enforcement and business licences
+
+**Not found as separate public sources.** Where they exist in this county they sit inside the same
+municipal building/zoning offices catalogued in `## 3` — and 11 of those 16 jurisdictions have no
+online lookup of any kind, so the same constraint applies. No separate code-enforcement portal was
+located for any jurisdiction.
+
 ### Power and utility infrastructure
 
 No kit asset covers power infrastructure in either reference kit — this section is new research.

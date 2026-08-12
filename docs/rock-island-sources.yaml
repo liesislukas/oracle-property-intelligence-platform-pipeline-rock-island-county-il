@@ -285,11 +285,83 @@ permits:
     throughput: not-measured — no online permit lookup exists to harvest; single-request probe 671 ms
     status: certified
 
-business_registration: {}
+business_registration:
+  name: Illinois Secretary of State — Business Services corporate/LLC search
+  url: https://www.ilsos.gov/corporatellc/
+  publisher: Illinois Secretary of State, Department of Business Services
+  access_method: >-
+    not-measured — the whole domain is refused from this egress. Named by the NETR directory as the
+    county's business-registration source. NOTE: sunbiz-corporate-ingest DOES NOT APPLY — it is
+    Florida-only by its own text and by use-elephant-skills. Illinois has no Sunbiz; this is a
+    first-run source with no kit precedent.
+  status: geo-blocked
+  record_count: null
+  throughput: not-measured
+  constraints: >-
+    HTTP 403 on every path tried, on IPv4 and IPv6, and also with a full browser User-Agent,
+    Accept and Accept-Language: /corporatellc/, apps.ilsos.gov/corporatellc/,
+    apps.ilsos.gov/businessentitysearch/, /data/, /departments/business_services/home.html.
+    Served by an Akamai edge (x-reference-error header, 384 bytes of generic HTML, no application
+    content). Recorded as geo-block-or-bot-block, UNDISTINGUISHED from a non-US egress. Uniform 403
+    across an entire domain including static content pages is characteristic of an edge geo-rule
+    rather than a per-request bot challenge — that is the strongest statement the evidence
+    supports. NOT recorded as absent and NOT recorded as bot-protected. Illinois also publishes a
+    paid BULK corporate-data purchase channel separate from the free search; it was NOT EVALUATED
+    because the domain is blocked from here — unevaluated, not unavailable. Re-probe from a US exit
+    with `node scripts/probe-sources.mjs`.
+  licence: not-measured
+  feasibility: undetermined-unreachable
+  verified_at: "2026-08-12"
+  evidence: docs/probe-results.json
 
-recorder: {}
+recorder:
+  name: Rock Island County Recorder — land records via Fidlar Tapestry
+  url: https://tapestry.fidlar.com/TapestryEON
+  publisher: Rock Island County Recorder, on the Fidlar Tapestry platform
+  access_method: >-
+    not-measured. Path: https://www.rockislandcountyil.gov/QuickLinks.aspx?CID=42 ->
+    https://www.landrecords.com -> HTTP 301 -> https://tapestry.fidlar.com/TapestryEON.
+  status: unreachable
+  record_count: null
+  throughput: not-measured
+  constraints: >-
+    www.landrecords.com answers the 301 normally (HTTP 301 in 0.30 s, so that host is alive), but
+    tapestry.fidlar.com returns NO A record and NO AAAA record from this resolver — verdict
+    dns-unresolved. This is a DIFFERENT failure mode from the assessor portal's tcp-blocked and
+    must not be conflated with it. A DNS failure does not prove the service is retired; a
+    split-horizon or geo-aware DNS answer is equally consistent. Tapestry is additionally a
+    PAY-PER-SEARCH commercial product in most counties, so even reachable it would not be a free
+    bulk source. REACHABLE SUBSTITUTE for the ownership-tenure question: the parcel layer's own
+    date_last_sale, gross_sale_price and net_sale_price fields — last sale only, not the deed
+    chain, with date_last_sale null for some parcels, date_of_sale null for all, and sale prices of
+    10 appearing as nominal non-arm's-length consideration.
+  licence: not-measured
+  feasibility: undetermined-unreachable
+  verified_at: "2026-08-12"
+  evidence: docs/probe-results.json
 
-contractor_reputation: {}
+contractor_reputation:
+  name: Better Business Bureau (BBB)
+  url: https://www.bbb.org/us/il/rock-island
+  publisher: Better Business Bureau — a NATIONAL source, not county-specific
+  access_method: >-
+    not-measured. The kit stage for this category is skills/skills/bbb-harvest. Nothing
+    county-specific needs discovering: the same national BBB covers Rock Island as everywhere else.
+    bbb-harvest was NOT run — that is a later stage, out of scope for discovery.
+  status: geo-blocked
+  record_count: null
+  throughput: not-measured
+  constraints: >-
+    HTTP 403 from this egress on IPv4 and IPv6, for both the county page
+    https://www.bbb.org/us/il/rock-island and the site root https://www.bbb.org/ — the block covers
+    the whole domain. The plan for this issue anticipated recording BBB as plainly available; the
+    measurement says otherwise and the measurement wins. Same undistinguished
+    geo-block-or-bot-block caveat as the Illinois SOS row. National scope means county coverage is
+    not the question; reachability is.
+  licence: not-measured
+  feasibility: undetermined-unreachable
+  verified_at: "2026-08-12"
+  evidence: docs/probe-results.json
 
 power_infrastructure:
   substations_note: >-
