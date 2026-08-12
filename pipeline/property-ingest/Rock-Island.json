@@ -1,0 +1,11 @@
+{
+  "requests": [
+    {
+      "key": "ParcelDetail",
+      "request": {
+        "method": "GET",
+        "url": "http://127.0.0.1:8099/parcels/{{=it.request_identifier}}.json"
+      }
+    }
+  ]
+}

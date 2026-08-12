@@ -1022,3 +1022,81 @@ because each would otherwise have produced a false finding:
    `curl/8.7.1` → 504, `ateam-county-discovery/1.0` → **200**,
    `ateam-county-discovery/1.0 (+https://github.com/…)` → 406. The parenthesised URL is what trips
    the filter. A bare `Mozilla/5.0` remains forbidden regardless.
+
+## 11. Transform validation
+
+Recorded by ISSUE-018 on 2026-08-12, per `validate-county-transform`. The skill names
+`Counties-trasform-scripts/<county>-county-findings.md` as the place for this; that org is not
+accessible from this account (§10), so this document is the recorded substitute — the same
+redirect discovery used.
+
+**Verdict: `pass-with-lexicon-gaps`.** 0 class-(a) extractor bugs, 0 class-(b) capture gaps,
+12 class-(c) lexicon gaps. `elephant-cli validate` exits 0 on all 25 samples; the fail-closed gate
+was never weakened or bypassed.
+
+### The sample
+
+25 parcels, selected deterministically by 25 measured variability predicates (usage classes 0010
+through 0090, zoning classes AG1/R1/B1/I1/PUD, a municipality-coded zoning value, blank zoning,
+`!` and `?` suffixed zoning, blank situs address, a non-numeric PIN, a duplicated PIN, a null and a
+recent `date_last_sale`, blank `YRBuilt`, zero `EAV`, and acreage over 100). Every predicate
+matched a real parcel; no slot needed a backfill. That exceeds the skill's 10–20 parcels.
+
+| OBJECTID | PIN | class | selected by | extracted / present | coverage |
+|---|---|---|---|---|---|
+| 1 | 0133300004 | 0081 | date_last_sale null | 45 / 56 | 80.36% |
+| 2 | 0311100001 | 0021 | zoning_code = AG1 | 42 / 53 | 79.25% |
+| 3 | 0311300004 | 0021 | situs_address blank | 30 / 48 | 62.5% |
+| 4 | 0311400001 | 0020 | usage_class starts 0020 | 31 / 53 | 58.49% |
+| 5 | 0329300007 | 0011 | date_last_sale > 2020-01-01 | 30 / 48 | 62.5% |
+| 6 | 0329300003 | 0030 | usage_class starts 0030 | 34 / 52 | 65.38% |
+| 7 | 0330400005 | 0021 | YRBuilt blank | 42 / 53 | 79.25% |
+| 10 | 0330400002 | 0040 | usage_class starts 0040 | 38 / 61 | 62.3% |
+| 11 | 0330400004 | 0090 | usage_class starts 0090 | 43 / 53 | 81.13% |
+| 26 | 0134100001 | 0081 | zoning_code ends ! | 42 / 52 | 80.77% |
+| 31 | 0305200001 | 0080 | usage_class starts 0080 | 40 / 56 | 71.43% |
+| 34 | 0305400001 | 0080 | GIS_acres_num > 100 | 40 / 52 | 76.92% |
+| 36 | 0307401001 | 0040 | zoning_code ends ? | 35 / 60 | 58.33% |
+| 53 | 0307202003 | 0040 | zoning_code = R1 | 38 / 61 | 62.3% |
+| 129 | 0317400001 | 0060 | usage_class starts 0060 | 49 / 61 | 80.33% |
+| 181 | 0320100008 | 0090 | EAV = 0 | 30 / 52 | 57.69% |
+| 184 | 0320100013 | 0060 | zoning_code = I1 | 42 / 56 | 75% |
+| 340 | 0236205003 | 0050 | usage_class starts 0050 | 36 / 52 | 69.23% |
+| 376 | 0236215004 | 0040 | zoning_code blank | 34 / 59 | 57.63% |
+| 1551 | 0519201001 | 0020 | PIN duplicated across the seed | 28 / 46 | 60.87% |
+| 2300 | STATE | (blank) | PIN not ^[0-9]{10}$ | 5 / 8 | 62.5% |
+| 2910 | 1008300004 | 0021 | zoning_code = PUD | 28 / 46 | 60.87% |
+| 4935 | 0915200006 | 0010 | usage_class starts 0010 | 47 / 60 | 78.33% |
+| 8541 | 0835317018 | 0040 | zoning_code = MOL (municipality-coded) | 37 / 60 | 61.67% |
+| 17590 | 1708410001 | 0060 | zoning_code = B1 | 37 / 60 | 61.67% |
+
+Mean coverage **68.27 %** of the source fields present on each record, range 57.63 – 81.13 %.
+
+### No class-(a) or class-(b) gap remains
+
+Two class-(a) bugs were found and fixed during the repair loop — the ~26 taxing-district name
+fields were unmapped although `tax_jurisdiction` is their lexicon home, and owner/tax-bill mailing
+address parts were not carried — and both fixes were re-verified over all 25 samples. The capture
+returns the layer's complete 82-field feature plus geometry on every sample, so there is no
+class-(b) gap.
+
+### The 12 class-(c) gaps, all preserved verbatim in the source mirror
+
+Individual owner names (the `person` class requires a Title-Cased, parsed first/last pair, while
+this source publishes one ALL-CAPS combined string often naming two people); the ownership edge
+itself (`person_has_property` / `company_has_property` are declared by the County data group but
+`createCountyDataGroup` in `@elephant-xyz/cli@1.58.1` has no branch that populates either);
+`RICO_PARCE` / `alternate_parcel_number`; the assessor `class` code (its label table is on the
+TCP-blocked portal, and `property` is `additionalProperties: false`); `Taxbill_last` /
+`Taxbill_first`; `tax_code`; `assessed_last`; `gross_acres` (superseded by `GIS_acres_num`);
+`MODLNAME` / `GarSQFT` (no per-structure breakdown exists to justify a `structure` entity);
+`net_sale_price`; `address.county_name` (its enum lists Florida and Texas counties only, so
+Illinois has no member); and multi-part polygon rings. Full detail:
+`elephant-pipeline/docs/open-lexicon-gaps.md` and the issue's
+`evidence/validate-county-transform-report.md`.
+
+### County jurisdiction
+
+24 of 25 samples carry `ROCK ISLAND COUNTY` as a `tax_jurisdiction` entity, matching the source's
+own `county` and `Jurisdiction` fields. The 25th (OBJECTID 2300, PIN `STATE`) has every
+taxing-district field null in the source itself. No sample carries a different county.
