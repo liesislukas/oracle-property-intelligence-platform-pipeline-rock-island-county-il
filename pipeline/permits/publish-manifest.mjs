@@ -107,8 +107,13 @@ async function main() {
     decision: "download",
     gaps: [
       `Permits in Rock Island County are not county-level: sixteen jurisdictions each run their own permitting and only this one publishes a bulk-shaped source. The other fifteen were not harvested — four of them are listed as their own sources in this stage, and the eleven that publish nothing online at all are listed below. A parcel with no permits found here is not a parcel with no permits.`,
-      ...offline.map(
-        (row) => `${row.display_name} — no online permit lookup exists. ${row.coverage_note}`,
+      // The absence is stated first, in the same words, for every one of the eleven — then the
+      // jurisdiction's own recorded note. The note is not repeated when it already opens with that
+      // same sentence.
+      ...offline.map((row) =>
+        /^no online permit lookup exists/i.test(row.coverage_note)
+          ? `${row.display_name} — ${row.coverage_note.charAt(0).toLowerCase()}${row.coverage_note.slice(1)}`
+          : `${row.display_name} — no online permit lookup exists. ${row.coverage_note}`,
       ),
       coverage.archive_lag_note,
       `March 2021 has no report of its own. The city's index links document 15854 under both October 2020 and March 2021, and that document's own records are October 2020 permits, so 2021-03 is absent from the archive rather than empty. 111 distinct documents cover 111 of the 112 index entries, and every month from 2017-01 to 2026-04 except 2021-03.`,

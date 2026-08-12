@@ -15,16 +15,16 @@
       "gaps": [
         "Permits in Rock Island County are not county-level: sixteen jurisdictions each run their own permitting and only this one publishes a bulk-shaped source. The other fifteen were not harvested — four of them are listed as their own sources in this stage, and the eleven that publish nothing online at all are listed below. A parcel with no permits found here is not a parcel with no permits.",
         "Andalusia — no online permit lookup exists. No permit page exists on the village site. The site carries Ordinances, Zoning Ordinances, Public Works and Contact only.",
-        "Coal Valley — no online permit lookup exists. No online permit lookup exists. PDF application submitted by mail, email or in person. Coal Valley issues its own permits but directs inspections to Rock Island County at 309-558-3771.",
-        "Cordova — no online permit lookup exists. No online permit lookup exists. PDF application submitted by mail, email or in person.",
-        "Hampton — no online permit lookup exists. No online permit lookup exists. PDF application submitted by mail, email or in person.",
+        "Coal Valley — no online permit lookup exists. PDF application submitted by mail, email or in person. Coal Valley issues its own permits but directs inspections to Rock Island County at 309-558-3771.",
+        "Cordova — no online permit lookup exists. PDF application submitted by mail, email or in person.",
+        "Hampton — no online permit lookup exists. PDF application submitted by mail, email or in person.",
         "Hillsdale — no online permit lookup exists. No village website exists. Candidate domains villageofhillsdale.org, hillsdaleil.org, hillsdaleillinois.org and villageofhillsdaleil.org were all probed and all failed to connect. Permits are handled at the village clerk's counter.",
         "Oak Grove — no online permit lookup exists. No village website exists. Its only web presence is Facebook pages and directory listings. Permits are handled at the village clerk's counter.",
-        "Port Byron — no online permit lookup exists. No online permit lookup exists. PDF application submitted by mail, email or in person.",
+        "Port Byron — no online permit lookup exists. PDF application submitted by mail, email or in person.",
         "Rapids City — no online permit lookup exists. Counter-only by explicit policy: \"A permit will need to be purchased in person at the Village of Rapids City Office... No permits or payments for permits will be accepted via email, fax, or mail!\" Rapids City adopts the county fee schedule but runs its own counter-only permitting.",
         "Reynolds — no online permit lookup exists. No village website exists. Its only web presence is Facebook pages and directory listings. Permits are handled at the village clerk's counter.",
-        "Silvis — no online permit lookup exists. No online permit lookup exists. PDF application submitted by mail, email or in person.",
-        "Unincorporated Rock Island County — no online permit lookup exists. No online permit lookup exists. Commercial and Residential PDF applications, submitted by mail, email or in person; 309-558-3771. Absence of records here is absence of a public source, not absence of permits.",
+        "Silvis — no online permit lookup exists. PDF application submitted by mail, email or in person.",
+        "Unincorporated Rock Island County — no online permit lookup exists. Commercial and Residential PDF applications, submitted by mail, email or in person; 309-558-3771. Absence of records here is absence of a public source, not absence of permits.",
         "The city's archive ends at 2026-04. Coverage is stated through 2026-04, not through the current month.",
         "March 2021 has no report of its own. The city's index links document 15854 under both October 2020 and March 2021, and that document's own records are October 2020 permits, so 2021-03 is absent from the archive rather than empty. 111 distinct documents cover 111 of the 112 index entries, and every month from 2017-01 to 2026-04 except 2021-03.",
         "425 of 25,354 permit records did not resolve to a parcel: 88 source-sentinel-not-a-parcel-reference; 297 legacy-key-not-in-current-parcel-layer; 40 address-ambiguous-or-absent. A permit that did not match is not a permit without a parcel. Unmatched records fall into stated categories, including source sentinel values such as 000000 and RIGHT-OF-WAY that are not parcel references at all, and legacy keys for parcels that appear to have since been split or retired. Matching is to the parcel layer as it stands today, not as it stood when the permit was issued.",
@@ -119,6 +119,6 @@
   ],
   "run": {
     "started_at": "2026-08-12T18:21:27.843Z",
-    "finished_at": "2026-08-12T18:31:21.786Z"
+    "finished_at": "2026-08-12T18:36:35.172Z"
   }
 }
