@@ -1,0 +1,38 @@
+[
+  {
+    "id": "hifld-transmission-lines",
+    "endpoint": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/US_Electric_Power_Transmission_Lines/FeatureServer/0",
+    "query": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/US_Electric_Power_Transmission_Lines/FeatureServer/0/query?geometry=-91.08%2C41.32%2C-90.15%2C41.79&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&where=1%3D1&outFields=*&returnGeometry=true&outSR=4326&resultRecordCount=2000&resultOffset=0&orderByFields=OBJECTID&f=geojson",
+    "http_status": 200,
+    "elapsed_s": 1.221,
+    "pages": 1,
+    "count_fetch_bbox": 113,
+    "count_discovery_bbox": 78,
+    "retrieved_at": "2026-08-12T18:20:44.229Z",
+    "bytes": 233168
+  },
+  {
+    "id": "hifld-power-plants",
+    "endpoint": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/Power_Plants_in_the_US/FeatureServer/0",
+    "query": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/Power_Plants_in_the_US/FeatureServer/0/query?geometry=-91.08%2C41.32%2C-90.15%2C41.79&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&where=1%3D1&outFields=*&returnGeometry=true&outSR=4326&resultRecordCount=2000&resultOffset=0&orderByFields=OBJECTID&f=geojson",
+    "http_status": 200,
+    "elapsed_s": 0.655,
+    "pages": 1,
+    "count_fetch_bbox": 9,
+    "count_discovery_bbox": 2,
+    "retrieved_at": "2026-08-12T18:20:45.618Z",
+    "bytes": 7034
+  },
+  {
+    "id": "usgs-nhd-waterbodies",
+    "endpoint": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+    "query": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12/query?geometry=-91.08%2C41.32%2C-90.15%2C41.79&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&where=1%3D1&outFields=*&returnGeometry=true&outSR=4326&resultRecordCount=2000&resultOffset=0&orderByFields=OBJECTID&f=geojson",
+    "http_status": 200,
+    "elapsed_s": 7.06,
+    "pages": 2,
+    "count_fetch_bbox": 2505,
+    "count_discovery_bbox": 962,
+    "retrieved_at": "2026-08-12T18:20:52.456Z",
+    "bytes": 3996431
+  }
+]
