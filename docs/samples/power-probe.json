@@ -4,7 +4,7 @@
     "count": 78,
     "http_status": 200,
     "elapsed_s": 0.459,
-    "licence": "not stated on the source item",
+    "licence": "Esri Master License Agreement (from the AGOL item licenseInfo; the FeatureServer itself states no licenseInfo)",
     "licence_raw_licenseInfo": "",
     "accessInformation": "",
     "copyrightText": "",
@@ -33,14 +33,19 @@
       "Shape__Length"
     ],
     "queried_at": "2026-08-12T09:23:30.106199Z",
-    "bbox": "-90.79,41.36,-90.25,41.65"
+    "bbox": "-90.79,41.36,-90.25,41.65",
+    "agol_item_id": "d4090758322c4d32a4cd002ffaa0aa12",
+    "agol_item_title": "U.S. Electric Power Transmission Lines (Archive)",
+    "agol_item_licenceInfo_text": "This work is licensed under the Esri Master License Agreement.",
+    "agol_item_accessInformation": "U.S. Government",
+    "licence_note": "The FeatureServer ?f=json returns an empty licenseInfo and empty copyrightText. The licence is stated only on the ArcGIS Online item. Quote the item, not the service."
   },
   "hifld-power-plants": {
     "endpoint": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/Power_Plants_in_the_US/FeatureServer/0",
     "count": 2,
     "http_status": 200,
     "elapsed_s": 0.42,
-    "licence": "not stated on the source item",
+    "licence": "Esri Master License Agreement (from the AGOL item licenseInfo; the FeatureServer itself states no licenseInfo)",
     "licence_raw_licenseInfo": "",
     "accessInformation": "",
     "copyrightText": "",
@@ -83,7 +88,12 @@
       "Latitude"
     ],
     "queried_at": "2026-08-12T09:23:31.515868Z",
-    "bbox": "-90.79,41.36,-90.25,41.65"
+    "bbox": "-90.79,41.36,-90.25,41.65",
+    "agol_item_id": "b063316fac7345dba4bae96eaa813b2f",
+    "agol_item_title": "Power Plants in the U.S.",
+    "agol_item_licenceInfo_text": "This work is licensed under the Esri Master License Agreement.",
+    "agol_item_accessInformation": "Energy Information Administration (EIA)",
+    "licence_note": "The FeatureServer ?f=json returns an empty licenseInfo and empty copyrightText. The licence is stated only on the ArcGIS Online item. Quote the item, not the service."
   },
   "osm-substations": {
     "endpoint": "https://overpass-api.de/api/interpreter",
