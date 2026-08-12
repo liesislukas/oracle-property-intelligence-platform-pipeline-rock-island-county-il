@@ -111,8 +111,12 @@ const fmt = (x) => new Intl.NumberFormat("en-US").format(x);
 // ---------------------------------------------------------------------------
 // 3. The manifest
 // ---------------------------------------------------------------------------
-const DERIVED_NOTE =
-  "DERIVED DATASET, not a new collection. This stage collected nothing from any new endpoint; it reconciled the records the ingest stages already loaded. Its record_count counts the rows this stage produced, and it must not be read as additional records harvested from the county. The county parcel count is and remains 65,955.";
+// Rendered as the FIRST gap on every derived source, not only as a note: the run summary renders
+// `gaps` directly beside the record count, so the caveat sits with the number it qualifies rather
+// than one page away from it.
+const DERIVED_GAP = (what) =>
+  `DERIVED DATASET, not a new collection — read the count beside it as ${what}. This stage collected nothing from any new endpoint; it reconciled records the ingest stages had already loaded, so its record_count is NOT additional records harvested from the county and the run total it feeds is a total of stage outputs, not of records collected. The county parcel count is and remains 65,955.`;
+const DERIVED_NOTE = DERIVED_GAP("this stage's own output");
 const CORPUS_NOTE = `COMPUTED OVER all 65,955 records of the per-parcel source mirror at elephant-pipeline/data/source-mirror/rock-island/, verified equal to the live FeatureServer count (returnCountOnly = 65,955) by scripts/reconcile-before-load.mjs at ${startedAt}. It was NOT computed over the query DB's parcels table: ISSUE-018's per-parcel ingest is a durable Restate workflow that was still running while this stage executed, climbing at roughly 1.5 parcels/s toward 65,955, so that table held a moving partial subset (${fmt(parcelRows)} rows at ${provenanceMeasuredAt}) and no county metric could honestly be taken from it.`;
 
 const manifest = {
@@ -129,6 +133,7 @@ const manifest = {
       duration_s: null,
       decision: "reconciled-derived",
       gaps: [
+        DERIVED_GAP("49,914 reconciled owner entities standing behind the county's 65,955 parcel records"),
         `${fmt(owner.owner_name_absent)} of 65,955 parcel records carry no owner name at all — neither owner1_name nor taxbill_name. They produce no owner entity and no placeholder owner was invented for them, so they are absent from every owner figure on this page.`,
         "Matching is exact on the normalized name only. There is no fuzzy, phonetic or similarity matching anywhere in this stage, so two spellings that differ by more than punctuation and case remain two entities. This is conservative by design: a stated gap beats a silent merge.",
         "Legal-entity suffixes (TRUST, ESTATE, LLC, INC) are deliberately NOT stripped before grouping. Stripping them would merge SMITH JOHN into SMITH JOHN TRUST, which are different legal entities. The consequence is that a person and their trust are counted as two entities.",
@@ -158,6 +163,7 @@ const manifest = {
       duration_s: null,
       decision: "parsed-derived",
       gaps: [
+        DERIVED_GAP("65,743 parcel records whose owner mailing location parsed"),
         `${fmt(mailing.blank)} of 65,955 records have an empty taxbill_csz (blank in this source is "" or " ", never NULL). They are recorded as blank, with city, state and ZIP left NULL. Blank is not the same fact as unparseable and the two are never folded together.`,
         `${fmt(mailing.unparsed)} records carry a taxbill_csz that is present but does not parse. Their city, state and ZIP are left NULL and the raw string is preserved; none was repaired or guessed. Every one, verbatim: ${mailing.unparsed_values.map((u) => `"${u.value}"${u.records > 1 ? ` (x${u.records})` : ""}`).join(", ")}.`,
         "owner1_csz was NOT used as the mailing source: it is blank on 14,150 of 65,955 records (21.45%), against 202 (0.31%) for taxbill_csz. The owner mailing location therefore comes from the tax-bill address, which is the more complete field, and that choice is stated rather than implied.",
@@ -184,6 +190,7 @@ const manifest = {
       duration_s: null,
       decision: "cross-matched",
       gaps: [
+        DERIVED_GAP("24,949 permits successfully linked to a parcel"),
         `${fmt(permitTotal - permitMatched)} of ${fmt(permitTotal)} permits (${pct(permitTotal - permitMatched, permitTotal)}%) are NOT linked to a parcel, broken out by reason rather than reported as one number: ${permitReasons.map(([reason, count]) => `${fmt(n(count))} ${reason ?? "(no reason recorded)"}`).join("; ")}.`,
         "The 88 permits recorded as source-sentinel-not-a-parcel-reference carry a source placeholder in the parcel field rather than a parcel reference. They are counted as unmatched. They are never counted as matched and never dropped.",
         `STRUCTURAL CEILING on address matching: ${fmt(permitMatch.ceiling.parcels_without_site_address)} of 65,955 parcels (${pct(permitMatch.ceiling.parcels_without_site_address, 65955)}%) have no site_address at all and can never be matched by address. Of the ${fmt(permitMatch.ceiling.distinct_site_address_keys)} distinct site-address keys, ${fmt(permitMatch.ceiling.ambiguous_keys)} resolve to more than one parcel, covering ${fmt(permitMatch.ceiling.parcels_on_ambiguous_keys)} parcels, which are never auto-linked. That leaves ${fmt(permitMatch.ceiling.unambiguous_candidates)} parcels (${pct(permitMatch.ceiling.unambiguous_candidates, 65955)}%) as unambiguous 1:1 address-match candidates.`,
@@ -210,6 +217,7 @@ const manifest = {
       duration_s: null,
       decision: "provenance-backfill",
       gaps: [
+        DERIVED_GAP("parcel rows carrying queryable provenance at the timestamp stated below"),
         "The elephant-query-db schema has no column for a source URL and no retrieval-timestamp column distinct from loaded_at, which is DB-insert time and not collection time. source_http_request (jsonb) is the column designed to hold it and is what this stage uses. No schema change was made and no kit table was altered.",
         `MOVING NUMBER, stated: ${fmt(parcelRows)} is the parcels row count at ${provenanceMeasuredAt}, not the county total. ISSUE-018's per-parcel ingest is a durable Restate workflow that was still running while this stage executed, at roughly 1.5 parcels/s toward 65,955. Rows loaded after this timestamp carry their endpoint in source_payload.source_http_request from the moment they land; re-running scripts/emit-reconciliation-manifest.mjs lifts them into the dedicated column too. The backfill only ever fills a NULL, so it is safe to re-run at any time.`,
       ],
