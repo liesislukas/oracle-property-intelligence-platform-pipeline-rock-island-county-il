@@ -39,7 +39,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "legacy-key-not-in-current-parcel-layer"
     },
     {
       "id": "15980:B202754:0",
@@ -67,7 +70,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1611326019",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202565:0",
@@ -95,7 +101,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1634200010",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202580:0",
@@ -123,7 +132,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0831106001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202590:0",
@@ -151,7 +163,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1634200010",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202591:0",
@@ -179,7 +194,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1612224003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202600:0",
@@ -211,7 +229,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1707301017",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202607:0",
@@ -239,7 +260,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1601217008",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202609:0",
@@ -267,7 +291,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1601202019",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202611:0",
@@ -295,7 +322,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1601134003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202613:0",
@@ -323,7 +353,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1614202013",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202625:0",
@@ -351,7 +384,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1603216011",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202632:0",
@@ -379,7 +415,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1706309058",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202634:0",
@@ -407,7 +446,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1634200010",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202640:0",
@@ -439,7 +481,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1629103002",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202658:0",
@@ -475,7 +520,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0831308022",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202662:0",
@@ -503,7 +551,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1629100003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202675:0",
@@ -531,7 +582,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1634200010",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202676:0",
@@ -559,7 +613,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1634200010",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202677:0",
@@ -587,7 +644,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1634200010",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202685:0",
@@ -615,7 +675,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1707107006",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202690:0",
@@ -643,7 +706,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0735220003",
+      "match_method": "address-normalized",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202691:0",
@@ -671,7 +737,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0736411001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202694:0",
@@ -699,7 +768,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1615200006",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202705:0",
@@ -727,7 +799,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1601443008",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202707:0",
@@ -755,7 +830,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1611202016",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202710:0",
@@ -783,7 +861,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1611210003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202721:0",
@@ -811,7 +892,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1634200010",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202723:0",
@@ -847,7 +931,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1621300004",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202752:0",
@@ -875,7 +962,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0735209004",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202752:1",
@@ -899,7 +989,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0735209004",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202753:0",
@@ -927,7 +1020,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0735427006",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202762:0",
@@ -955,7 +1051,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0736304002",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202764:0",
@@ -983,7 +1082,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1634200010",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202769:0",
@@ -1011,7 +1113,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1634200010",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202770:0",
@@ -1039,7 +1144,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0735443003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202771:0",
@@ -1075,7 +1183,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "legacy-key-not-in-current-parcel-layer"
     },
     {
       "id": "15980:B202780:0",
@@ -1103,7 +1214,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1601310012",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202785:0",
@@ -1131,7 +1245,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0831335007",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202582:0",
@@ -1159,7 +1276,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0831106001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202617:0",
@@ -1187,7 +1307,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1602318004",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202645:0",
@@ -1215,7 +1338,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0735211001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202665:0",
@@ -1251,7 +1377,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "legacy-key-not-in-current-parcel-layer"
     },
     {
       "id": "15980:B202701:0",
@@ -1279,7 +1408,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1602200011",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202701:1",
@@ -1311,7 +1443,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1602200011",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202709:0",
@@ -1339,7 +1474,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1611210003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202781:0",
@@ -1367,7 +1505,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1707139002",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202581:0",
@@ -1395,7 +1536,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0735108004",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202595:0",
@@ -1423,7 +1567,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0735209008",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202733:0",
@@ -1459,7 +1606,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1627200007",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202749:0",
@@ -1487,7 +1637,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0735207005",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202732:0",
@@ -1515,7 +1668,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1614302001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202552:0",
@@ -1543,7 +1699,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1602326002",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202553:0",
@@ -1571,7 +1730,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1603407040",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202554:0",
@@ -1599,7 +1761,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1603227005",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202555:0",
@@ -1627,7 +1792,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1602108058",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202556:0",
@@ -1655,7 +1823,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1602204006",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202557:0",
@@ -1687,7 +1858,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1603240008",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202558:0",
@@ -1715,7 +1889,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0734446003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202559:0",
@@ -1743,7 +1920,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0735107002",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202560:0",
@@ -1771,7 +1951,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1603227003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202561:0",
@@ -1799,7 +1982,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1601407011",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202562:0",
@@ -1827,7 +2013,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1612103003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202563:0",
@@ -1855,7 +2044,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1601334005",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202566:0",
@@ -1883,7 +2075,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1707109047",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202568:0",
@@ -1911,7 +2106,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0735401005",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202569:0",
@@ -1939,7 +2137,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1611200016",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202622:0",
@@ -1975,7 +2176,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0734436010",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202627:0",
@@ -2003,7 +2207,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1602146014",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202628:0",
@@ -2031,7 +2238,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1601320024",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202639:0",
@@ -2059,7 +2269,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1601402040",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202659:0",
@@ -2087,7 +2300,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1603218005",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202660:0",
@@ -2115,7 +2331,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1603218001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202667:0",
@@ -2143,7 +2362,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1602415023",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202667:1",
@@ -2167,7 +2389,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1602415023",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202668:0",
@@ -2195,7 +2420,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "legacy-key-not-in-current-parcel-layer"
     },
     {
       "id": "15980:B202669:0",
@@ -2223,7 +2451,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0736344003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202674:0",
@@ -2251,7 +2482,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1612216009",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202686:0",
@@ -2279,7 +2513,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1601226006",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202698:0",
@@ -2307,7 +2544,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1706333001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202700:0",
@@ -2335,7 +2575,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1628300004",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202714:0",
@@ -2363,7 +2606,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1706325015",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202715:0",
@@ -2391,7 +2637,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1601400018",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202718:0",
@@ -2419,7 +2668,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1706319065",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202719:0",
@@ -2447,7 +2699,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1612224003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202726:0",
@@ -2475,7 +2730,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1601409030",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202727:0",
@@ -2503,7 +2761,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0734400013",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202729:0",
@@ -2531,7 +2792,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0735310034",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202730:0",
@@ -2563,7 +2827,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0734400013",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202731:0",
@@ -2591,7 +2858,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1602137016",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202734:0",
@@ -2619,7 +2889,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1612234013",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202735:0",
@@ -2647,7 +2920,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1601310049",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202738:0",
@@ -2675,7 +2951,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1601310039",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202742:0",
@@ -2703,7 +2982,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0736402008",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202760:0",
@@ -2731,7 +3013,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1612234019",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202779:0",
@@ -2759,7 +3044,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1706332059",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202786:0",
@@ -2787,7 +3075,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1706333016",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202787:0",
@@ -2815,7 +3106,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0736401016",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202788:0",
@@ -2843,7 +3137,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1706100052",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202789:0",
@@ -2871,7 +3168,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1610211008",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:G200015:0",
@@ -2899,7 +3199,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "legacy-key-not-in-current-parcel-layer"
     },
     {
       "id": "15980:B202570:0",
@@ -2927,7 +3230,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1603240008",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202570:1",
@@ -2951,7 +3257,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1603240008",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202572:0",
@@ -2979,7 +3288,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0734446003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202573:0",
@@ -3007,7 +3319,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0735107002",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202574:0",
@@ -3035,7 +3350,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1603227003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202575:0",
@@ -3063,7 +3381,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1602326002",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202576:0",
@@ -3091,7 +3412,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1603407040",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202577:0",
@@ -3119,7 +3443,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1603227005",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202578:0",
@@ -3147,7 +3474,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1602108058",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202579:0",
@@ -3175,7 +3505,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1602204006",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202597:0",
@@ -3203,7 +3536,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1603216014",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202598:0",
@@ -3231,7 +3567,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1706131003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202603:0",
@@ -3259,7 +3598,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1626100014",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202604:0",
@@ -3287,7 +3629,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1707109063",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202605:0",
@@ -3315,7 +3660,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1707109047",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202606:0",
@@ -3343,7 +3691,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1613213002",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202615:0",
@@ -3371,7 +3722,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1610401002",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202618:0",
@@ -3407,7 +3761,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "legacy-key-not-in-current-parcel-layer"
     },
     {
       "id": "15980:B202619:0",
@@ -3435,7 +3792,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "legacy-key-not-in-current-parcel-layer"
     },
     {
       "id": "15980:B202619:1",
@@ -3459,7 +3819,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "legacy-key-not-in-current-parcel-layer"
     },
     {
       "id": "15980:B202624:0",
@@ -3487,7 +3850,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1602146014",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202631:0",
@@ -3515,7 +3881,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1611301068",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202636:0",
@@ -3547,7 +3916,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1601145009",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202641:0",
@@ -3575,7 +3947,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1601402040",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202642:0",
@@ -3603,7 +3978,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1601320024",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202652:0",
@@ -3631,7 +4009,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1706113014",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202653:0",
@@ -3659,7 +4040,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1707107006",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202671:0",
@@ -3687,7 +4071,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0736409001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202672:0",
@@ -3723,7 +4110,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0734424008",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202683:0",
@@ -3751,7 +4141,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1601310079",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202684:0",
@@ -3779,7 +4172,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0831335007",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202693:0",
@@ -3815,7 +4211,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0831304001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202704:0",
@@ -3843,7 +4242,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1628404005",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202708:0",
@@ -3871,7 +4273,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1611210003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202711:0",
@@ -3899,7 +4304,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1614302001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202711:1",
@@ -3923,7 +4331,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1614302001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202713:0",
@@ -3951,7 +4362,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1603403083",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202720:0",
@@ -3979,7 +4393,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1601409030",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202737:0",
@@ -4007,7 +4424,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1603226012",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202740:0",
@@ -4035,7 +4455,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1601226006",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202743:0",
@@ -4063,7 +4486,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1706333001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202748:0",
@@ -4091,7 +4517,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0734462003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202765:0",
@@ -4119,7 +4548,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1601230006",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202766:0",
@@ -4147,7 +4579,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1612434011",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202768:0",
@@ -4175,7 +4610,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1706332059",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202772:0",
@@ -4211,7 +4649,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0736401031",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202775:0",
@@ -4239,7 +4680,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1601150005",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202777:0",
@@ -4275,7 +4719,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0735209009",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202778:0",
@@ -4303,7 +4750,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1707124004",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202791:0",
@@ -4343,7 +4793,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "legacy-key-not-in-current-parcel-layer"
     },
     {
       "id": "15980:B202792:0",
@@ -4371,7 +4824,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1611100070",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202564:0",
@@ -4399,7 +4855,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0735443002",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202567:0",
@@ -4427,7 +4886,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1613204010",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202588:0",
@@ -4455,7 +4917,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1706318018",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202621:0",
@@ -4483,7 +4948,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1706100060",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202643:0",
@@ -4511,7 +4979,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0736417033",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202646:0",
@@ -4539,7 +5010,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1628404005",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202647:0",
@@ -4567,7 +5041,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0734440003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202648:0",
@@ -4595,7 +5072,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1602108030",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202649:0",
@@ -4623,7 +5103,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1602202001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202650:0",
@@ -4651,7 +5134,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1707118056",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202651:0",
@@ -4679,7 +5165,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1706104010",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202654:0",
@@ -4707,7 +5196,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1603221069",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202678:0",
@@ -4735,7 +5227,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1612309029",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202681:0",
@@ -4763,7 +5258,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1611331013",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202697:0",
@@ -4795,7 +5293,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1706118024",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202702:0",
@@ -4823,7 +5324,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1707107006",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202703:0",
@@ -4851,7 +5355,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1612302058",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202741:0",
@@ -4879,7 +5386,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1611305019",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202747:0",
@@ -4907,7 +5417,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1635102002",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202759:0",
@@ -4935,7 +5448,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1612224003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202761:0",
@@ -4963,7 +5479,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1603216011",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202767:0",
@@ -4991,7 +5510,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1601443002",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202782:0",
@@ -5019,7 +5541,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1707427004",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202790:0",
@@ -5047,7 +5572,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1602318004",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202793:0",
@@ -5075,7 +5603,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1601141004",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202585:0",
@@ -5103,7 +5634,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1612308004",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202587:0",
@@ -5131,7 +5665,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1601235002",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202589:0",
@@ -5159,7 +5696,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1603408019",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202593:0",
@@ -5187,7 +5727,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1706131003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202594:0",
@@ -5215,7 +5758,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1603216014",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202596:0",
@@ -5243,7 +5789,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1612129001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202620:0",
@@ -5275,7 +5824,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1602424001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202633:0",
@@ -5307,7 +5859,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1601310055",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202637:0",
@@ -5335,7 +5890,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1626105003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202644:0",
@@ -5363,7 +5921,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1626110017",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202679:0",
@@ -5391,7 +5952,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1707420003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202712:0",
@@ -5419,7 +5983,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1706100060",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202716:0",
@@ -5447,7 +6014,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1602105019",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202717:0",
@@ -5475,7 +6045,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0831317016",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202736:0",
@@ -5511,7 +6084,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0735209009",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202745:0",
@@ -5539,7 +6115,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0831335007",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202746:0",
@@ -5567,7 +6146,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1611327014",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202750:0",
@@ -5595,7 +6177,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1707140001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202751:0",
@@ -5623,7 +6208,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1706319035",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202756:0",
@@ -5651,7 +6239,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1613204010",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202757:0",
@@ -5679,7 +6270,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1614110035",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202758:0",
@@ -5707,7 +6301,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1612423016",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202773:0",
@@ -5735,7 +6332,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1602134005",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202774:0",
@@ -5763,7 +6363,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1611222007",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202774:1",
@@ -5787,7 +6390,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1611222007",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202776:0",
@@ -5815,7 +6421,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1706126016",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202794:0",
@@ -5843,7 +6452,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1601223016",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202795:0",
@@ -5871,7 +6483,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1611110023",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202571:0",
@@ -5899,7 +6514,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1706320016",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202592:0",
@@ -5931,7 +6549,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1706333012",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202610:0",
@@ -5959,7 +6580,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1601134003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202623:0",
@@ -5987,7 +6611,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0736352007",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202626:0",
@@ -6015,7 +6642,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1612100003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202630:0",
@@ -6043,7 +6673,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0736314007",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202655:0",
@@ -6071,7 +6704,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0735312001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202656:0",
@@ -6099,7 +6735,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0735430019",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202661:0",
@@ -6127,7 +6766,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1610102003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202673:0",
@@ -6155,7 +6797,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1611104004",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202682:0",
@@ -6183,7 +6828,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1601153001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202695:0",
@@ -6211,7 +6859,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1614124008",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202695:1",
@@ -6235,7 +6886,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1614124008",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202696:0",
@@ -6263,7 +6917,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0831340007",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202699:0",
@@ -6291,7 +6948,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1613207004",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202706:0",
@@ -6319,7 +6979,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1603235008",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202725:0",
@@ -6347,7 +7010,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1626106040",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202739:0",
@@ -6375,7 +7041,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1706318003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202744:0",
@@ -6411,7 +7080,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0736311006",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202763:0",
@@ -6439,7 +7111,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0736304002",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202784:0",
@@ -6467,7 +7142,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1602318004",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202583:0",
@@ -6499,7 +7177,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0735315010",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202584:0",
@@ -6531,7 +7212,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1603221025",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202602:0",
@@ -6559,7 +7243,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0831335007",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202612:0",
@@ -6587,7 +7274,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1603235006",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202635:0",
@@ -6619,7 +7309,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1706319035",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202663:0",
@@ -6647,7 +7340,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1706334004",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202666:0",
@@ -6683,7 +7379,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1706100019",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202680:0",
@@ -6711,7 +7410,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1603210006",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202687:0",
@@ -6739,7 +7441,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0734460004",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202689:0",
@@ -6771,7 +7476,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "1603221043",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202692:0",
@@ -6799,7 +7507,10 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0736319008",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "15980:B202755:0",
@@ -6827,7 +7538,11 @@
       "report_sha256": "04f0366d559c56344e668d241cb1ffbc243b0d14cb15eedd0eaa15b002fbebbe",
       "report_month": "2020-12",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:31.521Z"
+      "extracted_at": "2026-08-12T18:27:31.521Z",
+      "matched_pin": "0735302013",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     }
-  ]
+  ],
+  "linked_at": "2026-08-12T18:28:20.746Z"
 }

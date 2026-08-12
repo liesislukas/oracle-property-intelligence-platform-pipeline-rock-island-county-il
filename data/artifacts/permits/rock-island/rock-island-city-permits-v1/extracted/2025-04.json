@@ -39,7 +39,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "legacy-key-not-in-current-parcel-layer"
     },
     {
       "id": "19744:B250514:0",
@@ -67,7 +70,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1614300006",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250600:0",
@@ -95,7 +101,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0736328005",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250610:0",
@@ -123,7 +132,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1612415023",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250500:0",
@@ -151,7 +163,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601140009",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250503:0",
@@ -187,7 +202,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601158002",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250510:0",
@@ -215,7 +233,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1611100012",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250512:0",
@@ -251,7 +272,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601200001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250519:0",
@@ -287,7 +311,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0831304001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250520:0",
@@ -315,7 +342,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601200018",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250523:0",
@@ -347,7 +377,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1612200030",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250548:0",
@@ -391,7 +424,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1621300004",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250549:0",
@@ -419,7 +455,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1706332012",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250550:0",
@@ -447,7 +486,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0831327009",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250553:0",
@@ -479,7 +521,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601320038",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250557:0",
@@ -511,7 +556,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0735412009",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250561:0",
@@ -539,7 +587,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1626110006",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250562:0",
@@ -567,7 +618,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601446006",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250572:0",
@@ -595,7 +649,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1706138001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250583:0",
@@ -623,7 +680,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601417011",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250586:0",
@@ -651,7 +711,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0736402006",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250593:0",
@@ -679,7 +742,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1707201022",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250599:0",
@@ -707,7 +773,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0831306014",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250606:0",
@@ -735,7 +804,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1611318001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250607:0",
@@ -767,7 +839,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1707134002",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250608:0",
@@ -795,7 +870,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1628303039",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250609:0",
@@ -823,7 +901,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1706318024",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250612:0",
@@ -851,7 +932,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1611327016",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250614:0",
@@ -879,7 +963,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0734439009",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250618:0",
@@ -907,7 +994,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1611301061",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250624:0",
@@ -935,7 +1025,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601425047",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250635:0",
@@ -967,7 +1060,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601411024",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250636:0",
@@ -995,7 +1091,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1614109004",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250638:0",
@@ -1031,7 +1130,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0735109002",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250639:0",
@@ -1059,7 +1161,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1627400007",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250645:0",
@@ -1087,7 +1192,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1603216020",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250653:0",
@@ -1115,7 +1223,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1602211012",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250659:0",
@@ -1147,7 +1258,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0735317023",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250667:0",
@@ -1175,7 +1289,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601421030",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250668:0",
@@ -1207,7 +1324,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0734415002",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250674:0",
@@ -1235,7 +1355,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601410007",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250680:0",
@@ -1267,7 +1390,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601125002",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250684:0",
@@ -1295,7 +1421,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1611305005",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250691:0",
@@ -1327,7 +1456,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1613201014",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250692:0",
@@ -1355,7 +1487,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601207004",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250699:0",
@@ -1383,7 +1518,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1611306003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250711:0",
@@ -1411,7 +1549,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1706333002",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250715:0",
@@ -1439,7 +1580,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601425031",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250721:0",
@@ -1467,7 +1611,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1603400009",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250727:0",
@@ -1495,7 +1642,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1707148002",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250521:0",
@@ -1531,7 +1681,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0831304001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250640:0",
@@ -1559,7 +1712,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1627400007",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250642:0",
@@ -1599,7 +1755,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0735233011",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250728:0",
@@ -1627,7 +1786,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1610216002",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250729:0",
@@ -1655,7 +1817,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1613201014",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250541:0",
@@ -1691,7 +1856,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601200001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250559:0",
@@ -1719,7 +1887,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0734201007",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250634:0",
@@ -1747,7 +1918,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1602319001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250662:0",
@@ -1783,7 +1957,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1628102006",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250713:0",
@@ -1819,7 +1996,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0831346001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250714:0",
@@ -1855,7 +2035,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0736401031",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250693:0",
@@ -1883,7 +2066,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1602315028",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250517:0",
@@ -1911,7 +2097,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601443012",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250518:0",
@@ -1939,7 +2128,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0735437005",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250522:0",
@@ -1967,7 +2159,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1612113004",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250570:0",
@@ -1995,7 +2190,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1612118004",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250570:1",
@@ -2019,7 +2217,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1612118004",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250622:0",
@@ -2047,7 +2248,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1706308017",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250631:0",
@@ -2075,7 +2279,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601156006",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250641:0",
@@ -2103,7 +2310,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601238003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250664:0",
@@ -2139,7 +2349,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0735233007",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250681:0",
@@ -2167,7 +2380,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1611110019",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250707:0",
@@ -2195,7 +2411,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1603407035",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250709:0",
@@ -2223,7 +2442,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1610201046",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250710:0",
@@ -2251,7 +2473,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1610201046",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250615:0",
@@ -2287,7 +2512,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0735208001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250619:0",
@@ -2315,7 +2543,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1706333013",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250506:0",
@@ -2343,7 +2574,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0735133001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250507:0",
@@ -2371,7 +2605,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0831327009",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250524:0",
@@ -2399,7 +2636,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1603232006",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250533:0",
@@ -2431,7 +2671,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601125007",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250536:0",
@@ -2459,7 +2702,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1627100012",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250539:0",
@@ -2487,7 +2733,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1612113004",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250540:0",
@@ -2515,7 +2764,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0736345002",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250546:0",
@@ -2543,7 +2795,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1614109005",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250551:0",
@@ -2579,7 +2834,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0736401031",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250552:0",
@@ -2607,7 +2865,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1612118004",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250555:0",
@@ -2635,7 +2896,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1602134005",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250569:0",
@@ -2663,7 +2927,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1706334011",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250587:0",
@@ -2691,7 +2958,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1706116007",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250592:0",
@@ -2719,7 +2989,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1611219001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250595:0",
@@ -2747,7 +3020,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1602311002",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250596:0",
@@ -2775,7 +3051,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1706119003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250602:0",
@@ -2803,7 +3082,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1706308017",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250627:0",
@@ -2831,7 +3113,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601156006",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250629:0",
@@ -2863,7 +3148,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601238003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250633:0",
@@ -2891,7 +3179,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1612309012",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250647:0",
@@ -2919,7 +3210,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601334011",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250648:0",
@@ -2947,7 +3241,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1611320022",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250649:0",
@@ -2975,7 +3272,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1706131017",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250658:0",
@@ -3011,7 +3311,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0735233007",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250660:0",
@@ -3047,7 +3350,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601200001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250661:0",
@@ -3075,7 +3381,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1612200030",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250665:0",
@@ -3103,7 +3412,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0735426007",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250670:0",
@@ -3131,7 +3443,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1621300009",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250677:0",
@@ -3167,7 +3482,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1602408001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250682:0",
@@ -3195,7 +3513,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0736306006",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250685:0",
@@ -3223,7 +3544,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601411024",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250686:0",
@@ -3251,7 +3575,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1706332012",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250687:0",
@@ -3279,7 +3606,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0735426007",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250688:0",
@@ -3307,7 +3637,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1611110019",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250688:1",
@@ -3331,7 +3664,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1611110019",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250689:0",
@@ -3367,7 +3703,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0736318001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250690:0",
@@ -3395,7 +3734,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601115005",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250702:0",
@@ -3423,7 +3765,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1635102014",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250704:0",
@@ -3451,7 +3796,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1613109057",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250706:0",
@@ -3479,7 +3827,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1622401006",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250712:0",
@@ -3507,7 +3858,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1706128005",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250726:0",
@@ -3535,7 +3889,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1603225005",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250597:0",
@@ -3571,7 +3928,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0735312009",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250505:0",
@@ -3599,7 +3959,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1603404006",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250508:0",
@@ -3627,7 +3990,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601233007",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250516:0",
@@ -3655,7 +4021,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1707105013",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250530:0",
@@ -3683,7 +4052,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0734413011",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250545:0",
@@ -3715,7 +4087,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1706332012",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250554:0",
@@ -3743,7 +4118,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1626106005",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250556:0",
@@ -3771,7 +4149,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1612107014",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250579:0",
@@ -3799,7 +4180,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0831327009",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250580:0",
@@ -3827,7 +4211,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0736404008",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250621:0",
@@ -3855,7 +4242,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1611317005",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250630:0",
@@ -3891,7 +4281,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601158002",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250632:0",
@@ -3919,7 +4312,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1603415017",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250637:0",
@@ -3947,7 +4343,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1706119003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250644:0",
@@ -3975,7 +4374,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0736404008",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250671:0",
@@ -4003,7 +4405,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0736402006",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250722:0",
@@ -4031,7 +4436,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601326003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250509:0",
@@ -4059,7 +4467,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0831329003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250513:0",
@@ -4087,7 +4498,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1602209001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250515:0",
@@ -4119,7 +4533,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0831345015",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250528:0",
@@ -4147,7 +4564,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0736314001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250529:0",
@@ -4175,7 +4595,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0736403003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250531:0",
@@ -4203,7 +4626,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1603404002",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250532:0",
@@ -4231,7 +4657,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1603221031",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250534:0",
@@ -4259,7 +4688,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601104021",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250535:0",
@@ -4287,7 +4719,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601118004",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250537:0",
@@ -4315,7 +4750,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601446007",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250538:0",
@@ -4343,7 +4781,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1603413018",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250542:0",
@@ -4375,7 +4816,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0734439003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250568:0",
@@ -4403,7 +4847,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1706309105",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250574:0",
@@ -4431,7 +4878,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1612126004",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250578:0",
@@ -4459,7 +4909,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1706303011",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250584:0",
@@ -4487,7 +4940,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1603403101",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250594:0",
@@ -4515,7 +4971,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1610216002",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250616:0",
@@ -4543,7 +5002,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1627422001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250620:0",
@@ -4571,7 +5033,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1707139003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250666:0",
@@ -4603,7 +5068,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1626106005",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250701:0",
@@ -4631,7 +5099,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1611417001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250703:0",
@@ -4659,7 +5130,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601304031",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250705:0",
@@ -4687,7 +5161,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601310036",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250720:0",
@@ -4715,7 +5192,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1707234002",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250498:0",
@@ -4743,7 +5223,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1602326019",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250499:0",
@@ -4771,7 +5254,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1707301031",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250501:0",
@@ -4799,7 +5285,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1602128023",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250502:0",
@@ -4835,7 +5324,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601158002",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250511:0",
@@ -4863,7 +5355,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1602400009",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250525:0",
@@ -4891,7 +5386,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1602315019",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250526:0",
@@ -4919,7 +5417,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1610213008",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250527:0",
@@ -4947,7 +5448,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1611331003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250558:0",
@@ -4975,7 +5479,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1707114003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250563:0",
@@ -5003,7 +5510,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1602315015",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250563:1",
@@ -5027,7 +5537,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1602315015",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250564:0",
@@ -5055,7 +5568,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1611304014",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250567:0",
@@ -5083,7 +5599,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1706334008",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250571:0",
@@ -5111,7 +5630,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1603213014",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250576:0",
@@ -5139,7 +5661,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1612225011",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250577:0",
@@ -5167,7 +5692,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0736326001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250581:0",
@@ -5195,7 +5723,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1602408009",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250582:0",
@@ -5227,7 +5758,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1627200012",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250585:0",
@@ -5255,7 +5789,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601133009",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250588:0",
@@ -5283,7 +5820,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1612441005",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250589:0",
@@ -5311,7 +5851,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1612441006",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250590:0",
@@ -5339,7 +5882,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1612441007",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250591:0",
@@ -5367,7 +5913,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1612441008",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250598:0",
@@ -5395,7 +5944,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601336028",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250603:0",
@@ -5427,7 +5979,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1706325008",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250604:0",
@@ -5455,7 +6010,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1706333022",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250605:0",
@@ -5483,7 +6041,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1706132004",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250611:0",
@@ -5511,7 +6072,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1602312054",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250617:0",
@@ -5539,7 +6103,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1611301061",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250623:0",
@@ -5567,7 +6134,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1707424006",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250628:0",
@@ -5595,7 +6165,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1613109104",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250652:0",
@@ -5623,7 +6196,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1611405024",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250654:0",
@@ -5651,7 +6227,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1602211012",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250655:0",
@@ -5679,7 +6258,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1603400009",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250656:0",
@@ -5707,7 +6289,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1613100020",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250669:0",
@@ -5735,7 +6320,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1626109025",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250673:0",
@@ -5763,7 +6351,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0735452022",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250679:0",
@@ -5791,7 +6382,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1602108037",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250683:0",
@@ -5819,7 +6413,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1612403008",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250695:0",
@@ -5847,7 +6444,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0735432006",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250696:0",
@@ -5879,7 +6479,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601139007",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250697:0",
@@ -5907,7 +6510,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1706310019",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250698:0",
@@ -5935,7 +6541,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1706324001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250700:0",
@@ -5967,7 +6576,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1603407036",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250708:0",
@@ -5995,7 +6607,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0735432009",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250716:0",
@@ -6023,7 +6638,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1612219013",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250718:0",
@@ -6051,7 +6669,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1602315028",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250719:0",
@@ -6079,7 +6700,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1602319001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250723:0",
@@ -6107,7 +6731,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1614103012",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250724:0",
@@ -6135,7 +6762,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1627428016",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250725:0",
@@ -6163,7 +6793,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1707124019",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250565:0",
@@ -6191,7 +6824,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0735235002",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250650:0",
@@ -6227,7 +6863,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1707300001",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250651:0",
@@ -6263,7 +6902,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0735233011",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250663:0",
@@ -6295,7 +6937,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1629100003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250543:0",
@@ -6327,7 +6972,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0734439003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250547:0",
@@ -6355,7 +7003,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1614109005",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250560:0",
@@ -6383,7 +7034,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0734201007",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250566:0",
@@ -6411,7 +7065,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0736405005",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250573:0",
@@ -6439,7 +7096,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1612126004",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250575:0",
@@ -6467,7 +7127,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0736402006",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250625:0",
@@ -6495,7 +7158,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0736332014",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250626:0",
@@ -6523,7 +7189,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0736306005",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250646:0",
@@ -6559,7 +7228,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1601404003",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250672:0",
@@ -6587,7 +7259,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "0734426012",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250694:0",
@@ -6615,7 +7290,10 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1602202011",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     },
     {
       "id": "19744:B250717:0",
@@ -6651,7 +7329,11 @@
       "report_sha256": "81b1605cf2e95cc4ad3756e264dc10b574916b4029692fa16415ff0406b19661",
       "report_month": "2025-04",
       "report_layout": "legacy-tabular",
-      "extracted_at": "2026-08-12T18:27:32.446Z"
+      "extracted_at": "2026-08-12T18:27:32.446Z",
+      "matched_pin": "1610400032",
+      "match_method": "legacy-key-exact",
+      "unmatched_reason": null
     }
-  ]
+  ],
+  "linked_at": "2026-08-12T18:28:20.791Z"
 }

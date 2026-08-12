@@ -1,0 +1,24 @@
+{
+  "county_slug": "rock-island",
+  "job_id": "rock-island-city-permits-v1",
+  "linked_at": "2026-08-12T18:28:20.799Z",
+  "parcel_layer_url": "https://services9.arcgis.com/6FnscPPlUa9DXXOk/arcgis/rest/services/Parcels/FeatureServer/0",
+  "parcel_key_source": "/Users/lukas/Developer/ateam/elephant-pipeline/data/seeds/rock-island.csv",
+  "parcel_feature_count": 65955,
+  "total_permit_records": 25354,
+  "matched": 24929,
+  "match_rate_pct": 98.32,
+  "by_method": {
+    "pin-exact": 139,
+    "legacy-key-exact": 24688,
+    "address-normalized": 102
+  },
+  "unmatched": {
+    "source-sentinel-not-a-parcel-reference": 88,
+    "legacy-key-not-in-current-parcel-layer": 297,
+    "address-ambiguous-or-absent": 40,
+    "no-parcel-key-printed": 0
+  },
+  "method_statement": "Permits are joined to parcels on the identifier the source printed, in three tiers. Tier 1: the EnerGov reports (2026-04 onward) print the 10-digit county PIN, matched exactly after left-padding a dropped leading zero. Tier 2: the legacy reports (2017-01 to 2026-03) print a TAX_MAP number, matched exactly against the parcel layer's RICO_PARCE legacy identifier. Tier 3: remaining records are matched on a normalised site address. Address matching is the fallback, not the method, and the parcel layer's site_address is itself only 88.91% populated.",
+  "limits_statement": "A permit that did not match is not a permit without a parcel. Unmatched records fall into stated categories, including source sentinel values such as 000000 and RIGHT-OF-WAY that are not parcel references at all, and legacy keys for parcels that appear to have since been split or retired. Matching is to the parcel layer as it stands today, not as it stood when the permit was issued."
+}

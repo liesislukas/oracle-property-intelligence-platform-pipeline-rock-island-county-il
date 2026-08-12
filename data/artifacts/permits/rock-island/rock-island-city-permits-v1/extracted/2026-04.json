@@ -31,7 +31,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1611402007",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600023:0",
@@ -51,7 +54,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1601301010",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:ELEC-202600006:0",
@@ -71,7 +77,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1601140019",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:PLMB-2026-00006:0",
@@ -91,7 +100,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "0734464021",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:UTL-2026-00009:0",
@@ -111,7 +123,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1614109005",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:MECH-2026-00006:0",
@@ -131,7 +146,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "0734464021",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600022:0",
@@ -151,7 +169,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1612403002",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:PLMB-2026-00011:0",
@@ -171,7 +192,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:BLDR-202600028:0",
@@ -191,7 +215,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1706104012",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:PLMB-2026-00013:0",
@@ -211,7 +238,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1706114011",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:MECH-2026-00008:0",
@@ -231,7 +261,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "0734429019",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:PLMB-2026-00015:0",
@@ -251,7 +284,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1706320019",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:ELEC-202600011:0",
@@ -271,7 +307,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1601310045",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600034:0",
@@ -291,7 +330,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1610201066",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600035:0",
@@ -311,7 +353,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1610201066",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600033:0",
@@ -331,7 +376,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1610201066",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:PLMB-2026-00019:0",
@@ -351,7 +399,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1601310045",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:PLMB-2026-00020:0",
@@ -371,7 +422,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1612201006",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:PLMB-2026-00010:0",
@@ -391,7 +445,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1614131003",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600037:0",
@@ -411,7 +468,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1706105006",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600036:0",
@@ -431,7 +491,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1707114008",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDC-2026-00020:0",
@@ -451,7 +514,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1601222001",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:UTL-2026-00011:0",
@@ -471,7 +537,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1601214004",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:ELEC-202600013:0",
@@ -491,7 +560,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1707103011",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:UTL-2026-00010:0",
@@ -511,7 +583,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1611301022",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:MECH-2026-00012:0",
@@ -531,7 +606,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1611301022",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:PLMB-2026-00026:0",
@@ -551,7 +629,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "0735427006",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:PLMB-2026-00009:0",
@@ -571,7 +652,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1706305017",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:PLMB-2026-00014:0",
@@ -591,7 +675,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1601422007",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDC-2026-00019:0",
@@ -611,7 +698,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1629203002",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:PLMB-2026-00008:0",
@@ -631,7 +721,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1627415009",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:PLMB-2026-00007:0",
@@ -651,7 +744,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "0734429008",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:EXCAVATION-2026-00002:0",
@@ -671,7 +767,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:BLDC-2026-00021:0",
@@ -691,7 +790,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "0735202015",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:MECH-2026-00017:0",
@@ -711,7 +813,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1627100008",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:MECH-2026-00011:0",
@@ -731,7 +836,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1612203009",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:PLMB-2026-00023:0",
@@ -751,7 +859,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1601217009",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:PLMB-2026-00029:0",
@@ -771,7 +882,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1706318027",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:ELEC-202600008:0",
@@ -791,7 +905,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1614112028",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:ELEC-202600007:0",
@@ -811,7 +928,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1612442005",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:EXCAVATION-2026-00003:0",
@@ -831,7 +951,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:PLMB-2026-00012:0",
@@ -851,7 +974,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1612300021",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600044:0",
@@ -871,7 +997,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "0734463004",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:MECH-2026-00014:0",
@@ -891,7 +1020,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1601446003",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:UTL-2026-00018:0",
@@ -911,7 +1043,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "0831310003",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:UTL-2026-00012:0",
@@ -931,7 +1066,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1603407041",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:PLMB-2026-00018:0",
@@ -951,7 +1089,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1611122001",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:PLMB-2026-00024:0",
@@ -971,7 +1112,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:UTL-2026-00022:0",
@@ -991,7 +1135,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1603407041",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:PLMB-2026-00034:0",
@@ -1011,7 +1158,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1612442005",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600042:0",
@@ -1031,7 +1181,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1601130008",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600048:0",
@@ -1051,7 +1204,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1601436018",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600046:0",
@@ -1071,7 +1227,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1602300024",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDC-2026-00023:0",
@@ -1091,7 +1250,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1610201065",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:ELEC-202600023:0",
@@ -1111,7 +1273,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1602312014",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600026:0",
@@ -1131,7 +1296,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:BLDC-2026-00029:0",
@@ -1151,7 +1319,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1603105009",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:ELEC-202600026:0",
@@ -1171,7 +1342,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1612107018",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600025:0",
@@ -1191,7 +1365,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:UTL-2026-00023:0",
@@ -1211,7 +1388,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1601214004",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:PLMB-2026-00039:0",
@@ -1231,7 +1411,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1706137002",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:PLMB-2026-00035:0",
@@ -1251,7 +1434,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1629203002",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:PLMB-2026-00037:0",
@@ -1271,7 +1457,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:PLMB-2026-00028:0",
@@ -1291,7 +1480,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1601124003",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:MECH-2026-00016:0",
@@ -1311,7 +1503,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1602202010",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600041:0",
@@ -1331,7 +1526,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:PLMB-2026-00038:0",
@@ -1351,7 +1549,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:MECH-2026-00018:0",
@@ -1371,7 +1572,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1602108089",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:PLMB-2026-00043:0",
@@ -1391,7 +1595,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1613100007",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:ELEC-202600014:0",
@@ -1411,7 +1618,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:BLDR-202600040:0",
@@ -1431,7 +1641,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1706126038",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:EXCAVATION-2026-00004:0",
@@ -1451,7 +1664,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:PLMB-2026-00031:0",
@@ -1471,7 +1687,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:BLDC-2026-00022:0",
@@ -1491,7 +1710,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "0736103009",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:ELEC-202600022:0",
@@ -1511,7 +1733,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "0831327013",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600047:0",
@@ -1531,7 +1756,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1601310070",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:PLMB-2026-00036:0",
@@ -1551,7 +1779,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1612118035",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:ELEC-202600027:0",
@@ -1571,7 +1802,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1706118015",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600045:0",
@@ -1591,7 +1825,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1706332011",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600030:0",
@@ -1611,7 +1848,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1612123003",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600039:0",
@@ -1631,7 +1871,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "0735452017",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:MECH-2026-00025:0",
@@ -1651,7 +1894,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1601140019",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDC-2026-00025:0",
@@ -1671,7 +1917,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "0735215001",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:MECH-2026-00022:0",
@@ -1691,7 +1940,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1603411033",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDC-2026-00031:0",
@@ -1711,7 +1963,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1612403012",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600050:0",
@@ -1731,7 +1986,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1613109025",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:UTL-2026-00024:0",
@@ -1751,7 +2009,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1601403002",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:ELEC-202600016:0",
@@ -1771,7 +2032,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1707134001",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600020:0",
@@ -1791,7 +2055,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1612309026",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600027:0",
@@ -1811,7 +2078,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1601304020",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:UTL-2026-00025:0",
@@ -1831,7 +2101,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1611301022",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:PLMB-2026-00022:0",
@@ -1851,7 +2124,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1612123003",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:DEMO-2026-00008:0",
@@ -1871,7 +2147,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:ELEC-202600012:0",
@@ -1891,7 +2170,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1706309071",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:PLMB-2026-00049:0",
@@ -1911,7 +2193,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1612424010",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:MECH-2026-00024:0",
@@ -1931,7 +2216,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1601336037",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:MECH-2026-00020:0",
@@ -1951,7 +2239,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1706309033",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:MECH-2026-00021:0",
@@ -1971,7 +2262,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1706319030",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:ELEC-202600025:0",
@@ -1991,7 +2285,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1616305001",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:UTL-2026-00019:0",
@@ -2011,7 +2308,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:PLMB-2026-00042:0",
@@ -2031,7 +2331,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "0735445011",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:UTL-2026-00013:0",
@@ -2051,7 +2354,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1604200002",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:ELEC-202600018:0",
@@ -2071,7 +2377,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1621300009",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:UTL-2026-00015:0",
@@ -2091,7 +2400,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1604200002",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:UTL-2026-00014:0",
@@ -2111,7 +2423,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1604200002",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:ELEC-202600021:0",
@@ -2131,7 +2446,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "0735113002",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:MECH-2026-00009:0",
@@ -2151,7 +2469,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1621300009",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:EXCAVATION-2026-00008:0",
@@ -2171,7 +2492,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:EXCAVATION-2026-00009:0",
@@ -2191,7 +2515,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:PLMB-2026-00047:0",
@@ -2211,7 +2538,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "0736332014",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:DEMO-2026-00006:0",
@@ -2231,7 +2561,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:BLDR-202600061:0",
@@ -2251,7 +2584,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1706308036",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600064:0",
@@ -2271,7 +2607,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:BLDR-202600057:0",
@@ -2291,7 +2630,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "0736326001",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600058:0",
@@ -2311,7 +2653,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1612101012",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600060:0",
@@ -2331,7 +2676,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1610400024",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600068:0",
@@ -2351,7 +2699,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:BLDR-202600069:0",
@@ -2371,7 +2722,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:BLDR-202600071:0",
@@ -2391,7 +2745,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1626106041",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600067:0",
@@ -2411,7 +2768,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1707424002",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600073:0",
@@ -2431,7 +2791,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "0735310059",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600070:0",
@@ -2451,7 +2814,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:PLMB-2026-00033:0",
@@ -2471,7 +2837,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1718118003",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600021:0",
@@ -2491,7 +2860,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1706131012",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600024:0",
@@ -2511,7 +2883,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:EXCAVATION-2026-00006:0",
@@ -2531,7 +2906,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1603200009",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600052:0",
@@ -2551,7 +2929,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:MECH-2026-00010:0",
@@ -2571,7 +2952,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1613210004",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:UTL-2026-00020:0",
@@ -2591,7 +2975,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1601446003",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:MECH-2026-00015:0",
@@ -2611,7 +2998,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "0736332014",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:ELEC-202600029:0",
@@ -2631,7 +3021,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1706107009",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600029:0",
@@ -2651,7 +3044,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:PLMB-2026-00045:0",
@@ -2671,7 +3067,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1706309045",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:PLMB-2026-00046:0",
@@ -2691,7 +3090,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:PLMB-2026-00053:0",
@@ -2711,7 +3113,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1612127022",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:MECH-2026-00026:0",
@@ -2731,7 +3136,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1601400007",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:SIGN-2026-00016:0",
@@ -2751,7 +3159,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1614102001",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDC-2026-00026:0",
@@ -2771,7 +3182,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:MECH-2026-00031:0",
@@ -2791,7 +3205,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:MECH-2026-00027:0",
@@ -2811,7 +3228,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1612232005",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:MECH-2026-00028:0",
@@ -2831,7 +3251,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:PLMB-2026-00055:0",
@@ -2851,7 +3274,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:MECH-2026-00019:0",
@@ -2871,7 +3297,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "0831334005",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:PLMB-2026-00032:0",
@@ -2891,7 +3320,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1707134002",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:CFP-2026-00002:0",
@@ -2911,7 +3343,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:CFP-2026-00003:0",
@@ -2931,7 +3366,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:EXCAVATION-2026-00010:0",
@@ -2951,7 +3389,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1707101003",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:EXCAVATION-2026-00007:0",
@@ -2971,7 +3412,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:EXCAVATION-2026-00011:0",
@@ -2991,7 +3435,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:PLMB-2026-00050:0",
@@ -3011,7 +3458,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1602206017",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:SIGN-2026-00012:0",
@@ -3031,7 +3481,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1706133007",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDC-2026-00018:0",
@@ -3051,7 +3504,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1706133007",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:PLMB-2026-00051:0",
@@ -3071,7 +3527,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "0735308003",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:UTL-2026-00021:0",
@@ -3091,7 +3550,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "0736360010",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:ELEC-202600020:0",
@@ -3111,7 +3573,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1602212001",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:PLMB-2026-00044:0",
@@ -3131,7 +3596,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1706309112",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:PLMB-2026-00021:0",
@@ -3151,7 +3619,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1612118009",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:MECH-2026-00023:0",
@@ -3171,7 +3642,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1601112001",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:EXCAVATION-2026-00012:0",
@@ -3191,7 +3665,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:PLMB-2026-00048:0",
@@ -3211,7 +3688,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "0735308003",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:ELEC-202600019:0",
@@ -3231,7 +3711,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1629101002",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:PLMB-2026-00052:0",
@@ -3251,7 +3734,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1612409007",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:DEMO-2026-00007:0",
@@ -3271,7 +3757,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:PLMB-2026-00054:0",
@@ -3291,7 +3780,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1612114008",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:PLMB-2026-00041:0",
@@ -3311,7 +3803,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1614121010",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:MECH-2026-00007:0",
@@ -3331,7 +3826,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1601207020",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600019:0",
@@ -3351,7 +3849,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1612414006",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600049:0",
@@ -3371,7 +3872,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1603216020",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDR-202600055:0",
@@ -3391,7 +3895,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1612104009",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:ELEC-202600005:0",
@@ -3411,7 +3918,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1611301022",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:PLMB-2026-00030:0",
@@ -3431,7 +3941,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "0735215001",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:PLMB-2026-00040:0",
@@ -3451,7 +3964,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1706333016",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:EXCAVATION-2026-00016:0",
@@ -3471,7 +3987,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:BLDR-202600051:0",
@@ -3491,7 +4010,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:BLDR-202600056:0",
@@ -3511,7 +4033,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1706308043",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     },
     {
       "id": "20365:BLDC-2026-00024:0",
@@ -3531,7 +4056,10 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": null,
+      "match_method": null,
+      "unmatched_reason": "address-ambiguous-or-absent"
     },
     {
       "id": "20365:PLMB-2026-00017:0",
@@ -3551,7 +4079,11 @@
       "report_sha256": "3d05aaed7b41cec5c39856340d318ec15f388a07278d7b706fabb7a322b86402",
       "report_month": "2026-04",
       "report_layout": "energov-tabular",
-      "extracted_at": "2026-08-12T18:27:32.619Z"
+      "extracted_at": "2026-08-12T18:27:32.619Z",
+      "matched_pin": "1621300009",
+      "match_method": "pin-exact",
+      "unmatched_reason": null
     }
-  ]
+  ],
+  "linked_at": "2026-08-12T18:28:20.798Z"
 }
