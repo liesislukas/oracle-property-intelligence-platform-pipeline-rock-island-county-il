@@ -70,7 +70,7 @@ layer, not a token-gated service.
 | AGOL item id | `9cae8a64ab0e4cea99758f741ca43b3c` |
 | Layer name | `parcel_layer` |
 | **Geometry type** | **`esriGeometryPolygon`** — re-verified live 2026-08-12 |
-| Feature count | **65,955** — `returnCountOnly`, re-verified live 2026-08-12 (identical to the 2026-08-11 count) |
+| Feature count | **65,955** — `returnCountOnly` returned `{"count":65955}` in 0.50 s, re-verified live 2026-08-12 (identical to the 2026-08-11 count, so no drift over the probe window) |
 | Geometry mix | 65,407 `Polygon` + 621 `MultiPolygon`, **0 null geometries** (measured over the bulk export) |
 | `maxRecordCount` | **2000** (`standardMaxRecordCount` 2000, `tileMaxRecordCount` 4000) → **33 paged requests** for a full extract |
 | Auth | **none.** No token, no API key, no login. |
