@@ -692,7 +692,103 @@ _Filled by W2–W8._
 
 ## 9. Requested signals with no public source
 
-_Filled by W2–W8._
+The pipeline assignment asks for four derived signals by name. Each is answered here with either a
+named public source or an explicit "no public source found", plus what was checked to reach that
+conclusion. **A documented absence is a valid finding**, and a proxy is never filed as the real
+thing.
+
+| Signal | Assignment line | Verdict | What was checked | What we can offer instead |
+|---|---|---|---|---|
+| **Roof age** | oracle README line 33 | **`no-public-source-found`** | All 16 permit jurisdictions (`## 3`); the parcel layer's `YRBuilt` field; the assessor portal (unreachable); historic aerials (not evaluated) | Nothing direct. `YRBuilt` (81.0% populated) is **building** age, not roof age. A roofing-permit date is the only source-backed derivation and permits are not publicly searchable by parcel anywhere in this county. |
+| **Water view** | oracle README line 34 | **`proxy-only-no-direct-source`** | USGS NHD hydrography (reachable, 962 waterbody features in the county bbox); county contour/terrain services; the parcel layer | **Distance to water**, computable from NHD + parcel centroids. This is a proxy and is **not** a view — a view is a line-of-sight computation needing terrain *and* structure heights, and no public structure-height source was found. |
+| **Transit walkability** | oracle README line 37 | **`public-source-found`** | MetroLINK/MetroQC official site (no GTFS found); transitfeeds (403); transit.land API (401, needs key); Mobility Database API (needs auth); OpenStreetMap via Overpass | **OpenStreetMap `highway=bus_stop` — 119 stops in the county bbox**, plus the OSM pedestrian network for routing. ODbL. **No authoritative GTFS feed was located.** |
+| **Starbucks walkability** | oracle README line 38 | **`public-source-found`** | OpenStreetMap via Overpass over the fixed county bbox | **OpenStreetMap — 12 Starbucks features** (5 nodes + 7 ways) in the county bbox. ODbL. |
+
+### Roof age — `no-public-source-found`
+
+**No public roof-age source exists for Rock Island County.** What was checked:
+
+- **Permit portals, all 16 jurisdictions.** A roofing-permit date is the only genuinely
+  source-backed way to derive roof age. Per `## 3`: 11 jurisdictions have **no online permit lookup
+  at all**, Rock Island's and Milan's portals are unreachable from this egress, and the two that are
+  reachable cannot be searched by parcel or address in a way that would yield roofing permits per
+  property — East Moline searches by permit number only, Moline by address without a work-type
+  filter that was observable. **There is no countywide roofing-permit history to query.**
+- **The parcel layer's `YRBuilt` field.** Populated for **53,409 of 65,955 parcels (81.0%)**,
+  measured 2026-08-12. **`YRBuilt` is the year the building was built, not the year the roof was
+  replaced, and it must never be presented as roof age.** It is a *lower bound* on roof age only for
+  a house that has never been re-roofed, which is exactly the population the question is not asking
+  about. It is stored as a string, with `" "` for unpopulated rows.
+- **The assessor portal**, which in some counties carries roof material and condition — unreachable
+  from this egress (`## 1`), so its contents are unknown, not absent.
+- **Historic aerials** (`https://www.historicaerials.com/`) — not evaluated. Imagery is the only
+  other plausible route (a re-roof is sometimes visible), but that is a computer-vision project, not
+  a data source.
+
+### Water view — `proxy-only-no-direct-source`
+
+The Mississippi River forms the county's western and northern boundary, so water proximity is
+genuinely meaningful here — which makes it more important, not less, to be precise about what can be
+computed.
+
+- **Hydrography is available.** USGS **National Hydrography Dataset**,
+  `https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer`, HTTP 200 in 0.96 s from this
+  egress. Layer 12 (`Waterbody - Large Scale`) returns **962 features** over the county bbox. Public
+  federal data.
+- **A view is not a distance.** Determining whether a property *has a view of water* is a
+  line-of-sight computation requiring terrain elevation, intervening structure heights, and
+  vegetation. Terrain is partially available (the county publishes contour services), but **no
+  public structure-height dataset was found for this county**, and without it line-of-sight cannot
+  be computed.
+- Therefore: **distance-to-water is offered as a proxy and labelled as a proxy.** A parcel 50 m from
+  the Mississippi behind a levee and a warehouse has no view; this data cannot tell the difference.
+  Filing "distance to water" as "water view" would be exactly the kind of silent substitution this
+  document exists to prevent.
+
+### Transit walkability — `public-source-found`
+
+- **No authoritative GTFS feed was located.** The Quad Cities operator is **MetroLINK**, whose site
+  now redirects `gogreenmetro.com` → `https://www.metroqc.com/` (HTTP 200). The site mentions
+  schedules but exposes no GTFS or developer resource; `/gtfs`, `/gtfs.zip`, `/google_transit.zip`
+  and `/developer` all return **404**. Aggregators were tried and are not openly readable:
+  `transitfeeds.com` returns **403** from this egress, the transit.land API returns **401
+  Unauthorized** without a key, and the Mobility Database API requires authentication. **A GTFS feed
+  may well exist behind those keyed APIs — its absence here is "not located", not "does not
+  exist".**
+- **What is available and sufficient:** OpenStreetMap `highway=bus_stop` — **119 stops** in the
+  county bbox, measured 2026-08-12, **ODbL**. Combined with the OSM pedestrian network this supports
+  a genuine walking-distance computation from parcel coordinates.
+- Caveat carried: crowd-sourced, completeness unknown; a bus stop absent from OSM is invisible to
+  this computation. And a stop location is not a *service* — without GTFS there is no timetable, so
+  "near a stop" does not establish "served frequently, or at all".
+
+### Starbucks walkability — `public-source-found`
+
+- **OpenStreetMap, 12 Starbucks features** (5 nodes + 7 ways) in the county bbox, measured
+  2026-08-12 via Overpass, **ODbL**.
+- Caveat carried: crowd-sourced and name-matched. A licensed in-store Starbucks (inside a grocery
+  store or hotel) may be tagged under the host business and missed, and a closed location may
+  persist in the data. **12 is a measured count of OSM features, not a verified count of operating
+  stores.**
+- Note the bbox caveat from `## 6` applies here too: the rectangle crosses into Iowa, so some of
+  these 12 may be Davenport/Bettendorf locations rather than Rock Island County ones. Clip to the
+  county polygon before reporting a county figure.
+
+### Signals NOT in this section, and why
+
+Ownership tenure (line 35) and regional-owner questions (line 36) are **not** unavailable and are
+therefore not listed above. Both are answerable from the reachable parcel layer:
+
+- **Tenure:** `date_last_sale` is populated for **46,182 of 65,955 parcels (70.0%)**, and
+  **12,476 parcels have a last-sale date more than 10 years before 2026-08-12** — a direct,
+  measured, source-backed answer to *"properties that have not exchanged ownership in more than 10
+  years"*, with the honest qualifier that the 30% of parcels with a null `date_last_sale` are
+  **unknown**, not "not recently sold".
+- **Regional owners:** `taxbill_csz` carries the owner's city/state/ZIP.
+
+Caveat for both: `gross_sale_price` exceeds 100 on only **20,378** parcels, so most recorded sale
+prices are nominal ($10 and similar non-arm's-length consideration). **Sale price is not market
+value in this dataset.**
 
 ## 10. Probing limitations
 

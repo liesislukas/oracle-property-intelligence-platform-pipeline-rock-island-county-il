@@ -500,4 +500,123 @@ zoning:
   verified_at: "2026-08-12"
   evidence: docs/rock-island-county-findings.md#5-usage-type-vocabulary
 
-unavailable_signals: []
+unavailable_signals:
+  - signal: roof-age
+    assignment_line: "oracle README line 33: Support questions about properties with roofs older than 15 years."
+    verdict: no-public-source-found
+    sources_checked:
+      - name: Permit portals, all 16 jurisdictions
+        url: docs/rock-island-sources.yaml#permits
+        result: >-
+          No countywide roofing-permit history is publicly queryable. 11 of 16 jurisdictions have no
+          online permit lookup at all; Rock Island and Milan are unreachable from this egress; the
+          two reachable portals cannot be searched by parcel, and East Moline requires an exact
+          permit number.
+      - name: Parcel layer YRBuilt field
+        url: https://services9.arcgis.com/6FnscPPlUa9DXXOk/arcgis/rest/services/Parcels/FeatureServer/0
+        result: >-
+          Populated for 53,409 of 65,955 parcels (81.0%), measured 2026-08-12. This is BUILDING age,
+          not roof age — a lower bound only for a building that has never been re-roofed, which is
+          not the population the question asks about. Stored as a string with " " for unpopulated.
+      - name: Assessor portal (DEVNET Wedge)
+        url: https://rockislandil.devnetwedge.com/
+        result: unreachable from this egress — contents unknown, not absent. May carry roof material/condition.
+      - name: Historic aerials
+        url: https://www.historicaerials.com/
+        result: not evaluated. Imagery would be a computer-vision project, not a data source.
+    best_available_proxy: none
+    derivation_if_used: none
+    ui_statement: >-
+      No public roof-age source was found for Rock Island County. We checked all 16 permit
+      jurisdictions (11 have no online permit lookup at all, and none supports parcel-keyed roofing
+      permit search), the county parcel layer's YRBuilt field, and the assessor portal. YRBuilt is
+      the year the building was built, not the year the roof was replaced, so we do not offer it as
+      roof age.
+  - signal: water-view
+    assignment_line: "oracle README line 34: Support questions about properties with a view of water."
+    verdict: proxy-only-no-direct-source
+    sources_checked:
+      - name: USGS National Hydrography Dataset (NHD)
+        url: https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer
+        result: >-
+          Reachable, HTTP 200 in 0.96 s (2026-08-12). Layer 12 "Waterbody - Large Scale" returns 962
+          features over the county bbox. Public federal data. Gives WATER LOCATION, not view.
+      - name: Structure-height data for line-of-sight
+        url: null
+        result: >-
+          No public structure-height dataset found for this county. Without it, line-of-sight cannot
+          be computed, so a genuine "view" cannot be derived.
+      - name: County contour / terrain services
+        url: https://gis.rockislandcountyil.gov/arcgis/rest/services
+        result: Contour services exist (Contours, Contours_Vector_Tile), giving partial terrain — insufficient alone for line-of-sight.
+    best_available_proxy: Distance from parcel centroid to the nearest NHD waterbody
+    derivation_if_used: >-
+      Nearest-feature distance between the parcel centroid (X_longitude/Y_latitude on the parcel
+      layer) and NHD waterbody geometry. MUST be labelled distance-to-water, never water-view.
+    ui_statement: >-
+      No public water-view source was found for Rock Island County. A view is a line-of-sight
+      computation requiring terrain and structure heights, and no public structure-height source
+      exists for this county. We can offer distance to the nearest water body from USGS NHD data —
+      that is a proxy, not a view: a parcel 50 m from the Mississippi behind a levee has no view and
+      this data cannot tell the difference.
+  - signal: transit-walkability
+    assignment_line: "oracle README line 37: within walking distance of public transportation using property coordinates."
+    verdict: public-source-found
+    sources_checked:
+      - name: MetroLINK / MetroQC (the Quad Cities transit operator)
+        url: https://www.metroqc.com/
+        result: >-
+          Reachable, HTTP 200 — gogreenmetro.com now 301-redirects here. No GTFS or developer
+          resource published; /gtfs, /gtfs.zip, /google_transit.zip and /developer all return 404.
+      - name: transitfeeds.com
+        url: https://transitfeeds.com/p/metrolink-quad-cities
+        result: HTTP 403 from this egress — not readable here.
+      - name: transit.land API
+        url: https://transit.land/api/v2/rest/feeds?search=metrolink
+        result: HTTP 401 Unauthorized — requires an API key we do not hold.
+      - name: Mobility Database API
+        url: https://api.mobilitydatabase.org/v1/gtfs_feeds
+        result: Requires authentication — "Invalid GCIP ID token". Not evaluated further.
+      - name: OpenStreetMap bus stops via Overpass
+        url: https://overpass-api.de/api/interpreter
+        result: >-
+          119 highway=bus_stop features in the county bbox, measured 2026-08-12, ODbL. This IS a
+          usable public source for stop locations.
+    best_available_proxy: >-
+      OpenStreetMap highway=bus_stop (119 stops) plus the OSM pedestrian network — a direct source
+      for the computation, not a proxy, but crowd-sourced.
+    derivation_if_used: >-
+      Walking-distance routing from parcel centroid to nearest OSM bus stop over the OSM pedestrian
+      network. Note this establishes proximity to a STOP, not service frequency — without GTFS there
+      is no timetable.
+    ui_statement: >-
+      Transit proximity for Rock Island County is backed by OpenStreetMap bus-stop data — 119 stops
+      in the county area, licensed ODbL. No authoritative GTFS feed was located: the MetroLINK site
+      publishes none, and transitfeeds, transit.land and the Mobility Database all require keys or
+      block this egress. So we can say a property is near a stop, but not how often that stop is
+      served, and OSM completeness is not guaranteed.
+  - signal: starbucks-walkability
+    assignment_line: "oracle README line 38: within walking distance of Starbucks using property coordinates."
+    verdict: public-source-found
+    sources_checked:
+      - name: OpenStreetMap via Overpass, name match over the fixed county bbox
+        url: https://overpass-api.de/api/interpreter
+        result: >-
+          12 Starbucks features (5 nodes + 7 ways) in the county bbox, measured 2026-08-12, ODbL.
+      - name: OpenStreetMap brand:wikidata=Q37158 cross-check
+        url: https://overpass-api.de/api/interpreter
+        result: >-
+          Attempted as a corroborating query; Overpass returned a non-JSON error page under rapid
+          sequential load and the cross-check was NOT completed. The count of 12 rests on the name
+          match alone.
+    best_available_proxy: >-
+      OpenStreetMap POIs — a direct source for the computation, but crowd-sourced and name-matched.
+    derivation_if_used: >-
+      Walking-distance routing from parcel centroid to the nearest OSM Starbucks POI over the OSM
+      pedestrian network.
+    ui_statement: >-
+      Starbucks proximity for Rock Island County is backed by OpenStreetMap POI data — 12 locations
+      found in the county area, licensed ODbL. This is a count of OSM features, not a verified count
+      of operating stores: a licensed in-store Starbucks inside a grocery store or hotel may be
+      tagged under the host business and missed, a closed location may persist, and the search area
+      crosses the Mississippi into Iowa so some may be outside the county.
