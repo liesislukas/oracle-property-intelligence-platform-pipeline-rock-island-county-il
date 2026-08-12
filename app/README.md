@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Rock Island pipeline explorer
 
-## Getting Started
+The deployed UI for the Oracle property intelligence pipeline, Rock Island County, IL.
+Next.js App Router + TypeScript + Tailwind v4. Deployed on Vercel as
+`oracle-rock-island-explorer`.
 
-First, run the development server:
+## Stage manifests
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Pipeline stages publish JSON manifests that this app reads. They live at:
+
+```
+app/data/manifests/<stage>.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+They sit inside `app/` because a Vercel deploy uploads only the directory it is given
+(`--cwd app`); nothing above that directory exists in the build container, so a static import
+reaching outside `app/` would fail at build time.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Canonical stage manifests are written by the pipeline at the repo root
+(`data/manifests/<stage>.json`) and copied here byte-identical by
+`node scripts/sync-manifests.mjs`, which runs before every deploy.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Every manifest has the same shape:
 
-## Learn More
+```json
+{
+  "stage": "runs",
+  "status": "awaiting-data",
+  "county_slug": "rock-island",
+  "generated_at": null,
+  "source_note": null,
+  "records": []
+}
+```
 
-To learn more about Next.js, take a look at the following resources:
+`status` is either `awaiting-data` or `ready` — nothing else. A section whose manifest is
+`awaiting-data` renders an explicit "Awaiting data" state. It never renders an invented number.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Run from the repo root, after every push to the branch:
 
-## Deploy on Vercel
+```
+vercel deploy --prod --yes --cwd app \
+  --build-env NEXT_PUBLIC_GIT_REPO="oracle-property-intelligence-platform-pipeline-rock-island-county-il" \
+  --build-env NEXT_PUBLIC_GIT_BRANCH="$(git rev-parse --abbrev-ref HEAD)" \
+  --build-env NEXT_PUBLIC_GIT_COMMIT_SHA="$(git rev-parse --short=7 HEAD)"
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Push-to-deploy is deliberately not wired; the CLI deploy above is the redeploy contract.
