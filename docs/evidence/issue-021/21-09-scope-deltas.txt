@@ -1,0 +1,106 @@
+ISSUE-021 — deltas between plan.md and what was executed, each with its reason
+
+Four work items in plan.md were written before the board's other issues landed. By the time
+ISSUE-021 executed, the world had moved. Every deviation is listed here rather than left for a
+reader to discover.
+
+
+DELTA 1 — WI-1: the schema was VERIFIED, not applied.
+plan.md said: clone elephant-query-db, apply migrations/*.sql with psql, run ensure-folio-constraint.
+what happened: ISSUE-030 had already applied all seven migrations and recorded a
+  pipeline_schema_migrations ledger. Re-applying blindly was explicitly ruled out. WI-1 read the
+  ledger, verified all seven tables and the parcels_jurisdiction_key_request_identifier_unique
+  constraint, and recorded the evidence. npm ci was run in the clone; git status in the clone is
+  clean, so the read-only checkout was never edited.
+evidence: 21-01-schema-tables.txt, docs/query-db-setup.md
+
+
+DELTA 2 — WI-2 and WI-3: NO BULK LOAD WAS RUN, for any track.
+plan.md said: run `npm run load:bulk --tracks appraisal`, then `--tracks permits`.
+what happened:
+  - appraisal: ISSUE-018's per-parcel ingest is a durable Restate workflow that was ALREADY loading
+    these exact artifacts into parcels under source_system=rock_island_appraiser and was STILL
+    RUNNING throughout ISSUE-021, climbing at ~1.5 parcels/s toward 65,955 over ~11 hours. Starting
+    a second writer against the same source_system would be a concurrent double-load of the rows
+    ISSUE-018 is upserting, and the kit skill's rule is a single-writer Loader per county. The load
+    was VERIFIED instead, with the kit's own validate-appraisal-folio.ts.
+  - permits: ISSUE-019 had already loaded 25,354 permit records into permits_rock_island_city, the
+    table carrying the permit-to-parcel link columns. A --tracks permits load would have written the
+    same records a second time into property_improvements.
+  - geo: ISSUE-020 had already loaded all seven clipped signal sources.
+consequence, and how it was handled: the parcels table is a MOVING PARTIAL SUBSET. Reconciling over
+  it would have produced county metrics from an incomplete corpus. All reconciliation therefore runs
+  over the per-parcel source mirror — all 65,955 records, verified equal to the live FeatureServer
+  count by scripts/reconcile-before-load.mjs. Every published metric names the corpus, the record
+  count and the timestamp. The only figure taken from parcels is the provenance coverage, and it is
+  published with its row count and timestamp and an explicit "this is not the county total".
+evidence: 21-02-load-log.txt, 21-02-folio-validation.txt, 21-03-permit-load-log.txt,
+  21-03-track-counts.txt
+
+
+DELTA 3 — WI-2 acceptance cannot pass while ISSUE-018 is still running.
+plan.md acceptance: validate-appraisal-folio.ts exits 0 with distinct_folios = 65,955.
+what happened: it exits 1 on assertion 1a — distinct_folios was 2,479 at capture time, because the
+  ingest had reached that far. That is an INCOMPLETENESS report, not a collapse report, and it is
+  recorded verbatim rather than smoothed. The two assertions this issue actually exists to guard —
+  total_parcels == distinct_folios (no collapsed folios) and orphaned_properties == 0 (the collapse
+  symptom) — both PASS, and they are independent of how far the load has progressed. The acceptance
+  will pass unchanged once ISSUE-018 finishes; nothing in this issue needs to change for it to.
+evidence: 21-02-folio-validation.txt (both runs, verbatim)
+
+
+DELTA 4 — WI-8: NO UI CODE WAS WRITTEN. The manifest is the deliverable instead.
+plan.md said: replace app/src/app/runs/page.tsx and app/src/app/data/page.tsx, add
+  app/src/app/data/owners/[ownerKey]/page.tsx.
+what happened: those files are owned by ISSUE-016/028/033 and render EVERY stage manifest with zero
+  code change, so landing a correct data/manifests/reconciliation.json publishes this issue's
+  numbers on both /runs and /sources without touching a component. ISSUE-021 wrote the manifest and
+  did not edit app/src/lib/stageManifests.ts, app/src/app/sources/page.tsx,
+  app/src/app/runs/page.tsx or app/src/app/data/page.tsx.
+
+  WHAT THAT COVERS ON THE DEPLOYED RUNTIME:
+    - /runs shows the Reconciliation stage as Completed with its four sources, each record count,
+      and the derived-dataset caveat beside the number.
+    - /sources renders every reconciliation metric verbatim: 50,042 raw owner strings -> 49,914
+      entities with 128 groups collapsed; 6,031 multi-parcel entities over 21,883 parcels; the
+      permit match rate with matched AND unmatched broken out by reason; the mailing parse
+      65,743 / 202 / 10 with every unparsed value listed verbatim; the PIN-collapse avoidance; the
+      canonical-name rule; the sha256 address-hash method; and the provenance shape with its
+      retrieval timestamp and licence.
+
+  WHAT IT DOES NOT COVER, STATED PLAINLY:
+    Demo Script step 2 — "Pick an owner with multiple parcels and show me their record" — has no
+    browsable page. There is no /data/owners/<id> route, because building one is UI work this issue
+    was directed not to do. The DATA for it is committed and ready at
+    data/exports/reconciliation-owners.json: the 500 largest owner entities, each with canonical
+    name, canonical_name_field, entity kind and tags, mailing city/state/ZIP5 with parse status, the
+    full parcel list, and BOTH owner1_name and taxbill_name per parcel with names_disagree marked.
+    A page over that file is a rendering task, not a data task. The same records are queryable in
+    SQL today through owner_entities, owner_entity_parcels and the parcel_owner_location view
+    (21-07-provenance-queryable.txt shows a real multi-parcel owner rendered from them).
+    This is a genuine open item against the issue's "Done when" list and is not claimed as done.
+evidence: 21-08-deployed-verification.txt, and the screenshots in the issue's evidence/ directory
+
+
+DELTA 5 — WI-6: the cross-match was ADDITIVE to ISSUE-019's, not a replacement.
+plan.md said: write property_improvements.parcel_id for high-confidence address matches.
+what happened: permits live in permits_rock_island_city, not property_improvements (which holds 0
+  rows), and ISSUE-019 had already linked 24,929 of 25,354 at 98.32% by legacy key, PIN and
+  normalized address. Re-doing that work could only have weakened it. ISSUE-021 built the sha256
+  address-hash index over the full county mirror, measured all four buckets, and wrote a link ONLY
+  where matched_pin was still NULL and the key resolved to exactly one parcel — 20 permits, raising
+  the rate to 98.40%. The write can add a link; it can never overwrite or weaken one. Re-running it
+  changes nothing.
+evidence: 21-06-permit-matching.txt
+
+
+DELTA 6 — plan.md expected 12,151 entities with disagreeing name fields; measured 12,257.
+  +106, +0.87%, inside the 1% tolerance, and stated rather than smoothed. The measured figure counts
+  owner ENTITIES carrying at least one disagreeing parcel record. The record-level figure the
+  acceptance test asserts on — 15,619 parcel records — matched plan.md exactly, as did every other
+  expected value in the plan's table.
+evidence: 21-04-owner-reconciliation.txt
+
+
+NOT TOUCHED, on purpose: the PII approve gate. This issue writes no IPFS publish and calls no
+Publish/<county>/approve. That gate is human-only and belongs to ISSUE-022.

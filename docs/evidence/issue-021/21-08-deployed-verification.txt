@@ -1,0 +1,34 @@
+ISSUE-021 WI-9 — deployed runtime verification
+captured_at: 2026-08-12T20:27:30Z
+live URL: https://oracle-rock-island-explorer-liesislukas-projects.vercel.app
+commit:   59a941b  branch: feat/rock-island-source-discovery
+
+=== anonymous HTTP status (no session, no SSO redirect) ===
+/          HTTP/2 200 
+/runs      HTTP/2 200 
+/sources   HTTP/2 200 
+/data      HTTP/2 200 
+Location headers on /runs: 0 (0 = no SSO redirect; the page is reachable by an anonymous visitor)
+
+=== the deployed pages and the committed manifest agree, number by number ===
+  manifest record_count -> rendered on the deployed pages:
+    rock-island-owner-entity-reconciliation      49,914   /runs YES   /sources YES
+    rock-island-owner-mailing-location           65,743   /runs YES   /sources YES
+    rock-island-permit-parcel-crossmatch         24,949   /runs YES   /sources YES
+    rock-island-record-provenance                 3,527   /runs YES   /sources YES
+  required content:
+    entities before -> after (50,042 raw)            FOUND
+    duplicate groups collapsed (128)                 FOUND
+    multi-parcel entities (6,031)                    FOUND
+    permit match rate, matched AND unmatched         FOUND
+    mailing parse 65,743 / 202 / 10                  FOUND
+    every unparsed value listed verbatim             FOUND
+    PIN-collapse avoidance (142 parcels)             FOUND
+    canonical rule named on the page                 FOUND
+    normalized-name grouping method named            FOUND
+    sha256 address-hash method named                 FOUND
+    provenance shape with retrieved_at + licence     FOUND
+    derived-count caveat beside the number on /runs  FOUND
+    ingest-still-running caveat stated               FOUND
+
+ALL DEPLOYED VALUES MATCH THE COMMITTED MANIFEST
