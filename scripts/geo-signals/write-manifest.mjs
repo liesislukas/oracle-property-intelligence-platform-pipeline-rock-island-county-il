@@ -55,10 +55,11 @@ const bRing = boundary.features[0].geometry.coordinates[0];
 const sql = postgres(await connectionString(), { onnotice: () => {} });
 
 const sources = await sql`
-  SELECT id, label, publisher, endpoint, licence, licence_source, licence_url, attribution,
+  SELECT id, label, publisher, endpoint, query, licence, licence_source, licence_url, attribution,
          crowd_sourced, retrieved_at, elapsed_s, count_fetch_bbox, count_discovery_bbox,
          count_clipped
   FROM geo_signal_source ORDER BY id`;
+for (const s of sources) if (!s.query) fail(`${s.id}: no query recorded on the source row`);
 if (sources.length !== 7) fail(`geo_signal_source holds ${sources.length} rows, expected 7`);
 
 const loaded = await sql`

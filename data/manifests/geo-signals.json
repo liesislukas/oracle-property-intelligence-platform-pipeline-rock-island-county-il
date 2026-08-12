@@ -72,7 +72,7 @@
       "notes": [
         "Three measured counts, none typed: 36 inside the county polygon (the county figure, record_count), 109 in the fetch bounding box -91.08,41.32,-90.15,41.79 (bbox_count — a rectangle that crosses the Mississippi into Scott, Muscatine and Cedar counties, Iowa), and 66 in the ISSUE-001 source-discovery bounding box -90.79,41.36,-90.25,41.65. The discovery rectangle holds 93.1% of the county's parcels and misses its two largest generators; its count is kept for reproducibility and is not a county figure.",
         "Clipped to the US Census TIGERweb county polygon (State_County/MapServer layer 1, GEOID 17161, 2471 vertices, ring area 1167.16 km² against the feature's own AREALAND+AREAWATER of 1168.84 km²). The county's own GIS \"Boundaries\" service was rejected: it is 15 municipal polygons and excludes unincorporated county, so clipping against it would silently delete every rural feature.",
-        "Overpass query, verbatim: undefined",
+        "Overpass query, verbatim: [out:json][timeout:180];nwr[\"power\"=\"substation\"](41.32,-91.08,41.79,-90.15);out center tags;",
         "Licence read from the live response's osm3s.copyright field, not hardcoded. This dataset is a Derivative Database of OpenStreetMap and is offered under the same Open Database License (ODbL) v1.0. Attribution: © OpenStreetMap contributors (https://www.openstreetmap.org/copyright).",
         "Overpass politeness, measured: at 5-second spacing the API returned three 504s and two 429s in ten requests. This run used sequential requests at ≥15 s spacing with 4 attempts and 30/60/120 s backoff, and would have exited rather than record a rate-limited failure as a count."
       ]
@@ -94,7 +94,7 @@
       "notes": [
         "Three measured counts, none typed: 153 inside the county polygon (the county figure, record_count), 321 in the fetch bounding box -91.08,41.32,-90.15,41.79 (bbox_count — a rectangle that crosses the Mississippi into Scott, Muscatine and Cedar counties, Iowa), and 176 in the ISSUE-001 source-discovery bounding box -90.79,41.36,-90.25,41.65. The discovery rectangle holds 93.1% of the county's parcels and misses its two largest generators; its count is kept for reproducibility and is not a county figure.",
         "Clipped to the US Census TIGERweb county polygon (State_County/MapServer layer 1, GEOID 17161, 2471 vertices, ring area 1167.16 km² against the feature's own AREALAND+AREAWATER of 1168.84 km²). The county's own GIS \"Boundaries\" service was rejected: it is 15 municipal polygons and excludes unincorporated county, so clipping against it would silently delete every rural feature.",
-        "Overpass query, verbatim: undefined",
+        "Overpass query, verbatim: [out:json][timeout:180];way[\"power\"=\"line\"](41.32,-91.08,41.79,-90.15);out geom tags;",
         "Licence read from the live response's osm3s.copyright field, not hardcoded. This dataset is a Derivative Database of OpenStreetMap and is offered under the same Open Database License (ODbL) v1.0. Attribution: © OpenStreetMap contributors (https://www.openstreetmap.org/copyright).",
         "power=minor_line and power=tower are deliberately excluded: neither is transmission infrastructure. OSM voltage tags are volts as a string and may be multi-valued (\"161000;69000\"); a multi-valued tag yields voltage_kv NULL and stays intact in the raw property bag."
       ]
@@ -118,7 +118,7 @@
       "notes": [
         "Three measured counts, none typed: 103 inside the county polygon (the county figure, record_count), 119 in the fetch bounding box -91.08,41.32,-90.15,41.79 (bbox_count — a rectangle that crosses the Mississippi into Scott, Muscatine and Cedar counties, Iowa), and 119 in the ISSUE-001 source-discovery bounding box -90.79,41.36,-90.25,41.65. The discovery rectangle holds 93.1% of the county's parcels and misses its two largest generators; its count is kept for reproducibility and is not a county figure.",
         "Clipped to the US Census TIGERweb county polygon (State_County/MapServer layer 1, GEOID 17161, 2471 vertices, ring area 1167.16 km² against the feature's own AREALAND+AREAWATER of 1168.84 km²). The county's own GIS \"Boundaries\" service was rejected: it is 15 municipal polygons and excludes unincorporated county, so clipping against it would silently delete every rural feature.",
-        "Overpass query, verbatim: undefined",
+        "Overpass query, verbatim: [out:json][timeout:180];node[\"highway\"=\"bus_stop\"](41.32,-91.08,41.79,-90.15);out center tags;",
         "Licence read from the live response's osm3s.copyright field, not hardcoded. This dataset is a Derivative Database of OpenStreetMap and is offered under the same Open Database License (ODbL) v1.0. Attribution: © OpenStreetMap contributors (https://www.openstreetmap.org/copyright)."
       ]
     },
@@ -140,7 +140,7 @@
       "notes": [
         "Three measured counts, none typed: 5 inside the county polygon (the county figure, record_count), 12 in the fetch bounding box -91.08,41.32,-90.15,41.79 (bbox_count — a rectangle that crosses the Mississippi into Scott, Muscatine and Cedar counties, Iowa), and 12 in the ISSUE-001 source-discovery bounding box -90.79,41.36,-90.25,41.65. The discovery rectangle holds 93.1% of the county's parcels and misses its two largest generators; its count is kept for reproducibility and is not a county figure.",
         "Clipped to the US Census TIGERweb county polygon (State_County/MapServer layer 1, GEOID 17161, 2471 vertices, ring area 1167.16 km² against the feature's own AREALAND+AREAWATER of 1168.84 km²). The county's own GIS \"Boundaries\" service was rejected: it is 15 municipal polygons and excludes unincorporated county, so clipping against it would silently delete every rural feature.",
-        "Overpass query, verbatim: undefined",
+        "Overpass query, verbatim: [out:json][timeout:180];nwr[\"name\"~\"Starbucks\",i](41.32,-91.08,41.79,-90.15);out center tags;",
         "Licence read from the live response's osm3s.copyright field, not hardcoded. This dataset is a Derivative Database of OpenStreetMap and is offered under the same Open Database License (ODbL) v1.0. Attribution: © OpenStreetMap contributors (https://www.openstreetmap.org/copyright)."
       ]
     },
@@ -168,6 +168,6 @@
   ],
   "run": {
     "started_at": "2026-08-12T18:20:44.229Z",
-    "finished_at": "2026-08-12T18:30:13.231Z"
+    "finished_at": "2026-08-12T18:34:23.566Z"
   }
 }
