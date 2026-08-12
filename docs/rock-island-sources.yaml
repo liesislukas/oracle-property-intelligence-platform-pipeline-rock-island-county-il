@@ -285,6 +285,63 @@ permits:
     throughput: not-measured — no online permit lookup exists to harvest; single-request probe 671 ms
     status: certified
 
+# The 48-hour feasibility decision for the permits block. It lives here rather than on each permits[]
+# row because those rows use the key set county-discovery/SKILL.md specifies verbatim
+# {jurisdiction, url, vendor, search, probe, throughput, status}, which has no feasibility field,
+# and that schema contract is what downstream skills read. Every permit jurisdiction is covered.
+permits_feasibility:
+  - feasibility: runtime-fetch
+    jurisdictions: [moline, east-moline]
+    owning_service: permit lookup service
+    pattern: server-side scraping at query time, per address, results cached
+    rationale: >-
+      Search-shaped, not enumerable. Moline's eTRAKiT exposes no browse-all and no record count;
+      East Moline's iWorQ returns nothing without an exact permit number. A full-download estimate
+      is not-estimable (unmeasured: record count) for both, so bulk pre-fetch is not an option
+      regardless of speed. Measured per-request p50: Moline 981 ms, East Moline 1834 ms.
+  - feasibility: download
+    jurisdictions: [rock-island]
+    owning_service: permit report ingestion
+    pattern: fetch the monthly PDF reports and extract
+    rationale: >-
+      https://rigov.org/1276/Permit-Reports publishes ~116 monthly PDF reports (2017-01 through
+      2026-08). Estimate 116 * 1.365 s * 1.2 retry overhead = ~190 s — far inside the 48-hour gate.
+      PDF, so extraction is required, and the data is report-level rather than record-level. This is
+      the only bulk-shaped permit source in the county.
+  - feasibility: undetermined-unreachable
+    jurisdictions: [rock-island, milan, carbon-cliff]
+    owning_service: none yet
+    pattern: re-probe from a US exit before deciding
+    rationale: >-
+      Rock Island's Tyler EnerGov portal and Milan's GovBuilt portal both return 403 from this
+      egress (Milan with a Cloudflare challenge — an application-layer block, unlike the assessor's
+      network-layer block). Carbon Cliff's permitting is contracted to East Moline and whether its
+      records live in East Moline's iWorQ instance is unresolved. Note rock-island appears twice: its
+      portal is undetermined while its monthly PDF reports are downloadable.
+  - feasibility: not-feasible
+    jurisdictions:
+      [
+        unincorporated-rock-island-county,
+        andalusia,
+        coal-valley,
+        cordova,
+        hampton,
+        hillsdale,
+        oak-grove,
+        port-byron,
+        rapids-city,
+        reynolds,
+        silvis,
+      ]
+    owning_service: none
+    pattern: none — no online access path exists
+    rationale: >-
+      NO ONLINE ACCESS PATH EXISTS. These 11 jurisdictions offer a PDF application, a counter-only
+      policy, or no website at all (Hillsdale, Oak Grove and Reynolds have no website). not-feasible
+      here means ABSENT, not slow — no throughput improvement or egress change makes these
+      harvestable. Obtaining them would require FOIA requests or in-person visits, which is a
+      programme decision, not a pipeline one.
+
 business_registration:
   name: Illinois Secretary of State — Business Services corporate/LLC search
   url: https://www.ilsos.gov/corporatellc/

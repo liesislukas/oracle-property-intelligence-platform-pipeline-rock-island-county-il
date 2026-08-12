@@ -684,11 +684,158 @@ Recorded as unevaluated rather than unavailable, because that is the honest dist
 
 ## 7. Source feasibility
 
-_Filled by W2–W8._
+`county-discovery`'s gate: estimate total elapsed time from measured latency, safe concurrency,
+required delays and retry overhead. **Over 48 hours, full download stops being the default** and an
+explicit choice is recorded instead.
+
+**The estimate formula, stated so a reader can check it:**
+
+```
+hours = (record_count / page_size) * p50_seconds / safe_concurrency / 3600
+```
+
+with a **1.2× retry-overhead multiplier** applied to every estimate. Where any input is unmeasured
+the estimate is `not-estimable (unmeasured: <which input>)` — **never a guessed number**.
+
+Decision values: `download` (a bulk artifact exists, or the paged estimate is under 48 h) ·
+`ingest` (no bulk artifact, under 48 h, record-level data wanted) · `runtime-fetch` (over 48 h, or
+the source is per-parcel-lookup shaped) · `not-feasible` (no access path exists at all) ·
+`undetermined-unreachable` (cannot be estimated from this egress — **a first-class outcome, not a
+failure to do the work**).
+
+| Source | Records | Page size | p50 | Safe conc. | Estimated full download | Decision | Why |
+|---|---|---|---|---|---|---|---|
+| **Parcels** (GIS layer) | 65,955 | 2,000 | 0.46 s | 1 (untested higher) | **18 s** paged (33 pages × 0.46 s × 1.2), or **4.8 s** for the 19 MB shapefile | **`download`** | Bulk artifact exists and is trivially cheap. Five orders of magnitude inside the gate. |
+| **Zoning / class codes** | 65,955 | 2,000 | 0.46 s | 1 | **same 18 s** — attributes ride along with the parcel pull | **`download`** | Same layer, same request. No separate fetch. |
+| **Assessor portal** (DEVNET Wedge) | not-measured | not-measured | not-measured | not-measured | `not-estimable (unmeasured: latency, page size, record count — host TCP-blocked)` | **`undetermined-unreachable`** | Cannot be estimated from this egress. Re-probe from a US exit. |
+| **IL SOS business registration** | not-measured | not-measured | not-measured | not-measured | `not-estimable (unmeasured: latency, record count — domain 403)` | **`undetermined-unreachable`** | Whole domain refused. The paid bulk channel is the likely real path and is unevaluated. |
+| **Recorder** (Fidlar Tapestry) | not-measured | not-measured | not-measured | not-measured | `not-estimable (unmeasured: everything — DNS does not resolve)` | **`undetermined-unreachable`** | Also a pay-per-search commercial product, so unlikely to be bulk-feasible even when reachable. |
+| **Contractor reputation** (BBB) | not-measured | not-measured | not-measured | not-measured | `not-estimable (unmeasured: latency, record count — 403)` | **`undetermined-unreachable`** | National source; blocked from this egress. |
+| **HIFLD transmission lines** | 78 | 2,000 | 0.46 s | 1 | **0.6 s** (single bbox request) | **`download`** | One request returns the whole county. |
+| **HIFLD power plants** | 2 | 2,000 | 0.42 s | 1 | **0.5 s** (single bbox request) | **`download`** | One request. |
+| **OSM substations** | 66 | n/a | 1.47 s | 1 | **1.8 s** (single Overpass query) | **`download`** | One query. |
+| **OSM power lines** | 176 | n/a | 1.52 s | 1 | **1.8 s** (single Overpass query) | **`download`** | One query. |
+| **MISO interconnection queue** | not-measured | not-measured | not-measured | not-measured | `not-estimable (unmeasured: everything — not evaluated)` | **`undetermined-unreachable`** | Named as the next place to look, not assessed. |
+| **Permits — Moline** (eTRAKiT) | unknown | n/a | 0.981 s | 1 | `not-estimable (unmeasured: record count — no browse-all, count not exposed)` | **`runtime-fetch`** | Search-shaped, not enumerable. Per-address lookup at query time. |
+| **Permits — East Moline** (iWorQ) | unknown | n/a | 1.834 s | 1 | `not-estimable (unmeasured: record count — table returns nothing without an exact permit number)` | **`runtime-fetch`** | Cannot be enumerated at all; targeted lookup only. |
+| **Permits — Rock Island monthly PDF reports** | ~116 monthly reports (2017-01 → 2026-08) | 1/request | 1.365 s | 1 | **190 s** (116 × 1.365 s × 1.2) | **`download`** | The one bulk-shaped permit source in the county. PDF, so extraction is required. |
+| **Permits — Rock Island** (Tyler portal) | not-measured | n/a | not-measured | not-measured | `not-estimable (unmeasured: everything — 403)` | **`undetermined-unreachable`** | Portal unreachable; the monthly reports above are the reachable substitute. |
+| **Permits — Milan** (GovBuilt) | not-measured | n/a | not-measured | not-measured | `not-estimable (unmeasured: everything — 403 Cloudflare)` | **`undetermined-unreachable`** | Bot challenge, not a network block. |
+| **Permits — Carbon Cliff** | not-measured | n/a | not-measured | not-measured | `not-estimable (unmeasured: record scope — permitting contracted to East Moline)` | **`undetermined-unreachable`** | Whether its records live in East Moline's instance is unresolved. |
+| **Permits — the other 11 jurisdictions** | 0 online | n/a | n/a | n/a | **no online access path exists** | **`not-feasible`** | PDF-application, counter-only, or no website at all. Not slow — absent. |
+
+For every `runtime-fetch` row the owning service and pattern are: **the permit lookup service**,
+pattern **server-side scraping at query time**, triggered per address, with results cached — never a
+bulk pre-fetch, because neither portal can be enumerated.
+
+### Answering the assignment's own words — which sources are slow, which are constrained, and how
+
+The oracle README asks to *"identify slow source sites or constrained data sources"* (line 25) and
+*"document pipeline speed limitations and source constraints"* (line 26). In one place:
+
+**Nothing in this county is slow.** That is the genuinely surprising result. Every reachable source
+answers in **under 2 seconds**, none rate-limited us, none returned a 429, and the largest dataset
+in scope — 65,955 parcel polygons — downloads **whole, in 4.8 seconds, as a 19 MB shapefile**. The
+48-hour gate is not close to binding on any reachable source. A pipeline built on this county will
+not be waiting on the network.
+
+**The constraints are of three completely different kinds, and only one of them is technical:**
+
+1. **Fragmentation — the real constraint.** Permits are split across **16 jurisdictions with no
+   shared vendor** (`## 3`). Four online jurisdictions run four different platforms, so the
+   one-adapter-per-vendor leverage `county-discovery` depends on **does not apply here**. Zoning is
+   fragmented the same way: **77.4% of parcels carry a municipality code instead of a zoning class**
+   (`## 5`), so there is no countywide zoning classification for incorporated land.
+2. **Absence — not a speed limit at all.** **11 of 16 permit jurisdictions have no online permit
+   lookup of any kind**, including the county's own unincorporated jurisdiction, and **three
+   villages have no website whatsoever**. No amount of throughput fixes this. Countywide permit
+   completeness from public online sources **is not achievable**, and any countywide permit claim
+   must be scoped rather than implied.
+3. **Egress — an artefact of this run, not of the county.** Four sources (assessor portal, IL SOS,
+   BBB, and the Rock Island and Milan permit portals) are unreachable from a Lithuanian egress.
+   **This is our constraint, not the county's**, it is recorded as such throughout, and one action —
+   re-probing from a US exit — resolves it. See `## 10`.
+
+**The one structural data limit worth flagging to a consumer:** the parcel layer's per-request cap
+of `maxRecordCount 2000` and the Hub export's cached-snapshot drift (66,028 vs 65,955) mean a
+full-fidelity extract must either paginate 33 live requests or accept a stale count. Neither is
+slow; both need to be a deliberate choice.
 
 ## 8. Risks
 
-_Filled by W2–W8._
+### Geo-blocking and bot challenges
+
+- **The whole discovery run was performed from a Lithuanian egress.** Five sources are unreachable
+  as a result — the assessor portal, IL SOS, BBB, and the Rock Island and Milan permit portals. They
+  are recorded as unreachable, never as absent. **Risk: a reader who skims could mistake an
+  egress artefact for a county fact.** Mitigation: `## 10`, and every affected row carries the
+  re-probe instruction.
+- **Three distinct block mechanisms were observed and they need different mitigations.** Conflating
+  them leads to the wrong fix: `tcp-blocked` (assessor — network-layer, needs a different egress),
+  `http-denied` 403 (IL SOS, BBB, Rock Island, Milan — edge rule, needs a different egress *or*
+  browser automation depending on which it is, and from here we cannot tell), `dns-unresolved`
+  (recorder — the name does not resolve here at all).
+- **Milan's is explicitly a Cloudflare "Just a moment…" challenge**, which is a bot mitigation and
+  may well yield to a real browser session; the assessor's TCP timeout will not.
+
+### Source-stability risks
+
+- **The parcel viewer app is titled "(to be retired)".** Depend on the FeatureServer URL and the
+  AGOL item id `9cae8a64ab0e4cea99758f741ca43b3c`, never on the viewer app.
+- **The HIFLD transmission item is an archive** — titled "U.S. Electric Power Transmission Lines
+  (Archive)". Archived layers can be withdrawn. Snapshot what is needed rather than assuming it
+  stays live.
+- **MetroLINK's domain changed** — `gogreenmetro.com` now redirects to `metroqc.com`. Municipal and
+  agency domains in this county move; three villages have no domain at all.
+- **The county's on-prem ArcGIS Server exposes a `Parcels` service that returns `499 Token
+  Required`.** Anything that follows an AGOL item link to that on-prem URL will silently fail.
+
+### Data-quality risks in the parcel layer
+
+- **`gross_acres` is 0 for 72.5% of parcels.** Using it instead of `GIS_acres_num` silently
+  under-reports almost three quarters of the county.
+- **Empty is `""` or `" "`, not `NULL`.** Any `IS NOT NULL` filter over-counts. The layer's own
+  query engine has no `TRIM`, so whitespace-only values must be excluded explicitly.
+- **`owner1_name` and `taxbill_name` disagree**, including apparent source typos
+  (`SHELTER K TRUST` / `SHETLER KATHRYN/KENNETH D`). Picking the wrong one silently changes who owns
+  a parcel.
+- **`gross_sale_price` is nominal for most parcels** — above 100 on only 20,378 of 65,955. Treating
+  it as market value would be badly wrong.
+- **`date_last_sale` is null for 30% of parcels.** Those parcels are **unknown tenure**, not
+  long-held. A tenure report that treats null as "never sold" will overstate the answer.
+- **Bulk export vs REST field-name drift** (6 renames, 4 drops) and **count drift** (66,028 vs
+  65,955). A schema written against one path breaks on the other.
+
+### Power-data risks
+
+- **OSM completeness is unknown and unwarranted.** The 66 substations and 176 power lines are
+  crowd-sourced. Neither "all of these are real" nor "these are all there are" is guaranteed, and
+  OSM is the *only* public substations source because HIFLD publishes none.
+- **HIFLD `SOURCEDATE` lags the real grid** — 2015-03-31 to 2022-01-31 for this county. The newest
+  line on record is over four years old; recent grid changes will not appear.
+- **`INFERRED = Y` on 91% of in-county transmission lines.** These routes were inferred from imagery
+  and open data, not surveyed. Any distance-to-transmission figure inherits that uncertainty and
+  must be presented with it, not as a survey-grade measurement.
+- **`VOLTAGE = -999999` is a missing-value sentinel on 9 of 78 lines.** Sorting or filtering on
+  voltage without excluding it produces nonsense.
+- **Bounding-box counts are not county counts.** The county's boundary is the Mississippi River, so
+  the bbox reaches into Iowa — demonstrated: 1 of the 2 "county" power plants is in Scott County,
+  Iowa. All bbox figures in this document are upper bounds.
+
+### Coverage risks
+
+- **Permit coverage cannot be complete** from public online sources — 11 of 16 jurisdictions publish
+  nothing online. **A parcel with no permits found is not a parcel with no permits**, and any UI
+  must say which of the two it means.
+- **No parcel-keyed permit search exists anywhere in the county.** Joining permits to parcels goes
+  through address matching against a `site_address` field that is only 88.91% populated.
+- **The `class` code→label table is unmapped**, so commercial/industrial eligibility for permit
+  harvesting cannot yet be derived — it lives on the unreachable assessor portal.
+- **Unverified prior art.** `github.com/elephant-xyz/Counties-trasform-scripts` could not be
+  consulted (no access). If Rock Island transforms already exist there, this run has not seen them
+  and work may be duplicated.
+- **Two named source gaps remain unprobed:** Bi-State Regional Commission and
+  `clearinghouse.isgs.illinois.edu`.
 
 ## 9. Requested signals with no public source
 
