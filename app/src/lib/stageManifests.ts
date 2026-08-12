@@ -262,3 +262,60 @@ const DECISION_LABELS: Record<string, string> = {
 export function formatDecision(decision: string): string {
   return DECISION_LABELS[decision] ?? decision;
 }
+
+// ---------------------------------------------------------------------------
+// Run-level totals — added by ISSUE-028 for the /runs page. Appended here rather than forked into
+// a second reader so there is exactly one place that decides what a total is allowed to contain.
+// ---------------------------------------------------------------------------
+
+/** Wall-clock elapsed time of a stage, derived from its own start and finish stamps. null when the
+ *  stage has not run or did not record both stamps — never 0 as a stand-in. */
+export function stageElapsedS(stage: StageEntry): number | null {
+  if (stage.startedAt === null || stage.finishedAt === null) return null;
+  const start = new Date(stage.startedAt).getTime();
+  const end = new Date(stage.finishedAt).getTime();
+  if (Number.isNaN(start) || Number.isNaN(end) || end < start) return null;
+  return (end - start) / 1000;
+}
+
+export type RunTotals = {
+  stagesTotal: number; // always the six registry stages
+  stagesRun: number;
+  stagesNotRun: number;
+  sourcesTotal: number; // distinct source ids across every stage that ran
+  countedSources: number; // record_count !== null
+  uncountedSources: number; // record_count === null — stated, never zeroed
+  recordsCounted: number; // sum of non-null record_count. bbox_count is NEVER added.
+  bboxOnlySources: number; // sources carrying a bounding-box upper bound alongside their county count
+  earliestRetrievedAt: string | null;
+  latestRetrievedAt: string | null;
+  measuredDurationS: number | null; // sum of the source durations that were measured
+  unmeasuredDurations: number; // how many sources reported no duration
+};
+
+export function runTotals(stages: StageEntry[]): RunTotals {
+  const sources = allSources(stages);
+  const stamps = sources
+    .map((s) => s.retrieved_at)
+    .filter((v): v is string => v !== null && !Number.isNaN(new Date(v).getTime()))
+    .sort();
+  const measured = sources.filter((s) => s.duration_s !== null);
+
+  return {
+    stagesTotal: stages.length,
+    stagesRun: stages.filter((s) => s.hasRun).length,
+    stagesNotRun: stages.filter((s) => !s.hasRun).length,
+    sourcesTotal: sources.length,
+    countedSources: sources.filter((s) => s.record_count !== null).length,
+    uncountedSources: sources.filter((s) => s.record_count === null).length,
+    recordsCounted: recordsCounted(stages),
+    bboxOnlySources: sources.filter((s) => s.bbox_count !== null).length,
+    earliestRetrievedAt: stamps.length > 0 ? stamps[0] : null,
+    latestRetrievedAt: stamps.length > 0 ? stamps[stamps.length - 1] : null,
+    measuredDurationS:
+      measured.length > 0
+        ? measured.reduce((total, s) => total + (s.duration_s ?? 0), 0)
+        : null,
+    unmeasuredDurations: sources.length - measured.length,
+  };
+}

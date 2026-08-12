@@ -10,7 +10,7 @@ export const dynamicParams = false;
 // Section slugs that have their own page.tsx under app/src/app/ and must NOT be prerendered by
 // this dynamic segment. APPEND your slug here — never replace this array.
 // Owners: "sources" ISSUE-033 · "data" ISSUE-019 · "query" ISSUE-023 · "runs" ISSUE-028.
-export const DEDICATED_ROUTES = ["sources", "data"] as const;
+export const DEDICATED_ROUTES = ["sources", "data", "runs"] as const;
 
 export function generateStaticParams() {
   return sections
