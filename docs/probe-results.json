@@ -5,19 +5,19 @@
     "url": "https://services9.arcgis.com/6FnscPPlUa9DXXOk/arcgis/rest/services/Parcels/FeatureServer/0?f=json",
     "host": "services9.arcgis.com",
     "http_status": 200,
-    "ms": 546,
+    "ms": 951,
     "dns_a": [
-      "150.171.109.197"
+      "150.171.109.198"
     ],
     "dns_aaaa": [
-      "2603:1061:14:c4::1"
+      "2603:1061:14:c3::1"
     ],
     "bytes": 23466,
     "redirect_to": null,
     "error": null,
     "verdict": "reachable",
     "expect": "reachable",
-    "probed_at": "2026-08-12T09:16:38.382Z"
+    "probed_at": "2026-08-12T09:27:27.049Z"
   },
   {
     "id": "county-cms",
@@ -25,7 +25,7 @@
     "url": "https://www.rockislandcountyil.gov/176/Assessment-Search",
     "host": "www.rockislandcountyil.gov",
     "http_status": 200,
-    "ms": 1192,
+    "ms": 1348,
     "dns_a": [
       "207.38.78.66"
     ],
@@ -35,7 +35,7 @@
     "error": null,
     "verdict": "reachable",
     "expect": "reachable",
-    "probed_at": "2026-08-12T09:16:39.657Z"
+    "probed_at": "2026-08-12T09:27:28.457Z"
   },
   {
     "id": "netr-directory",
@@ -43,17 +43,17 @@
     "url": "https://publicrecords.netronline.com/state/IL/county/rock_island",
     "host": "publicrecords.netronline.com",
     "http_status": 200,
-    "ms": 1143,
+    "ms": 1223,
     "dns_a": [
       "5.78.98.197"
     ],
     "dns_aaaa": [],
-    "bytes": 56955,
+    "bytes": 56945,
     "redirect_to": null,
     "error": null,
     "verdict": "reachable",
     "expect": "reachable",
-    "probed_at": "2026-08-12T09:16:40.902Z"
+    "probed_at": "2026-08-12T09:27:29.771Z"
   },
   {
     "id": "assessor-devnet-wedge",
@@ -61,7 +61,7 @@
     "url": "https://rockislandil.devnetwedge.com/",
     "host": "rockislandil.devnetwedge.com",
     "http_status": 0,
-    "ms": 10210,
+    "ms": 10398,
     "dns_a": [
       "184.105.34.17"
     ],
@@ -71,7 +71,7 @@
     "error": "fetch failed",
     "verdict": "tcp-blocked",
     "expect": "reachable",
-    "probed_at": "2026-08-12T09:16:51.402Z"
+    "probed_at": "2026-08-12T09:27:40.273Z"
   },
   {
     "id": "county-zoning-building",
@@ -79,7 +79,7 @@
     "url": "https://www.rockislandcountyil.gov/QuickLinks.aspx?CID=47",
     "host": "www.rockislandcountyil.gov",
     "http_status": 200,
-    "ms": 1089,
+    "ms": 1445,
     "dns_a": [
       "207.38.78.66"
     ],
@@ -89,7 +89,7 @@
     "error": null,
     "verdict": "reachable",
     "expect": "reachable",
-    "probed_at": "2026-08-12T09:16:52.565Z"
+    "probed_at": "2026-08-12T09:27:41.801Z"
   },
   {
     "id": "recorder-landrecords",
@@ -97,21 +97,21 @@
     "url": "https://www.landrecords.com",
     "host": "www.landrecords.com",
     "http_status": 301,
-    "ms": 286,
+    "ms": 300,
     "dns_a": [
-      "172.67.217.58",
-      "104.21.78.61"
+      "104.21.78.61",
+      "172.67.217.58"
     ],
     "dns_aaaa": [
-      "2606:4700:3033::6815:4e3d",
-      "2606:4700:3035::ac43:d93a"
+      "2606:4700:3035::ac43:d93a",
+      "2606:4700:3033::6815:4e3d"
     ],
     "bytes": 167,
     "redirect_to": null,
     "error": null,
     "verdict": "reachable",
     "expect": "reachable",
-    "probed_at": "2026-08-12T09:16:52.900Z"
+    "probed_at": "2026-08-12T09:27:42.240Z"
   },
   {
     "id": "il-sos-corporate",
@@ -119,21 +119,21 @@
     "url": "https://www.ilsos.gov/corporatellc/",
     "host": "www.ilsos.gov",
     "http_status": 403,
-    "ms": 235,
+    "ms": 311,
     "dns_a": [
-      "2.22.145.90",
-      "2.22.145.86"
+      "2.22.145.86",
+      "2.22.145.90"
     ],
     "dns_aaaa": [
-      "2a02:26f0:3780:13::172f:7c14",
-      "2a02:26f0:3780:13::172f:7c1d"
+      "2a02:26f0:3780:13::172f:7c1d",
+      "2a02:26f0:3780:13::172f:7c14"
     ],
     "bytes": 384,
     "redirect_to": null,
     "error": null,
     "verdict": "http-denied",
     "expect": "reachable",
-    "probed_at": "2026-08-12T09:16:53.287Z"
+    "probed_at": "2026-08-12T09:27:42.682Z"
   },
   {
     "id": "hifld-transmission",
@@ -141,19 +141,19 @@
     "url": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/US_Electric_Power_Transmission_Lines/FeatureServer/0?f=json",
     "host": "services2.arcgis.com",
     "http_status": 200,
-    "ms": 491,
+    "ms": 415,
     "dns_a": [
       "150.171.109.198"
     ],
     "dns_aaaa": [
-      "2603:1061:14:c3::1"
+      "2603:1061:14:c5::1"
     ],
     "bytes": 16448,
     "redirect_to": null,
     "error": null,
     "verdict": "reachable",
     "expect": "reachable",
-    "probed_at": "2026-08-12T09:16:53.977Z"
+    "probed_at": "2026-08-12T09:27:43.317Z"
   },
   {
     "id": "hifld-power-plants",
@@ -161,19 +161,19 @@
     "url": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/Power_Plants_in_the_US/FeatureServer/0?f=json",
     "host": "services2.arcgis.com",
     "http_status": 200,
-    "ms": 178,
+    "ms": 191,
     "dns_a": [
       "150.171.109.198"
     ],
     "dns_aaaa": [
-      "2603:1061:14:c3::1"
+      "2603:1061:14:c5::1"
     ],
     "bytes": 79107,
     "redirect_to": null,
     "error": null,
     "verdict": "reachable",
     "expect": "reachable",
-    "probed_at": "2026-08-12T09:16:54.240Z"
+    "probed_at": "2026-08-12T09:27:43.583Z"
   },
   {
     "id": "overpass-api",
@@ -181,7 +181,7 @@
     "url": "https://overpass-api.de/api/status",
     "host": "overpass-api.de",
     "http_status": 200,
-    "ms": 194,
+    "ms": 230,
     "dns_a": [
       "65.109.112.52",
       "162.55.144.139"
@@ -195,6 +195,330 @@
     "error": null,
     "verdict": "reachable",
     "expect": "reachable",
-    "probed_at": "2026-08-12T09:16:54.520Z"
+    "probed_at": "2026-08-12T09:27:43.912Z"
+  },
+  {
+    "id": "il-sos-bulk",
+    "category": "business_registration",
+    "url": "https://www.ilsos.gov/departments/business_services/home.html",
+    "host": "www.ilsos.gov",
+    "http_status": 403,
+    "ms": 179,
+    "dns_a": [
+      "2.22.145.86",
+      "2.22.145.90"
+    ],
+    "dns_aaaa": [
+      "2a02:26f0:3780:13::172f:7c14",
+      "2a02:26f0:3780:13::172f:7c1d"
+    ],
+    "bytes": 422,
+    "redirect_to": null,
+    "error": null,
+    "verdict": "http-denied",
+    "expect": "reachable",
+    "probed_at": "2026-08-12T09:27:44.169Z"
+  },
+  {
+    "id": "recorder-tapestry-eon",
+    "category": "recorder",
+    "url": "https://tapestry.fidlar.com/TapestryEON",
+    "host": "tapestry.fidlar.com",
+    "http_status": 0,
+    "ms": 34,
+    "dns_a": [],
+    "dns_aaaa": [],
+    "bytes": 0,
+    "redirect_to": null,
+    "error": "fetch failed",
+    "verdict": "dns-unresolved",
+    "expect": "reachable",
+    "probed_at": "2026-08-12T09:28:08.394Z"
+  },
+  {
+    "id": "bbb",
+    "category": "contractor_reputation",
+    "url": "https://www.bbb.org/us/il/rock-island",
+    "host": "www.bbb.org",
+    "http_status": 403,
+    "ms": 168,
+    "dns_a": [
+      "104.18.13.85",
+      "104.18.12.85"
+    ],
+    "dns_aaaa": [
+      "2606:4700::6812:c55",
+      "2606:4700::6812:d55"
+    ],
+    "bytes": 14416,
+    "redirect_to": null,
+    "error": null,
+    "verdict": "http-denied",
+    "expect": "reachable",
+    "probed_at": "2026-08-12T09:28:08.678Z"
+  },
+  {
+    "id": "permits-unincorporated-rock-island-county",
+    "category": "permits",
+    "url": "https://www.rockislandcountyil.gov/366/Building-Permits",
+    "host": "www.rockislandcountyil.gov",
+    "http_status": 200,
+    "ms": 1115,
+    "dns_a": [
+      "207.38.78.66"
+    ],
+    "dns_aaaa": [],
+    "bytes": 131685,
+    "redirect_to": null,
+    "error": null,
+    "verdict": "reachable",
+    "expect": "reachable",
+    "probed_at": "2026-08-12T09:28:09.925Z"
+  },
+  {
+    "id": "permits-andalusia",
+    "category": "permits",
+    "url": "https://villageofandalusiail.org/",
+    "host": "villageofandalusiail.org",
+    "http_status": 200,
+    "ms": 1094,
+    "dns_a": [
+      "209.192.211.134"
+    ],
+    "dns_aaaa": [],
+    "bytes": 124923,
+    "redirect_to": null,
+    "error": null,
+    "verdict": "reachable",
+    "expect": "reachable",
+    "probed_at": "2026-08-12T09:28:11.271Z"
+  },
+  {
+    "id": "permits-carbon-cliff",
+    "category": "permits",
+    "url": "https://carboncliff.gov/permits-zoning-and-floodplain",
+    "host": "carboncliff.gov",
+    "http_status": 200,
+    "ms": 1045,
+    "dns_a": [
+      "69.16.237.158"
+    ],
+    "dns_aaaa": [],
+    "bytes": 47473,
+    "redirect_to": null,
+    "error": null,
+    "verdict": "reachable",
+    "expect": "reachable",
+    "probed_at": "2026-08-12T09:28:12.442Z"
+  },
+  {
+    "id": "permits-coal-valley",
+    "category": "permits",
+    "url": "https://www.coalvalleyil.org/for-businesses/building-permits/",
+    "host": "www.coalvalleyil.org",
+    "http_status": 200,
+    "ms": 3352,
+    "dns_a": [
+      "188.114.97.3",
+      "188.114.96.3"
+    ],
+    "dns_aaaa": [
+      "2a06:98c1:3120::3",
+      "2a06:98c1:3121::3"
+    ],
+    "bytes": 150310,
+    "redirect_to": null,
+    "error": null,
+    "verdict": "reachable",
+    "expect": "reachable",
+    "probed_at": "2026-08-12T09:28:15.920Z"
+  },
+  {
+    "id": "permits-cordova",
+    "category": "permits",
+    "url": "https://villageofcordova.com/government",
+    "host": "villageofcordova.com",
+    "http_status": 200,
+    "ms": 192,
+    "dns_a": [
+      "13.248.243.5",
+      "76.223.105.230"
+    ],
+    "dns_aaaa": [],
+    "bytes": 91970,
+    "redirect_to": null,
+    "error": null,
+    "verdict": "reachable",
+    "expect": "reachable",
+    "probed_at": "2026-08-12T09:28:16.225Z"
+  },
+  {
+    "id": "permits-east-moline",
+    "category": "permits",
+    "url": "https://eastmolinepermit.portal.iworq.net/EASTMOLINE/permits/600",
+    "host": "eastmolinepermit.portal.iworq.net",
+    "http_status": 200,
+    "ms": 1081,
+    "dns_a": [
+      "52.34.35.204"
+    ],
+    "dns_aaaa": [],
+    "bytes": 325552,
+    "redirect_to": null,
+    "error": null,
+    "verdict": "reachable",
+    "expect": "reachable",
+    "probed_at": "2026-08-12T09:28:17.785Z"
+  },
+  {
+    "id": "permits-hampton",
+    "category": "permits",
+    "url": "https://www.hamptonil.org/info.php",
+    "host": "www.hamptonil.org",
+    "http_status": 200,
+    "ms": 864,
+    "dns_a": [
+      "209.124.88.123"
+    ],
+    "dns_aaaa": [],
+    "bytes": 38771,
+    "redirect_to": null,
+    "error": null,
+    "verdict": "reachable",
+    "expect": "reachable",
+    "probed_at": "2026-08-12T09:28:18.807Z"
+  },
+  {
+    "id": "permits-milan",
+    "category": "permits",
+    "url": "https://www.milanil.org/building-and-inspections",
+    "host": "www.milanil.org",
+    "http_status": 403,
+    "ms": 248,
+    "dns_a": [
+      "104.18.13.47",
+      "104.18.12.47"
+    ],
+    "dns_aaaa": [],
+    "bytes": 5563,
+    "redirect_to": null,
+    "error": null,
+    "verdict": "http-denied",
+    "expect": "reachable",
+    "probed_at": "2026-08-12T09:28:19.213Z"
+  },
+  {
+    "id": "permits-moline",
+    "category": "permits",
+    "url": "https://moli.csqrcloud.com/community-etrakit/Search/permit.aspx",
+    "host": "moli.csqrcloud.com",
+    "http_status": 200,
+    "ms": 890,
+    "dns_a": [
+      "34.231.113.38",
+      "98.89.133.133",
+      "32.195.178.164"
+    ],
+    "dns_aaaa": [],
+    "bytes": 83358,
+    "redirect_to": null,
+    "error": null,
+    "verdict": "reachable",
+    "expect": "reachable",
+    "probed_at": "2026-08-12T09:28:20.231Z"
+  },
+  {
+    "id": "permits-port-byron",
+    "category": "permits",
+    "url": "https://www.portbyronil.com/forms-permits",
+    "host": "www.portbyronil.com",
+    "http_status": 200,
+    "ms": 841,
+    "dns_a": [
+      "172.66.3.8",
+      "162.159.143.12"
+    ],
+    "dns_aaaa": [],
+    "bytes": 612446,
+    "redirect_to": null,
+    "error": null,
+    "verdict": "reachable",
+    "expect": "reachable",
+    "probed_at": "2026-08-12T09:28:21.202Z"
+  },
+  {
+    "id": "permits-rapids-city",
+    "category": "permits",
+    "url": "https://www.rapidscity.us/information.php",
+    "host": "www.rapidscity.us",
+    "http_status": 200,
+    "ms": 1255,
+    "dns_a": [
+      "209.124.88.123"
+    ],
+    "dns_aaaa": [],
+    "bytes": 15322,
+    "redirect_to": null,
+    "error": null,
+    "verdict": "reachable",
+    "expect": "reachable",
+    "probed_at": "2026-08-12T09:28:22.591Z"
+  },
+  {
+    "id": "permits-rock-island",
+    "category": "permits",
+    "url": "https://cityofrockislandil-energovweb.tylerhost.net/apps/selfservice",
+    "host": "cityofrockislandil-energovweb.tylerhost.net",
+    "http_status": 403,
+    "ms": 561,
+    "dns_a": [
+      "18.214.66.134",
+      "3.208.43.128",
+      "3.231.52.73"
+    ],
+    "dns_aaaa": [],
+    "bytes": 118,
+    "redirect_to": null,
+    "error": null,
+    "verdict": "http-denied",
+    "expect": "reachable",
+    "probed_at": "2026-08-12T09:28:23.293Z"
+  },
+  {
+    "id": "permits-rock-island-monthly-reports",
+    "category": "permits",
+    "url": "https://rigov.org/1276/Permit-Reports",
+    "host": "rigov.org",
+    "http_status": 200,
+    "ms": 1029,
+    "dns_a": [
+      "208.90.188.146"
+    ],
+    "dns_aaaa": [],
+    "bytes": 115216,
+    "redirect_to": null,
+    "error": null,
+    "verdict": "reachable",
+    "expect": "reachable",
+    "probed_at": "2026-08-12T09:28:24.879Z"
+  },
+  {
+    "id": "permits-silvis",
+    "category": "permits",
+    "url": "https://silvisil.org/inspections.html",
+    "host": "silvisil.org",
+    "http_status": 200,
+    "ms": 671,
+    "dns_a": [
+      "75.2.99.121",
+      "99.83.155.231"
+    ],
+    "dns_aaaa": [],
+    "bytes": 23773,
+    "redirect_to": null,
+    "error": null,
+    "verdict": "reachable",
+    "expect": "reachable",
+    "probed_at": "2026-08-12T09:28:25.674Z"
   }
 ]

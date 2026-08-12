@@ -90,6 +90,117 @@ const TARGETS = [
     expect: "reachable",
   },
 
+  // --- ownership, business registration, contractor reputation (W6) ----------------------------
+  {
+    id: "il-sos-bulk",
+    category: "business_registration",
+    url: "https://www.ilsos.gov/departments/business_services/home.html",
+    expect: "reachable",
+  },
+  {
+    id: "recorder-tapestry-eon",
+    category: "recorder",
+    // The redirect target of www.landrecords.com. Probed as its own row precisely so that the
+    // failing hop is attributed to the host that actually fails.
+    url: "https://tapestry.fidlar.com/TapestryEON",
+    expect: "reachable",
+  },
+  {
+    id: "bbb",
+    category: "contractor_reputation",
+    url: "https://www.bbb.org/us/il/rock-island",
+    expect: "reachable",
+  },
+
+  // --- permit jurisdictions (W5) ---------------------------------------------------------------
+  // One row per jurisdiction that HAS a discovered URL. Hillsdale, Oak Grove and Reynolds have no
+  // website at all and are therefore absent here: there is no endpoint to probe. That absence is
+  // recorded in docs/rock-island-sources.yaml as vendor: none-found, url: null — a finding, not a
+  // gap in this harness.
+  {
+    id: "permits-unincorporated-rock-island-county",
+    category: "permits",
+    url: "https://www.rockislandcountyil.gov/366/Building-Permits",
+    expect: "reachable",
+  },
+  {
+    id: "permits-andalusia",
+    category: "permits",
+    url: "https://villageofandalusiail.org/",
+    expect: "reachable",
+  },
+  {
+    id: "permits-carbon-cliff",
+    category: "permits",
+    url: "https://carboncliff.gov/permits-zoning-and-floodplain",
+    expect: "reachable",
+  },
+  {
+    id: "permits-coal-valley",
+    category: "permits",
+    url: "https://www.coalvalleyil.org/for-businesses/building-permits/",
+    expect: "reachable",
+  },
+  {
+    id: "permits-cordova",
+    category: "permits",
+    url: "https://villageofcordova.com/government",
+    expect: "reachable",
+  },
+  {
+    id: "permits-east-moline",
+    category: "permits",
+    url: "https://eastmolinepermit.portal.iworq.net/EASTMOLINE/permits/600",
+    expect: "reachable",
+  },
+  {
+    id: "permits-hampton",
+    category: "permits",
+    url: "https://www.hamptonil.org/info.php",
+    expect: "reachable",
+  },
+  {
+    id: "permits-milan",
+    category: "permits",
+    url: "https://www.milanil.org/building-and-inspections",
+    expect: "reachable",
+  },
+  {
+    id: "permits-moline",
+    category: "permits",
+    url: "https://moli.csqrcloud.com/community-etrakit/Search/permit.aspx",
+    expect: "reachable",
+  },
+  {
+    id: "permits-port-byron",
+    category: "permits",
+    url: "https://www.portbyronil.com/forms-permits",
+    expect: "reachable",
+  },
+  {
+    id: "permits-rapids-city",
+    category: "permits",
+    url: "https://www.rapidscity.us/information.php",
+    expect: "reachable",
+  },
+  {
+    id: "permits-rock-island",
+    category: "permits",
+    url: "https://cityofrockislandil-energovweb.tylerhost.net/apps/selfservice",
+    expect: "reachable",
+  },
+  {
+    id: "permits-rock-island-monthly-reports",
+    category: "permits",
+    url: "https://rigov.org/1276/Permit-Reports",
+    expect: "reachable",
+  },
+  {
+    id: "permits-silvis",
+    category: "permits",
+    url: "https://silvisil.org/inspections.html",
+    expect: "reachable",
+  },
 ];
 
 /**

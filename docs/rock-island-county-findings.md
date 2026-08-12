@@ -106,7 +106,142 @@ Permit-portal identifier formats are likewise unconfirmed per jurisdiction — s
 
 ## 3. Permit portals
 
-_Filled by W2–W8._
+### Permits are not county-level — the structural constraint
+
+**A county has ONE appraiser but permits are NOT county-level.** Illinois is no different from
+Florida in this respect, and Rock Island County is the demonstration: the county's own GIS
+`Municipal Boundaries` layer returns **15 municipalities**, and unincorporated county is a
+sixteenth jurisdiction, so there are **16 permit jurisdictions**, each its own permitting authority
+with its own vendor, its own identifiers, and its own idea of what is public.
+
+This is the single most important answer this document gives to the assignment's *"identify slow
+source sites or constrained data sources"* and *"document pipeline speed limitations and source
+constraints"* criteria. The binding constraint on permit data in Rock Island County **is not
+speed**. It is that **most of the data is not online at all**.
+
+The 16 jurisdictions, from the county's own GIS layer: unincorporated county, plus Andalusia,
+Carbon Cliff, Coal Valley, Cordova, East Moline, Hampton, Hillsdale, Milan, Moline, Oak Grove,
+Port Byron, Rapids City, Reynolds, Rock Island and Silvis.
+
+### Certification summary
+
+`county-discovery` calls the certification re-probe "the acceptance test for 'the agent can
+discover sources'". Every one of the 16 rows was discovered and re-probed on 2026-08-12; full rows
+in [`rock-island-sources.yaml`](./rock-island-sources.yaml) under `permits:`.
+
+| Outcome | Count | Jurisdictions |
+|---|---|---|
+| **`certified`** | **13** | unincorporated county, Andalusia, Coal Valley, Cordova, East Moline, Hampton, Hillsdale, Moline, Oak Grove, Port Byron, Rapids City, Reynolds, Silvis |
+| `discovered` (not certified) | 3 | **Rock Island** (403 from this egress), **Milan** (403 Cloudflare challenge), **Carbon Cliff** (permitting contracted out; record scope untestable) |
+| `needs-review` | 0 | — |
+
+### Vendor distribution
+
+| Vendor | Count | Jurisdictions |
+|---|---|---|
+| **`none-found`** | **11** | unincorporated county, Andalusia, Coal Valley, Cordova, Hampton, Hillsdale, Oak Grove, Port Byron, Rapids City, Reynolds, Silvis |
+| `custom` | 2 | East Moline (**really iWorQ**), Milan (**really GovBuilt**) |
+| `centralsquare` | 1 | Moline (eTRAKiT) |
+| `tyler` | 1 | Rock Island (EnerGov Civic Access) |
+| `unknown` | 1 | Carbon Cliff |
+
+**No two jurisdictions share a vendor.** Moline is CentralSquare, Rock Island is Tyler, East Moline
+is iWorQ, Milan is GovBuilt — **four distinct stacks in four adjacent cities**. The leverage
+`county-discovery` relies on ("one adapter serves every jurisdiction on that vendor") **does not
+exist here**: four online jurisdictions would need four adapters. That is a direct finding against
+the permit-adapter stage's core assumption, and it should be known before that stage is scoped.
+
+**Vendor-library gap, reported not silently patched.** iWorQ and GovBuilt are real commercial permit
+platforms and neither appears in `county-discovery`'s known-vendor library
+(Accela, Tyler, Click2Gov, OpenGov, CentralSquare, ePZB, GovAccess, Citizenserve). Both are recorded
+as `custom` because the enum has no value for them, with the true vendor named in each row's `probe`
+field. **The library should gain `iworq` and `govbuilt`.**
+
+### The jurisdictions with an online lookup — measured
+
+| Jurisdiction | Portal | Vendor | Search by | p50 | p95 | Date window? |
+|---|---|---|---|---|---|---|
+| **Moline** | `https://moli.csqrcloud.com/community-etrakit/Search/permit.aspx` | CentralSquare eTRAKiT | **Permit Number, Site Address** | **981 ms** | **1129 ms** | **No** |
+| **East Moline** | `https://eastmolinepermit.portal.iworq.net/EASTMOLINE/permits/600` | iWorQ | **Permit # or Primary Contractor only** | **1834 ms** | **2457 ms** | **No** |
+| **Rock Island** | `https://cityofrockislandil-energovweb.tylerhost.net/apps/selfservice` | Tyler EnerGov Civic Access | **not observable — 403 from this egress** | not-measured | not-measured | unverified |
+| Rock Island *(workaround)* | `https://rigov.org/1276/Permit-Reports` | city CMS | monthly PDF reports | **1365 ms** | **1828 ms** | **Yes — monthly** |
+| **Milan** | `https://www.milanil.org/building-and-inspections` | GovBuilt | **not observable — 403 Cloudflare** | not-measured | not-measured | unverified |
+
+All throughput figures are 10 sequential requests, 10/10 HTTP 200, measured 2026-08-12.
+
+### Date-window behaviour — the incremental-harvest question
+
+`county-discovery` asks for date-window behaviour because it decides whether a source can be
+harvested incrementally or must be re-swept whole.
+
+- **No jurisdiction's live permit search exposes a date-range filter that could be observed.**
+  Moline's eTRAKiT searches Permit Number and Site Address only; East Moline's iWorQ searches Permit
+  # and Primary Contractor only.
+- **East Moline is worse than "no date filter": it cannot be enumerated at all.** Its result table
+  renders zero rows until an exact permit number or contractor is supplied. There is no browse-all,
+  so bulk harvesting through that form is not possible — only targeted lookup of a permit you
+  already know.
+- **The one genuine date-windowed feed in the county is Rock Island's monthly PDF permit reports**
+  (`https://rigov.org/1276/Permit-Reports`), published by permit application type for **every month
+  from 2017 through 2026**. It is a de-facto month-granularity incremental feed, it is **reachable
+  from this egress** even though the city's Tyler portal is not, and it is the only source here that
+  supports "what changed since last month" without a full re-sweep. It is PDF, so it needs
+  extraction, and it is report-level rather than record-level.
+- Tyler EnerGov normally exposes date filters, and GovBuilt may. **Neither was observed**, so
+  neither is asserted.
+
+### The 11 jurisdictions with no online permit lookup
+
+Eleven of sixteen jurisdictions — **including the county's own unincorporated jurisdiction** — have
+no online permit search of any kind. This is a real, reportable finding about how permitting works
+in this county, not a failed search. What each of them has instead:
+
+- **PDF application, submit by mail/email/in person:** unincorporated county (Commercial and
+  Residential PDFs, 309-558-3771), Coal Valley, Cordova, Hampton, Port Byron, Silvis.
+- **Counter-only by explicit policy:** Rapids City — *"A permit will need to be purchased in person
+  at the Village of Rapids City Office… No permits or payments for permits will be accepted via
+  email, fax, or mail!"*
+- **No permit page at all:** Andalusia — the village site carries Ordinances, Zoning Ordinances,
+  Public Works and Contact, and the word "permit" does not appear on its new-resident page.
+- **No village website exists at all:** **Hillsdale, Oak Grove, Reynolds.** Multiple candidate
+  domains were probed for each (e.g. `villageofhillsdale.org`, `hillsdaleil.org`,
+  `hillsdaleillinois.org`, `villageofhillsdaleil.org`) and every one failed to connect. Their only
+  web presence is Facebook pages and directory listings. Permits are handled at the village clerk's
+  counter.
+
+**Consequence for the pipeline:** permit coverage for Rock Island County cannot be complete from
+public online sources. Any countywide permit claim must be scoped to the jurisdictions that publish
+online — realistically Moline and Rock Island, together roughly half the county's parcels — and the
+remainder must be declared as *not available online*, not silently reported as zero permits. A
+parcel in Reynolds with no permits found is not a parcel with no permits.
+
+### Shared and delegated arrangements
+
+Three cross-jurisdiction arrangements were found, each of which will otherwise cause a
+misattribution:
+
+1. **Carbon Cliff → East Moline (contract, confirmed both sides).** Carbon Cliff's own site states it
+   "has a contract with the City of East Moline to handle all Plumbing, Mechanical, Building &
+   Electrical permitting and inspections". East Moline's iWorQ contractor-registration portal is
+   labelled for "City of East Moline **& Carbon Cliff**" registration. **Unresolved:** whether Carbon
+   Cliff's building-permit *records* live inside the `eastmolinepermit` iWorQ instance could not be
+   confirmed, because that instance returns nothing without a permit number. Recorded as `unknown` /
+   `discovered` rather than guessed either way.
+2. **Coal Valley → Rock Island County (inspections only).** Coal Valley issues its own permits but
+   directs "call Rock Island County at 309-558-3771 for all inspections", so permit records are
+   Coal Valley's while **inspection** records may sit with the county.
+3. **Rapids City → Rock Island County (fee schedule only).** Rapids City links the county's fee
+   schedule PDF, adopting county rates while running its own counter-only permitting.
+
+### Parcel identifiers on permit portals
+
+**Unconfirmed for every jurisdiction.** No permit portal in this county was observed searching by
+parcel number — Moline searches by address, East Moline by permit number or contractor. Whether any
+of them carries a PIN at all, and in what format, is not established. `county-discovery` warns the
+identifier "often differs" between appraiser and permit portals; here the more basic problem is that
+**parcel-keyed permit lookup does not appear to be offered publicly anywhere in the county.** Joining
+permits to parcels would go through **address matching**, with all the normalisation risk that
+implies, against a `site_address` field that is itself only 88.91% populated.
 
 ## 4. Bulk data sources
 

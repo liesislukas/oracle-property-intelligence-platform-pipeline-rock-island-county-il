@@ -72,7 +72,218 @@ parcels:
   verified_at: "2026-08-12"
   evidence: docs/samples/parcels-sample.geojson
 
-permits: []
+# 16 jurisdictions: the 15 municipalities in the county GIS Municipal Boundaries layer, plus
+# unincorporated county. vendor is constrained to the county-discovery known-vendor library; where
+# the REAL vendor is outside that library the row says so in `probe` (see the iworq/govbuilt note
+# in the findings doc). status: needs-review -> discovered -> certified; certified requires the
+# re-probe to confirm the portal is live AND its detected vendor matches the row.
+permits:
+  - jurisdiction: unincorporated-rock-island-county
+    url: https://www.rockislandcountyil.gov/366/Building-Permits
+    vendor: none-found
+    search: none
+    probe: >-
+      reachable, HTTP 200 (2026-08-12). The county's own jurisdiction has NO online permit lookup.
+      The page offers only a Commercial Application (PDF) and a Residential Application (PDF) and
+      instructs applicants to submit "via mail, email or in person" (309-558-3771). QuickLinks
+      CID=47 carries only external ICC/NFPA/OSHA links; /651/Online-Services lists Judici court
+      records, GIS and tax payment, but no permit search.
+    throughput: p50 1431 ms, p95 1808 ms over 10 sequential requests, 10/10 HTTP 200 (2026-08-12)
+    status: certified
+  - jurisdiction: andalusia
+    url: https://villageofandalusiail.org/
+    vendor: none-found
+    search: none
+    probe: >-
+      reachable, HTTP 200 (2026-08-12). Village site nav carries only Ordinances, Zoning
+      Ordinances, Public Works and Contact. No building or permit page, no PDF permit application
+      and no portal were found; the new-resident information page contains zero occurrences of the
+      word "permit".
+    throughput: not-measured — no online permit lookup exists to harvest; single-request probe 1094 ms
+    status: certified
+  - jurisdiction: carbon-cliff
+    url: https://carboncliff.gov/permits-zoning-and-floodplain
+    vendor: unknown
+    search: none
+    probe: >-
+      reachable, HTTP 200 (2026-08-12), but NOT certified. The page states verbatim that "The
+      Village of Carbon Cliff has a contract with the City of East Moline to handle all Plumbing,
+      Mechanical, Building & Electrical permitting and inspections" and links to
+      https://www.eastmoline.com/152/Inspections. Corroborated from East Moline's side: its iWorQ
+      contractor-registration portal is labelled for "City of East Moline & Carbon Cliff"
+      registration. UNRESOLVED: whether Carbon Cliff BUILDING PERMIT RECORDS land in the
+      eastmolinepermit iWorQ instance could not be confirmed — that instance returns no rows
+      without a permit number, so its scope is untestable from outside. The village's own only PDF
+      is a Floodplain Permit Application.
+    throughput: not-measured — permitting is contracted out; no own lookup to harvest
+    status: discovered
+  - jurisdiction: coal-valley
+    url: https://www.coalvalleyil.org/for-businesses/building-permits/
+    vendor: none-found
+    search: none
+    probe: >-
+      reachable, HTTP 200 (2026-08-12). Step 1 of the page reads "You may obtain an application for
+      a building permit via the website, or by picking up one at the Building Inspection
+      department"; the only application is a PDF (/docs/BuildingPermitApplication2022.pdf). No
+      search box and no portal. The page also directs "call Rock Island County at 309-558-3771 for
+      all inspections", so Coal Valley issues the permit while INSPECTION records may sit with the
+      county.
+    throughput: not-measured — no online permit lookup exists to harvest; single-request probe 3352 ms
+    status: certified
+  - jurisdiction: cordova
+    url: https://villageofcordova.com/government
+    vendor: none-found
+    search: none
+    probe: >-
+      reachable, HTTP 200 (2026-08-12). The Government page lists a downloadable "Building Permit
+      Application (pdf)" hosted on a GoDaddy site-builder domain alongside water and sewer forms.
+      No portal, no search; contact (309) 654-2646.
+    throughput: not-measured — no online permit lookup exists to harvest; single-request probe 192 ms
+    status: certified
+  - jurisdiction: east-moline
+    url: https://eastmolinepermit.portal.iworq.net/EASTMOLINE/permits/600
+    vendor: custom
+    search: by-permit-number
+    probe: >-
+      reachable, HTTP 200 (2026-08-12), vendor confirmed from page markup — the portal is branded
+      iWorQ and hosted at *.portal.iworq.net. REAL VENDOR IS iWORQ, which is not in the
+      county-discovery known-vendor library; recorded as `custom` because the enum has no iworq
+      value. The search control is a single select with exactly two options, "Permit #"
+      (permitnum_id) and "Primary Contractor" (contractor_id); result columns are Permit # /
+      Permit Type / Status / Request An Inspection / View. NO date-range filter, and NO search by
+      parcel or address — the table renders zero rows until a specific permit number is supplied,
+      so bulk enumeration is not possible through this form. Linked from
+      https://www.eastmoline.com/442/Permits-Contractor-Reg-Food-Beverage-Por.
+    throughput: p50 1834 ms, p95 2457 ms over 10 sequential requests, 10/10 HTTP 200 (2026-08-12)
+    status: certified
+  - jurisdiction: hampton
+    url: https://www.hamptonil.org/info.php
+    vendor: none-found
+    search: none
+    probe: >-
+      reachable, HTTP 200 (2026-08-12). The General Info page lists a "Permit Application Form PDF"
+      and a contractor registration form with a $50 fee / $10,000 bond; contact is the Village
+      Clerk, 901 4th Street, (309) 755-7165. No online permit search anywhere on the site. A
+      Citizenserve portal named "HAMPTON" surfaced in search results but its installationID
+      belongs to a DIFFERENT Hampton, not Hampton, Illinois — explicitly rejected rather than
+      recorded.
+    throughput: not-measured — no online permit lookup exists to harvest; single-request probe 864 ms
+    status: certified
+  - jurisdiction: hillsdale
+    url: null
+    vendor: none-found
+    search: none
+    probe: >-
+      NO OFFICIAL VILLAGE WEBSITE EXISTS. Probed villageofhillsdale.org, hillsdaleil.org,
+      hillsdaleillinois.org and villageofhillsdaleil.org — all fail to connect (HTTP 000). The only
+      web presence located is a Facebook page and directory listings. Permits are handled at the
+      Village Clerk office, 415 1/2 Main St, (309) 658-2433. This is a finding, not a search
+      failure.
+    throughput: not-measured — no website exists
+    status: certified
+  - jurisdiction: milan
+    url: https://www.milanil.org/building-and-inspections
+    vendor: custom
+    search: browse-only
+    probe: >-
+      UNREACHABLE FROM THIS EGRESS — HTTP 403 with a Cloudflare "Just a moment..." challenge to
+      both a browser User-Agent and the probe harness (2026-08-12). NOT certified. Search-engine
+      results show the site is served by GovBuilt (https://milanil.govbuilt.com/) and that Milan
+      has an "Apply Online" flow, with /portal and /forms paths existing. REAL VENDOR IS GOVBUILT,
+      which is not in the county-discovery known-vendor library; recorded as `custom` because the
+      enum has no govbuilt value. Whether a PUBLIC permit lookup exists could NOT be observed, so
+      `search` is recorded as browse-only on the strength of the department page alone and must be
+      re-checked from a US exit. Unlike the assessor portal this is an application-layer bot
+      challenge, not a network block.
+    throughput: not-measured — 403 from this egress
+    status: discovered
+  - jurisdiction: moline
+    url: https://moli.csqrcloud.com/community-etrakit/Search/permit.aspx
+    vendor: centralsquare
+    search: by-address
+    probe: >-
+      reachable, HTTP 200 (2026-08-12), vendor confirmed from page markup — the footer reads
+      "Powered by CentralSquare Technologies" and the product is eTRAKiT. The Search By dropdown
+      offers exactly "Permit Number" and "Site Address", with operators Begins With / Contains /
+      Equals / At Least / At Most and the instruction "Please omit the street suffixes (ST, RD,
+      AVE)". A login selector offers Public / Contractor; public search needs no account. NO
+      date-range filter is exposed. Linked from
+      https://www.moline.il.us/1949/Online-Permitting-System. This is the largest jurisdiction in
+      the county (17,261 parcels) and the most capable public permit search in it.
+    throughput: p50 981 ms, p95 1129 ms over 10 sequential requests, 10/10 HTTP 200 (2026-08-12)
+    status: certified
+  - jurisdiction: oak-grove
+    url: null
+    vendor: none-found
+    search: none
+    probe: >-
+      NO OFFICIAL VILLAGE WEBSITE EXISTS. Probed villageofoakgrove.org, oakgroveil.org and
+      oakgroveillinois.org — all HTTP 000. Only Wikipedia, city-data and a QuadCities.com directory
+      entry were found, giving 600 Woodland Rd, Milan IL 61264, 309-787-1056.
+    throughput: not-measured — no website exists
+    status: certified
+  - jurisdiction: port-byron
+    url: https://www.portbyronil.com/forms-permits
+    vendor: none-found
+    search: none
+    probe: >-
+      reachable, HTTP 200 (2026-08-12). The Forms & Permits page (a Wix site) lists a Building
+      Permit Application PDF, a Building Permit Fees PDF, a Gas Piping Affidavit and a Contractor
+      Registration DOCX; the only external link is BILL PAY. No portal, no search; Village Hall
+      (309) 523-3705.
+    throughput: not-measured — no online permit lookup exists to harvest; single-request probe 841 ms
+    status: certified
+  - jurisdiction: rapids-city
+    url: https://www.rapidscity.us/information.php
+    vendor: none-found
+    search: none
+    probe: >-
+      reachable, HTTP 200 (2026-08-12). The page states "A permit will need to be purchased in
+      person at the Village of Rapids City Office located at 1204 - 4th Avenue... No permits or
+      payments for permits will be accepted via email, fax, or mail!" — counter-only by explicit
+      village policy. It links out to Rock Island County's fee schedule PDF, i.e. it adopts county
+      rates while running its own permitting.
+    throughput: not-measured — no online permit lookup exists to harvest; single-request probe 1255 ms
+    status: certified
+  - jurisdiction: reynolds
+    url: null
+    vendor: none-found
+    search: none
+    probe: >-
+      NO OFFICIAL VILLAGE WEBSITE EXISTS. Probed villageofreynolds.org, villageofreynoldsil.org,
+      reynoldsil.org and reynoldsillinois.org — all HTTP 000. Two web searches returned only
+      Wikipedia, hometownlocator, citydirectory and Yelp; the village office is listed at 222 Main
+      Street, 309-372-4600.
+    throughput: not-measured — no website exists
+    status: certified
+  - jurisdiction: rock-island
+    url: https://cityofrockislandil-energovweb.tylerhost.net/apps/selfservice
+    vendor: tyler
+    search: browse-only
+    probe: >-
+      UNREACHABLE FROM THIS EGRESS — HTTP 403 (2026-08-12). NOT certified. The portal URL was
+      scraped verbatim from the HTML of https://www.rigov.org/634/Building-Permits-and-Contractor-Registra
+      (HTTP 200), whose text reads "The City has implemented online permitting and licensing using
+      Tyler Technologies... Customer Self-Service Portal". The hostname
+      *-energovweb.tylerhost.net is the Tyler EnerGov Civic Access signature, so the VENDOR IS
+      CONFIRMED from the county-side link plus the hostname pattern even though the portal itself
+      could not be loaded. Public-search capability and any date filter could NOT be observed and
+      are not asserted. IMPORTANT WORKAROUND, reachable from this egress: the city publishes
+      MONTHLY PDF PERMIT REPORTS by permit application type for every month from 2017 through 2026
+      at https://rigov.org/1276/Permit-Reports — a de-facto month-granularity incremental feed.
+    throughput: not-measured — 403 from this egress. The monthly-reports workaround measured p50 1365 ms, p95 1828 ms over 10 sequential requests.
+    status: discovered
+  - jurisdiction: silvis
+    url: https://silvisil.org/inspections.html
+    vendor: none-found
+    search: none
+    probe: >-
+      reachable, HTTP 200 (2026-08-12). The Inspections page lists only downloadable applications
+      (Building, Electrical/Sign, Residential Plumbing, Commercial Plumbing, Mechanical,
+      Demolition, Fee Schedule); the building-permit PDF returns HTTP 200 application/pdf. No
+      search box and no portal; office hours 8-9am and noon-1pm, (309) 792-4808.
+    throughput: not-measured — no online permit lookup exists to harvest; single-request probe 671 ms
+    status: certified
 
 business_registration: {}
 
