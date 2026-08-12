@@ -1,0 +1,141 @@
+{
+  "hifld-transmission-lines": {
+    "endpoint": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/US_Electric_Power_Transmission_Lines/FeatureServer/0",
+    "count": 78,
+    "http_status": 200,
+    "elapsed_s": 0.459,
+    "licence": "not stated on the source item",
+    "licence_raw_licenseInfo": "",
+    "accessInformation": "",
+    "copyrightText": "",
+    "geometryType": "esriGeometryPolyline",
+    "maxRecordCount": 2000,
+    "capabilities": "Query,Extract,ChangeTracking",
+    "fields": [
+      "OBJECTID_1",
+      "OBJECTID",
+      "ID",
+      "TYPE",
+      "STATUS",
+      "NAICS_CODE",
+      "NAICS_DESC",
+      "SOURCE",
+      "SOURCEDATE",
+      "VAL_METHOD",
+      "VAL_DATE",
+      "OWNER",
+      "VOLTAGE",
+      "VOLT_CLASS",
+      "INFERRED",
+      "SUB_1",
+      "SUB_2",
+      "Shape__Len",
+      "Shape__Length"
+    ],
+    "queried_at": "2026-08-12T09:23:30.106199Z",
+    "bbox": "-90.79,41.36,-90.25,41.65"
+  },
+  "hifld-power-plants": {
+    "endpoint": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/Power_Plants_in_the_US/FeatureServer/0",
+    "count": 2,
+    "http_status": 200,
+    "elapsed_s": 0.42,
+    "licence": "not stated on the source item",
+    "licence_raw_licenseInfo": "",
+    "accessInformation": "",
+    "copyrightText": "",
+    "geometryType": "esriGeometryPoint",
+    "maxRecordCount": 2000,
+    "capabilities": "Query,Extract",
+    "fields": [
+      "FID",
+      "OBJECTID",
+      "Plant_Code",
+      "Plant_Name",
+      "Utility_ID",
+      "Utility_Na",
+      "sector_nam",
+      "Street_Add",
+      "City",
+      "County",
+      "State",
+      "Zip",
+      "PrimSource",
+      "source_des",
+      "tech_desc",
+      "Install_MW",
+      "Total_MW",
+      "Bat_MW",
+      "Bio_MW",
+      "Coal_MW",
+      "Geo_MW",
+      "Hydro_MW",
+      "HydroPS_MW",
+      "NG_MW",
+      "Nuclear_MW",
+      "Crude_MW",
+      "Solar_MW",
+      "Wind_MW",
+      "Other_MW",
+      "Source",
+      "Period",
+      "Longitude",
+      "Latitude"
+    ],
+    "queried_at": "2026-08-12T09:23:31.515868Z",
+    "bbox": "-90.79,41.36,-90.25,41.65"
+  },
+  "osm-substations": {
+    "endpoint": "https://overpass-api.de/api/interpreter",
+    "overpass_query": "[out:json][timeout:90];nwr[\"power\"=\"substation\"](41.360000,-90.790000,41.650000,-90.250000);out count;",
+    "count": 66,
+    "count_breakdown": {
+      "nodes": 0,
+      "ways": 66,
+      "relations": 0
+    },
+    "http_status": 200,
+    "elapsed_s": 1.471,
+    "licence": "ODbL \u2014 The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+    "osm3s": {
+      "timestamp_osm_base": "2026-08-12T09:22:20Z",
+      "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+    },
+    "queried_at": "2026-08-12T09:23:33.005135Z",
+    "bbox": "-90.79,41.36,-90.25,41.65"
+  },
+  "osm-power-lines": {
+    "endpoint": "https://overpass-api.de/api/interpreter",
+    "overpass_query": "[out:json][timeout:90];way[\"power\"=\"line\"](41.360000,-90.790000,41.650000,-90.250000);out count;",
+    "count": 176,
+    "count_breakdown": {
+      "nodes": 0,
+      "ways": 176,
+      "relations": 0
+    },
+    "http_status": 200,
+    "elapsed_s": 1.52,
+    "licence": "ODbL \u2014 The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+    "osm3s": {
+      "timestamp_osm_base": "2026-08-12T09:22:20Z",
+      "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+    },
+    "queried_at": "2026-08-12T09:23:34.541115Z",
+    "bbox": "-90.79,41.36,-90.25,41.65"
+  },
+  "_hifld_org_service_scan": {
+    "endpoint": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services?f=json",
+    "http_status": 200,
+    "elapsed_s": 2.097,
+    "total_services": 222,
+    "filter_regex": "substation|transmission|power|electric|energy (case-insensitive)",
+    "matched_service_names": [
+      "Aggregation_of_Power_Plants_in_the_U_S__by_hexagon_bins",
+      "Energy_Liquids_Border_Crossings_in_North_America",
+      "Power_Plants_in_the_US",
+      "US_Electric_Power_Transmission_Lines"
+    ],
+    "substations_layer_found": false,
+    "queried_at": "2026-08-12T09:23:36.657859Z"
+  }
+}

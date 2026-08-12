@@ -80,7 +80,115 @@ recorder: {}
 
 contractor_reputation: {}
 
-power_infrastructure: []
+power_infrastructure:
+  substations_note: >-
+    HIFLD publishes NO public electric-substations layer. Method, reproducible: the HIFLD ArcGIS org
+    services2.arcgis.com/FiaPA4ga0iQKduv3 exposes 222 services; filtering their names for
+    substation|transmission|power|electric|energy (case-insensitive) matches exactly four —
+    Aggregation_of_Power_Plants_in_the_U_S__by_hexagon_bins,
+    Energy_Liquids_Border_Crossings_in_North_America, Power_Plants_in_the_US,
+    US_Electric_Power_Transmission_Lines — and none is a substations layer. Transmission lines are
+    public; substations are not. OpenStreetMap power=substation (66 features, ODbL) is the public
+    substitute, with a different provenance character: crowd-sourced, not authoritative,
+    completeness unknown.
+  bbox_note: >-
+    All counts are over the fixed bbox -90.79,41.36,-90.25,41.65 (EPSG:4326). A bbox is not the
+    county: the county's west and north boundary is the Mississippi River, so the rectangle reaches
+    into Scott County, Iowa. Measured proof — of the 2 power plants in the bbox only 1 (Moline,
+    MidAmerican Energy) is in Rock Island County; the other is in Davenport, Scott County, Iowa.
+    These counts are UPPER BOUNDS for the county and must be clipped to the county polygon before
+    being reported as county totals.
+  sources:
+    - name: HIFLD — U.S. Electric Power Transmission Lines (Archive)
+      url: https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/US_Electric_Power_Transmission_Lines/FeatureServer/0
+      publisher: Esri Federal User Community (HIFLD); AGOL item d4090758322c4d32a4cd002ffaa0aa12; accessInformation "U.S. Government"
+      access_method: >-
+        Anonymous ArcGIS REST bbox query, esriGeometryEnvelope + inSR=4326 +
+        spatialRel=esriSpatialRelIntersects. geometryType esriGeometryPolyline, maxRecordCount 2000,
+        capabilities Query,Extract,ChangeTracking.
+      status: available
+      record_count: 78
+      throughput: 78 features in 0.46 s, HTTP 200, single request (2026-08-12)
+      constraints: >-
+        INFERRED=Y on 71 of 78 features (91%) — routes inferred from imagery/open data, not
+        surveyed. SOURCEDATE spans 2015-03-31 to 2022-01-31, so the newest line here is over four
+        years old. VOLTAGE uses -999999 as a missing-value sentinel on 9 of 78; real values are only
+        69, 161 and 345 kV. OWNER is MIDAMERICAN ENERGY CO on 72 of 78. The AGOL item is titled
+        "(Archive)". Count is a bbox count, not a county count — see bbox_note.
+      licence: Esri Master License Agreement (per the AGOL item licenseInfo; the FeatureServer itself states no licenceInfo)
+      feasibility: download
+      verified_at: "2026-08-12"
+      evidence: docs/samples/power-probe.json
+    - name: HIFLD — Power Plants in the U.S.
+      url: https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/Power_Plants_in_the_US/FeatureServer/0
+      publisher: Esri Federal User Community (HIFLD); AGOL item b063316fac7345dba4bae96eaa813b2f; accessInformation "Energy Information Administration (EIA)"
+      access_method: Anonymous ArcGIS REST bbox query. geometryType esriGeometryPoint, maxRecordCount 2000, capabilities Query,Extract.
+      status: available
+      record_count: 2
+      throughput: 2 features in 0.42 s, HTTP 200, single request (2026-08-12)
+      constraints: >-
+        Only 1 of the 2 in-bbox plants is in Rock Island County — Moline (MidAmerican Energy Co,
+        natural gas 60 MW + hydroelectric 3.2 MW). The other is the Davenport Water Pollution
+        Control Plant in Scott County, Iowa. Filter on the County/State attributes before reporting
+        a county total.
+      licence: Esri Master License Agreement (per the AGOL item licenseInfo; the FeatureServer itself states no licenceInfo)
+      feasibility: download
+      verified_at: "2026-08-12"
+      evidence: docs/samples/power-probe.json
+    - name: OpenStreetMap — electric substations (power=substation)
+      url: https://overpass-api.de/api/interpreter
+      publisher: OpenStreetMap contributors, queried via the Overpass API
+      access_method: >-
+        POST Overpass QL — [out:json][timeout:90];nwr["power"="substation"](41.36,-90.79,41.65,-90.25);out count;
+        A descriptive User-Agent is mandatory; measured 2026-08-12, "ateam-county-discovery/1.0"
+        returns 200 while an empty UA, "Mozilla/5.0", and a UA carrying a parenthesised contact URL
+        all return HTTP 406, and "curl/8.7.1" returns 504.
+      status: available
+      record_count: 66
+      throughput: 66 features (0 nodes / 66 ways / 0 relations) in 1.47 s, HTTP 200 (2026-08-12)
+      constraints: >-
+        This is the PUBLIC SUBSTITUTE for the substations layer HIFLD does not publish. Crowd-sourced
+        and therefore not authoritative: completeness is unknown and unwarranted — neither "all 66
+        are real" nor "there are only 66" is guaranteed. Count is a bbox count, not a county count.
+      licence: >-
+        ODbL — verbatim from the Overpass response: "The data included in this document is from
+        www.openstreetmap.org. The data is made available under ODbL."
+      feasibility: download
+      verified_at: "2026-08-12"
+      evidence: docs/samples/power-probe.json
+    - name: OpenStreetMap — power lines (power=line)
+      url: https://overpass-api.de/api/interpreter
+      publisher: OpenStreetMap contributors, queried via the Overpass API
+      access_method: POST Overpass QL — [out:json][timeout:90];way["power"="line"](41.36,-90.79,41.65,-90.25);out count;
+      status: available
+      record_count: 176
+      throughput: 176 ways in 1.52 s, HTTP 200 (2026-08-12)
+      constraints: >-
+        Crowd-sourced, completeness unknown. Overlaps the HIFLD transmission layer without being
+        reconcilable to it feature-by-feature — the two disagree on count (176 OSM ways vs 78 HIFLD
+        polylines) because they segment the network differently. Do not sum them. Count is a bbox
+        count, not a county count.
+      licence: >-
+        ODbL — verbatim from the Overpass response: "The data included in this document is from
+        www.openstreetmap.org. The data is made available under ODbL."
+      feasibility: download
+      verified_at: "2026-08-12"
+      evidence: docs/samples/power-probe.json
+    - name: MISO generator interconnection queue
+      url: https://www.misoenergy.org/
+      publisher: Midcontinent Independent System Operator (MISO)
+      access_method: not-measured — named as the next place to look, not evaluated in this run
+      status: available
+      record_count: null
+      throughput: not-measured
+      constraints: >-
+        MISO is the regional grid operator covering northwestern Illinois and publishes a generator
+        interconnection queue. NOT EVALUATED in this run — recorded as unevaluated, not as
+        unavailable. Relevant to data-centre interconnection feasibility.
+      licence: not-measured
+      feasibility: undetermined-unreachable
+      verified_at: "2026-08-12"
+      evidence: docs/rock-island-county-findings.md#power-and-utility-infrastructure
 
 zoning:
   name: Rock Island County zoning and property-class codes (attributes of the GIS parcel layer)

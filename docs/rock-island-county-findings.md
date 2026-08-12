@@ -318,7 +318,115 @@ deliberately; do not let them silently fragment a `GROUP BY`.
 
 ## 6. Additional data sources
 
-_Filled by W2–W8._
+### Power and utility infrastructure
+
+No kit asset covers power infrastructure in either reference kit — this section is new research.
+Evidence: [`samples/power-probe.json`](./samples/power-probe.json).
+
+All counts are over one fixed county bounding box, used for every query so the numbers are
+comparable: **`-90.79,41.36,-90.25,41.65`** (west, south, east, north, EPSG:4326).
+
+| id | Source | Endpoint | Count in bbox | HTTP | Elapsed | Licence |
+|---|---|---|---|---|---|---|
+| `hifld-transmission-lines` | HIFLD / Esri Federal User Community — U.S. Electric Power Transmission Lines | `https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/US_Electric_Power_Transmission_Lines/FeatureServer/0` | **78** polylines | 200 | 0.46 s | Esri Master License Agreement |
+| `hifld-power-plants` | HIFLD / Esri Federal User Community — Power Plants in the U.S. | `https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/Power_Plants_in_the_US/FeatureServer/0` | **2** points (**only 1 in-county** — see below) | 200 | 0.42 s | Esri Master License Agreement |
+| `osm-substations` | OpenStreetMap via Overpass — `nwr["power"="substation"]` | `https://overpass-api.de/api/interpreter` | **66** (0 nodes / 66 ways / 0 relations) | 200 | 1.47 s | **ODbL** |
+| `osm-power-lines` | OpenStreetMap via Overpass — `way["power"="line"]` | `https://overpass-api.de/api/interpreter` | **176** ways | 200 | 1.52 s | **ODbL** |
+
+All four are reachable from this egress, all are public, all answer in under two seconds.
+
+#### Headline finding: transmission lines are public, substations are not
+
+**HIFLD publishes no public electric-substations layer.** This is a finding, not a search failure,
+and the method is reproducible: list every service in the HIFLD ArcGIS org
+(`https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services?f=json` → **222 services**) and
+filter the service names case-insensitively for `substation|transmission|power|electric|energy`.
+Exactly **four** match:
+
+```
+Aggregation_of_Power_Plants_in_the_U_S__by_hexagon_bins
+Energy_Liquids_Border_Crossings_in_North_America
+Power_Plants_in_the_US
+US_Electric_Power_Transmission_Lines
+```
+
+**None of them is a substations layer** (`substations_layer_found: false` in the probe output).
+Electric substations were withdrawn from public HIFLD distribution; transmission lines were not.
+
+**The public substitute is OpenStreetMap `power=substation`** — 66 features in the county bbox,
+licensed **ODbL**, quoted verbatim from the Overpass response: `The data included in this document
+is from www.openstreetmap.org. The data is made available under ODbL.` Its provenance character is
+fundamentally different from HIFLD's and must be carried into any UI: **crowd-sourced, not
+authoritative, completeness unknown and unwarranted.** Nobody guarantees that all 66 are real, and
+nobody guarantees there are only 66.
+
+#### Provenance qualifiers measured on the HIFLD transmission layer
+
+These matter because a downstream issue will render these lines on a map, and each qualifier
+changes what the line means:
+
+| Attribute | Measured over the 78 in-bbox features |
+|---|---|
+| `INFERRED` | **`Y` for 71 of 78 (91%)**, `N` for 4, `NOT AVAILABLE` for 3 |
+| `SOURCEDATE` | **2015-03-31 → 2022-01-31** — the newest line in this county is over four years old |
+| `VOLTAGE` | real values only `69`, `161`, `345` kV; **9 of 78 carry the sentinel `-999999`** |
+| `VOLT_CLASS` | `100-161` ×37, `UNDER 100` ×29, `345` ×6, `NOT AVAILABLE` ×6 |
+| `OWNER` | **`MIDAMERICAN ENERGY CO` ×72**, `AMEREN ILLINOIS COMPANY` ×1, `NOT AVAILABLE` ×5 |
+| `STATUS` | `IN SERVICE` ×74, `NOT AVAILABLE` ×4 |
+| `SOURCE` | derived from `IMAGERY`, `OpenStreetMap`, `EIA 861`, `EIA 860` in combination |
+| `NAICS_DESC` | `ELECTRIC BULK POWER TRANSMISSION AND CONTROL` for all 78 |
+
+**`INFERRED = Y` on 91% of the lines is the single most important qualifier in this section.** The
+route was inferred from imagery and open data rather than surveyed. These lines are approximately
+where the grid is, not authoritatively where it is. Any "distance to transmission line" figure
+computed from them inherits that uncertainty and must be presented with it.
+
+`-999999` is a **missing-value sentinel, not a voltage.** Filtering or sorting on `VOLTAGE` without
+excluding it produces nonsense.
+
+Layer facts for the renderer: `geometryType esriGeometryPolyline`, `maxRecordCount 2000`,
+`capabilities Query,Extract,ChangeTracking`. Fields available: `ID`, `TYPE`, `STATUS`, `NAICS_CODE`,
+`NAICS_DESC`, `SOURCE`, `SOURCEDATE`, `VAL_METHOD`, `VAL_DATE`, `OWNER`, `VOLTAGE`, `VOLT_CLASS`,
+`INFERRED`, `SUB_1`, `SUB_2`.
+
+**The transmission item is an archive.** Its AGOL item
+(`d4090758322c4d32a4cd002ffaa0aa12`, owner `Federal_User_Community`) is titled
+**"U.S. Electric Power Transmission Lines (Archive)"**, last modified 2026-06-01. It is public and
+live, but it is published as an archived snapshot — consistent with the 2015–2022 `SOURCEDATE`
+range. `accessInformation` is `U.S. Government`.
+
+#### The bbox is not the county — a counting caveat
+
+**Only 1 of the 2 power plants in the bounding box is in Rock Island County.** The bbox is a
+rectangle and the county's western and northern boundary is the Mississippi River, so the rectangle
+extends into Scott County, **Iowa**:
+
+| Plant | Utility | County / State | Primary source | Capacity |
+|---|---|---|---|---|
+| **Moline** | MidAmerican Energy Co | **Rock Island, Illinois** | natural gas | Natural Gas 60 MW, Hydroelectric 3.2 MW |
+| Davenport Water Pollution Control Plant | Davenport, City of | Scott, **Iowa** | biomass | Biomass 1.6 MW |
+
+Every bbox count in this section carries the same caveat: **it is a bounding-box count, not a
+county count.** Anything that reports these numbers as county totals must first clip to the county
+polygon or filter on the `County`/`State` attributes where they exist. The 78 transmission lines and
+the 66 OSM substations were **not** clipped and are therefore upper bounds for the county.
+
+The in-county utility is **MidAmerican Energy** (owner of 72 of 78 lines and of the one in-county
+plant), with Ameren Illinois present on a single line.
+
+#### Not found public — and what was checked
+
+Recorded as unevaluated rather than unavailable, because that is the honest distinction:
+
+- **Utility interconnection queue position data for this county.** The regional grid operator is
+  **MISO** (Midcontinent Independent System Operator), which covers northwestern Illinois. MISO
+  publishes a generator interconnection queue as an operator dataset. **It was not evaluated in this
+  run.** It is not claimed to be unavailable — it is named as the next place to look for anyone
+  sizing data-centre interconnection feasibility.
+- **Distribution-level (sub-transmission) infrastructure.** No public source was located. HIFLD
+  covers bulk transmission only (`NAICS_DESC` confirms: *bulk power transmission and control*), and
+  distribution networks are generally utility-confidential. Not evaluated against MidAmerican
+  directly; no utility was contacted.
 
 ## 7. Source feasibility
 
