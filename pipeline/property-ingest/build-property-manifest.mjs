@@ -28,6 +28,8 @@ const ART = (job) => path.join(REPO_ROOT, "data", "artifacts", "appraisal", "roc
 
 const txt = (v) => String(v ?? "").trim();
 const pct = (n, d) => Number(((n / d) * 100).toFixed(3));
+/** One decimal place, the form the published caveat copy uses. */
+const pct1 = (n, d) => ((n / d) * 100).toFixed(1);
 
 // --- read the mirror once ----------------------------------------------------------------------
 const files = (await readdir(MIRROR)).filter((f) => f.endsWith(".json"));
@@ -41,6 +43,7 @@ let namesDifferFromTaxbill = 0;
 let personEntities = 0;
 let companyEntities = 0;
 let zoningMunicipality = 0;
+let zoningMunicipalitySuffixed = 0;
 let zoningCounty = 0;
 let zoningBlank = 0;
 let zoningSuffixed = 0;
@@ -94,8 +97,11 @@ for (const f of files) {
   if (cls === "company") companyEntities += 1;
 
   const z = txt(a.Zoning);
+  // Two measurements, both reported: the exact-match count (the discovery figure) and the count
+  // that also accepts a municipality code carrying the undocumented trailing ! or ? suffix.
   if (z === "") zoningBlank += 1;
-  else if (MUNI.has(z.replace(/[!?]$/, ""))) zoningMunicipality += 1;
+  else if (MUNI.has(z)) zoningMunicipality += 1;
+  else if (MUNI.has(z.replace(/[!?]$/, ""))) zoningMunicipalitySuffixed += 1;
   else zoningCounty += 1;
   if (/[!?]$/.test(z)) zoningSuffixed += 1;
 }
@@ -167,6 +173,11 @@ const dbRows = execFileSync(
 const [dbCount, dbDistinct] = dbRows.split("|").map(Number);
 
 const durations = JSON.parse(await readFile(path.join(REPO_ROOT, "data", "run-timings.json"), "utf8"));
+// The full run is still advancing, so every count in this manifest is stamped with the moment it
+// was taken. Nothing here is a projection except the line that says it is one.
+const manifestAt = new Date().toISOString();
+const fullElapsed = Math.round((Date.parse(manifestAt) - Date.parse(durations.full.started_at)) / 1000);
+const fullRate = (0).toFixed;
 
 const scriptsSha = execFileSync("shasum", ["-a", "256", path.join(REPO_ROOT, "transforms", "rock-island", "transform-scripts.zip")])
   .toString().trim().split(/\s+/)[0];
@@ -194,10 +205,10 @@ const manifest = {
       licence,
       retrieved_at: retrievedAt,
       record_count: dbDistinct,
-      duration_s: durations.full.duration_s,
+      duration_s: fullElapsed,
       decision: "multi-request-flow-over-local-mirror",
       gaps: [
-        `Zoning here is the county GIS layer's Zoning field, and for ${num(zoningMunicipality)} of ${num(total)} parcels (${pct(zoningMunicipality, total)}%) it holds a three-letter municipality code — MOL (Moline), RI (Rock Island), EM (East Moline), SIL (Silvis), MIL (Milan), CV (Coal Valley), HAM (Hampton), PB (Port Byron), CCL (Carbon Cliff), AND (Andalusia), COR (Cordova), OAK (Oak Grove), REY (Reynolds) — not a zoning class. Rock Island County records a zoning class only where it is the zoning authority, which is the unincorporated area: ${num(zoningCounty)} parcels (${pct(zoningCounty, total)}%). A further ${num(zoningBlank)} parcels (${pct(zoningBlank, total)}%) are blank. Municipal zoning for incorporated land is held by each municipality separately and was not ingested in this run. ${num(zoningSuffixed)} parcels also carry an undocumented ! or ? suffix on the code; the layer publishes no meaning for it, so the suffix is preserved verbatim and not interpreted.`,
+        `Zoning here is the county GIS layer's Zoning field, and for ${num(zoningMunicipality)} of ${num(total)} parcels (${pct1(zoningMunicipality, total)}%) it holds a three-letter municipality code — MOL (Moline), RI (Rock Island), EM (East Moline), SIL (Silvis), MIL (Milan), CV (Coal Valley), HAM (Hampton), PB (Port Byron), CCL (Carbon Cliff), AND (Andalusia), COR (Cordova), OAK (Oak Grove), REY (Reynolds) — not a zoning class. Rock Island County records a zoning class only where it is the zoning authority, which is the unincorporated area: ${num(zoningCounty)} parcels (${pct1(zoningCounty, total)}%). A further ${num(zoningBlank)} parcels (${pct1(zoningBlank, total)}%) are blank. Municipal zoning for incorporated land is held by each municipality separately and was not ingested in this run. ${num(zoningSuffixed)} parcels also carry an undocumented ! or ? suffix on the code; the layer publishes no meaning for it, so the suffix is preserved verbatim and not interpreted. ${num(zoningMunicipalitySuffixed)} of those suffixed codes are themselves municipality codes, so counting them too raises the municipality-coded share to ${num(zoningMunicipality + zoningMunicipalitySuffixed)} parcels (${pct1(zoningMunicipality + zoningMunicipalitySuffixed, total)}%); both measurements were taken over all ${num(total)} records in this run and neither is copied from the discovery document.`,
         `Ownership tenure comes from the parcel layer's date_last_sale, populated for ${num(counts.date_last_sale)} of ${num(total)} parcels (${pct(counts.date_last_sale, total)}%). The remaining ${(100 - pct(counts.date_last_sale, total)).toFixed(1)}% have no last-sale date and are reported as unknown tenure — never as long-held. Sale prices of $10 appear in the source as nominal consideration for non-arm's-length transfers, so gross_sale_price is not a market value.`,
         `Full ownership history — the chain of deeds, mortgages and liens — is not in this dataset. Rock Island County's recorder runs Fidlar Tapestry, whose host does not resolve from this egress and which is a pay-per-search commercial product besides. The parcel layer gives the last sale, not the sequence of them.`,
         `PIN is the county's parcel identifier but it is not unique: ${num(total)} records carry ${num(identity.distinctPin)} distinct PIN values. ${identity.duplicatePinValues} values repeat across ${identity.recordsWithDuplicatePin} records, and ${identity.nonNumericPinRecords} records carry a non-numeric placeholder PIN such as USA, RAILROAD, STATE or LEVEE ROW. This pipeline is therefore keyed on the layer's unique OBJECTID and carries PIN as the county parcel identifier, so that no record is silently collapsed into another.`,
@@ -205,11 +216,11 @@ const manifest = {
         `Owner names classified as individuals (${num(personEntities)} of ${num(total)} parcels, ${pct(personEntities, total)}%) are NOT written as lexicon person entities. The person class requires a Title-Cased, parsed first_name/last_name pair; this source publishes one ALL-CAPS combined string that often names two people ("COERS ROBERT W & KRISTIN J"). Re-casing and splitting it would be inference, so the name is preserved verbatim in the per-parcel capture and source mirror instead. Company-classified owners (${num(companyEntities)} parcels, ${pct(companyEntities, total)}%) are written as company entities with their mailing address. This is a lexicon gap, recorded in elephant-pipeline/docs/open-lexicon-gaps.md, not a data loss.`,
         durations.full.complete
           ? `The full county run reached terminal state.`
-          : `PARTIAL RUN, stated honestly: the full-county workflow was still running when this manifest was written. ${num(runs.full.ready)} of ${num(total)} parcels had completed and loaded at ${durations.full.measured_at}, at a measured ${durations.full.parcels_per_second} parcels/second, which projects to ${durations.full.projected_hours} hours for the whole county. The workflow is durable (Restate) and continues; record_count above is the count actually in Postgres at manifest time, never a projection.`,
+          : `PARTIAL RUN, stated honestly: the full-county workflow was still running when this manifest was written. ${num(runs.full.ready)} of ${num(total)} parcels had completed and loaded at ${manifestAt}, ${num(fullElapsed)} seconds into the run, a measured ${(runs.full.ready / fullElapsed).toFixed(3)} parcels per second, which projects to ${(total / (runs.full.ready / fullElapsed) / 3600).toFixed(1)} hours for the whole county. The workflow is durable (Restate) and continues; record_count above is the count actually in Postgres at manifest time, never a projection.`,
       ],
       notes: [
         `Field coverage, recomputed over all ${num(total)} mirrored records at ingest time and compared with the ISSUE-001 discovery measurement (no figure is copied): ${coverageLine}.`,
-        `Pilot then full, per county-ingest-run. Pilot ${JOB_PILOT}: ${runs.pilot.ready} ready, ${runs.pilot.dead} dead, ${runs.pilot.invalid} invalid over a 25-parcel seed selected by 25 measured variability predicates, ${durations.pilot.duration_s} s wall (${durations.pilot.started_at} to ${durations.pilot.finished_at}). Full ${JOB_FULL}: started ${durations.full.started_at}, ${num(runs.full.ready)} ready, ${runs.full.dead} dead, ${runs.full.invalid} invalid at ${durations.full.measured_at}.`,
+        `Pilot then full, per county-ingest-run. Pilot ${JOB_PILOT}: ${runs.pilot.ready} ready, ${runs.pilot.dead} dead, ${runs.pilot.invalid} invalid over a 25-parcel seed selected by 25 measured variability predicates, ${durations.pilot.duration_s} s wall (${durations.pilot.started_at} to ${durations.pilot.finished_at}). Full ${JOB_FULL}: started ${durations.full.started_at}, ${num(runs.full.ready)} ready, ${runs.full.dead} dead, ${runs.full.invalid} invalid at ${manifestAt}.`,
         `Postgres holds ${num(dbCount)} rows and ${num(dbDistinct)} distinct request_identifier values in the parcels table, upserted on (source_system, source_record_key). request_identifier is the OBJECTID as a decimal string; parcel_identifier is the PIN verbatim, never digits-only-normalized.`,
         `Transform validation: validate-county-transform verdict pass-with-lexicon-gaps over 25 samples — 0 class-(a) extractor bugs, 0 class-(b) capture gaps, 12 class-(c) lexicon gaps, elephant-cli validate exit 0 on all 25. Mean extraction coverage 68.27% of the source fields present per record; every point of the shortfall is an enumerated lexicon gap. Report: evidence/validate-county-transform-report.md.`,
         `Per-record provenance: every entity in every parcel's transformed.zip carries source_http_request pointing at the county endpoint that serves that record (…/FeatureServer/0/query?where=OBJECTID=<id>&outFields=*&f=geojson&outSR=4326) plus request_identifier, and each Postgres row carries source_system, source_record_key, source_record_hash (sha256 of the validated transform) and source_artifact_uri.`,
