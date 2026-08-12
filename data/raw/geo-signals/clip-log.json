@@ -1,0 +1,51 @@
+[
+  {
+    "id": "hifld-transmission-lines",
+    "count_fetch_bbox": 113,
+    "count_clipped": 60,
+    "count_dropped": 53,
+    "clipped_artifact_path": "/Users/lukas/Developer/ateam/elephant-pipeline/data/artifacts/geo-signals/rock-island/hifld-transmission-lines.clipped.geojson"
+  },
+  {
+    "id": "hifld-power-plants",
+    "count_fetch_bbox": 9,
+    "count_clipped": 3,
+    "count_dropped": 6,
+    "clipped_artifact_path": "/Users/lukas/Developer/ateam/elephant-pipeline/data/artifacts/geo-signals/rock-island/hifld-power-plants.clipped.geojson"
+  },
+  {
+    "id": "osm-substations",
+    "count_fetch_bbox": 109,
+    "count_clipped": 36,
+    "count_dropped": 73,
+    "clipped_artifact_path": "/Users/lukas/Developer/ateam/elephant-pipeline/data/artifacts/geo-signals/rock-island/osm-substations.clipped.geojson"
+  },
+  {
+    "id": "osm-power-lines",
+    "count_fetch_bbox": 321,
+    "count_clipped": 153,
+    "count_dropped": 168,
+    "clipped_artifact_path": "/Users/lukas/Developer/ateam/elephant-pipeline/data/artifacts/geo-signals/rock-island/osm-power-lines.clipped.geojson"
+  },
+  {
+    "id": "osm-bus-stops",
+    "count_fetch_bbox": 119,
+    "count_clipped": 103,
+    "count_dropped": 16,
+    "clipped_artifact_path": "/Users/lukas/Developer/ateam/elephant-pipeline/data/artifacts/geo-signals/rock-island/osm-bus-stops.clipped.geojson"
+  },
+  {
+    "id": "osm-starbucks",
+    "count_fetch_bbox": 12,
+    "count_clipped": 5,
+    "count_dropped": 7,
+    "clipped_artifact_path": "/Users/lukas/Developer/ateam/elephant-pipeline/data/artifacts/geo-signals/rock-island/osm-starbucks.clipped.geojson"
+  },
+  {
+    "id": "usgs-nhd-waterbodies",
+    "count_fetch_bbox": 2505,
+    "count_clipped": 834,
+    "count_dropped": 1671,
+    "clipped_artifact_path": "/Users/lukas/Developer/ateam/elephant-pipeline/data/artifacts/geo-signals/rock-island/usgs-nhd-waterbodies.clipped.geojson"
+  }
+]
