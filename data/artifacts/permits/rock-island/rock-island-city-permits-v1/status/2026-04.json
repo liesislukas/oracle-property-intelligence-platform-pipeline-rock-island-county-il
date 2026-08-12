@@ -9,5 +9,11 @@
   "elapsed_ms": 995,
   "attempts": 1,
   "downloaded_at": "2026-08-12T18:26:37.736Z",
-  "extract": null
+  "extract": {
+    "status": "ok",
+    "layout": "energov-tabular",
+    "record_count": 177,
+    "month_mismatch": false,
+    "extracted_at": "2026-08-12T18:27:32.619Z"
+  }
 }

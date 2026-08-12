@@ -1,0 +1,3409 @@
+{
+  "county_slug": "rock-island",
+  "jurisdiction": "rock-island",
+  "job_id": "rock-island-city-permits-v1",
+  "report_month": "2026-03",
+  "index_month": "2026-03",
+  "derived_month": "2026-03",
+  "month_source": "index",
+  "report_layout": "legacy-tabular",
+  "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+  "report_document_id": "20355",
+  "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+  "extracted_at": "2026-08-12T18:27:32.602Z",
+  "record_count": 119,
+  "records": [
+    {
+      "id": "20355:B260183:0",
+      "permit_number": "B260183",
+      "permit_date": "03/06/2026",
+      "permit_type_source": "bnewconres",
+      "purpose": "BUILD NEW 24X30 GARAGE ALL TO CODE",
+      "parties": [
+        {
+          "name": "Richard G Fuller",
+          "role": "Owner"
+        },
+        {
+          "name": "Maraca and Son's",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "097158",
+      "parcel_number_source": null,
+      "address_source": "1004 22 ST",
+      "total_cost": "$15,000.00",
+      "source_page": 1,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260153:0",
+      "permit_number": "B260153",
+      "permit_date": "03/02/2026",
+      "permit_type_source": "bremodel",
+      "purpose": "Replace fiber/plastic roof with steel panels and add a soffit to code",
+      "parties": [
+        {
+          "name": "HENKE DAVID J",
+          "role": "Owner"
+        },
+        {
+          "name": "Taymak Construction",
+          "role": null
+        }
+      ],
+      "tax_map": "10645-152",
+      "parcel_number_source": null,
+      "address_source": "4225 26 AVE",
+      "total_cost": "$4,500.00",
+      "source_page": 1,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260155:0",
+      "permit_number": "B260155",
+      "permit_date": "03/02/2026",
+      "permit_type_source": "bremodel",
+      "purpose": "Install 120' of drain tile with vapor barrier to code.",
+      "parties": [
+        {
+          "name": "HANSEN J W",
+          "role": null
+        },
+        {
+          "name": "ACE Renovations QC LLC",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "094728",
+      "parcel_number_source": null,
+      "address_source": "1305 43 ST",
+      "total_cost": "$39,619.00",
+      "source_page": 1,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260157:0",
+      "permit_number": "B260157",
+      "permit_date": "03/03/2026",
+      "permit_type_source": "bremodel",
+      "purpose": "5 replacement style windows -all to code.",
+      "parties": [
+        {
+          "name": "Gregory L Bateman",
+          "role": "Owner"
+        },
+        {
+          "name": "Best Improvement Company Inc.",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "103879-54",
+      "parcel_number_source": null,
+      "address_source": "2615 26 AVE CT",
+      "total_cost": "$4,750.00",
+      "source_page": 1,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260168:0",
+      "permit_number": "B260168",
+      "permit_date": "03/04/2026",
+      "permit_type_source": "bremodel",
+      "purpose": "existing communication facility verizon proposed equipment modification; addition of antennas and reconfiguring related radio equipment. all to code,.",
+      "parties": [
+        {
+          "name": "JAY AMBE 11 LLC",
+          "role": "Contractor"
+        },
+        {
+          "name": "SRU ELECTRIC",
+          "role": null
+        }
+      ],
+      "tax_map": "10-5134",
+      "parcel_number_source": null,
+      "address_source": "4715 11 ST",
+      "total_cost": "$40,000.00",
+      "source_page": 1,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260171:0",
+      "permit_number": "B260171",
+      "permit_date": "03/05/2026",
+      "permit_type_source": "bremodel",
+      "purpose": "New front deck all to code.",
+      "parties": [
+        {
+          "name": "MINTY DEVON CHIDESTER BUCKLEY",
+          "role": "Owner"
+        },
+        {
+          "name": "Avila's Home Improvement",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "0927",
+      "parcel_number_source": null,
+      "address_source": "1706 32 ST",
+      "total_cost": "$3,500.00",
+      "source_page": 1,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260174:0",
+      "permit_number": "B260174",
+      "permit_date": "03/05/2026",
+      "permit_type_source": "bremodel",
+      "purpose": "Install new bay window U factor .24 and remove deck all done to code.",
+      "parties": [
+        {
+          "name": "THUL PHYLLIS A",
+          "role": "Owner"
+        },
+        {
+          "name": "ACRI Inc.",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "101007-3",
+      "parcel_number_source": null,
+      "address_source": "2519 13 ST",
+      "total_cost": "$14,095.00",
+      "source_page": 1,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260178:0",
+      "permit_number": "B260178",
+      "permit_date": "03/06/2026",
+      "permit_type_source": "bremodel",
+      "purpose": "Remove and replace drywall",
+      "parties": [
+        {
+          "name": "Sheila Angel",
+          "role": null
+        },
+        {
+          "name": "CARTER'S",
+          "role": null
+        },
+        {
+          "name": "CARTER'S",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "097579",
+      "parcel_number_source": null,
+      "address_source": "605 13 AVE",
+      "total_cost": "$600.00",
+      "source_page": 1,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260181:0",
+      "permit_number": "B260181",
+      "permit_date": "03/06/2026",
+      "permit_type_source": "bremodel",
+      "purpose": "Remove and replace siding - all to code.",
+      "parties": [
+        {
+          "name": "VANZYLE A J JR",
+          "role": "Owner"
+        },
+        {
+          "name": "FRONTLINE SERVICES",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "103591",
+      "parcel_number_source": null,
+      "address_source": "1818 9 1/2 ST",
+      "total_cost": "$11,350.00",
+      "source_page": 1,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260187:0",
+      "permit_number": "B260187",
+      "permit_date": "03/09/2026",
+      "permit_type_source": "bremodel",
+      "purpose": "waterproofing all to code",
+      "parties": [
+        {
+          "name": "Absolutely Dry Basement Waterproofing",
+          "role": "Contractor"
+        },
+        {
+          "name": "Jeremy Rogers",
+          "role": null
+        }
+      ],
+      "tax_map": "101925-1",
+      "parcel_number_source": null,
+      "address_source": "2343 39 ST",
+      "total_cost": "$14,500.00",
+      "source_page": 1,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260197:0",
+      "permit_number": "B260197",
+      "permit_date": "03/09/2026",
+      "permit_type_source": "bremodel",
+      "purpose": "INSTALL NEW SIDING ALL TO CODE",
+      "parties": [
+        {
+          "name": "Catherine Colley",
+          "role": null
+        },
+        {
+          "name": "AARON DIAZ CONSTURCTION",
+          "role": null
+        }
+      ],
+      "tax_map": "113033",
+      "parcel_number_source": null,
+      "address_source": "1701 88 AVE W",
+      "total_cost": "$3,500.00",
+      "source_page": 1,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260206:0",
+      "permit_number": "B260206",
+      "permit_date": "03/11/2026",
+      "permit_type_source": "bremodel",
+      "purpose": "Installing 3 replacement windows.",
+      "parties": [
+        {
+          "name": "KONGKOUSONH SAY",
+          "role": "Owner"
+        },
+        {
+          "name": "ACRI Inc.",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "101570",
+      "parcel_number_source": null,
+      "address_source": "1845 44 ST",
+      "total_cost": "$5,422.00",
+      "source_page": 1,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260208:0",
+      "permit_number": "B260208",
+      "permit_date": "03/11/2026",
+      "permit_type_source": "bremodel",
+      "purpose": "POURING BASEMENT FLOOR CONCRETE, ALL TO CODE.",
+      "parties": [
+        {
+          "name": "EZ's MAINTENANCE HOME",
+          "role": "Contractor"
+        },
+        {
+          "name": "IMPROVEMENTS",
+          "role": null
+        },
+        {
+          "name": "Mmunga Alimasi",
+          "role": "Owner"
+        }
+      ],
+      "tax_map": "093570",
+      "parcel_number_source": null,
+      "address_source": "2432 8 1/2 AVE",
+      "total_cost": "$3,000.00",
+      "source_page": 1,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260225:0",
+      "permit_number": "B260225",
+      "permit_date": "03/13/2026",
+      "permit_type_source": "bremodel",
+      "purpose": "Remodel of home: repair floor joists and replace sheetrock all done to code.",
+      "parties": [
+        {
+          "name": "JACKSON ALBERT",
+          "role": null
+        },
+        {
+          "name": "CARTER'S",
+          "role": null
+        }
+      ],
+      "tax_map": "092160",
+      "parcel_number_source": null,
+      "address_source": "501 7 AVE",
+      "total_cost": "$24,000.00",
+      "source_page": 1,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260239:0",
+      "permit_number": "B260239",
+      "permit_date": "03/19/2026",
+      "permit_type_source": "bremodel",
+      "purpose": "installing diesel generator atop of anew concrete pad at exiting telecommunication facility. no tower/antenna work. all to code. 1",
+      "parties": [
+        {
+          "name": "DARRELL D BARKER",
+          "role": "Owner"
+        },
+        {
+          "name": "4/30/2026",
+          "role": null
+        }
+      ],
+      "tax_map": "10253-E",
+      "parcel_number_source": null,
+      "address_source": "2319 31 AVE",
+      "total_cost": "$35,000.00",
+      "source_page": 1,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260239:1",
+      "permit_number": "B260239",
+      "permit_date": "03/19/2026",
+      "permit_type_source": "bremodel",
+      "purpose": "installing diesel generator atop of anew concrete pad at exiting telecommunication facility. no tower/antenna work. all to code.",
+      "parties": [
+        {
+          "name": "TRIAD ASSOCIATES",
+          "role": null
+        }
+      ],
+      "tax_map": "10253-E",
+      "parcel_number_source": null,
+      "address_source": "2319 31 AVE",
+      "total_cost": "$35,000.00",
+      "source_page": 2,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260244:0",
+      "permit_number": "B260244",
+      "permit_date": "03/19/2026",
+      "permit_type_source": "bremodel",
+      "purpose": "Install 27 squares of vinyl on the house.",
+      "parties": [
+        {
+          "name": "VOLS MARGARET",
+          "role": "Owner"
+        },
+        {
+          "name": "Storm Recovery Roofing & Siding",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "095676",
+      "parcel_number_source": null,
+      "address_source": "2519 8 AVE",
+      "total_cost": "$15,950.00",
+      "source_page": 2,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260247:0",
+      "permit_number": "B260247",
+      "permit_date": "03/19/2026",
+      "permit_type_source": "bremodel",
+      "purpose": "install 2 windows, all to code",
+      "parties": [
+        {
+          "name": "MADDEN WILLIAM/JESSIE",
+          "role": "Owner"
+        },
+        {
+          "name": "River City Pella",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "103723",
+      "parcel_number_source": null,
+      "address_source": "2010 23 ST",
+      "total_cost": "$7,700.00",
+      "source_page": 2,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260253:0",
+      "permit_number": "B260253",
+      "permit_date": "03/19/2026",
+      "permit_type_source": "bremodel",
+      "purpose": "siding on front and wrapping windows, all to code",
+      "parties": [
+        {
+          "name": "Richard J Cloninger",
+          "role": null
+        },
+        {
+          "name": "Best Improvement Company Inc.",
+          "role": null
+        }
+      ],
+      "tax_map": "103740-11",
+      "parcel_number_source": null,
+      "address_source": "2509 37 AVE",
+      "total_cost": "$3,790.00",
+      "source_page": 2,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260254:0",
+      "permit_number": "B260254",
+      "permit_date": "03/19/2026",
+      "permit_type_source": "bremodel",
+      "purpose": "siding on front, with new soffit and gutters -all to code",
+      "parties": [
+        {
+          "name": "STRANG DANIEL E/PATRICIA",
+          "role": "Owner"
+        },
+        {
+          "name": "Best Improvement Company Inc.",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "103008-6",
+      "parcel_number_source": null,
+      "address_source": "2417 35 AVE",
+      "total_cost": "$7,250.00",
+      "source_page": 2,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260258:0",
+      "permit_number": "B260258",
+      "permit_date": "03/20/2026",
+      "permit_type_source": "bremodel",
+      "purpose": "Install an egress window all done to code.",
+      "parties": [
+        {
+          "name": "HENSELER VINCENT/MARJORIE",
+          "role": "Owner"
+        },
+        {
+          "name": "Midwest Reconstruction dba MidAmerican",
+          "role": "Contractor"
+        },
+        {
+          "name": "Basement System",
+          "role": null
+        }
+      ],
+      "tax_map": "104990",
+      "parcel_number_source": null,
+      "address_source": "2913 35TH AVE",
+      "total_cost": "$8,645.00",
+      "source_page": 2,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260267:0",
+      "permit_number": "B260267",
+      "permit_date": "03/20/2026",
+      "permit_type_source": "bremodel",
+      "purpose": "basement remodel, framing, drywall, flooring, batrhoom and wet bar. no structural changes. all to code.",
+      "parties": [
+        {
+          "name": "CEYLONA CREIGHTON",
+          "role": "Owner"
+        },
+        {
+          "name": "GLENN VARNER",
+          "role": null
+        }
+      ],
+      "tax_map": "101361-59",
+      "parcel_number_source": null,
+      "address_source": "3922 28 ST",
+      "total_cost": "$14,000.00",
+      "source_page": 2,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260269:0",
+      "permit_number": "B260269",
+      "permit_date": "03/23/2026",
+      "permit_type_source": "bremodel",
+      "purpose": "26 windows and 2 doors, all to code",
+      "parties": [
+        {
+          "name": "James R Loula",
+          "role": "Owner"
+        },
+        {
+          "name": "EXTREME RESTORATION, CO.",
+          "role": "Contractor"
+        },
+        {
+          "name": "James R Loula",
+          "role": "Owner"
+        },
+        {
+          "name": "EXTREME RESTORATION, CO.",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "095996",
+      "parcel_number_source": null,
+      "address_source": "941-943 21 ST; 941 21 ST",
+      "total_cost": "$4,700.00",
+      "source_page": 2,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260270:0",
+      "permit_number": "B260270",
+      "permit_date": "03/23/2026",
+      "permit_type_source": "bremodel",
+      "purpose": "1 picture window, all to code",
+      "parties": [
+        {
+          "name": "SIMS MARY",
+          "role": "Owner"
+        },
+        {
+          "name": "EXTREME RESTORATION, CO.",
+          "role": null
+        }
+      ],
+      "tax_map": "104002-13",
+      "parcel_number_source": null,
+      "address_source": "2714 9 ST",
+      "total_cost": "$1,000.00",
+      "source_page": 2,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260274:0",
+      "permit_number": "B260274",
+      "permit_date": "03/24/2026",
+      "permit_type_source": "bremodel",
+      "purpose": "reside , deck 4 by 6, and strairs- all to code",
+      "parties": [
+        {
+          "name": "Douglas Breiby",
+          "role": null
+        },
+        {
+          "name": "Douglas Breiby",
+          "role": "Owner"
+        }
+      ],
+      "tax_map": "10854",
+      "parcel_number_source": null,
+      "address_source": "2022 29 ST",
+      "total_cost": "$28,000.00",
+      "source_page": 2,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260279:0",
+      "permit_number": "B260279",
+      "permit_date": "03/27/2026",
+      "permit_type_source": "bremodel",
+      "purpose": "Building U: Basement waterproofing inatalling 260 LF of hydradry Plus with 2 sump pumps and discharge line All done to code.",
+      "parties": [
+        {
+          "name": "Helitech, Slab Masters dba",
+          "role": "Contractor"
+        },
+        {
+          "name": "Heather Ridge IL TC LP",
+          "role": null
+        }
+      ],
+      "tax_map": "11388-8",
+      "parcel_number_source": null,
+      "address_source": "9500 14 ST W",
+      "total_cost": "$31,013.00",
+      "source_page": 2,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260164:0",
+      "permit_number": "B260164",
+      "permit_date": "03/04/2026",
+      "permit_type_source": "Commercial Elec",
+      "purpose": "Electrical Remodel (law office) - all to code.",
+      "parties": [
+        {
+          "name": "Property Pros LLC",
+          "role": "Contractor"
+        },
+        {
+          "name": "Hawkeye Electric",
+          "role": null
+        }
+      ],
+      "tax_map": "097695",
+      "parcel_number_source": null,
+      "address_source": "120 16 1/2 ST",
+      "total_cost": "$26,928.00",
+      "source_page": 2,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260176:0",
+      "permit_number": "B260176",
+      "permit_date": "03/05/2026",
+      "permit_type_source": "Commercial Elec",
+      "purpose": "REWIRE BASEBOARD HEATERS TO NEW BREAKER/AMP DRAW ON EXISTING 4 UNITS BASEDBOARD HEATERS.ALL TO CODE.",
+      "parties": [
+        {
+          "name": "MONTANA REALTY INVESTMENTS",
+          "role": null
+        },
+        {
+          "name": "X ELECTRIC, LLC",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "097615",
+      "parcel_number_source": null,
+      "address_source": "1701 25 ST",
+      "total_cost": "$1,150.00",
+      "source_page": 2,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260240:0",
+      "permit_number": "B260240",
+      "permit_date": "03/19/2026",
+      "permit_type_source": "Commercial Elec",
+      "purpose": "installing diesel generator atop of a new concrete pad at existing telecommunication facility. no tower/antenna work. all to code.",
+      "parties": [
+        {
+          "name": "DARRELL D BARKER",
+          "role": "Owner"
+        },
+        {
+          "name": "TRIAD ASSOCIATES",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "10253-E",
+      "parcel_number_source": null,
+      "address_source": "2319 31 AVE",
+      "total_cost": "$25,000.00",
+      "source_page": 2,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260252:0",
+      "permit_number": "B260252",
+      "permit_date": "03/19/2026",
+      "permit_type_source": "Commercial Elec",
+      "purpose": "install usb rpts,power to ext signs,replace lamps,cooler light,rcpt ,kisosks,relocate power for cctv- all to code 2",
+      "parties": [
+        {
+          "name": "David Parochetti",
+          "role": "Owner"
+        },
+        {
+          "name": "4/30/2026",
+          "role": null
+        }
+      ],
+      "tax_map": "096220",
+      "parcel_number_source": null,
+      "address_source": "1531 38 ST",
+      "total_cost": "$4,600.00",
+      "source_page": 2,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260252:1",
+      "permit_number": "B260252",
+      "permit_date": "03/19/2026",
+      "permit_type_source": "Commercial Elec",
+      "purpose": "install usb rpts,power to ext signs,replace lamps,cooler light,rcpt ,kisosks,relocate power for cctv- all to code",
+      "parties": [
+        {
+          "name": "Tri City Electric",
+          "role": null
+        },
+        {
+          "name": "David Parochetti",
+          "role": null
+        },
+        {
+          "name": "Tri City Electric",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "096220",
+      "parcel_number_source": null,
+      "address_source": "1531 38 ST; 1533 38 ST",
+      "total_cost": "$4,600.00",
+      "source_page": 3,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260233:0",
+      "permit_number": "B260233",
+      "permit_date": "03/18/2026",
+      "permit_type_source": "Commercial HVAC",
+      "purpose": "Install new 12' hood all done to code.",
+      "parties": [
+        {
+          "name": "Tom S Norman JR",
+          "role": null
+        },
+        {
+          "name": "C Equipment Sales",
+          "role": "Contractor"
+        },
+        {
+          "name": "Tom S Norman JR",
+          "role": "Owner"
+        },
+        {
+          "name": "C Equipment Sales",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "096403",
+      "parcel_number_source": null,
+      "address_source": "1811 2 AV; 1809 2 AV",
+      "total_cost": "$50,000.00",
+      "source_page": 3,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260237:0",
+      "permit_number": "B260237",
+      "permit_date": "03/19/2026",
+      "permit_type_source": "demo",
+      "purpose": "demo house all to ode",
+      "parties": [
+        {
+          "name": "Michael R VanHecks",
+          "role": "Owner"
+        },
+        {
+          "name": "APOLLO EXCAVATING, INC",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "094155",
+      "parcel_number_source": null,
+      "address_source": "3321 7 1/2 AVE",
+      "total_cost": null,
+      "source_page": 3,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260166:0",
+      "permit_number": "B260166",
+      "permit_date": "03/04/2026",
+      "permit_type_source": "excavation",
+      "purpose": "Cutting into the street for utility disconnect.",
+      "parties": [
+        {
+          "name": "Michael R VanHecks",
+          "role": "Owner"
+        },
+        {
+          "name": "APOLLO EXCAVATING, INC",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "094155",
+      "parcel_number_source": null,
+      "address_source": "3321 7 1/2 AVE",
+      "total_cost": null,
+      "source_page": 3,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260186:0",
+      "permit_number": "B260186",
+      "permit_date": "03/09/2026",
+      "permit_type_source": "excavation",
+      "purpose": "SLRP",
+      "parties": [
+        {
+          "name": "Pace Bennett",
+          "role": "Owner"
+        },
+        {
+          "name": "JC Dillon, Inc.",
+          "role": null
+        }
+      ],
+      "tax_map": "101893-1",
+      "parcel_number_source": null,
+      "address_source": "3518 24 AVE",
+      "total_cost": null,
+      "source_page": 3,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260205:0",
+      "permit_number": "B260205",
+      "permit_date": "03/11/2026",
+      "permit_type_source": "excavation",
+      "purpose": "Description of Work Proposed: Water service",
+      "parties": [
+        {
+          "name": "Petersen Plumbing & Heating Company",
+          "role": null
+        },
+        {
+          "name": "Slyvia Crouch",
+          "role": "Owner"
+        }
+      ],
+      "tax_map": "102970",
+      "parcel_number_source": null,
+      "address_source": "2210 45 ST",
+      "total_cost": null,
+      "source_page": 3,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260210:0",
+      "permit_number": "B260210",
+      "permit_date": "03/12/2026",
+      "permit_type_source": "excavation",
+      "purpose": "Sewer lateral spot repair in street.",
+      "parties": [
+        {
+          "name": "J Cook",
+          "role": "Owner"
+        },
+        {
+          "name": "River Bend Plumbing",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "10741-33",
+      "parcel_number_source": null,
+      "address_source": "2406 BRITTANY LN",
+      "total_cost": null,
+      "source_page": 3,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260212:0",
+      "permit_number": "B260212",
+      "permit_date": "03/12/2026",
+      "permit_type_source": "excavation",
+      "purpose": "SLRP",
+      "parties": [
+        {
+          "name": "RUSK DEBORAH A",
+          "role": "Owner"
+        },
+        {
+          "name": "JC Dillon, Inc.",
+          "role": null
+        }
+      ],
+      "tax_map": "101881",
+      "parcel_number_source": null,
+      "address_source": "2210 38 ST",
+      "total_cost": null,
+      "source_page": 3,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260213:0",
+      "permit_number": "B260213",
+      "permit_date": "03/12/2026",
+      "permit_type_source": "excavation",
+      "purpose": "WSRP",
+      "parties": [
+        {
+          "name": "Brenda L James",
+          "role": null
+        },
+        {
+          "name": "JC Dillon, Inc.",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "095585",
+      "parcel_number_source": null,
+      "address_source": "916 11 AVE",
+      "total_cost": null,
+      "source_page": 3,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260214:0",
+      "permit_number": "B260214",
+      "permit_date": "03/12/2026",
+      "permit_type_source": "excavation",
+      "purpose": "SLRP",
+      "parties": [
+        {
+          "name": "Jill M Twing",
+          "role": "Owner"
+        },
+        {
+          "name": "JC Dillon, Inc.",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "101812-56",
+      "parcel_number_source": null,
+      "address_source": "2918 30 AVE",
+      "total_cost": null,
+      "source_page": 3,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260215:0",
+      "permit_number": "B260215",
+      "permit_date": "03/12/2026",
+      "permit_type_source": "excavation",
+      "purpose": "Water Service",
+      "parties": [
+        {
+          "name": "A+ Plumbing",
+          "role": "Contractor"
+        },
+        {
+          "name": "DEHALVA PROPERTIES",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "095893",
+      "parcel_number_source": null,
+      "address_source": "1619 6 ST",
+      "total_cost": null,
+      "source_page": 3,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260221:0",
+      "permit_number": "B260221",
+      "permit_date": "03/13/2026",
+      "permit_type_source": "excavation",
+      "purpose": "Utility Disconnection for House Demolition.",
+      "parties": [
+        {
+          "name": "Nicolasa Casco",
+          "role": null
+        },
+        {
+          "name": "JC Dillon, Inc.",
+          "role": null
+        }
+      ],
+      "tax_map": "095336",
+      "parcel_number_source": null,
+      "address_source": "1213 7 AVE",
+      "total_cost": null,
+      "source_page": 3,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260230:0",
+      "permit_number": "B260230",
+      "permit_date": "03/17/2026",
+      "permit_type_source": "excavation",
+      "purpose": "WSRP",
+      "parties": [
+        {
+          "name": "Shal L Moo",
+          "role": "Owner"
+        },
+        {
+          "name": "JC Dillon, Inc.",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "103056-F",
+      "parcel_number_source": null,
+      "address_source": "2136 23 AVE",
+      "total_cost": null,
+      "source_page": 3,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260231:0",
+      "permit_number": "B260231",
+      "permit_date": "03/17/2026",
+      "permit_type_source": "excavation",
+      "purpose": "SLRP",
+      "parties": [
+        {
+          "name": "Ryan Donkersloot",
+          "role": "Owner"
+        },
+        {
+          "name": "JC Dillon, Inc.",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "103616-27",
+      "parcel_number_source": null,
+      "address_source": "2414 28 AVE",
+      "total_cost": null,
+      "source_page": 3,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260232:0",
+      "permit_number": "B260232",
+      "permit_date": "03/17/2026",
+      "permit_type_source": "excavation",
+      "purpose": "Telcom Service 3",
+      "parties": [
+        {
+          "name": "Stanley McClellan",
+          "role": "Owner"
+        },
+        {
+          "name": "4/30/2026",
+          "role": null
+        }
+      ],
+      "tax_map": "10260-20",
+      "parcel_number_source": null,
+      "address_source": "3725 31 AVE",
+      "total_cost": null,
+      "source_page": 3,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260232:1",
+      "permit_number": "B260232",
+      "permit_date": "03/17/2026",
+      "permit_type_source": "excavation",
+      "purpose": "Telcom Service",
+      "parties": [
+        {
+          "name": "METRONET",
+          "role": null
+        }
+      ],
+      "tax_map": "10260-20",
+      "parcel_number_source": null,
+      "address_source": "3725 31 AVE",
+      "total_cost": null,
+      "source_page": 4,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260257:0",
+      "permit_number": "B260257",
+      "permit_date": "03/20/2026",
+      "permit_type_source": "excavation",
+      "purpose": "SLRP",
+      "parties": [
+        {
+          "name": "Shane L Littlejohn",
+          "role": null
+        },
+        {
+          "name": "JC Dillon, Inc.",
+          "role": null
+        }
+      ],
+      "tax_map": "101130-44",
+      "parcel_number_source": null,
+      "address_source": "3222 37 AVE",
+      "total_cost": null,
+      "source_page": 4,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260276:0",
+      "permit_number": "B260276",
+      "permit_date": "03/25/2026",
+      "permit_type_source": "excavation",
+      "purpose": "WSRP",
+      "parties": [
+        {
+          "name": "Erik Nettles",
+          "role": "Owner"
+        },
+        {
+          "name": "JC Dillon, Inc.",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "092031",
+      "parcel_number_source": null,
+      "address_source": "517 9 ST",
+      "total_cost": null,
+      "source_page": 4,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260277:0",
+      "permit_number": "B260277",
+      "permit_date": "03/26/2026",
+      "permit_type_source": "excavation",
+      "purpose": "SLRP / WSRP",
+      "parties": [
+        {
+          "name": "RICE JEFFREY/ALICE",
+          "role": "Owner"
+        },
+        {
+          "name": "JC Dillon, Inc.",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "102598-B",
+      "parcel_number_source": null,
+      "address_source": "3515 17 ST",
+      "total_cost": null,
+      "source_page": 4,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260278:0",
+      "permit_number": "B260278",
+      "permit_date": "03/26/2026",
+      "permit_type_source": "excavation",
+      "purpose": "WSRP",
+      "parties": [
+        {
+          "name": "HINTERMEISTER DONNA J",
+          "role": null
+        },
+        {
+          "name": "JC Dillon, Inc.",
+          "role": null
+        }
+      ],
+      "tax_map": "112591",
+      "parcel_number_source": null,
+      "address_source": "8805 20 ST W",
+      "total_cost": null,
+      "source_page": 4,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260159:0",
+      "permit_number": "B260159",
+      "permit_date": "03/03/2026",
+      "permit_type_source": "plumbing",
+      "purpose": "Water tap and connect. All to code.",
+      "parties": [
+        {
+          "name": "MYERS CYNTHIA",
+          "role": null
+        },
+        {
+          "name": "JC Dillon, Inc.",
+          "role": null
+        }
+      ],
+      "tax_map": "102697",
+      "parcel_number_source": null,
+      "address_source": "2412 30 ST",
+      "total_cost": "$0.00",
+      "source_page": 4,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260160:0",
+      "permit_number": "B260160",
+      "permit_date": "03/03/2026",
+      "permit_type_source": "plumbing",
+      "purpose": "Service repair. All to code.",
+      "parties": [
+        {
+          "name": "Shal L Moo",
+          "role": "Owner"
+        },
+        {
+          "name": "JC Dillon, Inc.",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "103056-F",
+      "parcel_number_source": null,
+      "address_source": "2136 23 AVE",
+      "total_cost": "$0.00",
+      "source_page": 4,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260161:0",
+      "permit_number": "B260161",
+      "permit_date": "03/03/2026",
+      "permit_type_source": "plumbing",
+      "purpose": "REPLACE WATER HEATER ALL TO CODE",
+      "parties": [
+        {
+          "name": "Hirst Plumbing & Mechanical Services",
+          "role": "Contractor"
+        },
+        {
+          "name": "POSRM HOLDINGS LLC",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "095401",
+      "parcel_number_source": null,
+      "address_source": "2930 5 AVE",
+      "total_cost": "$500.00",
+      "source_page": 4,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260162:0",
+      "permit_number": "B260162",
+      "permit_date": "03/04/2026",
+      "permit_type_source": "plumbing",
+      "purpose": "water and sewer disconnect, all to code",
+      "parties": [
+        {
+          "name": "Michael R VanHecks",
+          "role": null
+        },
+        {
+          "name": "McClintock Trucking & Excavating",
+          "role": null
+        }
+      ],
+      "tax_map": "094155",
+      "parcel_number_source": null,
+      "address_source": "3321 7 1/2 AVE",
+      "total_cost": "$0.00",
+      "source_page": 4,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260173:0",
+      "permit_number": "B260173",
+      "permit_date": "03/05/2026",
+      "permit_type_source": "plumbing",
+      "purpose": "New water lines. 1str floor bathroom remodel, 2nd foor bath remodel, kitchen sink install, and new water heater.",
+      "parties": [
+        {
+          "name": "Hirst Plumbing & Mechanical Services",
+          "role": null
+        },
+        {
+          "name": "Invictus Realty Solutions LLC",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "102286",
+      "parcel_number_source": null,
+      "address_source": "1811 12 ST",
+      "total_cost": "$11,000.00",
+      "source_page": 4,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260184:0",
+      "permit_number": "B260184",
+      "permit_date": "03/09/2026",
+      "permit_type_source": "plumbing",
+      "purpose": "sewer repair all to code",
+      "parties": [
+        {
+          "name": "Pace Bennett",
+          "role": "Owner"
+        },
+        {
+          "name": "JC Dillon, Inc.",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "101893-1",
+      "parcel_number_source": null,
+      "address_source": "3518 24 AVE",
+      "total_cost": "$0.00",
+      "source_page": 4,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260185:0",
+      "permit_number": "B260185",
+      "permit_date": "03/09/2026",
+      "permit_type_source": "plumbing",
+      "purpose": "sewer repair all to code",
+      "parties": [
+        {
+          "name": "Ryan Donkersloot",
+          "role": "Owner"
+        },
+        {
+          "name": "JC Dillon, Inc.",
+          "role": null
+        }
+      ],
+      "tax_map": "103616-27",
+      "parcel_number_source": null,
+      "address_source": "2414 28 AVE",
+      "total_cost": "$0.00",
+      "source_page": 4,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260188:0",
+      "permit_number": "B260188",
+      "permit_date": "03/09/2026",
+      "permit_type_source": "plumbing",
+      "purpose": "New water heater. All to code.",
+      "parties": [
+        {
+          "name": "WATSON PLUMBING & MECHANICAL",
+          "role": null
+        },
+        {
+          "name": "Lynn Harris",
+          "role": "Owner"
+        }
+      ],
+      "tax_map": "097333",
+      "parcel_number_source": null,
+      "address_source": "1700 26 ST",
+      "total_cost": "$1,200.00",
+      "source_page": 4,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260189:0",
+      "permit_number": "B260189",
+      "permit_date": "03/09/2026",
+      "permit_type_source": "plumbing",
+      "purpose": "25 water services. All to code.",
+      "parties": [
+        {
+          "name": "Erickson Plumbing & Heating, Inc.",
+          "role": "Contractor"
+        },
+        {
+          "name": "CITY OF ROCK ISLAND",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "10222",
+      "parcel_number_source": null,
+      "address_source": "950 31 AVE",
+      "total_cost": "$0.00",
+      "source_page": 4,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260191:0",
+      "permit_number": "B260191",
+      "permit_date": "03/09/2026",
+      "permit_type_source": "plumbing",
+      "purpose": "Sewer repair on property. All to code.",
+      "parties": [
+        {
+          "name": "Petersen Plumbing & Heating Company",
+          "role": "Contractor"
+        },
+        {
+          "name": "ADAM C DESCAMPS",
+          "role": null
+        }
+      ],
+      "tax_map": "091630",
+      "parcel_number_source": null,
+      "address_source": "1617 34 ST",
+      "total_cost": "$0.00",
+      "source_page": 4,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260193:0",
+      "permit_number": "B260193",
+      "permit_date": "03/09/2026",
+      "permit_type_source": "plumbing",
+      "purpose": "Install new water heater. All to code.",
+      "parties": [
+        {
+          "name": "MUSCOVALLEY FRANCIS L",
+          "role": null
+        },
+        {
+          "name": "WATSON PLUMBING & MECHANICAL",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "101447",
+      "parcel_number_source": null,
+      "address_source": "502 18 AVE",
+      "total_cost": "$1,200.00",
+      "source_page": 4,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260194:0",
+      "permit_number": "B260194",
+      "permit_date": "03/09/2026",
+      "permit_type_source": "plumbing",
+      "purpose": "Install new water heater in building E unit 4. All to code.",
+      "parties": [
+        {
+          "name": "Erickson Plumbing & Heating, Inc.",
+          "role": "Contractor"
+        },
+        {
+          "name": "Heather Ridge IL TC LP",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "11388-8",
+      "parcel_number_source": null,
+      "address_source": "9500 14 ST W",
+      "total_cost": "$0.00",
+      "source_page": 4,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260195:0",
+      "permit_number": "B260195",
+      "permit_date": "03/09/2026",
+      "permit_type_source": "plumbing",
+      "purpose": "Water service repair. All to code. 4",
+      "parties": [
+        {
+          "name": "Petersen Plumbing & Heating Company",
+          "role": "Contractor"
+        },
+        {
+          "name": "Carman Properties, LLC",
+          "role": "Contractor"
+        },
+        {
+          "name": "4/30/2026",
+          "role": null
+        }
+      ],
+      "tax_map": "105203",
+      "parcel_number_source": null,
+      "address_source": "4683 HARMONEY LANE",
+      "total_cost": "$0.00",
+      "source_page": 4,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260198:0",
+      "permit_number": "B260198",
+      "permit_date": "03/09/2026",
+      "permit_type_source": "plumbing",
+      "purpose": "SEWER REPAIR ALL TO CODE",
+      "parties": [
+        {
+          "name": "RUSK DEBORAH A",
+          "role": null
+        },
+        {
+          "name": "JC Dillon, Inc.",
+          "role": null
+        }
+      ],
+      "tax_map": "101881",
+      "parcel_number_source": null,
+      "address_source": "2210 38 ST",
+      "total_cost": "$0.00",
+      "source_page": 5,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260200:0",
+      "permit_number": "B260200",
+      "permit_date": "03/10/2026",
+      "permit_type_source": "plumbing",
+      "purpose": "Install new tub all done to code.",
+      "parties": [
+        {
+          "name": "TMI/Total Maintenance Inc.",
+          "role": null
+        },
+        {
+          "name": "Alexis Nyandwi",
+          "role": "Owner"
+        }
+      ],
+      "tax_map": "101812-22",
+      "parcel_number_source": null,
+      "address_source": "2124 37 ST",
+      "total_cost": "$1,298.00",
+      "source_page": 5,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260202:0",
+      "permit_number": "B260202",
+      "permit_date": "03/10/2026",
+      "permit_type_source": "plumbing",
+      "purpose": "sewer repair all to code",
+      "parties": [
+        {
+          "name": "Jill M Twing",
+          "role": "Owner"
+        },
+        {
+          "name": "JC Dillon, Inc.",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "101812-56",
+      "parcel_number_source": null,
+      "address_source": "2918 30 AVE",
+      "total_cost": "$0.00",
+      "source_page": 5,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260203:0",
+      "permit_number": "B260203",
+      "permit_date": "03/10/2026",
+      "permit_type_source": "plumbing",
+      "purpose": "water service repair all to code.",
+      "parties": [
+        {
+          "name": "Brenda L James",
+          "role": "Owner"
+        },
+        {
+          "name": "JC Dillon, Inc.",
+          "role": null
+        }
+      ],
+      "tax_map": "095585",
+      "parcel_number_source": null,
+      "address_source": "916 11 AVE",
+      "total_cost": "$0.00",
+      "source_page": 5,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260207:0",
+      "permit_number": "B260207",
+      "permit_date": "03/11/2026",
+      "permit_type_source": "plumbing",
+      "purpose": "SEWER LATERAL REPAIR IN STREET ALL TO CODE",
+      "parties": [
+        {
+          "name": "J Cook",
+          "role": null
+        },
+        {
+          "name": "River Bend Plumbing",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "10741-33",
+      "parcel_number_source": null,
+      "address_source": "2406 BRITTANY LN",
+      "total_cost": "$5,500.00",
+      "source_page": 5,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260216:0",
+      "permit_number": "B260216",
+      "permit_date": "03/12/2026",
+      "permit_type_source": "plumbing",
+      "purpose": "WATER SERVICE. ALL TO CODE.",
+      "parties": [
+        {
+          "name": "A+ Plumbing",
+          "role": "Contractor"
+        },
+        {
+          "name": "DEHALVA PROPERTIES",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "095893",
+      "parcel_number_source": null,
+      "address_source": "1619 6 ST",
+      "total_cost": "$0.00",
+      "source_page": 5,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260224:0",
+      "permit_number": "B260224",
+      "permit_date": "03/13/2026",
+      "permit_type_source": "plumbing",
+      "purpose": "Disconnect water and sewer for house demo all done to code.",
+      "parties": [
+        {
+          "name": "Nicolasa Casco",
+          "role": "Owner"
+        },
+        {
+          "name": "JC Dillon, Inc.",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "095336",
+      "parcel_number_source": null,
+      "address_source": "1213 7 AVE",
+      "total_cost": "$0.00",
+      "source_page": 5,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260234:0",
+      "permit_number": "B260234",
+      "permit_date": "03/18/2026",
+      "permit_type_source": "plumbing",
+      "purpose": "SANITARY SEWER REPAIR ALL TO CODE",
+      "parties": [
+        {
+          "name": "RICE JEFFREY/ALICE",
+          "role": null
+        },
+        {
+          "name": "JC Dillon, Inc.",
+          "role": null
+        }
+      ],
+      "tax_map": "102598-B",
+      "parcel_number_source": null,
+      "address_source": "3515 17 ST",
+      "total_cost": "$10,000.00",
+      "source_page": 5,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260235:0",
+      "permit_number": "B260235",
+      "permit_date": "03/19/2026",
+      "permit_type_source": "plumbing",
+      "purpose": "Replace two water heaters to code.",
+      "parties": [
+        {
+          "name": "Crawford Company",
+          "role": "Contractor"
+        },
+        {
+          "name": "LOFT GROUP LIMITED",
+          "role": "Owner"
+        },
+        {
+          "name": "Crawford Company",
+          "role": "Contractor"
+        },
+        {
+          "name": "LOFT GROUP LIMITED",
+          "role": "Owner"
+        }
+      ],
+      "tax_map": "096388",
+      "parcel_number_source": null,
+      "address_source": "1715-17 2 AVE; 124 Arts Alley",
+      "total_cost": "$2,800.00",
+      "source_page": 5,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260236:0",
+      "permit_number": "B260236",
+      "permit_date": "03/19/2026",
+      "permit_type_source": "plumbing",
+      "purpose": "install new gas piping all to code",
+      "parties": [
+        {
+          "name": "Crawford Company",
+          "role": null
+        },
+        {
+          "name": "GOOD REAL ESTATE LLC",
+          "role": null
+        },
+        {
+          "name": "Crawford Company",
+          "role": null
+        },
+        {
+          "name": "GOOD REAL ESTATE LLC",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "097430",
+      "parcel_number_source": null,
+      "address_source": "830-32 14 1/2 ST; 830 14 1/2",
+      "total_cost": "$22,000.00",
+      "source_page": 5,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260248:0",
+      "permit_number": "B260248",
+      "permit_date": "03/19/2026",
+      "permit_type_source": "plumbing",
+      "purpose": "Replace water service. All to code.",
+      "parties": [
+        {
+          "name": "Crawford Company",
+          "role": "Contractor"
+        },
+        {
+          "name": "CAROL BAKER JACKSON",
+          "role": "Owner"
+        },
+        {
+          "name": "Crawford Company",
+          "role": "Contractor"
+        },
+        {
+          "name": "CAROL BAKER JACKSON",
+          "role": null
+        }
+      ],
+      "tax_map": "09788",
+      "parcel_number_source": null,
+      "address_source": "905-907 15 ST; 905 15 ST",
+      "total_cost": "$1,000.00",
+      "source_page": 5,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260249:0",
+      "permit_number": "B260249",
+      "permit_date": "03/19/2026",
+      "permit_type_source": "plumbing",
+      "purpose": "Replace water service. All to code.",
+      "parties": [
+        {
+          "name": "Crawford Company",
+          "role": null
+        },
+        {
+          "name": "Joshua Thorndyke",
+          "role": "Owner"
+        }
+      ],
+      "tax_map": "09872",
+      "parcel_number_source": null,
+      "address_source": "906 15 ST",
+      "total_cost": "$1,000.00",
+      "source_page": 5,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260256:0",
+      "permit_number": "B260256",
+      "permit_date": "03/20/2026",
+      "permit_type_source": "plumbing",
+      "purpose": "water service all to code",
+      "parties": [
+        {
+          "name": "A+ Plumbing",
+          "role": "Contractor"
+        },
+        {
+          "name": "Julio Barrerra",
+          "role": "Owner"
+        }
+      ],
+      "tax_map": "091440",
+      "parcel_number_source": null,
+      "address_source": "618 45 ST",
+      "total_cost": "$1.00",
+      "source_page": 5,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260259:0",
+      "permit_number": "B260259",
+      "permit_date": "03/20/2026",
+      "permit_type_source": "plumbing",
+      "purpose": "Sanitary sewer repair all done to code.",
+      "parties": [
+        {
+          "name": "Shane L Littlejohn",
+          "role": "Owner"
+        },
+        {
+          "name": "JC Dillon, Inc.",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "101130-44",
+      "parcel_number_source": null,
+      "address_source": "3222 37 AVE",
+      "total_cost": "$0.00",
+      "source_page": 5,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260260:0",
+      "permit_number": "B260260",
+      "permit_date": "03/20/2026",
+      "permit_type_source": "plumbing",
+      "purpose": "Exterior sewer repair- all to code.",
+      "parties": [
+        {
+          "name": "Twins Capital Holdings, LLC",
+          "role": null
+        },
+        {
+          "name": "Element Plumbing LLC",
+          "role": null
+        }
+      ],
+      "tax_map": "102435",
+      "parcel_number_source": null,
+      "address_source": "509 23 AVE",
+      "total_cost": "$6,000.00",
+      "source_page": 5,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260261:0",
+      "permit_number": "B260261",
+      "permit_date": "03/20/2026",
+      "permit_type_source": "plumbing",
+      "purpose": "Sewer Lateral- all to code. 5",
+      "parties": [
+        {
+          "name": "Elenitsa Inc",
+          "role": "Contractor"
+        },
+        {
+          "name": "4/30/2026",
+          "role": null
+        }
+      ],
+      "tax_map": "093818",
+      "parcel_number_source": null,
+      "address_source": "1340 31 ST",
+      "total_cost": "$0.00",
+      "source_page": 5,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260261:1",
+      "permit_number": "B260261",
+      "permit_date": "03/20/2026",
+      "permit_type_source": "plumbing",
+      "purpose": "Sewer Lateral- all to code.",
+      "parties": [
+        {
+          "name": "Erickson Plumbing & Heating, Inc.",
+          "role": null
+        }
+      ],
+      "tax_map": "093818",
+      "parcel_number_source": null,
+      "address_source": "1340 31 ST",
+      "total_cost": "$0.00",
+      "source_page": 6,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260265:0",
+      "permit_number": "B260265",
+      "permit_date": "03/20/2026",
+      "permit_type_source": "plumbing",
+      "purpose": "Water service - on property. All to code.",
+      "parties": [
+        {
+          "name": "Petersen Plumbing & Heating Company",
+          "role": null
+        },
+        {
+          "name": "Slyvia Crouch",
+          "role": null
+        }
+      ],
+      "tax_map": "102970",
+      "parcel_number_source": null,
+      "address_source": "2210 45 ST",
+      "total_cost": "$0.00",
+      "source_page": 6,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260266:0",
+      "permit_number": "B260266",
+      "permit_date": "03/20/2026",
+      "permit_type_source": "plumbing",
+      "purpose": "Install new water heater. All to code.",
+      "parties": [
+        {
+          "name": "DEMUYNCK THOMAS",
+          "role": "Owner"
+        },
+        {
+          "name": "WATSON PLUMBING & MECHANICAL",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "102138",
+      "parcel_number_source": null,
+      "address_source": "2501 30 ST",
+      "total_cost": "$1,200.00",
+      "source_page": 6,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260268:0",
+      "permit_number": "B260268",
+      "permit_date": "03/23/2026",
+      "permit_type_source": "plumbing",
+      "purpose": "cap of water after curb box and cut back sewer lateral, all to code",
+      "parties": [
+        {
+          "name": "Petersen Plumbing & Heating Company",
+          "role": "Contractor"
+        },
+        {
+          "name": "Deric L Slaight",
+          "role": "Owner"
+        }
+      ],
+      "tax_map": "103314-G",
+      "parcel_number_source": null,
+      "address_source": "4111 31 AVE",
+      "total_cost": "$1,000.00",
+      "source_page": 6,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260272:0",
+      "permit_number": "B260272",
+      "permit_date": "03/24/2026",
+      "permit_type_source": "plumbing",
+      "purpose": "THIS PROJECT INCLUDES THE RELOCATION OF 35 SPRINKLERS ON AN EXISTING FIRE SPRINKLER SYSTEM THROUGHOUT THE 2631 SQFT AREA TO ACCOMMODATE FOR A NEW FLOOR PLAN. ALL TO CODE.",
+      "parties": [
+        {
+          "name": "Continental Fire Sprinkler Company",
+          "role": null
+        },
+        {
+          "name": "Property Pros LLC",
+          "role": null
+        }
+      ],
+      "tax_map": "097695",
+      "parcel_number_source": null,
+      "address_source": "120 16 1/2 ST",
+      "total_cost": "$13,460.00",
+      "source_page": 6,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260163:0",
+      "permit_number": "B260163",
+      "permit_date": "03/04/2026",
+      "permit_type_source": "Resident Elect",
+      "purpose": "Bathroom lighting, new panel, & other misc electrical work-all to code.",
+      "parties": [
+        {
+          "name": "Paradise Power Inc.",
+          "role": null
+        },
+        {
+          "name": "Joan Degarmo",
+          "role": null
+        }
+      ],
+      "tax_map": "091206",
+      "parcel_number_source": null,
+      "address_source": "1533 29 ST",
+      "total_cost": "$3,500.00",
+      "source_page": 6,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260170:0",
+      "permit_number": "B260170",
+      "permit_date": "03/05/2026",
+      "permit_type_source": "Resident Elect",
+      "purpose": "Remodel the electrical system to code.",
+      "parties": [
+        {
+          "name": "Daniel T Klak",
+          "role": "Owner"
+        },
+        {
+          "name": "Advantage Electrical Contractors, Inc.",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "094729",
+      "parcel_number_source": null,
+      "address_source": "1309 43 ST",
+      "total_cost": "$7,200.00",
+      "source_page": 6,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260172:0",
+      "permit_number": "B260172",
+      "permit_date": "03/05/2026",
+      "permit_type_source": "Resident Elect",
+      "purpose": "Electrical remodel/ utility turn on",
+      "parties": [
+        {
+          "name": "Paradise Power Inc.",
+          "role": "Contractor"
+        },
+        {
+          "name": "Julio Barrera Lopez",
+          "role": "Owner"
+        }
+      ],
+      "tax_map": "09317",
+      "parcel_number_source": null,
+      "address_source": "2831 6 AVE",
+      "total_cost": "$7,000.00",
+      "source_page": 6,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260190:0",
+      "permit_number": "B260190",
+      "permit_date": "03/09/2026",
+      "permit_type_source": "Resident Elect",
+      "purpose": "Demo existing 100 Amp service panel and install new 200 Amp SQD Homeline Panel. All to code.",
+      "parties": [
+        {
+          "name": "Crawford Company",
+          "role": null
+        },
+        {
+          "name": "Robyn L McCracken",
+          "role": null
+        }
+      ],
+      "tax_map": "095490",
+      "parcel_number_source": null,
+      "address_source": "1148 45TH ST",
+      "total_cost": "$3,300.00",
+      "source_page": 6,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260229:0",
+      "permit_number": "B260229",
+      "permit_date": "03/16/2026",
+      "permit_type_source": "Resident Elect",
+      "purpose": "200AMP SERVICE ON GARAGE. ALL TO CODE",
+      "parties": [
+        {
+          "name": "KENT RICHARD L",
+          "role": "Owner"
+        },
+        {
+          "name": "Lakewood Electric & Generator Service, Inc.",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "11388-2",
+      "parcel_number_source": null,
+      "address_source": "9215 RIDGEWOOD RD",
+      "total_cost": "$2,500.00",
+      "source_page": 6,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260238:0",
+      "permit_number": "B260238",
+      "permit_date": "03/19/2026",
+      "permit_type_source": "Resident Elect",
+      "purpose": "replace electrical panel and work for utility turn on all to code",
+      "parties": [
+        {
+          "name": "Advantage Electrical Contractors, Inc.",
+          "role": "Contractor"
+        },
+        {
+          "name": "G1 Investments, LLC",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "09204",
+      "parcel_number_source": null,
+      "address_source": "1600 14 ST",
+      "total_cost": "$1,600.00",
+      "source_page": 6,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260251:0",
+      "permit_number": "B260251",
+      "permit_date": "03/19/2026",
+      "permit_type_source": "Resident Elect",
+      "purpose": "GFCI's,fixture,buble cor.,comb switch- all to code",
+      "parties": [
+        {
+          "name": "Pizano Electric",
+          "role": null
+        },
+        {
+          "name": "EARVIE C PULLIAM",
+          "role": null
+        }
+      ],
+      "tax_map": "091282-1",
+      "parcel_number_source": null,
+      "address_source": "2528 6 AVE",
+      "total_cost": "$1,600.00",
+      "source_page": 6,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260263:0",
+      "permit_number": "B260263",
+      "permit_date": "03/20/2026",
+      "permit_type_source": "Resident Elect",
+      "purpose": "200A panel swap. All to code.",
+      "parties": [
+        {
+          "name": "JOHNSON KENNETH A",
+          "role": "Owner"
+        },
+        {
+          "name": "Shaw Electric Company",
+          "role": "Contractor"
+        },
+        {
+          "name": "JOHNSON KENNETH A",
+          "role": "Owner"
+        },
+        {
+          "name": "Shaw Electric Company",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "094513",
+      "parcel_number_source": null,
+      "address_source": "2826 8 1/2 AVE; 2826 8 1/2 AV",
+      "total_cost": "$1,800.00",
+      "source_page": 6,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260264:0",
+      "permit_number": "B260264",
+      "permit_date": "03/20/2026",
+      "permit_type_source": "Resident Elect",
+      "purpose": "Upgrading meter to meter disconnect. All to code.",
+      "parties": [
+        {
+          "name": "Kay J Niemann as trustee",
+          "role": null
+        },
+        {
+          "name": "POWER UP ELECTRIC",
+          "role": null
+        }
+      ],
+      "tax_map": "101909-55",
+      "parcel_number_source": null,
+      "address_source": "3533 31 AVE",
+      "total_cost": "$13,856.32",
+      "source_page": 6,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260192:0",
+      "permit_number": "B260192",
+      "permit_date": "03/09/2026",
+      "permit_type_source": "Resident HVAC",
+      "purpose": "Replace furnace and AC. All to code. 6",
+      "parties": [
+        {
+          "name": "Joseph Alongi",
+          "role": null
+        },
+        {
+          "name": "4/30/2026",
+          "role": null
+        }
+      ],
+      "tax_map": "104518",
+      "parcel_number_source": null,
+      "address_source": "2516 36 ST",
+      "total_cost": "$11,619.00",
+      "source_page": 6,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260192:1",
+      "permit_number": "B260192",
+      "permit_date": "03/09/2026",
+      "permit_type_source": "Resident HVAC",
+      "purpose": "Replace furnace and AC. All to code.",
+      "parties": [
+        {
+          "name": "Crawford Company",
+          "role": null
+        }
+      ],
+      "tax_map": "104518",
+      "parcel_number_source": null,
+      "address_source": "2516 36 ST",
+      "total_cost": "$11,619.00",
+      "source_page": 7,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260226:0",
+      "permit_number": "B260226",
+      "permit_date": "03/16/2026",
+      "permit_type_source": "Resident HVAC",
+      "purpose": "Replace furnace. All to code.",
+      "parties": [
+        {
+          "name": "Douglas E Mason",
+          "role": null
+        },
+        {
+          "name": "Freed Heating & Air Conditioning",
+          "role": null
+        }
+      ],
+      "tax_map": "103182",
+      "parcel_number_source": null,
+      "address_source": "4230 9 ST",
+      "total_cost": "$4,600.00",
+      "source_page": 7,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260242:0",
+      "permit_number": "B260242",
+      "permit_date": "03/19/2026",
+      "permit_type_source": "Resident HVAC",
+      "purpose": "Replace 70K BTU furnace to code.",
+      "parties": [
+        {
+          "name": "JL Brady Company LLC",
+          "role": "Contractor"
+        },
+        {
+          "name": "James J Sexton",
+          "role": "Owner"
+        }
+      ],
+      "tax_map": "1052-A",
+      "parcel_number_source": null,
+      "address_source": "1800 9 1/2 ST",
+      "total_cost": "$2,000.00",
+      "source_page": 7,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260245:0",
+      "permit_number": "B260245",
+      "permit_date": "03/19/2026",
+      "permit_type_source": "Resident HVAC",
+      "purpose": "furnace and ac replacement, all to code",
+      "parties": [
+        {
+          "name": "Gabrilson Heating & Air Conditioning DBA",
+          "role": "Contractor"
+        },
+        {
+          "name": "Gabrilson Indoor Climate Solutions",
+          "role": null
+        },
+        {
+          "name": "JOSUE S DOMINGUEZ",
+          "role": "Owner"
+        }
+      ],
+      "tax_map": "101461",
+      "parcel_number_source": null,
+      "address_source": "516 18 1/2 AVE",
+      "total_cost": "$5,000.00",
+      "source_page": 7,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260246:0",
+      "permit_number": "B260246",
+      "permit_date": "03/19/2026",
+      "permit_type_source": "Resident HVAC",
+      "purpose": "furnace replacement- all to code",
+      "parties": [
+        {
+          "name": "Gabrilson Heating & Air Conditioning DBA",
+          "role": "Contractor"
+        },
+        {
+          "name": "Gabrilson Indoor Climate Solutions",
+          "role": null
+        },
+        {
+          "name": "Daniel Garrison",
+          "role": null
+        }
+      ],
+      "tax_map": "102179-2",
+      "parcel_number_source": null,
+      "address_source": "3700 28 ST",
+      "total_cost": "$3,000.00",
+      "source_page": 7,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260275:0",
+      "permit_number": "B260275",
+      "permit_date": "03/24/2026",
+      "permit_type_source": "Resident HVAC",
+      "purpose": "Furnace install. All to code.",
+      "parties": [
+        {
+          "name": "Richard J Trinrud",
+          "role": null
+        },
+        {
+          "name": "Kale Heating & Air Conditioning",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "091300",
+      "parcel_number_source": null,
+      "address_source": "3932 8 AVE",
+      "total_cost": "$7,150.00",
+      "source_page": 7,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260169:0",
+      "permit_number": "B260169",
+      "permit_date": "03/04/2026",
+      "permit_type_source": "roof",
+      "purpose": "remove and replace 14.5s of shingles and gutters on the home. all to code,",
+      "parties": [
+        {
+          "name": "Jennifer M Hurt",
+          "role": null
+        },
+        {
+          "name": "Erie Construction Mid-West LLC",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "092463",
+      "parcel_number_source": null,
+      "address_source": "1505 39 ST",
+      "total_cost": "$25,234.46",
+      "source_page": 7,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260179:0",
+      "permit_number": "B260179",
+      "permit_date": "03/06/2026",
+      "permit_type_source": "roof",
+      "purpose": "Roof-all to code.",
+      "parties": [
+        {
+          "name": "Erdman Construction",
+          "role": "Contractor"
+        },
+        {
+          "name": "LOYD HOLDINGS LLC",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "097497",
+      "parcel_number_source": null,
+      "address_source": "1600 9 ST",
+      "total_cost": "$17,000.00",
+      "source_page": 7,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260180:0",
+      "permit_number": "B260180",
+      "permit_date": "03/06/2026",
+      "permit_type_source": "roof",
+      "purpose": "Remove and replace roof-all to code.",
+      "parties": [
+        {
+          "name": "VANZYLE A J JR",
+          "role": "Owner"
+        },
+        {
+          "name": "FRONTLINE SERVICES",
+          "role": null
+        }
+      ],
+      "tax_map": "103591",
+      "parcel_number_source": null,
+      "address_source": "1818 9 1/2 ST",
+      "total_cost": "$7,777.00",
+      "source_page": 7,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260182:0",
+      "permit_number": "B260182",
+      "permit_date": "03/06/2026",
+      "permit_type_source": "roof",
+      "purpose": "Remove and replace roof-all to code.",
+      "parties": [
+        {
+          "name": "BARBER ALBERT",
+          "role": null
+        },
+        {
+          "name": "FRONTLINE SERVICES",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "101373",
+      "parcel_number_source": null,
+      "address_source": "1842 9 ST",
+      "total_cost": "$9,595.00",
+      "source_page": 7,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260196:0",
+      "permit_number": "B260196",
+      "permit_date": "03/09/2026",
+      "permit_type_source": "roof",
+      "purpose": "REPLACE 10 SQ ON FRONT ROOF ALL TO CODE",
+      "parties": [
+        {
+          "name": "Catherine Colley",
+          "role": "Owner"
+        },
+        {
+          "name": "AARON DIAZ CONSTURCTION",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "113033",
+      "parcel_number_source": null,
+      "address_source": "1701 88 AVE W",
+      "total_cost": "$3,000.00",
+      "source_page": 7,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260199:0",
+      "permit_number": "B260199",
+      "permit_date": "03/10/2026",
+      "permit_type_source": "roof",
+      "purpose": "replace shingles on house only. replace plywood if needed. all to code.",
+      "parties": [
+        {
+          "name": "CONDRACK JUDITH A",
+          "role": "Owner"
+        },
+        {
+          "name": "Perfect Choice Exteriors",
+          "role": null
+        }
+      ],
+      "tax_map": "112996",
+      "parcel_number_source": null,
+      "address_source": "1010 83 AVE W",
+      "total_cost": "$11,780.00",
+      "source_page": 7,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260201:0",
+      "permit_number": "B260201",
+      "permit_date": "03/10/2026",
+      "permit_type_source": "roof",
+      "purpose": "roof garage and house, all to code",
+      "parties": [
+        {
+          "name": "Advanced Construction & Improvement Co.",
+          "role": null
+        },
+        {
+          "name": "Margaret Carpenter",
+          "role": "Owner"
+        }
+      ],
+      "tax_map": "094971",
+      "parcel_number_source": null,
+      "address_source": "4218 13 AVE CT",
+      "total_cost": "$4,900.00",
+      "source_page": 7,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260204:0",
+      "permit_number": "B260204",
+      "permit_date": "03/11/2026",
+      "permit_type_source": "roof",
+      "purpose": "Roof- all to code.",
+      "parties": [
+        {
+          "name": "Bernabe Cobos",
+          "role": "Owner"
+        },
+        {
+          "name": "Vogue Marketing Inc",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "093056-A",
+      "parcel_number_source": null,
+      "address_source": "1419 7 AVE",
+      "total_cost": "$8,850.00",
+      "source_page": 7,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260211:0",
+      "permit_number": "B260211",
+      "permit_date": "03/12/2026",
+      "permit_type_source": "roof",
+      "purpose": "repalce upper low slope roof all to code.",
+      "parties": [
+        {
+          "name": "MCLAUGHLIN MARY LOU",
+          "role": "Owner"
+        },
+        {
+          "name": "QC Roof DRS, Inc",
+          "role": null
+        }
+      ],
+      "tax_map": "101203",
+      "parcel_number_source": null,
+      "address_source": "2500 30 ST",
+      "total_cost": "$1,800.00",
+      "source_page": 7,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260217:0",
+      "permit_number": "B260217",
+      "permit_date": "03/12/2026",
+      "permit_type_source": "roof",
+      "purpose": "Re-roof house. All to code.",
+      "parties": [
+        {
+          "name": "RYAN TRIMBLE",
+          "role": null
+        },
+        {
+          "name": "Elite Exteriors LLC",
+          "role": null
+        }
+      ],
+      "tax_map": "104139",
+      "parcel_number_source": null,
+      "address_source": "2310 37TH ST",
+      "total_cost": "$12,000.00",
+      "source_page": 7,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260220:0",
+      "permit_number": "B260220",
+      "permit_date": "03/13/2026",
+      "permit_type_source": "roof",
+      "purpose": "remove old shingles and install new asphalt shingles, all to code 7",
+      "parties": [
+        {
+          "name": "D & K RENTAL PROPERTIES",
+          "role": "Contractor"
+        },
+        {
+          "name": "D & K RENTAL PROPERTIES",
+          "role": "Contractor"
+        },
+        {
+          "name": "4/30/2026",
+          "role": null
+        }
+      ],
+      "tax_map": "093703",
+      "parcel_number_source": null,
+      "address_source": "1120 37 ST",
+      "total_cost": "$7,800.00",
+      "source_page": 7,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260220:1",
+      "permit_number": "B260220",
+      "permit_date": "03/13/2026",
+      "permit_type_source": "roof",
+      "purpose": "remove old shingles and install new asphalt shingles, all to code",
+      "parties": [
+        {
+          "name": "D & K RENTAL PROPERTIES",
+          "role": null
+        }
+      ],
+      "tax_map": "093703",
+      "parcel_number_source": null,
+      "address_source": "1120 37 ST",
+      "total_cost": "$7,800.00",
+      "source_page": 8,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260262:0",
+      "permit_number": "B260262",
+      "permit_date": "03/20/2026",
+      "permit_type_source": "roof",
+      "purpose": "Remove existing shingled roof and install 28 SQ asphalt shingles. All to code.",
+      "parties": [
+        {
+          "name": "Steven J Daack",
+          "role": null
+        },
+        {
+          "name": "Veterans Choice Contracting, LLC",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "103891-76",
+      "parcel_number_source": null,
+      "address_source": "29 WOODLEY RD",
+      "total_cost": "$10,000.00",
+      "source_page": 8,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260280:0",
+      "permit_number": "B260280",
+      "permit_date": "03/30/2026",
+      "permit_type_source": "roof",
+      "purpose": "Remove shingles and replace with 4sq of architectural shingles to code.",
+      "parties": [
+        {
+          "name": "Duncan Cole SR",
+          "role": "Owner"
+        },
+        {
+          "name": "Duncan Cole SR",
+          "role": "Owner"
+        }
+      ],
+      "tax_map": "096973",
+      "parcel_number_source": null,
+      "address_source": "1306 5 1/2 AVE",
+      "total_cost": "$2,000.00",
+      "source_page": 8,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260158:0",
+      "permit_number": "B260158",
+      "permit_date": "03/03/2026",
+      "permit_type_source": "utility",
+      "purpose": "electric turn on, all to code",
+      "parties": [
+        {
+          "name": "EARVIE C PULLIAM",
+          "role": "Owner"
+        },
+        {
+          "name": "EARVIE C PULLIAM",
+          "role": "Owner"
+        }
+      ],
+      "tax_map": "091282-1",
+      "parcel_number_source": null,
+      "address_source": "2528 6 AVE",
+      "total_cost": null,
+      "source_page": 8,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260209:0",
+      "permit_number": "B260209",
+      "permit_date": "03/11/2026",
+      "permit_type_source": "utility",
+      "purpose": "utility turn on, gas. all to code.",
+      "parties": [
+        {
+          "name": "WADSWORTH WILLIAM",
+          "role": null
+        },
+        {
+          "name": "Crawford Company",
+          "role": null
+        }
+      ],
+      "tax_map": "103891-82",
+      "parcel_number_source": null,
+      "address_source": "8 HAWTHORNE RD",
+      "total_cost": null,
+      "source_page": 8,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260241:0",
+      "permit_number": "B260241",
+      "permit_date": "03/19/2026",
+      "permit_type_source": "utility",
+      "purpose": "utility turn on all to code",
+      "parties": [
+        {
+          "name": "Advantage Electrical Contractors, Inc.",
+          "role": "Contractor"
+        },
+        {
+          "name": "G1 Investments, LLC",
+          "role": "Contractor"
+        }
+      ],
+      "tax_map": "09204",
+      "parcel_number_source": null,
+      "address_source": "1600 14 ST",
+      "total_cost": null,
+      "source_page": 8,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260250:0",
+      "permit_number": "B260250",
+      "permit_date": "03/19/2026",
+      "permit_type_source": "utility",
+      "purpose": "Electric UTO. All to code.",
+      "parties": [
+        {
+          "name": "Pizano Electric",
+          "role": "Contractor"
+        },
+        {
+          "name": "EARVIE C PULLIAM",
+          "role": "Owner"
+        }
+      ],
+      "tax_map": "091282-1",
+      "parcel_number_source": null,
+      "address_source": "2528 6 AVE",
+      "total_cost": null,
+      "source_page": 8,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    },
+    {
+      "id": "20355:B260273:0",
+      "permit_number": "B260273",
+      "permit_date": "03/24/2026",
+      "permit_type_source": "utility",
+      "purpose": "Gas utility turn on all done to code. 8",
+      "parties": [
+        {
+          "name": "Jeffery Phillip",
+          "role": "Owner"
+        },
+        {
+          "name": "R3 HEATING & AIR",
+          "role": null
+        }
+      ],
+      "tax_map": "094495",
+      "parcel_number_source": null,
+      "address_source": "2733 8 1/2 AVE",
+      "total_cost": null,
+      "source_page": 8,
+      "report_url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report",
+      "report_document_id": "20355",
+      "report_sha256": "97301f9c640a2000647e21b4d6af909f3023871c00cb763e5e56d5c41ffa9e79",
+      "report_month": "2026-03",
+      "report_layout": "legacy-tabular",
+      "extracted_at": "2026-08-12T18:27:32.602Z"
+    }
+  ]
+}

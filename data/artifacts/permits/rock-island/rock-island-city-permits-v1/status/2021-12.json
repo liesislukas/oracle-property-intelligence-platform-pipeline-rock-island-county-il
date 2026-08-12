@@ -9,5 +9,11 @@
   "elapsed_ms": 893,
   "attempts": 1,
   "downloaded_at": "2026-08-12T18:24:30.641Z",
-  "extract": null
+  "extract": {
+    "status": "ok",
+    "layout": "legacy-tabular",
+    "record_count": 155,
+    "month_mismatch": false,
+    "extracted_at": "2026-08-12T18:27:31.718Z"
+  }
 }
