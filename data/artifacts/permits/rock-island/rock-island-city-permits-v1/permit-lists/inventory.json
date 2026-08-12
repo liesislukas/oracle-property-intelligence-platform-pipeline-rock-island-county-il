@@ -1,0 +1,798 @@
+{
+  "county_slug": "rock-island",
+  "jurisdiction": "rock-island",
+  "job_id": "rock-island-city-permits-v1",
+  "source_index_url": "https://rigov.org/1276/Permit-Reports",
+  "harvested_at": "2026-08-12T18:20:30.345Z",
+  "index_entry_count": 112,
+  "distinct_document_count": 111,
+  "duplicate_document_ids": [
+    "15854"
+  ],
+  "reports": [
+    {
+      "index_month": "2017-01",
+      "index_year": 2017,
+      "index_month_name": "January",
+      "document_id": "11935",
+      "url": "https://rigov.org/DocumentCenter/View/11935"
+    },
+    {
+      "index_month": "2017-02",
+      "index_year": 2017,
+      "index_month_name": "February",
+      "document_id": "12026",
+      "url": "https://rigov.org/DocumentCenter/View/12026"
+    },
+    {
+      "index_month": "2017-03",
+      "index_year": 2017,
+      "index_month_name": "March",
+      "document_id": "12161",
+      "url": "https://rigov.org/DocumentCenter/View/12161"
+    },
+    {
+      "index_month": "2017-04",
+      "index_year": 2017,
+      "index_month_name": "April",
+      "document_id": "12445",
+      "url": "https://rigov.org/DocumentCenter/View/12445"
+    },
+    {
+      "index_month": "2017-05",
+      "index_year": 2017,
+      "index_month_name": "May",
+      "document_id": "12623",
+      "url": "https://rigov.org/DocumentCenter/View/12623"
+    },
+    {
+      "index_month": "2017-06",
+      "index_year": 2017,
+      "index_month_name": "June",
+      "document_id": "12694",
+      "url": "https://rigov.org/DocumentCenter/View/12694"
+    },
+    {
+      "index_month": "2017-07",
+      "index_year": 2017,
+      "index_month_name": "July",
+      "document_id": "12784",
+      "url": "https://rigov.org/DocumentCenter/View/12784"
+    },
+    {
+      "index_month": "2017-08",
+      "index_year": 2017,
+      "index_month_name": "August",
+      "document_id": "12869",
+      "url": "https://rigov.org/DocumentCenter/View/12869"
+    },
+    {
+      "index_month": "2017-09",
+      "index_year": 2017,
+      "index_month_name": "September",
+      "document_id": "12944",
+      "url": "https://rigov.org/DocumentCenter/View/12944"
+    },
+    {
+      "index_month": "2017-10",
+      "index_year": 2017,
+      "index_month_name": "October",
+      "document_id": "12990",
+      "url": "https://rigov.org/DocumentCenter/View/12990"
+    },
+    {
+      "index_month": "2017-11",
+      "index_year": 2017,
+      "index_month_name": "November",
+      "document_id": "13051",
+      "url": "https://rigov.org/DocumentCenter/View/13051"
+    },
+    {
+      "index_month": "2017-12",
+      "index_year": 2017,
+      "index_month_name": "December",
+      "document_id": "13160",
+      "url": "https://rigov.org/DocumentCenter/View/13160"
+    },
+    {
+      "index_month": "2018-01",
+      "index_year": 2018,
+      "index_month_name": "January",
+      "document_id": "13248",
+      "url": "https://rigov.org/DocumentCenter/View/13248"
+    },
+    {
+      "index_month": "2018-02",
+      "index_year": 2018,
+      "index_month_name": "February",
+      "document_id": "13295",
+      "url": "https://rigov.org/DocumentCenter/View/13295"
+    },
+    {
+      "index_month": "2018-03",
+      "index_year": 2018,
+      "index_month_name": "March",
+      "document_id": "13387",
+      "url": "https://rigov.org/DocumentCenter/View/13387"
+    },
+    {
+      "index_month": "2018-04",
+      "index_year": 2018,
+      "index_month_name": "April",
+      "document_id": "13422",
+      "url": "https://rigov.org/DocumentCenter/View/13422"
+    },
+    {
+      "index_month": "2018-05",
+      "index_year": 2018,
+      "index_month_name": "May",
+      "document_id": "13477",
+      "url": "https://rigov.org/DocumentCenter/View/13477"
+    },
+    {
+      "index_month": "2018-06",
+      "index_year": 2018,
+      "index_month_name": "June",
+      "document_id": "13535",
+      "url": "https://rigov.org/DocumentCenter/View/13535"
+    },
+    {
+      "index_month": "2018-07",
+      "index_year": 2018,
+      "index_month_name": "July",
+      "document_id": "13593",
+      "url": "https://rigov.org/DocumentCenter/View/13593"
+    },
+    {
+      "index_month": "2018-08",
+      "index_year": 2018,
+      "index_month_name": "August",
+      "document_id": "13678",
+      "url": "https://rigov.org/DocumentCenter/View/13678"
+    },
+    {
+      "index_month": "2018-09",
+      "index_year": 2018,
+      "index_month_name": "September",
+      "document_id": "13728",
+      "url": "https://rigov.org/DocumentCenter/View/13728"
+    },
+    {
+      "index_month": "2018-10",
+      "index_year": 2018,
+      "index_month_name": "October",
+      "document_id": "14455",
+      "url": "https://rigov.org/DocumentCenter/View/14455"
+    },
+    {
+      "index_month": "2018-11",
+      "index_year": 2018,
+      "index_month_name": "November",
+      "document_id": "14499",
+      "url": "https://rigov.org/DocumentCenter/View/14499"
+    },
+    {
+      "index_month": "2018-12",
+      "index_year": 2018,
+      "index_month_name": "December",
+      "document_id": "14538",
+      "url": "https://rigov.org/DocumentCenter/View/14538"
+    },
+    {
+      "index_month": "2019-01",
+      "index_year": 2019,
+      "index_month_name": "January",
+      "document_id": "14604",
+      "url": "https://rigov.org/DocumentCenter/View/14604"
+    },
+    {
+      "index_month": "2019-02",
+      "index_year": 2019,
+      "index_month_name": "February",
+      "document_id": "14661",
+      "url": "https://rigov.org/DocumentCenter/View/14661"
+    },
+    {
+      "index_month": "2019-03",
+      "index_year": 2019,
+      "index_month_name": "March",
+      "document_id": "14795",
+      "url": "https://rigov.org/DocumentCenter/View/14795"
+    },
+    {
+      "index_month": "2019-04",
+      "index_year": 2019,
+      "index_month_name": "April",
+      "document_id": "14827",
+      "url": "https://rigov.org/DocumentCenter/View/14827"
+    },
+    {
+      "index_month": "2019-05",
+      "index_year": 2019,
+      "index_month_name": "May",
+      "document_id": "14952",
+      "url": "https://rigov.org/DocumentCenter/View/14952"
+    },
+    {
+      "index_month": "2019-06",
+      "index_year": 2019,
+      "index_month_name": "June",
+      "document_id": "15029",
+      "url": "https://rigov.org/DocumentCenter/View/15029"
+    },
+    {
+      "index_month": "2019-07",
+      "index_year": 2019,
+      "index_month_name": "July",
+      "document_id": "15088",
+      "url": "https://rigov.org/DocumentCenter/View/15088"
+    },
+    {
+      "index_month": "2019-08",
+      "index_year": 2019,
+      "index_month_name": "August",
+      "document_id": "15150",
+      "url": "https://rigov.org/DocumentCenter/View/15150"
+    },
+    {
+      "index_month": "2019-09",
+      "index_year": 2019,
+      "index_month_name": "September",
+      "document_id": "15193",
+      "url": "https://rigov.org/DocumentCenter/View/15193"
+    },
+    {
+      "index_month": "2019-10",
+      "index_year": 2019,
+      "index_month_name": "October",
+      "document_id": "15261",
+      "url": "https://rigov.org/DocumentCenter/View/15261"
+    },
+    {
+      "index_month": "2019-11",
+      "index_year": 2019,
+      "index_month_name": "November",
+      "document_id": "15311",
+      "url": "https://rigov.org/DocumentCenter/View/15311"
+    },
+    {
+      "index_month": "2019-12",
+      "index_year": 2019,
+      "index_month_name": "December",
+      "document_id": "15350",
+      "url": "https://rigov.org/DocumentCenter/View/15350"
+    },
+    {
+      "index_month": "2020-01",
+      "index_year": 2020,
+      "index_month_name": "January",
+      "document_id": "15414",
+      "url": "https://rigov.org/DocumentCenter/View/15414/Newspaper_Report-JAN-2020"
+    },
+    {
+      "index_month": "2020-02",
+      "index_year": 2020,
+      "index_month_name": "February",
+      "document_id": "15477",
+      "url": "https://rigov.org/DocumentCenter/View/15477/2020-Feb-Permit-Report"
+    },
+    {
+      "index_month": "2020-03",
+      "index_year": 2020,
+      "index_month_name": "March",
+      "document_id": "15525",
+      "url": "https://rigov.org/DocumentCenter/View/15525/2020-March-01-Permit-Report"
+    },
+    {
+      "index_month": "2020-04",
+      "index_year": 2020,
+      "index_month_name": "April",
+      "document_id": "15555",
+      "url": "https://rigov.org/DocumentCenter/View/15555/2020-April-Permit-Report"
+    },
+    {
+      "index_month": "2020-05",
+      "index_year": 2020,
+      "index_month_name": "May",
+      "document_id": "15578",
+      "url": "https://rigov.org/DocumentCenter/View/15578/2020-May-Permit-Report"
+    },
+    {
+      "index_month": "2020-06",
+      "index_year": 2020,
+      "index_month_name": "June",
+      "document_id": "15631",
+      "url": "https://rigov.org/DocumentCenter/View/15631/June-2020-Permit-Report"
+    },
+    {
+      "index_month": "2020-07",
+      "index_year": 2020,
+      "index_month_name": "July",
+      "document_id": "15690",
+      "url": "https://rigov.org/DocumentCenter/View/15690/2020-July-Permit-Report"
+    },
+    {
+      "index_month": "2020-08",
+      "index_year": 2020,
+      "index_month_name": "August",
+      "document_id": "15762",
+      "url": "https://rigov.org/DocumentCenter/View/15762/2020-August-Permit-Report"
+    },
+    {
+      "index_month": "2020-09",
+      "index_year": 2020,
+      "index_month_name": "September",
+      "document_id": "15810",
+      "url": "https://rigov.org/DocumentCenter/View/15810/September-2020-Permit-Report"
+    },
+    {
+      "index_month": "2020-10",
+      "index_year": 2020,
+      "index_month_name": "October",
+      "document_id": "15854",
+      "url": "https://rigov.org/DocumentCenter/View/15854/November-Permit-Report-2020"
+    },
+    {
+      "index_month": "2020-11",
+      "index_year": 2020,
+      "index_month_name": "November",
+      "document_id": "15924",
+      "url": "https://rigov.org/DocumentCenter/View/15924/November-2020-Permit-Report"
+    },
+    {
+      "index_month": "2020-12",
+      "index_year": 2020,
+      "index_month_name": "December",
+      "document_id": "15980",
+      "url": "https://rigov.org/DocumentCenter/View/15980/December-2020-Permit-Report"
+    },
+    {
+      "index_month": "2021-01",
+      "index_year": 2021,
+      "index_month_name": "January",
+      "document_id": "16035",
+      "url": "https://rigov.org/DocumentCenter/View/16035/Permit-Report-Jan-2021"
+    },
+    {
+      "index_month": "2021-02",
+      "index_year": 2021,
+      "index_month_name": "February",
+      "document_id": "16128",
+      "url": "https://rigov.org/DocumentCenter/View/16128/Feb-2021-Permit-Report"
+    },
+    {
+      "index_month": "2021-03",
+      "index_year": 2021,
+      "index_month_name": "March",
+      "document_id": "15854",
+      "url": "https://rigov.org/DocumentCenter/View/15854/November-Permit-Report-2020"
+    },
+    {
+      "index_month": "2021-04",
+      "index_year": 2021,
+      "index_month_name": "April",
+      "document_id": "16227",
+      "url": "https://rigov.org/DocumentCenter/View/16227/Permit-Report-April-2021"
+    },
+    {
+      "index_month": "2021-05",
+      "index_year": 2021,
+      "index_month_name": "May",
+      "document_id": "16275",
+      "url": "https://rigov.org/DocumentCenter/View/16275/Permit-Report-May-2021"
+    },
+    {
+      "index_month": "2021-06",
+      "index_year": 2021,
+      "index_month_name": "June",
+      "document_id": "16328",
+      "url": "https://rigov.org/DocumentCenter/View/16328/June-2021-Permit-Report"
+    },
+    {
+      "index_month": "2021-07",
+      "index_year": 2021,
+      "index_month_name": "July",
+      "document_id": "16360",
+      "url": "https://rigov.org/DocumentCenter/View/16360/Permit-Report-July-2021"
+    },
+    {
+      "index_month": "2021-08",
+      "index_year": 2021,
+      "index_month_name": "August",
+      "document_id": "16414",
+      "url": "https://rigov.org/DocumentCenter/View/16414/August-Permit-Report-2021"
+    },
+    {
+      "index_month": "2021-09",
+      "index_year": 2021,
+      "index_month_name": "September",
+      "document_id": "16458",
+      "url": "https://rigov.org/DocumentCenter/View/16458/September-2021-Permit-Report"
+    },
+    {
+      "index_month": "2021-10",
+      "index_year": 2021,
+      "index_month_name": "October",
+      "document_id": "16562",
+      "url": "https://rigov.org/DocumentCenter/View/16562/October-2021-Permit-Report"
+    },
+    {
+      "index_month": "2021-11",
+      "index_year": 2021,
+      "index_month_name": "November",
+      "document_id": "16598",
+      "url": "https://rigov.org/DocumentCenter/View/16598/November-2021-Permit-Report"
+    },
+    {
+      "index_month": "2021-12",
+      "index_year": 2021,
+      "index_month_name": "December",
+      "document_id": "16687",
+      "url": "https://rigov.org/DocumentCenter/View/16687/December-Permit-Report-2021"
+    },
+    {
+      "index_month": "2022-01",
+      "index_year": 2022,
+      "index_month_name": "January",
+      "document_id": "16761",
+      "url": "https://rigov.org/DocumentCenter/View/16761/January-2022-Permit-Report"
+    },
+    {
+      "index_month": "2022-02",
+      "index_year": 2022,
+      "index_month_name": "February",
+      "document_id": "16926",
+      "url": "https://rigov.org/DocumentCenter/View/16926/Feb-2022-Permit-Report"
+    },
+    {
+      "index_month": "2022-03",
+      "index_year": 2022,
+      "index_month_name": "March",
+      "document_id": "17126",
+      "url": "https://rigov.org/DocumentCenter/View/17126/March-2022-Permit-Report"
+    },
+    {
+      "index_month": "2022-04",
+      "index_year": 2022,
+      "index_month_name": "April",
+      "document_id": "17220",
+      "url": "https://rigov.org/DocumentCenter/View/17220/April-Permit-Report-2022"
+    },
+    {
+      "index_month": "2022-05",
+      "index_year": 2022,
+      "index_month_name": "May",
+      "document_id": "17269",
+      "url": "https://rigov.org/DocumentCenter/View/17269/Permit-Report-May-2022"
+    },
+    {
+      "index_month": "2022-06",
+      "index_year": 2022,
+      "index_month_name": "June",
+      "document_id": "17318",
+      "url": "https://rigov.org/DocumentCenter/View/17318/June-Permit-Report-2022"
+    },
+    {
+      "index_month": "2022-07",
+      "index_year": 2022,
+      "index_month_name": "July",
+      "document_id": "17367",
+      "url": "https://rigov.org/DocumentCenter/View/17367/July-Permit-Report-2022"
+    },
+    {
+      "index_month": "2022-08",
+      "index_year": 2022,
+      "index_month_name": "August",
+      "document_id": "17454",
+      "url": "https://rigov.org/DocumentCenter/View/17454/Permit-Report-August-2022"
+    },
+    {
+      "index_month": "2022-09",
+      "index_year": 2022,
+      "index_month_name": "September",
+      "document_id": "17540",
+      "url": "https://rigov.org/DocumentCenter/View/17540/Permit-Report-September-2022"
+    },
+    {
+      "index_month": "2022-10",
+      "index_year": 2022,
+      "index_month_name": "October",
+      "document_id": "17613",
+      "url": "https://rigov.org/DocumentCenter/View/17613/October-Permit-Report-2022"
+    },
+    {
+      "index_month": "2022-11",
+      "index_year": 2022,
+      "index_month_name": "November",
+      "document_id": "17676",
+      "url": "https://rigov.org/DocumentCenter/View/17676/Permit-Report-November-2022"
+    },
+    {
+      "index_month": "2022-12",
+      "index_year": 2022,
+      "index_month_name": "December",
+      "document_id": "17720",
+      "url": "https://rigov.org/DocumentCenter/View/17720/Permit-Report-December-2022"
+    },
+    {
+      "index_month": "2023-01",
+      "index_year": 2023,
+      "index_month_name": "January",
+      "document_id": "17797",
+      "url": "https://rigov.org/DocumentCenter/View/17797/Jan-2023-Permit-Report"
+    },
+    {
+      "index_month": "2023-02",
+      "index_year": 2023,
+      "index_month_name": "February",
+      "document_id": "17874",
+      "url": "https://rigov.org/DocumentCenter/View/17874/Permit-Report-Feb-2023"
+    },
+    {
+      "index_month": "2023-03",
+      "index_year": 2023,
+      "index_month_name": "March",
+      "document_id": "17932",
+      "url": "https://rigov.org/DocumentCenter/View/17932/Permit-Report-March-2023"
+    },
+    {
+      "index_month": "2023-04",
+      "index_year": 2023,
+      "index_month_name": "April",
+      "document_id": "18026",
+      "url": "https://rigov.org/DocumentCenter/View/18026/April-Permit-Report-2023"
+    },
+    {
+      "index_month": "2023-05",
+      "index_year": 2023,
+      "index_month_name": "May",
+      "document_id": "18079",
+      "url": "https://rigov.org/DocumentCenter/View/18079/Permit-Report-May-2023"
+    },
+    {
+      "index_month": "2023-06",
+      "index_year": 2023,
+      "index_month_name": "June",
+      "document_id": "18146",
+      "url": "https://rigov.org/DocumentCenter/View/18146/Permit-Report-June-2023"
+    },
+    {
+      "index_month": "2023-07",
+      "index_year": 2023,
+      "index_month_name": "July",
+      "document_id": "18193",
+      "url": "https://rigov.org/DocumentCenter/View/18193/Permit-Report-July-2023"
+    },
+    {
+      "index_month": "2023-08",
+      "index_year": 2023,
+      "index_month_name": "August",
+      "document_id": "18304",
+      "url": "https://rigov.org/DocumentCenter/View/18304/Permit-Report-August-2023"
+    },
+    {
+      "index_month": "2023-09",
+      "index_year": 2023,
+      "index_month_name": "September",
+      "document_id": "18402",
+      "url": "https://rigov.org/DocumentCenter/View/18402/Permit-Report-September-2023"
+    },
+    {
+      "index_month": "2023-10",
+      "index_year": 2023,
+      "index_month_name": "October",
+      "document_id": "18454",
+      "url": "https://rigov.org/DocumentCenter/View/18454/Permit-Report-October-2023"
+    },
+    {
+      "index_month": "2023-11",
+      "index_year": 2023,
+      "index_month_name": "November",
+      "document_id": "18512",
+      "url": "https://rigov.org/DocumentCenter/View/18512/Permit-Report-November-2023"
+    },
+    {
+      "index_month": "2023-12",
+      "index_year": 2023,
+      "index_month_name": "December",
+      "document_id": "18569",
+      "url": "https://rigov.org/DocumentCenter/View/18569/Permit-Report-December-2023"
+    },
+    {
+      "index_month": "2024-01",
+      "index_year": 2024,
+      "index_month_name": "January",
+      "document_id": "18631",
+      "url": "https://rigov.org/DocumentCenter/View/18631/Permit-Report-January-2024"
+    },
+    {
+      "index_month": "2024-02",
+      "index_year": 2024,
+      "index_month_name": "February",
+      "document_id": "18749",
+      "url": "https://rigov.org/DocumentCenter/View/18749/Permit-Report-February-2024"
+    },
+    {
+      "index_month": "2024-03",
+      "index_year": 2024,
+      "index_month_name": "March",
+      "document_id": "18851",
+      "url": "https://rigov.org/DocumentCenter/View/18851/Permit-Report-March-2024"
+    },
+    {
+      "index_month": "2024-04",
+      "index_year": 2024,
+      "index_month_name": "April",
+      "document_id": "18915",
+      "url": "https://rigov.org/DocumentCenter/View/18915/Permit-Report-April-2024"
+    },
+    {
+      "index_month": "2024-05",
+      "index_year": 2024,
+      "index_month_name": "May",
+      "document_id": "19041",
+      "url": "https://rigov.org/DocumentCenter/View/19041/May-Permit-Report-2024"
+    },
+    {
+      "index_month": "2024-06",
+      "index_year": 2024,
+      "index_month_name": "June",
+      "document_id": "19203",
+      "url": "https://rigov.org/DocumentCenter/View/19203/June-Permit-Report-2024"
+    },
+    {
+      "index_month": "2024-07",
+      "index_year": 2024,
+      "index_month_name": "July",
+      "document_id": "19310",
+      "url": "https://rigov.org/DocumentCenter/View/19310/July-Permit-Report-2024"
+    },
+    {
+      "index_month": "2024-08",
+      "index_year": 2024,
+      "index_month_name": "August",
+      "document_id": "19364",
+      "url": "https://rigov.org/DocumentCenter/View/19364/August-Permit-Report-2024"
+    },
+    {
+      "index_month": "2024-09",
+      "index_year": 2024,
+      "index_month_name": "September",
+      "document_id": "19400",
+      "url": "https://rigov.org/DocumentCenter/View/19400/September-Permit-Report-2024"
+    },
+    {
+      "index_month": "2024-10",
+      "index_year": 2024,
+      "index_month_name": "October",
+      "document_id": "19456",
+      "url": "https://rigov.org/DocumentCenter/View/19456/October-2024-Permit-Report"
+    },
+    {
+      "index_month": "2024-11",
+      "index_year": 2024,
+      "index_month_name": "November",
+      "document_id": "19481",
+      "url": "https://rigov.org/DocumentCenter/View/19481/November-2024-Permit-Report"
+    },
+    {
+      "index_month": "2024-12",
+      "index_year": 2024,
+      "index_month_name": "December",
+      "document_id": "19531",
+      "url": "https://rigov.org/DocumentCenter/View/19531/December-2024-Permit-Report"
+    },
+    {
+      "index_month": "2025-01",
+      "index_year": 2025,
+      "index_month_name": "January",
+      "document_id": "19578",
+      "url": "https://rigov.org/DocumentCenter/View/19578/January-2025-Permit-Report"
+    },
+    {
+      "index_month": "2025-02",
+      "index_year": 2025,
+      "index_month_name": "February",
+      "document_id": "19619",
+      "url": "https://rigov.org/DocumentCenter/View/19619/Februrary-2025-Permit-Report"
+    },
+    {
+      "index_month": "2025-03",
+      "index_year": 2025,
+      "index_month_name": "March",
+      "document_id": "19687",
+      "url": "https://rigov.org/DocumentCenter/View/19687/March-2025-Permit-Report"
+    },
+    {
+      "index_month": "2025-04",
+      "index_year": 2025,
+      "index_month_name": "April",
+      "document_id": "19744",
+      "url": "https://rigov.org/DocumentCenter/View/19744/April-2025-Permit-Report"
+    },
+    {
+      "index_month": "2025-05",
+      "index_year": 2025,
+      "index_month_name": "May",
+      "document_id": "19791",
+      "url": "https://rigov.org/DocumentCenter/View/19791/May-2025-Permit-Report"
+    },
+    {
+      "index_month": "2025-06",
+      "index_year": 2025,
+      "index_month_name": "June",
+      "document_id": "19884",
+      "url": "https://rigov.org/DocumentCenter/View/19884/June-2025-Permit-Report"
+    },
+    {
+      "index_month": "2025-07",
+      "index_year": 2025,
+      "index_month_name": "July",
+      "document_id": "19924",
+      "url": "https://rigov.org/DocumentCenter/View/19924/July-2025-permit-report"
+    },
+    {
+      "index_month": "2025-08",
+      "index_year": 2025,
+      "index_month_name": "August",
+      "document_id": "19959",
+      "url": "https://rigov.org/DocumentCenter/View/19959/August-2025-Permit-Report"
+    },
+    {
+      "index_month": "2025-09",
+      "index_year": 2025,
+      "index_month_name": "September",
+      "document_id": "19995",
+      "url": "https://rigov.org/DocumentCenter/View/19995/September-2025-Permit-Report"
+    },
+    {
+      "index_month": "2025-10",
+      "index_year": 2025,
+      "index_month_name": "October",
+      "document_id": "20050",
+      "url": "https://rigov.org/DocumentCenter/View/20050/October-2025-Permit-Report"
+    },
+    {
+      "index_month": "2025-11",
+      "index_year": 2025,
+      "index_month_name": "November",
+      "document_id": "20078",
+      "url": "https://rigov.org/DocumentCenter/View/20078/November-2025-Permit-Report"
+    },
+    {
+      "index_month": "2025-12",
+      "index_year": 2025,
+      "index_month_name": "December",
+      "document_id": "20102",
+      "url": "https://rigov.org/DocumentCenter/View/20102/december-2025-permit-report"
+    },
+    {
+      "index_month": "2026-01",
+      "index_year": 2026,
+      "index_month_name": "January",
+      "document_id": "20160",
+      "url": "https://rigov.org/DocumentCenter/View/20160/january-2026-permit-report"
+    },
+    {
+      "index_month": "2026-02",
+      "index_year": 2026,
+      "index_month_name": "February",
+      "document_id": "20254",
+      "url": "https://rigov.org/DocumentCenter/View/20254/february-2026-permit-report"
+    },
+    {
+      "index_month": "2026-03",
+      "index_year": 2026,
+      "index_month_name": "March",
+      "document_id": "20355",
+      "url": "https://rigov.org/DocumentCenter/View/20355/March-2026-Permit-Report"
+    },
+    {
+      "index_month": "2026-04",
+      "index_year": 2026,
+      "index_month_name": "April",
+      "document_id": "20365",
+      "url": "https://rigov.org/DocumentCenter/View/20365/April-2026-Permit-Report"
+    }
+  ]
+}
