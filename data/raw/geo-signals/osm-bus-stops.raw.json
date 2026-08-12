@@ -1,0 +1,2047 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-12T18:22:08Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 1269233980,
+      "lat": 41.4753359,
+      "lon": -90.4570817,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "60 St & 36 Ave Ct",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML60S36ACT_2"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1781340133,
+      "lat": 41.5072334,
+      "lon": -90.519541,
+      "tags": {
+        "addr:city": "Moline",
+        "addr:housenumber": "1200",
+        "addr:postcode": "61265",
+        "addr:state": "IL",
+        "addr:street": "River Drive",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "level": "0",
+        "name": "Centre Station",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "network:wikipedia": "en:Quad Cities MetroLINK",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3496213671,
+      "lat": 41.5736557,
+      "lon": -90.5267574,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8245220783,
+      "lat": 41.5069014,
+      "lon": -90.5197876,
+      "tags": {
+        "bus": "yes",
+        "departures_board": "realtime",
+        "highway": "bus_stop",
+        "name": "Centre Station",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "passenger_information_display": "yes",
+        "public_transport": "platform",
+        "ref": "MLCTSRVD_8"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9999279061,
+      "lat": 41.5208085,
+      "lon": -90.5781352,
+      "tags": {
+        "bench": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Ground Transportation Center",
+        "network": "CitiBus",
+        "operator": "Davenport Citibus",
+        "public_transport": "platform",
+        "shelter": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11757171398,
+      "lat": 41.4662956,
+      "lon": -90.5019892,
+      "tags": {
+        "bench": "yes",
+        "bus": "yes",
+        "departures_board": "realtime",
+        "highway": "bus_stop",
+        "name": "SouthPark Mall Shelter",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "MLSPMSHL_1",
+        "shelter": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11757171399,
+      "lat": 41.4661319,
+      "lon": -90.5019861,
+      "tags": {
+        "bus": "yes",
+        "departures_board": "realtime",
+        "highway": "bus_stop",
+        "name": "SouthPark Mall Shelter",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "MLSPMSHL_2",
+        "shelter": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11757171400,
+      "lat": 41.4659537,
+      "lon": -90.5020039,
+      "tags": {
+        "bus": "yes",
+        "departures_board": "realtime",
+        "highway": "bus_stop",
+        "name": "SouthPark Mall Shelter",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "MLSPMSHL_3",
+        "shelter": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11757171401,
+      "lat": 41.4657955,
+      "lon": -90.5019819,
+      "tags": {
+        "bus": "yes",
+        "departures_board": "realtime",
+        "highway": "bus_stop",
+        "name": "SouthPark Mall Shelter",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "MLSPMSHL_4",
+        "shelter": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12209621862,
+      "lat": 41.5417205,
+      "lon": -90.582669,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "St. Ambrose (NW/Northbound)",
+        "public_transport": "platform",
+        "ref": "2012",
+        "shelter": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12810570525,
+      "lat": 41.5601502,
+      "lon": -90.6004788,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Division & Kimberly",
+        "public_transport": "platform",
+        "ref": "1029"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13836906588,
+      "lat": 41.4690958,
+      "lon": -90.531237,
+      "tags": {
+        "bench": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "UnityPoint Moline",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "network:wikipedia": "en:Quad Cities MetroLINK",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML7STUPSHL_3",
+        "shelter": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13854073965,
+      "lat": 41.480129,
+      "lon": -90.4570559,
+      "tags": {
+        "bench": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "51 Ave & Kennedy Dr Shelter",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "EMKND51ASHL_2",
+        "shelter": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13898352936,
+      "lat": 41.4539448,
+      "lon": -90.50552,
+      "tags": {
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "covered": "yes",
+        "departures_board": "realtime",
+        "highway": "bus_stop",
+        "name": "Quad City International Airport",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "passenger_information_display": "yes",
+        "public_transport": "platform",
+        "ref": "MLQCASHL_3",
+        "route_ref": "20",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13900878825,
+      "lat": 41.5070622,
+      "lon": -90.5197214,
+      "tags": {
+        "bus": "yes",
+        "departures_board": "realtime",
+        "highway": "bus_stop",
+        "name": "Centre Station",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "passenger_information_display": "yes",
+        "public_transport": "platform",
+        "ref": "MLCTSRVD_4"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13900878826,
+      "lat": 41.5080243,
+      "lon": -90.5114304,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Le Clair Apartments",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "shelter": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13903285021,
+      "lat": 41.4696839,
+      "lon": -90.3584485,
+      "tags": {
+        "amenity": "shelter",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "1 St & 9 Ave Shelter",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "CL1S9ASHL_3",
+        "shelter": "yes",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13903285032,
+      "lat": 41.4732233,
+      "lon": -90.364353,
+      "tags": {
+        "amenity": "shelter",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "6 St & 7 Ave Shelter",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "CL6S7ASHL_2",
+        "shelter": "yes",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13903285041,
+      "lat": 41.4950045,
+      "lon": -90.4028948,
+      "tags": {
+        "amenity": "shelter",
+        "bench": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Wal-Mart",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "SLWMTSHL_3",
+        "shelter": "yes",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13903395100,
+      "lat": 41.5115591,
+      "lon": -90.5719776,
+      "tags": {
+        "bus": "yes",
+        "departures_board": "realtime",
+        "highway": "bus_stop",
+        "name": "District",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "RIRITS_3",
+        "shelter": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13903403329,
+      "lat": 41.51123,
+      "lon": -90.5719809,
+      "tags": {
+        "bus": "yes",
+        "departures_board": "realtime",
+        "highway": "bus_stop",
+        "name": "District",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "RIRITS_1",
+        "shelter": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13903403330,
+      "lat": 41.5113775,
+      "lon": -90.5719782,
+      "tags": {
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "departures_board": "realtime",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "District",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "passenger_information_display": "yes",
+        "public_transport": "platform",
+        "ref": "RIRITS_2",
+        "shelter": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13903403331,
+      "lat": 41.5111241,
+      "lon": -90.5721991,
+      "tags": {
+        "bus": "yes",
+        "departures_board": "realtime",
+        "highway": "bus_stop",
+        "name": "District",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "RIRITS_6",
+        "shelter": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13903403332,
+      "lat": 41.5111268,
+      "lon": -90.572395,
+      "tags": {
+        "bus": "yes",
+        "departures_board": "realtime",
+        "highway": "bus_stop",
+        "name": "District",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "RIRITS_7",
+        "shelter": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13903403333,
+      "lat": 41.5111309,
+      "lon": -90.5725876,
+      "tags": {
+        "bus": "yes",
+        "departures_board": "realtime",
+        "highway": "bus_stop",
+        "name": "District",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "RIRITS_8",
+        "shelter": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13903403334,
+      "lat": 41.511128,
+      "lon": -90.5727823,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "District",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "RIRITS_9",
+        "shelter": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13903403335,
+      "lat": 41.5111338,
+      "lon": -90.5729411,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "District",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "RIRITS_10",
+        "shelter": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13913436920,
+      "lat": 41.4867375,
+      "lon": -90.4563518,
+      "tags": {
+        "amenity": "shelter",
+        "bench": "yes",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "44 Ave & Kennedy Dr Shelter",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "EMKND44ASHL_2",
+        "shelter": "yes",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13913436929,
+      "lat": 41.4773207,
+      "lon": -90.457073,
+      "tags": {
+        "amenity": "shelter",
+        "bench": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "60 St & 34 Ave Shelter",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML60S34ASHL_6",
+        "shelter": "yes",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13913579966,
+      "lat": 41.4798857,
+      "lon": -90.4568505,
+      "tags": {
+        "bench": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "51 Ave & Kennedy Dr",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "EMKND51ASHL_4",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13913579967,
+      "lat": 41.4831324,
+      "lon": -90.4566258,
+      "tags": {
+        "bench": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "45 Ave & Kennedy Dr",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "EMKND45A_4",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13913579968,
+      "lat": 41.4833896,
+      "lon": -90.456716,
+      "tags": {
+        "bench": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "51 Ave & Kennedy Dr Shelter",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "EMKND51ASHL_2",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13913579969,
+      "lat": 41.4864363,
+      "lon": -90.456113,
+      "tags": {
+        "bench": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "44 St & Kennedy Dr Shelter",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "EMKND44ASHL_4",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13913579970,
+      "lat": 41.4888446,
+      "lon": -90.4560843,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Kennedy Dr & Ave Cities",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "EMKNDAVCSFR_4",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13913579971,
+      "lat": 41.4891946,
+      "lon": -90.4563356,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Kennedy Dr & Ave Cities",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "EMKNDAVCSFR_2",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13913579973,
+      "lat": 41.4779188,
+      "lon": -90.4568923,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "60 St & 34 Ave Shelter",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML60S34ASHL_4"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13913579975,
+      "lat": 41.4751354,
+      "lon": -90.4568845,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "60 St & 36 Ave Ct",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML60S36ACT_4"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13913579977,
+      "lat": 41.4742472,
+      "lon": -90.4570081,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "IDHS",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML60SIDHS_2",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13913579978,
+      "lat": 41.4728781,
+      "lon": -90.4567974,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "60 St & 38 Ave",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML60S38A_2"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13913579979,
+      "lat": 41.4728654,
+      "lon": -90.4564322,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "60 St & 38 Ave",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML60S38A_4:"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13913579982,
+      "lat": 41.4740978,
+      "lon": -90.4567398,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "IDHS",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML60SIDHS_4",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13913579983,
+      "lat": 41.4911862,
+      "lon": -90.4563256,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "41 Ave & Kennedy Dr Shelter",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "EMKND41ASHL_2",
+        "shelter": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13913579984,
+      "lat": 41.4913602,
+      "lon": -90.4560491,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Kennedy Sq Shelter",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "EMKND41ASHL_4",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13913579988,
+      "lat": 41.4921598,
+      "lon": -90.4562952,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "4015 Kennedy Dr",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ARC-4015Ken",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13913579990,
+      "lat": 41.4912993,
+      "lon": -90.4602203,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Kennedy Sq Shelter",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "EM1SAVCSHL_4",
+        "shelter": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13916627718,
+      "lat": 41.4697501,
+      "lon": -90.3617821,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "4 St & 9 Ave",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "CL4S9A_3",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13921050748,
+      "lat": 41.4769318,
+      "lon": -90.3638367,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "5 St & 5 Ave",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "CL5S5A_2",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13921764626,
+      "lat": 41.4684391,
+      "lon": -90.5326817,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "UnityPoint Moline Shelter",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML7STUPSHL_5",
+        "shelter": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13921872861,
+      "lat": 41.4694227,
+      "lon": -90.5250927,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Aldi's-Kohls-Target",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "MLAKTJDR_3",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13921872862,
+      "lat": 41.470616,
+      "lon": -90.5269506,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Aldi-Kohls-Target",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "MLAKT2JDR_5",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13921872864,
+      "lat": 41.4687706,
+      "lon": -90.523266,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "41 St & 43 Ave",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML41S43A_5",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13921872866,
+      "lat": 41.4670201,
+      "lon": -90.5283052,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "7 St & 43 Ave Dr",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML7S43ADR_4",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13921872868,
+      "lat": 41.4672247,
+      "lon": -90.5284436,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "7 St & 43 Ave Dr",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML7S43ADR_2",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13921872870,
+      "lat": 41.4665366,
+      "lon": -90.5320352,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "UnityPoint Moline Drive",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "MLUPD52A_4",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13921872872,
+      "lat": 41.4659478,
+      "lon": -90.532341,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "UnityPoint Moline Drive",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "MLUPD52A_3",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13921872873,
+      "lat": 41.4661269,
+      "lon": -90.5320167,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "MLUPD52A_5: UnityPoint Moline Drive",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "MLUPD52A_5: UnityPoint Moline Drive",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13921872874,
+      "lat": 41.4663935,
+      "lon": -90.5322317,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "UnityPoint Moline Drive",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "MLUPD52A_2",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13926790509,
+      "lat": 41.4750178,
+      "lon": -90.3578609,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "1 St & 6 Ave",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "CL1S6A_4"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13932531410,
+      "lat": 41.49657,
+      "lon": -90.40441,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Dunkin - Aldi Shelter",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "SLCTAIL5SHL_5",
+        "shelter": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13932531414,
+      "lat": 41.4887994,
+      "lon": -90.4059848,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "RICCA",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "SLIL5RIC_2",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13932531416,
+      "lat": 41.4886003,
+      "lon": -90.4056112,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "RICCA",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "SLIL5RIC_4",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13932531418,
+      "lat": 41.4850462,
+      "lon": -90.4059878,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Colona Rd & I-5",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "SLIL5COR_2",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13932531421,
+      "lat": 41.4837976,
+      "lon": -90.4043102,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Colona Rd & I-5",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "SLIL5COR_5",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13932531422,
+      "lat": 41.483574,
+      "lon": -90.407629,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Colona Rd & I-5",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "SLIL5COR_3",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13932531423,
+      "lat": 41.4907409,
+      "lon": -90.404783,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "RICCA",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "SLIL5RIC_6:",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13932531424,
+      "lat": 41.4833893,
+      "lon": -90.3639232,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Mother Hubbards",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "CL5S1A_2",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13932531425,
+      "lat": 41.4840443,
+      "lon": -90.3636488,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Mother Hubbards",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "CL5S1A_5"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13932531426,
+      "lat": 41.4839868,
+      "lon": -90.3662541,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "7 St & 1 Ave",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "CL7S1A_5",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13932531427,
+      "lat": 41.4837623,
+      "lon": -90.3669186,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "7 St & 1 Ave",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "CL7S1A_3",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13932531428,
+      "lat": 41.4797823,
+      "lon": -90.3638942,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "5 St & 3 Ave",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "CL5S3A_2",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13932531429,
+      "lat": 41.4700367,
+      "lon": -90.3642761,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "6 St & 9 Ave",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "CL6S9A_2"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13932531430,
+      "lat": 41.4796761,
+      "lon": -90.3579581,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "1 St & 3 Ave",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "CL1S3A_4"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13976290026,
+      "lat": 41.4897547,
+      "lon": -90.5137219,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "16 St & Ave Cities",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML16SAVC_2"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13976290028,
+      "lat": 41.4893906,
+      "lon": -90.5135006,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "16 St & Ave Cities",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML16SAVC_4"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13976290031,
+      "lat": 41.4874553,
+      "lon": -90.5137085,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "16 St & 25 Ave_01",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML16S25A_2"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13976290033,
+      "lat": 41.4873412,
+      "lon": -90.5135485,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "16 St & 25 Ave",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML16S25A_4"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13976290035,
+      "lat": 41.4853543,
+      "lon": -90.5137351,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "16 St & 27 Ave",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML16S27A_2"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13976290036,
+      "lat": 41.4851821,
+      "lon": -90.5135405,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "16 St & 27 Ave",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML16S27A_4"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13976290038,
+      "lat": 41.4823942,
+      "lon": -90.5120579,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "16 St & 30 Ave",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML16S30A_2"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13976290040,
+      "lat": 41.4822165,
+      "lon": -90.5116891,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "16 St & 30 Ave",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML16S30A_4"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13976290042,
+      "lat": 41.4774372,
+      "lon": -90.504491,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "20 St & 36 Ave",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML20S36A_5"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13976290043,
+      "lat": 41.4773464,
+      "lon": -90.5044432,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "20 St & 36 Ave",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML20S36A_3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13976290046,
+      "lat": 41.4770305,
+      "lon": -90.5026414,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "25 St & 36 Ave",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML25S36ASFR_2"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13976290047,
+      "lat": 41.4768189,
+      "lon": -90.5022098,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "25 St & 36 Ave",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML25S36ASFR_4"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13976290049,
+      "lat": 41.4755978,
+      "lon": -90.5023804,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "25 St & 37 Ave",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML25S37A_2"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13976290051,
+      "lat": 41.4754936,
+      "lon": -90.5022546,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "25 St & 37 Ave",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML25S37A_4"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13976290053,
+      "lat": 41.473459,
+      "lon": -90.5023916,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "25 St & 39 Ave",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML25S39A_2",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13976290055,
+      "lat": 41.4733415,
+      "lon": -90.5024314,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "St & 39 Ave_01",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML25S39A_3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13976290057,
+      "lat": 41.4733728,
+      "lon": -90.5062403,
+      "tags": {
+        "amenity": "shelter",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "16 St & 39 Ave Shelter",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML16S39ASHL_6",
+        "shelter": "yes",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13976290060,
+      "lat": 41.4734791,
+      "lon": -90.5066897,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "16 St & 39 Ave Shelter",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML16S39ASHL_5"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13976290061,
+      "lat": 41.4689168,
+      "lon": -90.5073054,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "16 St & 44 Ave",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML16S44A_2"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13976290063,
+      "lat": 41.4686056,
+      "lon": -90.5069701,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "16 St & 44 Ave",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML16S44A_4"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13976290065,
+      "lat": 41.4670902,
+      "lon": -90.5072893,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "16 St & 46 Ave",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML16S46A_2"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13976290067,
+      "lat": 41.4668942,
+      "lon": -90.5069738,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "16 St & 46 Ave",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML16S46A_4",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13976290069,
+      "lat": 41.4657525,
+      "lon": -90.5072819,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "St & 47 Ave",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML16S47A_2"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13976290071,
+      "lat": 41.4657752,
+      "lon": -90.5069212,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "16 St & 47 Ave",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML16S47A_5"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13976290073,
+      "lat": 41.4663526,
+      "lon": -90.4993798,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Southpark Mall",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML27SSPM_3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13976290075,
+      "lat": 41.4663422,
+      "lon": -90.4990362,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Southpark Mall",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML27SSPM_4"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13976290077,
+      "lat": 41.4643458,
+      "lon": -90.4993678,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "27 St & 52 Ave",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML27S52A_2",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13976290079,
+      "lat": 41.4639548,
+      "lon": -90.498987,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "27 St & 52 Ave",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML27S52A_4",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13976290081,
+      "lat": 41.4560223,
+      "lon": -90.4997342,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "27 St & Airport Rd",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML27SAPR_2"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13976290082,
+      "lat": 41.4553185,
+      "lon": -90.4992909,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "27 St & Airport Rd",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML27SAPR_4"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13976290083,
+      "lat": 41.4563195,
+      "lon": -90.5023112,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Airport Road",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "MLAR24S"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13976290085,
+      "lat": 41.4517231,
+      "lon": -90.495951,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Airport Ring Road & 30 St",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "MLARR30S"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14050305974,
+      "lat": 41.4937159,
+      "lon": -90.4562026,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "38 Ave & Kennedy Dr",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "EMKND38A_2",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14050305976,
+      "lat": 41.4934416,
+      "lon": -90.4560489,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "38 Ave & Kennedy Dr",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "EMKND38A_4",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14050305977,
+      "lat": 41.4920451,
+      "lon": -90.4605722,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Kennedy Sq Shelter",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "EM1S41A_3",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14050305978,
+      "lat": 41.4917687,
+      "lon": -90.4621346,
+      "tags": {
+        "amenity": "shelter",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Colona House Apts Shelter",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "EMCHA41ASHL_3",
+        "shelter": "yes",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14050305980,
+      "lat": 41.4917514,
+      "lon": -90.4626373,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Colona House Apts",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "EMCHA41ASHL_5"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14050305982,
+      "lat": 41.4910481,
+      "lon": -90.4653637,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "53 St & 22 Ave",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML53S22A_5"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14050305984,
+      "lat": 41.490769,
+      "lon": -90.4655559,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "St & 22 Ave",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "public_transport": "platform",
+        "ref": "ML53S22A_4"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14069877422,
+      "lat": 41.5070257,
+      "lon": -90.5198522,
+      "tags": {
+        "bus": "yes",
+        "departures_board": "realtime",
+        "highway": "bus_stop",
+        "name": "Centre Station",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "passenger_information_display": "yes",
+        "public_transport": "platform",
+        "ref": "MLCTSRVD_4"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14069877424,
+      "lat": 41.5069986,
+      "lon": -90.5199786,
+      "tags": {
+        "bus": "yes",
+        "departures_board": "realtime",
+        "highway": "bus_stop",
+        "name": "Centre Station",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "passenger_information_display": "yes",
+        "public_transport": "platform",
+        "ref": "MLCTSRVD_3"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14069877426,
+      "lat": 41.5069496,
+      "lon": -90.5201227,
+      "tags": {
+        "bus": "yes",
+        "departures_board": "realtime",
+        "highway": "bus_stop",
+        "name": "Centre Station",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "passenger_information_display": "yes",
+        "public_transport": "platform",
+        "ref": "MLCTSRVD_2"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14069877433,
+      "lat": 41.506954,
+      "lon": -90.5197105,
+      "tags": {
+        "bus": "yes",
+        "departures_board": "realtime",
+        "highway": "bus_stop",
+        "name": "Centre Station",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "passenger_information_display": "yes",
+        "public_transport": "platform",
+        "ref": "MLCTSRVD_6"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14069877435,
+      "lat": 41.5068304,
+      "lon": -90.5203507,
+      "tags": {
+        "bus": "yes",
+        "departures_board": "realtime",
+        "highway": "bus_stop",
+        "name": "Centre Station",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "passenger_information_display": "yes",
+        "public_transport": "platform",
+        "ref": "MLCTSRVD_10"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14069877436,
+      "lat": 41.5068837,
+      "lon": -90.5200705,
+      "tags": {
+        "bus": "yes",
+        "departures_board": "realtime",
+        "highway": "bus_stop",
+        "name": "Centre Station",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "passenger_information_display": "yes",
+        "public_transport": "platform",
+        "ref": "MLCTSRVD_1"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14069877437,
+      "lat": 41.5069301,
+      "lon": -90.5199304,
+      "tags": {
+        "bus": "yes",
+        "departures_board": "realtime",
+        "highway": "bus_stop",
+        "name": "Centre Station",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "passenger_information_display": "yes",
+        "public_transport": "platform",
+        "ref": "MLCTSRVD_9"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14069877438,
+      "lat": 41.5069449,
+      "lon": -90.5197926,
+      "tags": {
+        "bus": "yes",
+        "departures_board": "realtime",
+        "highway": "bus_stop",
+        "name": "Centre Station",
+        "network": "MetroLINK",
+        "network:wikidata": "Q7268260",
+        "operator": "Metro Rock Island County Metropolitan Mass Transit District",
+        "passenger_information_display": "yes",
+        "public_transport": "platform",
+        "ref": "MLCTSRVD_8"
+      }
+    }
+  ]
+}

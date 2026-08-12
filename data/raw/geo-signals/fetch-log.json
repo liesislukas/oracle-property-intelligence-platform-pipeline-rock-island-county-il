@@ -34,5 +34,57 @@
     "count_discovery_bbox": 962,
     "retrieved_at": "2026-08-12T18:20:52.456Z",
     "bytes": 3996431
+  },
+  {
+    "id": "osm-substations",
+    "endpoint": "https://overpass-api.de/api/interpreter",
+    "query": "[out:json][timeout:180];nwr[\"power\"=\"substation\"](41.32,-91.08,41.79,-90.15);out center tags;",
+    "http_status": 200,
+    "elapsed_s": 17.765,
+    "pages": 1,
+    "count_fetch_bbox": 109,
+    "count_discovery_bbox": 66,
+    "retrieved_at": "2026-08-12T18:22:58.534Z",
+    "bytes": 22856,
+    "osm3s_copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  {
+    "id": "osm-power-lines",
+    "endpoint": "https://overpass-api.de/api/interpreter",
+    "query": "[out:json][timeout:180];way[\"power\"=\"line\"](41.32,-91.08,41.79,-90.15);out geom tags;",
+    "http_status": 200,
+    "elapsed_s": 17.842,
+    "pages": 1,
+    "count_fetch_bbox": 321,
+    "count_discovery_bbox": 176,
+    "retrieved_at": "2026-08-12T18:23:33.071Z",
+    "bytes": 492192,
+    "osm3s_copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  {
+    "id": "osm-bus-stops",
+    "endpoint": "https://overpass-api.de/api/interpreter",
+    "query": "[out:json][timeout:180];node[\"highway\"=\"bus_stop\"](41.32,-91.08,41.79,-90.15);out center tags;",
+    "http_status": 200,
+    "elapsed_s": 19.307,
+    "pages": 1,
+    "count_fetch_bbox": 119,
+    "count_discovery_bbox": 119,
+    "retrieved_at": "2026-08-12T18:24:08.793Z",
+    "bytes": 49267,
+    "osm3s_copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  {
+    "id": "osm-starbucks",
+    "endpoint": "https://overpass-api.de/api/interpreter",
+    "query": "[out:json][timeout:180];nwr[\"name\"~\"Starbucks\",i](41.32,-91.08,41.79,-90.15);out center tags;",
+    "http_status": 200,
+    "elapsed_s": 23.961,
+    "pages": 1,
+    "count_fetch_bbox": 12,
+    "count_discovery_bbox": 12,
+    "retrieved_at": "2026-08-12T18:25:32.301Z",
+    "bytes": 6685,
+    "osm3s_copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   }
 ]

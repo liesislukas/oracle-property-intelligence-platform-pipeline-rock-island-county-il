@@ -1,0 +1,1416 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-12T18:21:07Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "way",
+      "id": 49037355,
+      "center": {
+        "lat": 41.5347826,
+        "lon": -90.4692482
+      },
+      "tags": {
+        "operator": "MidAmerican Energy",
+        "operator:wikidata": "Q6840876",
+        "power": "substation",
+        "substation": "industrial",
+        "voltage": "161000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 49037367,
+      "center": {
+        "lat": 41.5410967,
+        "lon": -90.4572699
+      },
+      "tags": {
+        "power": "substation",
+        "substation": "industrial",
+        "voltage": "161000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 50873888,
+      "center": {
+        "lat": 41.5126318,
+        "lon": -90.5537401
+      },
+      "tags": {
+        "barrier": "fence",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 75701636,
+      "center": {
+        "lat": 41.7830465,
+        "lon": -90.2570555
+      },
+      "tags": {
+        "barrier": "fence",
+        "frequency": "60",
+        "location": "outdoor",
+        "operator": "ITC",
+        "operator:wikidata": "Q5974728",
+        "power": "substation",
+        "substation": "minor_distribution",
+        "voltage": "69000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104334521,
+      "center": {
+        "lat": 41.7501755,
+        "lon": -90.2843125
+      },
+      "tags": {
+        "barrier": "fence",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104334522,
+      "center": {
+        "lat": 41.7265209,
+        "lon": -90.3062786
+      },
+      "tags": {
+        "barrier": "fence",
+        "name": "Quad Cities Substation",
+        "power": "substation",
+        "substation": "transmission",
+        "voltage": "345000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104336398,
+      "center": {
+        "lat": 41.6813478,
+        "lon": -90.5276511
+      },
+      "tags": {
+        "barrier": "fence",
+        "name": "Sub 91",
+        "operator": "MidAmerican Energy",
+        "operator:wikidata": "Q6840876",
+        "power": "substation",
+        "substation": "transmission",
+        "voltage": "345000;161000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104356586,
+      "center": {
+        "lat": 41.5750852,
+        "lon": -90.6900816
+      },
+      "tags": {
+        "name": "Sub 56",
+        "operator": "MidAmerican Energy",
+        "operator:wikidata": "Q6840876",
+        "power": "substation",
+        "source": "https://efs.iowa.gov/efs/ShowDocketSummary.do?docketNumber=E-21154",
+        "substation": "transmission",
+        "voltage": "345000;161000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104359087,
+      "center": {
+        "lat": 41.536018,
+        "lon": -90.5479078
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 170481316,
+      "center": {
+        "lat": 41.5254785,
+        "lon": -90.3538231
+      },
+      "tags": {
+        "barrier": "fence",
+        "name": "Sub 39",
+        "operator": "MidAmerican Energy",
+        "operator:wikidata": "Q6840876",
+        "power": "substation",
+        "voltage": "345000;161000;69000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 170481578,
+      "center": {
+        "lat": 41.7151664,
+        "lon": -90.278937
+      },
+      "tags": {
+        "barrier": "fence",
+        "power": "substation",
+        "substation": "transmission",
+        "voltage": "345000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 170481597,
+      "center": {
+        "lat": 41.566199,
+        "lon": -90.2695869
+      },
+      "tags": {
+        "barrier": "fence",
+        "power": "substation",
+        "voltage": "161000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 170481624,
+      "center": {
+        "lat": 41.7141589,
+        "lon": -90.2749578
+      },
+      "tags": {
+        "barrier": "fence",
+        "power": "substation",
+        "voltage": "161000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 170481626,
+      "center": {
+        "lat": 41.7139046,
+        "lon": -90.27979
+      },
+      "tags": {
+        "barrier": "fence",
+        "power": "substation",
+        "substation": "transmission",
+        "voltage": "345000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 170481648,
+      "center": {
+        "lat": 41.5349992,
+        "lon": -90.394096
+      },
+      "tags": {
+        "barrier": "fence",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 170772176,
+      "center": {
+        "lat": 41.3976969,
+        "lon": -90.5860201
+      },
+      "tags": {
+        "barrier": "fence",
+        "name": "Oak Grove Substation",
+        "operator": "MidAmerican Energy",
+        "operator:wikidata": "Q6840876",
+        "power": "substation",
+        "substation": "transmission",
+        "voltage": "345000;161000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 170772223,
+      "center": {
+        "lat": 41.3683885,
+        "lon": -90.8687161
+      },
+      "tags": {
+        "barrier": "fence",
+        "power": "substation",
+        "substation": "distribution",
+        "voltage": "161000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 186976205,
+      "center": {
+        "lat": 41.480314,
+        "lon": -90.8214433
+      },
+      "tags": {
+        "operator": "MidAmerican Energy",
+        "operator:wikidata": "Q6840876",
+        "power": "substation",
+        "substation": "industrial",
+        "voltage": "345000;161000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 244897154,
+      "center": {
+        "lat": 41.4424118,
+        "lon": -90.6118871
+      },
+      "tags": {
+        "barrier": "fence",
+        "power": "substation",
+        "substation": "distribution",
+        "voltage": "161000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 244897156,
+      "center": {
+        "lat": 41.4617904,
+        "lon": -90.5810766
+      },
+      "tags": {
+        "barrier": "fence",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 245104587,
+      "center": {
+        "lat": 41.3429294,
+        "lon": -90.6071874
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 245115921,
+      "center": {
+        "lat": 41.3403948,
+        "lon": -90.4926722
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 245125159,
+      "center": {
+        "lat": 41.3434071,
+        "lon": -90.6967676
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 246333910,
+      "center": {
+        "lat": 41.3389785,
+        "lon": -90.8782147
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 248574375,
+      "center": {
+        "lat": 41.439508,
+        "lon": -90.4618479
+      },
+      "tags": {
+        "barrier": "fence",
+        "power": "substation",
+        "substation": "distribution",
+        "voltage": "161000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 249936503,
+      "center": {
+        "lat": 41.3919786,
+        "lon": -91.0568662
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 249936508,
+      "center": {
+        "lat": 41.3914523,
+        "lon": -91.0571785
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 249936511,
+      "center": {
+        "lat": 41.3879932,
+        "lon": -91.0606145
+      },
+      "tags": {
+        "operator": "Muscatine Power and Water",
+        "power": "substation",
+        "substation": "generation",
+        "voltage": "161000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 249936512,
+      "center": {
+        "lat": 41.3922874,
+        "lon": -91.0574092
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 251703844,
+      "center": {
+        "lat": 41.4636854,
+        "lon": -90.5062029
+      },
+      "tags": {
+        "power": "substation",
+        "voltage": "161000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 251703847,
+      "center": {
+        "lat": 41.4799697,
+        "lon": -90.4363684
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 253836003,
+      "center": {
+        "lat": 41.4854379,
+        "lon": -90.5664392
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 253858380,
+      "center": {
+        "lat": 41.5106973,
+        "lon": -90.5675006
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 253883912,
+      "center": {
+        "lat": 41.5100499,
+        "lon": -90.5859688
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 256055602,
+      "center": {
+        "lat": 41.5250647,
+        "lon": -90.5008395
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 256055605,
+      "center": {
+        "lat": 41.5102407,
+        "lon": -90.5340815
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 259942347,
+      "center": {
+        "lat": 41.4830692,
+        "lon": -90.5276051
+      },
+      "tags": {
+        "barrier": "fence",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 266015811,
+      "center": {
+        "lat": 41.5138195,
+        "lon": -90.4884303
+      },
+      "tags": {
+        "barrier": "fence",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 266233359,
+      "center": {
+        "lat": 41.4783415,
+        "lon": -90.4852238
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 272852801,
+      "center": {
+        "lat": 41.5412532,
+        "lon": -90.4500116
+      },
+      "tags": {
+        "barrier": "fence",
+        "operator": "MidAmerican Energy",
+        "operator:wikidata": "Q6840876",
+        "power": "substation",
+        "substation": "transmission",
+        "voltage": "69000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 272852805,
+      "center": {
+        "lat": 41.5410088,
+        "lon": -90.4489021
+      },
+      "tags": {
+        "operator": "MidAmerican Energy",
+        "operator:wikidata": "Q6840876",
+        "power": "substation",
+        "substation": "transmission",
+        "voltage": "161000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 273275959,
+      "center": {
+        "lat": 41.5165526,
+        "lon": -90.4206477
+      },
+      "tags": {
+        "power": "substation",
+        "voltage": "161000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 273377284,
+      "center": {
+        "lat": 41.4833977,
+        "lon": -90.4005813
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 273377652,
+      "center": {
+        "lat": 41.4676515,
+        "lon": -90.3583108
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 283807319,
+      "center": {
+        "lat": 41.5565508,
+        "lon": -90.2263811
+      },
+      "tags": {
+        "power": "substation",
+        "voltage": "161000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 297465667,
+      "center": {
+        "lat": 41.5892736,
+        "lon": -90.6013384
+      },
+      "tags": {
+        "name": "Sub 78",
+        "operator": "MidAmerican Energy",
+        "operator:wikidata": "Q6840876",
+        "power": "substation",
+        "substation": "distribution",
+        "voltage": "161000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 342673306,
+      "center": {
+        "lat": 41.5885313,
+        "lon": -90.5503421
+      },
+      "tags": {
+        "operator": "MidAmerican Energy",
+        "operator:wikidata": "Q6840876",
+        "power": "substation",
+        "substation": "distribution",
+        "voltage": "161000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 459636621,
+      "center": {
+        "lat": 41.7722315,
+        "lon": -90.9949731
+      },
+      "tags": {
+        "power": "substation",
+        "voltage": "69000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 461418007,
+      "center": {
+        "lat": 41.5843245,
+        "lon": -91.0410439
+      },
+      "tags": {
+        "operator": "MidAmerican Energy",
+        "operator:wikidata": "Q6840876",
+        "power": "substation",
+        "substation": "industrial",
+        "voltage": "161000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 463532396,
+      "center": {
+        "lat": 41.5976827,
+        "lon": -91.0380072
+      },
+      "tags": {
+        "fence": "yes",
+        "power": "substation",
+        "voltage": "69000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 472267606,
+      "center": {
+        "lat": 41.5598467,
+        "lon": -90.5146302
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 636996496,
+      "center": {
+        "lat": 41.4973399,
+        "lon": -90.6453329
+      },
+      "tags": {
+        "barrier": "fence",
+        "operator": "MidAmerican Energy",
+        "operator:wikidata": "Q6840876",
+        "power": "substation",
+        "substation": "industrial",
+        "voltage": "161000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 636996499,
+      "center": {
+        "lat": 41.4709484,
+        "lon": -90.6625854
+      },
+      "tags": {
+        "barrier": "fence",
+        "name": "Sub 85",
+        "operator": "MidAmerican Energy",
+        "operator:wikidata": "Q6840876",
+        "power": "substation",
+        "source": "https://efs.iowa.gov/efs/ShowDocketSummary.do?docketNumber=E-21981",
+        "substation": "transmission",
+        "voltage": "161000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 636998073,
+      "center": {
+        "lat": 41.5518741,
+        "lon": -90.6192861
+      },
+      "tags": {
+        "barrier": "fence",
+        "power": "substation",
+        "voltage": "69000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 637001767,
+      "center": {
+        "lat": 41.5893668,
+        "lon": -90.5104947
+      },
+      "tags": {
+        "operator": "MidAmerican Energy",
+        "operator:wikidata": "Q6840876",
+        "power": "substation",
+        "substation": "distribution",
+        "voltage": "161000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 664185793,
+      "center": {
+        "lat": 41.5651606,
+        "lon": -90.8117508
+      },
+      "tags": {
+        "name": "Walcott Substation",
+        "operator": "MidAmerican Energy",
+        "operator:wikidata": "Q6840876",
+        "power": "substation",
+        "source": "https://efs.iowa.gov/efs/ShowDocketSummary.do?docketNumber=E-21153",
+        "substation": "transmission",
+        "voltage": "345000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 674042696,
+      "center": {
+        "lat": 41.4566003,
+        "lon": -91.0146706
+      },
+      "tags": {
+        "power": "substation",
+        "voltage": "69000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 680716903,
+      "center": {
+        "lat": 41.5965669,
+        "lon": -90.8801246
+      },
+      "tags": {
+        "operator": "City of Durant",
+        "power": "substation",
+        "substation": "distribution"
+      }
+    },
+    {
+      "type": "way",
+      "id": 680716904,
+      "center": {
+        "lat": 41.5963297,
+        "lon": -90.8802145
+      },
+      "tags": {
+        "addr:city": "Stockton",
+        "addr:housenumber": "1009",
+        "addr:postcode": "52769",
+        "addr:state": "IA",
+        "addr:street": "Verde Avenue",
+        "name": "Fulton Substation",
+        "operator": "ITC",
+        "operator:wikidata": "Q5974728",
+        "power": "substation",
+        "substation": "transmission",
+        "voltage": "69000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 680716905,
+      "center": {
+        "lat": 41.5959369,
+        "lon": -90.8800277
+      },
+      "tags": {
+        "operator": "Eastern Iowa REC",
+        "power": "substation",
+        "substation": "distribution"
+      }
+    },
+    {
+      "type": "way",
+      "id": 720715784,
+      "center": {
+        "lat": 41.6113283,
+        "lon": -90.6096829
+      },
+      "tags": {
+        "barrier": "fence",
+        "location": "outdoor",
+        "name": "Enterprise Way Substation",
+        "operator": "MidAmerican Energy",
+        "operator:wikidata": "Q6840876",
+        "power": "substation",
+        "substation": "distribution",
+        "voltage": "161000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 759644348,
+      "center": {
+        "lat": 41.5721916,
+        "lon": -90.4822331
+      },
+      "tags": {
+        "operator": "MidAmerican Energy",
+        "operator:wikidata": "Q6840876",
+        "power": "substation",
+        "substation": "distribution",
+        "voltage": "161000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 761873147,
+      "center": {
+        "lat": 41.644465,
+        "lon": -90.5293195
+      },
+      "tags": {
+        "barrier": "fence",
+        "power": "substation",
+        "substation": "industrial",
+        "voltage": "161000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 761873148,
+      "center": {
+        "lat": 41.6435854,
+        "lon": -90.5303035
+      },
+      "tags": {
+        "barrier": "fence",
+        "owner": "Mid American Energy",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 761873151,
+      "center": {
+        "lat": 41.6123982,
+        "lon": -90.5660993
+      },
+      "tags": {
+        "operator": "MidAmerican Energy",
+        "operator:wikidata": "Q6840876",
+        "power": "substation",
+        "substation": "distribution",
+        "voltage": "161000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 761978442,
+      "center": {
+        "lat": 41.5971737,
+        "lon": -91.0377986
+      },
+      "tags": {
+        "power": "substation",
+        "substation": "minor_distribution",
+        "voltage": "69000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 761978446,
+      "center": {
+        "lat": 41.5815305,
+        "lon": -90.7626434
+      },
+      "tags": {
+        "power": "substation",
+        "substation": "minor_distribution"
+      }
+    },
+    {
+      "type": "way",
+      "id": 788662247,
+      "center": {
+        "lat": 41.5343735,
+        "lon": -90.4688469
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 793345898,
+      "center": {
+        "lat": 41.5207058,
+        "lon": -90.591467
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 796168160,
+      "center": {
+        "lat": 41.5669864,
+        "lon": -90.4340482
+      },
+      "tags": {
+        "operator": "MidAmerican Energy",
+        "operator:wikidata": "Q6840876",
+        "power": "substation",
+        "substation": "distribution",
+        "voltage": "69000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 796463267,
+      "center": {
+        "lat": 41.6117172,
+        "lon": -90.3739379
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 796656441,
+      "center": {
+        "lat": 41.4957162,
+        "lon": -90.7323116
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 796976283,
+      "center": {
+        "lat": 41.6332889,
+        "lon": -90.5797754
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 797161804,
+      "center": {
+        "lat": 41.5122245,
+        "lon": -90.7648645
+      },
+      "tags": {
+        "power": "substation",
+        "voltage": "69000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 798126875,
+      "center": {
+        "lat": 41.553077,
+        "lon": -90.5711994
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 799106326,
+      "center": {
+        "lat": 41.5734684,
+        "lon": -90.7411168
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 814268625,
+      "center": {
+        "lat": 41.454218,
+        "lon": -90.4897342
+      },
+      "tags": {
+        "barrier": "fence",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 815012312,
+      "center": {
+        "lat": 41.4844578,
+        "lon": -90.3655119
+      },
+      "tags": {
+        "barrier": "fence",
+        "power": "substation",
+        "substation": "yes",
+        "voltage": "69000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 815052291,
+      "center": {
+        "lat": 41.5203039,
+        "lon": -90.1756008
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 816699241,
+      "center": {
+        "lat": 41.4378422,
+        "lon": -91.0767538
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 825446348,
+      "center": {
+        "lat": 41.617363,
+        "lon": -90.5733747
+      },
+      "tags": {
+        "operator": "MidAmerican Energy",
+        "operator:wikidata": "Q6840876",
+        "power": "substation",
+        "substation": "industrial",
+        "voltage": "161000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 839950646,
+      "center": {
+        "lat": 41.44265,
+        "lon": -90.5864871
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 839950679,
+      "center": {
+        "lat": 41.5192801,
+        "lon": -90.4406635
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 843256953,
+      "center": {
+        "lat": 41.5816948,
+        "lon": -90.5522447
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 865690963,
+      "center": {
+        "lat": 41.487188,
+        "lon": -90.5938345
+      },
+      "tags": {
+        "barrier": "fence",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 866354933,
+      "center": {
+        "lat": 41.4536907,
+        "lon": -90.54461
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 879412180,
+      "center": {
+        "lat": 41.6976951,
+        "lon": -90.5298717
+      },
+      "tags": {
+        "power": "substation",
+        "voltage": "69000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 894636727,
+      "center": {
+        "lat": 41.7860857,
+        "lon": -90.452411
+      },
+      "tags": {
+        "power": "substation",
+        "voltage": "69000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 934708896,
+      "center": {
+        "lat": 41.5376422,
+        "lon": -90.6397344
+      },
+      "tags": {
+        "barrier": "fence",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1015157451,
+      "center": {
+        "lat": 41.7206592,
+        "lon": -90.4515315
+      },
+      "tags": {
+        "barrier": "fence",
+        "name": "Buffalo Bill Substation",
+        "power": "substation",
+        "voltage": "69000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1017623686,
+      "center": {
+        "lat": 41.4930382,
+        "lon": -91.0384308
+      },
+      "tags": {
+        "name": "Muscatine Substation",
+        "operator": "Muscatine Power and Water",
+        "power": "substation",
+        "source": "https://efs.iowa.gov/efs/ShowDocketSummary.do?docketNumber=E-22423",
+        "substation": "distribution",
+        "voltage": "69000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1018821435,
+      "center": {
+        "lat": 41.4596236,
+        "lon": -90.6952865
+      },
+      "tags": {
+        "power": "substation",
+        "substation": "industrial",
+        "voltage": "161000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1023361447,
+      "center": {
+        "lat": 41.6213389,
+        "lon": -90.7833553
+      },
+      "tags": {
+        "barrier": "fence",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1025628891,
+      "center": {
+        "lat": 41.6779055,
+        "lon": -90.3748372
+      },
+      "tags": {
+        "barrier": "fence",
+        "power": "substation",
+        "substation": "minor_distribution"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1088042248,
+      "center": {
+        "lat": 41.4576867,
+        "lon": -90.8235896
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1237834948,
+      "center": {
+        "lat": 41.4649216,
+        "lon": -90.9701642
+      },
+      "tags": {
+        "fence": "yes",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1237837524,
+      "center": {
+        "lat": 41.4422696,
+        "lon": -91.0415997
+      },
+      "tags": {
+        "fence": "yes",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1241212503,
+      "center": {
+        "lat": 41.5184579,
+        "lon": -90.8813771
+      },
+      "tags": {
+        "fence": "yes",
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1241214727,
+      "center": {
+        "lat": 41.4892141,
+        "lon": -90.8053216
+      },
+      "tags": {
+        "fence": "yes",
+        "power": "substation",
+        "voltage": "69000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1267737868,
+      "center": {
+        "lat": 41.5049808,
+        "lon": -90.7072825
+      },
+      "tags": {
+        "power": "substation",
+        "voltage": "69000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1344437369,
+      "center": {
+        "lat": 41.3966609,
+        "lon": -90.3384099
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1378814905,
+      "center": {
+        "lat": 41.6499449,
+        "lon": -90.4510255
+      },
+      "tags": {
+        "power": "substation",
+        "voltage": "69000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1456579045,
+      "center": {
+        "lat": 41.5094294,
+        "lon": -90.6194598
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1456744911,
+      "center": {
+        "lat": 41.7279334,
+        "lon": -90.6456469
+      },
+      "tags": {
+        "power": "substation",
+        "voltage": "69000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1460895962,
+      "center": {
+        "lat": 41.5155333,
+        "lon": -90.4118309
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1460897522,
+      "center": {
+        "lat": 41.7276991,
+        "lon": -90.7623598
+      },
+      "tags": {
+        "power": "substation",
+        "voltage": "69000"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1485091777,
+      "center": {
+        "lat": 41.536056,
+        "lon": -90.4596341
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1485091779,
+      "center": {
+        "lat": 41.4193825,
+        "lon": -91.0482126
+      },
+      "tags": {
+        "power": "substation"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1498610423,
+      "center": {
+        "lat": 41.4549444,
+        "lon": -90.1629418
+      },
+      "tags": {
+        "barrier": "fence",
+        "frequency": "60",
+        "location": "outdoor",
+        "operator": "City of Geneseo",
+        "power": "substation",
+        "substation": "minor_distribution",
+        "voltage": "115000"
+      }
+    }
+  ]
+}

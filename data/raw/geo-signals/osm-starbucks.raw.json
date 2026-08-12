@@ -1,0 +1,275 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-08-12T18:24:11Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 7815076616,
+      "lat": 41.5573232,
+      "lon": -90.5578028,
+      "tags": {
+        "addr:city": "Davenport",
+        "addr:housenumber": "1050",
+        "addr:postcode": "52807",
+        "addr:state": "IA",
+        "addr:street": "East Kimberly Road",
+        "amenity": "cafe",
+        "branch": "Davenport-Kimberly & Bridge",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "cuisine": "coffee_shop",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "phone": "+1 563-386-1610",
+        "ref": "17464",
+        "takeaway": "yes",
+        "website": "https://www.starbucks.com/store-locator/store/17464/davenport-kimberly-bridge-1050-e-kimberly-rd-davenport-ia-528071760-us"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7841634046,
+      "lat": 41.4438537,
+      "lon": -90.5701256,
+      "tags": {
+        "addr:city": "Milan",
+        "addr:housenumber": "201",
+        "addr:postcode": "61264",
+        "addr:state": "IL",
+        "addr:street": "10th Avenue West",
+        "amenity": "cafe",
+        "branch": "Hy-Vee Milan 1415",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "cuisine": "coffee_shop",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "phone": "+1 309-787-0273",
+        "ref": "1022358",
+        "takeaway": "yes",
+        "website": "https://www.starbucks.com/store-locator/store/1022358/hy-vee-milan-1415-201-10th-avenue-west-milan-il-61264-us"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13811637359,
+      "lat": 41.5542666,
+      "lon": -90.5265623,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "cuisine": "coffee_shop",
+        "drive_through": "yes",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13979708337,
+      "lat": 41.5746899,
+      "lon": -90.5075547,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "cuisine": "coffee_shop",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13993410815,
+      "lat": 41.6179902,
+      "lon": -90.7811202,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "check_date": "2026-07-06",
+        "cuisine": "coffee_shop",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 342650863,
+      "center": {
+        "lat": 41.5752899,
+        "lon": -90.5279468
+      },
+      "tags": {
+        "addr:city": "Davenport",
+        "addr:housenumber": "3120",
+        "addr:postcode": "52807",
+        "addr:state": "IA",
+        "addr:street": "East 53rd Street",
+        "amenity": "cafe",
+        "branch": "Davenport - 53rd & Elmore",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "building": "yes",
+        "cuisine": "coffee_shop",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "phone": "+1 563-359-3610",
+        "ref": "6831",
+        "takeaway": "yes",
+        "website": "https://www.starbucks.com/store-locator/store/6831/davenport-53rd-elmore-3120-e-53rd-street-davenport-ia-528073014-us"
+      }
+    },
+    {
+      "type": "way",
+      "id": 494509635,
+      "center": {
+        "lat": 41.5393002,
+        "lon": -90.5191497
+      },
+      "tags": {
+        "addr:city": "bettendorf",
+        "addr:housenumber": "931",
+        "addr:postcode": "52722",
+        "addr:state": "IA",
+        "addr:street": "Middle Road",
+        "amenity": "cafe",
+        "branch": "Kimberly & Middle Road",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "building": "yes",
+        "cuisine": "coffee_shop",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "phone": "+1 563-359-1110",
+        "takeaway": "yes",
+        "website": "https://www.starbucks.com/store-locator/store/1009993/kimberly-middle-rd-931-middle-road-bettendorf-ia-527224103-us"
+      }
+    },
+    {
+      "type": "way",
+      "id": 785594860,
+      "center": {
+        "lat": 41.5506557,
+        "lon": -90.4870946
+      },
+      "tags": {
+        "addr:city": "Bettendorf",
+        "addr:housenumber": "3232",
+        "addr:postcode": "52722",
+        "addr:state": "IA",
+        "addr:street": "Middle Road",
+        "amenity": "cafe",
+        "branch": "Middle Road & Devils Glenn",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "building": "yes",
+        "cuisine": "coffee_shop",
+        "drive_through": "yes",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "outdoor_seating": "yes",
+        "phone": "+1 563-340-2452",
+        "ref": "1024302",
+        "takeaway": "yes",
+        "website": "https://www.starbucks.com/store-locator/store/1024302/middle-rd-devils-glenn-3232-middle-rd-bettendorf-ia-527223305-us"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1479174332,
+      "center": {
+        "lat": 41.4938698,
+        "lon": -90.5359863
+      },
+      "tags": {
+        "addr:city": "Moline",
+        "addr:housenumber": "151",
+        "addr:postcode": "61265",
+        "addr:state": "IL",
+        "addr:street": "19th Avenue",
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "cuisine": "coffee_shop",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1504265138,
+      "center": {
+        "lat": 41.4907068,
+        "lon": -90.4809209
+      },
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "building": "yes",
+        "cuisine": "coffee_shop",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1505421870,
+      "center": {
+        "lat": 41.4711435,
+        "lon": -90.474441
+      },
+      "tags": {
+        "addr:city": "Moline",
+        "addr:housenumber": "4200",
+        "addr:postcode": "61265",
+        "addr:state": "IL",
+        "addr:street": "38th Avenue",
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "building": "yes",
+        "cuisine": "coffee_shop",
+        "drive_through": "yes",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1514851023,
+      "center": {
+        "lat": 41.4703166,
+        "lon": -90.5288757
+      },
+      "tags": {
+        "addr:city": "Moline",
+        "addr:housenumber": "4005",
+        "addr:postcode": "61265",
+        "addr:state": "IL",
+        "addr:street": "7th Street",
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "building": "yes",
+        "cuisine": "coffee_shop",
+        "drive_through": "yes",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "takeaway": "yes"
+      }
+    }
+  ]
+}
