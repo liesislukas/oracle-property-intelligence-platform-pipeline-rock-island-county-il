@@ -15,7 +15,7 @@ export default function DataPage() {
   return (
     <section
       data-testid="section-data"
-      className="mx-auto w-full max-w-5xl px-6 py-12"
+      className="mx-auto w-full max-w-6xl px-6 py-12"
     >
       <h1 className="text-2xl font-semibold tracking-tight">{section.label}</h1>
       <p className="mt-3 text-black/70 dark:text-white/70">{section.blurb}</p>
