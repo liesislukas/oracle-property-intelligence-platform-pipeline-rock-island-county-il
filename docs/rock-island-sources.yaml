@@ -21,7 +21,33 @@ egress_country: LT
 
 appraisal: {}
 
-parcels: {}
+parcels:
+  name: Rock Island County GIS — Parcels (parcel_layer)
+  url: https://services9.arcgis.com/6FnscPPlUa9DXXOk/arcgis/rest/services/Parcels/FeatureServer/0
+  publisher: Rock Island County GIS (ArcGIS Online org 6FnscPPlUa9DXXOk, urlKey "ricogis")
+  access_method: >-
+    Anonymous ArcGIS REST query, no token and no session. esriGeometryPolygon geometry,
+    f=geojson and outSR=4326 both verified. Paginate 33 requests at maxRecordCount 2000, or
+    take the 19 MB shapefile bulk export from
+    https://hub.arcgis.com/api/download/v1/items/9cae8a64ab0e4cea99758f741ca43b3c/shapefile?layers=0
+  status: available
+  record_count: 65955
+  throughput: >-
+    p50 0.46 s, p95 0.79 s over 10 rapid sequential queries (2026-08-12); zero 429, zero
+    throttling. Bulk: shapefile 19,163,379 B in 4.8 s; csv 46,916,439 B in 7.6 s;
+    geojson 183,669,886 B in 15.5 s; kml 336,984,388 B in 24.8 s.
+  constraints: >-
+    maxRecordCount 2000 is a hard per-request cap (33 pages for a full extract). Hub export is a
+    cached snapshot and drifts from live — 66,028 export features vs 65,955 live. Hub export
+    renames 6 fields and drops 4 (82 REST fields vs 79 export properties). geoPackage and filegdb
+    return HTTP 400 from the Hub endpoint despite being advertised in supportedExportFormats.
+    gross_acres is 0 for 72.5% of parcels — use GIS_acres_num. Empty values are "" or " ", never
+    NULL. The county on-prem service gis.rockislandcountyil.gov/.../Hosted/Parcels returns
+    499 Token Required and must not be used.
+  licence: For use by the general public
+  feasibility: download
+  verified_at: "2026-08-12"
+  evidence: docs/samples/parcels-sample.geojson
 
 permits: []
 

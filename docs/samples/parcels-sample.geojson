@@ -1,0 +1,371 @@
+{
+    "type": "FeatureCollection",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "EPSG:4326"
+        }
+    },
+    "properties": {
+        "exceededTransferLimit": true
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "id": 11,
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -90.3110257592247,
+                            41.6920806533623
+                        ],
+                        [
+                            -90.3118793328621,
+                            41.6901581085278
+                        ],
+                        [
+                            -90.3112207839507,
+                            41.6920782823658
+                        ],
+                        [
+                            -90.3110257592247,
+                            41.6920806533623
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "OBJECTID": 11,
+                "RICO_PARCE": "01190-A-1",
+                "PIN": "0330400004",
+                "GIS_acres_num": 0.42597185416818306,
+                "X_longitude": -90.31136879,
+                "Y_latitude": 41.69143135,
+                "TWP_RAN_SE": null,
+                "OBJECTID_1": null,
+                "parcel_number": "0330400004",
+                "alternate_parcel_number": "01190-A-1",
+                "site_address": "",
+                "site_csz": "",
+                "Site_City": " ",
+                "Site_State": "IL",
+                "Site_Zip": "",
+                "gross_acres": 0,
+                "class": "0090",
+                "EMV": 0,
+                "EAV": 0,
+                "farm_land": 0,
+                "farm_building": 0,
+                "non_farm_land": 0,
+                "non_farm_building": 0,
+                "taxbill_name": "VILLAGE OF CORDOVA",
+                "Taxbill_last": "VILLAGE",
+                "Taxbill_first": "OF CORDOVA",
+                "taxbill_addr1": "PO BOX 6",
+                "taxbill_addr2": "",
+                "taxbill_addr": "PO BOX 6",
+                "taxbill_csz": "CORDOVA IL 612420006",
+                "Taxbill_CS": "CORDOVA IL",
+                "Taxbill_Zip": "612420006",
+                "owner1_name": "VILLAGE OF CORDOVA",
+                "owner1_address1": "906 MAIN AVE",
+                "owner1_address2": "",
+                "owner1_csz": "CORDOVA IL 612427757",
+                "Owner_City": "CORDOVA ",
+                "Owner_State": "IL",
+                "Owner_zip": "612427757",
+                "date_last_sale": 1500595200000,
+                "gross_sale_price": 10,
+                "net_sale_price": 10,
+                "community_college": "BLACKHAWK CC 503",
+                "fire_district": "CORDOVA FPD",
+                "grade_school": "",
+                "high_school": "",
+                "library_district": "CORDOVA LIBRARY",
+                "library": "",
+                "tif_district": "",
+                "non_high_school": "",
+                "unit_school": "RIVERDALE CUSD 100",
+                "legal": "SUPVR ASST MAP LOT 401-1 SHEET 26",
+                "date_of_sale": null,
+                "airport": "",
+                "cemetery": "",
+                "conservation": "",
+                "county": "ROCK ISLAND COUNTY",
+                "municipality": "CORDOVA VILLAGE",
+                "Jurisdiction": "CORDOVA VILLAGE",
+                "forest_preserve": "FOREST PRESERVE",
+                "drainage": "",
+                "mass_transit": "",
+                "road_district": "CORDOVA ROAD & BRIDGE",
+                "multi_township_district": "MULTI-TWP CD-PORT BYRON",
+                "park_district": "",
+                "sanitary_district": "",
+                "special_district": "",
+                "street_light_district": "",
+                "misc_district": "",
+                "hospital_district": "",
+                "township": "01",
+                "tax_code": "01004",
+                "taxbill_year": 2025,
+                "Zoning": "COR",
+                "assessed_last": 1783953916000,
+                "MODLNAME": " ",
+                "YRBuilt": " ",
+                "GarSQFT": " ",
+                "TOTSQFT": " ",
+                "OBJECTID_1_1": 4746,
+                "Shape__Area": 18555.33349609375,
+                "Shape__Length": 1513.970806438775
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 12,
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -90.3114296147521,
+                            41.6921443624527
+                        ],
+                        [
+                            -90.3115915536378,
+                            41.6917239317619
+                        ],
+                        [
+                            -90.3129902382748,
+                            41.6917403117156
+                        ],
+                        [
+                            -90.3132889372693,
+                            41.6917438072851
+                        ],
+                        [
+                            -90.3132399266507,
+                            41.6921175858342
+                        ],
+                        [
+                            -90.3129209211676,
+                            41.6921223060901
+                        ],
+                        [
+                            -90.3114296147521,
+                            41.6921443624527
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "OBJECTID": 12,
+                "RICO_PARCE": "01594",
+                "PIN": "0330401001",
+                "GIS_acres_num": 1.5902555878455036,
+                "X_longitude": -90.3123634,
+                "Y_latitude": 41.69192669,
+                "TWP_RAN_SE": null,
+                "OBJECTID_1": null,
+                "parcel_number": "0330401001",
+                "alternate_parcel_number": "01594",
+                "site_address": "",
+                "site_csz": "",
+                "Site_City": " ",
+                "Site_State": "IL",
+                "Site_Zip": "",
+                "gross_acres": 0,
+                "class": "0030",
+                "EMV": 194602,
+                "EAV": 64861,
+                "farm_land": 0,
+                "farm_building": 0,
+                "non_farm_land": 64861,
+                "non_farm_building": 0,
+                "taxbill_name": "CORDOVA ENERGY COMPANY",
+                "Taxbill_last": "CORDOVA",
+                "Taxbill_first": "ENERGY COMPANY",
+                "taxbill_addr1": "PO BOX 657",
+                "taxbill_addr2": "TAX-DML4N",
+                "taxbill_addr": "PO BOX 657TAX-DML4N",
+                "taxbill_csz": "DES MOINES IA 503060657",
+                "Taxbill_CS": "DES MOINES IA",
+                "Taxbill_Zip": "503060657",
+                "owner1_name": "IL AMERICAN PACIFIC FIN",
+                "owner1_address1": "",
+                "owner1_address2": "",
+                "owner1_csz": "",
+                "Owner_City": " ",
+                "Owner_State": "",
+                "Owner_zip": "",
+                "date_last_sale": null,
+                "gross_sale_price": 0,
+                "net_sale_price": 0,
+                "community_college": "BLACKHAWK CC 503",
+                "fire_district": "CORDOVA FPD",
+                "grade_school": "",
+                "high_school": "",
+                "library_district": "CORDOVA LIBRARY",
+                "library": "",
+                "tif_district": "",
+                "non_high_school": "",
+                "unit_school": "RIVERDALE CUSD 100",
+                "legal": "LOT 19 SULLIVANS MISSISSIPPI RIVER ESTATES SH 26",
+                "date_of_sale": null,
+                "airport": "",
+                "cemetery": "",
+                "conservation": "",
+                "county": "ROCK ISLAND COUNTY",
+                "municipality": "CORDOVA VILLAGE",
+                "Jurisdiction": "CORDOVA VILLAGE",
+                "forest_preserve": "FOREST PRESERVE",
+                "drainage": "",
+                "mass_transit": "",
+                "road_district": "CORDOVA ROAD & BRIDGE",
+                "multi_township_district": "MULTI-TWP CD-PORT BYRON",
+                "park_district": "",
+                "sanitary_district": "",
+                "special_district": "",
+                "street_light_district": "",
+                "misc_district": "",
+                "hospital_district": "",
+                "township": "01",
+                "tax_code": "01004",
+                "taxbill_year": 2025,
+                "Zoning": "COR",
+                "assessed_last": 1783953916000,
+                "MODLNAME": " ",
+                "YRBuilt": " ",
+                "GarSQFT": " ",
+                "TOTSQFT": " ",
+                "OBJECTID_1_1": 372,
+                "Shape__Area": 69271.533203125,
+                "Shape__Length": 1254.443790007753
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 13,
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -90.3115915536378,
+                            41.6917239317619
+                        ],
+                        [
+                            -90.3116979993377,
+                            41.6914475730797
+                        ],
+                        [
+                            -90.3130402071295,
+                            41.6914649439011
+                        ],
+                        [
+                            -90.3133250185433,
+                            41.6914686281415
+                        ],
+                        [
+                            -90.3132889372693,
+                            41.6917438072851
+                        ],
+                        [
+                            -90.3129902382748,
+                            41.6917403117156
+                        ],
+                        [
+                            -90.3115915536378,
+                            41.6917239317619
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "OBJECTID": 13,
+                "RICO_PARCE": "01593",
+                "PIN": "0330401002",
+                "GIS_acres_num": 1.0505299955190797,
+                "X_longitude": -90.31246809,
+                "Y_latitude": 41.69158927,
+                "TWP_RAN_SE": null,
+                "OBJECTID_1": null,
+                "parcel_number": "0330401002",
+                "alternate_parcel_number": "01593",
+                "site_address": "17010 RIVER RD N",
+                "site_csz": "CORDOVA IL 61242",
+                "Site_City": "CORDOVA",
+                "Site_State": "IL",
+                "Site_Zip": "61242",
+                "gross_acres": 0,
+                "class": "0040",
+                "EMV": 675212,
+                "EAV": 225048,
+                "farm_land": 0,
+                "farm_building": 0,
+                "non_farm_land": 45404,
+                "non_farm_building": 179644,
+                "taxbill_name": "SHETLER KATHRYN/KENNETH D",
+                "Taxbill_last": "SHETLER",
+                "Taxbill_first": "KATHRYN/KENNETH D",
+                "taxbill_addr1": "17010 RIVER RD N",
+                "taxbill_addr2": "",
+                "taxbill_addr": "17010 RIVER RD N",
+                "taxbill_csz": "CORDOVA IL 612429679",
+                "Taxbill_CS": "CORDOVA IL",
+                "Taxbill_Zip": "612429679",
+                "owner1_name": "SHELTER K TRUST",
+                "owner1_address1": "",
+                "owner1_address2": "",
+                "owner1_csz": "",
+                "Owner_City": " ",
+                "Owner_State": "",
+                "Owner_zip": "",
+                "date_last_sale": 1273622400000,
+                "gross_sale_price": 10,
+                "net_sale_price": 10,
+                "community_college": "BLACKHAWK CC 503",
+                "fire_district": "CORDOVA FPD",
+                "grade_school": "",
+                "high_school": "",
+                "library_district": "CORDOVA LIBRARY",
+                "library": "",
+                "tif_district": "",
+                "non_high_school": "",
+                "unit_school": "RIVERDALE CUSD 100",
+                "legal": "LOT 18 SULLIVANS MISSISSIPPI RIVER ESTATES SH 26",
+                "date_of_sale": null,
+                "airport": "",
+                "cemetery": "",
+                "conservation": "",
+                "county": "ROCK ISLAND COUNTY",
+                "municipality": "CORDOVA VILLAGE",
+                "Jurisdiction": "CORDOVA VILLAGE",
+                "forest_preserve": "FOREST PRESERVE",
+                "drainage": "",
+                "mass_transit": "",
+                "road_district": "CORDOVA ROAD & BRIDGE",
+                "multi_township_district": "MULTI-TWP CD-PORT BYRON",
+                "park_district": "",
+                "sanitary_district": "",
+                "special_district": "",
+                "street_light_district": "",
+                "misc_district": "",
+                "hospital_district": "",
+                "township": "01",
+                "tax_code": "01004",
+                "taxbill_year": 2025,
+                "Zoning": "COR",
+                "assessed_last": 1783953916000,
+                "MODLNAME": "1.5 Story",
+                "YRBuilt": "2004",
+                "GarSQFT": "992",
+                "TOTSQFT": "2700",
+                "OBJECTID_1_1": 4960,
+                "Shape__Area": 45761.0869140625,
+                "Shape__Length": 1113.6194257708148
+            }
+        }
+    ]
+}

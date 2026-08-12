@@ -26,7 +26,30 @@ _Filled by W2–W8._
 
 ## 2. Parcel identifier
 
-_Filled by W2–W8._
+**Official name: PIN.** Format: **10-digit numeric string, no punctuation**, e.g. `0330400004`.
+Source field `PIN`, `esriFieldTypeString(10)` on the county GIS parcel layer.
+**100% populated — 65,955 of 65,955.** This is the join key.
+
+| Identifier | Field | Format | Example | Coverage |
+|---|---|---|---|---|
+| PIN (canonical) | `PIN` | 10-digit string, no punctuation | `0330400004` | 65,955 / 65,955 (100%) |
+| PIN (duplicate) | `parcel_number` | as above | `0330400004` | identical to `PIN` in all sampled records |
+| Legacy / alternate | `RICO_PARCE` | mixed alphanumeric with hyphens | `01190-A-1`, `01594` | present |
+| Legacy (duplicate) | `alternate_parcel_number` | as above | `01190-A-1` | identical to `RICO_PARCE` in all sampled records |
+
+Two identifier families coexist: the 10-digit `PIN` and a legacy hyphenated `RICO_PARCE`. Each is
+carried twice under two field names. A transform must pick `PIN` and normalise, not assume the four
+fields agree.
+
+**The assessor portal's identifier format is UNCONFIRMED.** `rockislandil.devnetwedge.com` is
+unreachable from this egress (see `## 1` and `## 10`), so the id shown on the assessment portal has
+not been observed. `county-discovery/SKILL.md` warns that the parcel id "often differs" between
+appraiser and permit portals — commonly by punctuation or by a check digit. **Do not assume the
+DEVNET Wedge id equals the GIS `PIN`** until it has been seen. Asserting equality on the strength of
+the GIS layer alone would be a fabrication, and a transform built on that assumption would fail
+silently at join time.
+
+Permit-portal identifier formats are likewise unconfirmed per jurisdiction — see `## 3`.
 
 ## 3. Permit portals
 
@@ -34,7 +57,152 @@ _Filled by W2–W8._
 
 ## 4. Bulk data sources
 
-_Filled by W2–W8._
+### Parcel geometry — answered definitively: real polygons, public, no auth
+
+**Rock Island County publishes downloadable parcel POLYGONS.** Not centroids, not an annotation
+layer, not a token-gated service.
+
+| Property | Value |
+|---|---|
+| Layer URL | `https://services9.arcgis.com/6FnscPPlUa9DXXOk/arcgis/rest/services/Parcels/FeatureServer/0` |
+| Service URL | `https://services9.arcgis.com/6FnscPPlUa9DXXOk/arcgis/rest/services/Parcels/FeatureServer` |
+| Publisher | **Rock Island County GIS** — AGOL org `6FnscPPlUa9DXXOk`, urlKey `ricogis`. The county's own GIS department, not a reseller. |
+| AGOL item id | `9cae8a64ab0e4cea99758f741ca43b3c` |
+| Layer name | `parcel_layer` |
+| **Geometry type** | **`esriGeometryPolygon`** — re-verified live 2026-08-12 |
+| Feature count | **65,955** — `returnCountOnly`, re-verified live 2026-08-12 (identical to the 2026-08-11 count) |
+| Geometry mix | 65,407 `Polygon` + 621 `MultiPolygon`, **0 null geometries** (measured over the bulk export) |
+| `maxRecordCount` | **2000** (`standardMaxRecordCount` 2000, `tileMaxRecordCount` 4000) → **33 paged requests** for a full extract |
+| Auth | **none.** No token, no API key, no login. |
+| CORS | `access-control-allow-origin: *` — direct browser fetch works |
+| Native SR | `wkid 102672` / `latestWkid 3436` (NAD83 Illinois West ftUS); `outSR=4326` verified working |
+| Capabilities | `Query` only — read-only, no edit |
+| Licence | **`For use by the general public`** |
+| Last modified | `2026-08-11T12:08:40Z` |
+| Latency | 0.393–0.789 s over 10 rapid sequential queries on 2026-08-12; **p50 ≈ 0.46 s, p95 ≈ 0.79 s**; zero 429, zero throttling |
+| Formats | `supportedQueryFormats: JSON, geoJSON, PBF`; pagination via `advancedQueryCapabilities.supportsPagination: true`, verified empirically at `resultOffset=65950` |
+
+**Licence provenance precision.** The string `For use by the general public` is on the **ArcGIS
+Online item** (`.../sharing/rest/content/items/9cae8a64ab0e4cea99758f741ca43b3c?f=json` →
+`licenseInfo`). The FeatureServer REST endpoint itself returns **no** `licenseInfo` and an empty
+`copyrightText`. Quote the item, not the service. `accessInformation` on the item is empty — there
+is no attribution string the publisher requires beyond the licence sentence.
+
+Sample proving polygon rings: [`samples/parcels-sample.geojson`](./samples/parcels-sample.geojson) —
+3 features fetched live 2026-08-12 with `outSR=4326&f=geojson`, first feature `PIN 0330400004`
+(`VILLAGE OF CORDOVA`), geometry type `Polygon`.
+
+Paged-query template for a full extract:
+
+```
+{layer_url}/query?where=1%3D1&outFields=*&returnGeometry=true&outSR=4326
+  &resultOffset={n*2000}&resultRecordCount=2000&orderByFields=OBJECTID&f=geojson
+```
+
+### Bulk export paths — measured
+
+Base: `https://hub.arcgis.com/api/download/v1/items/9cae8a64ab0e4cea99758f741ca43b3c/<format>?layers=0`
+
+| Format | HTTP | Bytes | Time |
+|---|---|---|---|
+| `shapefile` | 200 | 19,163,379 | 4.8 s |
+| `csv` | 200 | 46,916,439 | 7.6 s |
+| `geojson` | 200 | 183,669,886 | 15.5 s |
+| `kml` | 200 | 336,984,388 | 24.8 s |
+| `geoPackage` | **400** | 133 | 0.7 s |
+| `filegdb` | **400** | 133 | 0.8 s |
+
+**Trap.** The service advertises `geoPackage` and `filegdb` in `supportedExportFormats`, but the Hub
+download API returns **HTTP 400** for both. Do not spec GeoPackage or FileGDB off the Hub endpoint.
+
+**Shapefile at 19 MB is the cheapest full-fidelity ingest.** CSV carries attributes but no polygon
+geometry. Raw GeoJSON at 183 MB is not viable as a single browser payload — server-side tiling,
+`maxAllowableOffset` simplification, bbox-filtered queries, or an attribute-thinned extract is
+required for any map use.
+
+**Two drifts to carry into ingestion.** Both are real and both bite silently:
+
+1. **Count drift.** The Hub export returned **66,028** features against **65,955** live. The Hub
+   download is a cached, materialised snapshot and is not perfectly in sync. If parity matters,
+   paginate the live `/query` endpoint and record the count at ingest time rather than trusting the
+   export.
+2. **Field-name drift.** The Hub export renames six fields and drops four. A schema written from
+   `?f=json` will **not** match a shapefile/CSV/GeoJSON bulk download — REST layer has 82 fields,
+   the bulk export 79 properties.
+
+| REST layer metadata | Bulk export |
+|---|---|
+| `Site_City` | `site_city` |
+| `Site_State` | `site_state` |
+| `Taxbill_last` | `taxbill_last` |
+| `Taxbill_first` | `taxbill_first` |
+| `Owner_City` | `Owner_city` |
+| `Owner_State` | `Owner_state` |
+| `TWP_RAN_SE` | *(absent)* |
+| `date_of_sale` | *(absent)* |
+| `OBJECTID_1_1` | *(absent)* |
+| `Shape__Area`, `Shape__Length` | *(absent)* |
+
+### Key attribute coverage — measured over all 65,955
+
+| Field | Populated | % | Note |
+|---|---|---|---|
+| `PIN` | 65,955 | 100.0% | join key |
+| `owner1_name` | 65,763 | 99.71% | |
+| `taxbill_name` | 65,764 | 99.71% | **often differs from `owner1_name`** |
+| `taxbill_addr` | 65,763 | 99.71% | mailing address line |
+| `EAV > 0` | 63,436 | 96.18% | Equalized Assessed Value |
+| `EMV > 0` | 59,007 | 89.47% | market value |
+| `site_address` | 58,639 | 88.91% | situs (physical) address |
+| `GIS_acres_num > 0` | 65,953 | 99.997% | **use this for acreage** |
+| `gross_acres > 0` | 18,165 | 27.54% | **do not use** |
+
+Also present and directly useful downstream: `date_last_sale`, `gross_sale_price`, `net_sale_price`,
+`YRBuilt`, `TOTSQFT`, `GarSQFT`, `Zoning`, `class`, `legal`, `tax_code`, `township`, `taxbill_year`,
+`X_longitude`/`Y_latitude` (per-parcel centroids), and a full set of taxing-district names.
+
+**Data-quality traps, measured:**
+
+1. `gross_acres` is **0 for 72.5%** of parcels. Use `GIS_acres_num`, never `gross_acres`.
+2. Empty is `""` or `" "`, **not `NULL`** (`site_address`, `YRBuilt`, `TOTSQFT`, `Owner_City`). Trim
+   before any `IS NOT NULL` count or the result over-counts.
+3. `owner1_name` != `taxbill_name` in 2 of 3 sampled records, including an apparent source typo
+   (`SHELTER K TRUST` vs `SHETLER KATHRYN/KENNETH D`). Decide which is canonical; do not assume.
+4. `taxbill_csz` is one combined `CITY ST ZIP` string, sometimes ZIP+4 with no hyphen
+   (`CORDOVA IL 612420006`). Parsing required.
+5. Dirty concatenations exist in the source (`"PO BOX 657TAX-DML4N"`).
+6. `TWP_RAN_SE`, `OBJECTID_1` and `date_of_sale` were **null in every sampled record**.
+   `date_of_sale` is redundant with `date_last_sale`.
+7. Dates are **epoch milliseconds**.
+
+### Dead ends — recorded so they are not re-probed
+
+- `https://gis.rockislandcountyil.gov/arcgis/rest/services/Hosted/Parcels/FeatureServer/0` →
+  **`{"error":{"code":499,"message":"Token Required"}}`**. The county's on-prem ArcGIS Server does
+  serve a parcels service, but it is **not anonymously accessible**. Three public AGOL items point
+  at it. Do not build against it — use the `services9.arcgis.com` hosted layer.
+- `.../services/Parcel_Annotation/MapServer` → real, but an **annotation/label service**
+  (cartographic text), not usable parcel features.
+- `gis.rockislandcounty.org`, `maps.rockislandcounty.org`, `www.rockislandcounty.org` → connect
+  failure. The live county host is **`rockislandcountyil.gov`**, not `rockislandcounty.org`.
+- The public viewer app is titled `1) RICO GIS Public Mapping App (to be retired)`. **Depend on the
+  FeatureServer URL and the item id, not on the viewer app.**
+
+### Bulk sources reached for but NOT verified — open gaps
+
+Named honestly as gaps, with no inference about their contents:
+
+- **Bi-State Regional Commission** (the Quad Cities MPO) — **not probed.** No finding either way. It
+  is the most likely home of regional transportation, land-use and transit datasets spanning the
+  Illinois/Iowa state line, and it is the first place a follow-up run should look.
+- **Illinois State Geological Survey / Illinois Geospatial Data Clearinghouse**
+  (`https://clearinghouse.isgs.illinois.edu/`) — **not probed.** Only a web search was run; no
+  endpoint was hit. Search results indicated Illinois has no unified statewide parcel dataset and
+  that counties publish their own, which is consistent with what was measured here, but **that was
+  not confirmed against the clearinghouse itself.** Treat as unverified.
+
+Neither gap blocks parcel work: the county's own AGOL service is authoritative, current and richer
+than a state aggregate would be.
 
 ## 5. Usage-type vocabulary
 
