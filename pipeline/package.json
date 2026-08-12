@@ -1,0 +1,21 @@
+{
+  "name": "oracle-pipeline-permits",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Permit ingest pipeline for Rock Island County, IL — City of Rock Island monthly permit reports.",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "harvest:inventory": "node permits/harvest-inventory.mjs",
+    "harvest:reports": "node permits/harvest-reports.mjs",
+    "extract:permits": "node permits/extract-permits.mjs",
+    "link:parcels": "node permits/link-parcels.mjs",
+    "load:permits": "node permits/load-permits.mjs"
+  },
+  "dependencies": {
+    "pdfjs-dist": "6.2.108",
+    "postgres": "3.4.9"
+  }
+}

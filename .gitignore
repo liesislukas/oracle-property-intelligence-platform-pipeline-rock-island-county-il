@@ -4,3 +4,6 @@ node_modules/
 .DS_Store
 *.tsbuildinfo
 .secrets/
+pipeline/node_modules/
+data/artifacts/permits/rock-island/rock-island-city-permits-v1/raw/
+.env
