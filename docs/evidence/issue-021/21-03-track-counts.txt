@@ -1,0 +1,56 @@
+ISSUE-021 WI-3 — per-track load counts in the query DB
+captured_at: 2026-08-12T20:06:45Z
+
+DECISION, STATED PLAINLY: ISSUE-021 RAN NO PERMIT OR GEO LOAD EITHER.
+ISSUE-019 loaded the permits and ISSUE-020 loaded the geo signals before this issue ran. Both
+landed in county-scoped tables rather than in property_improvements, so the plan's
+'--tracks permits' bulk load would have loaded the same records a second time into a different
+table. WI-3 therefore RECORDS the loaded state per track. Every count below states the table it
+came from.
+
+== TRACK: appraisal (source_system=rock_island_appraiser) — table: parcels ==
+     source_system     | rows | distinct_folios 
+-----------------------+------+-----------------
+ rock_island_appraiser | 2579 |            2579
+(1 row)
+
+IN FLIGHT: ISSUE-018's Restate workflow is still writing. Not the county total (65,955).
+
+== TRACK: permits (source: City of Rock Island monthly permit reports) — table: permits_rock_island_city ==
+ county_slug | jurisdiction | rows  | first_month | last_month |     first_extracted_at     |     last_extracted_at      
+-------------+--------------+-------+-------------+------------+----------------------------+----------------------------
+ rock-island | rock-island  | 25354 | 2017-01     | 2026-04    | 2026-08-12 18:27:30.523+00 | 2026-08-12 18:27:32.619+00
+(1 row)
+
+
+== TRACK: geo signals — tables: geo_signal_source / geo_signal_feature ==
+        source_id         | county_slug |                            publisher                             |                                                 licence                                                  | clipped_features |        retrieved_at        
+--------------------------+-------------+------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+------------------+----------------------------
+ hifld-power-plants       | rock-island | Homeland Infrastructure Foundation-Level Data (HIFLD) / U.S. EIA | This work is licensed under the Esri Master License Agreement.                                           |                9 | 2026-08-12 18:20:45.618+00
+ hifld-transmission-lines | rock-island | Homeland Infrastructure Foundation-Level Data (HIFLD)            | This work is licensed under the Esri Master License Agreement.                                           |              113 | 2026-08-12 18:20:44.229+00
+ osm-bus-stops            | rock-island | OpenStreetMap contributors (via Overpass API)                    | The data included in this document is from www.openstreetmap.org. The data is made available under ODbL. |              119 | 2026-08-12 18:24:08.793+00
+ osm-power-lines          | rock-island | OpenStreetMap contributors (via Overpass API)                    | The data included in this document is from www.openstreetmap.org. The data is made available under ODbL. |              321 | 2026-08-12 18:23:33.071+00
+ osm-starbucks            | rock-island | OpenStreetMap contributors (via Overpass API)                    | The data included in this document is from www.openstreetmap.org. The data is made available under ODbL. |               12 | 2026-08-12 18:25:32.301+00
+ osm-substations          | rock-island | OpenStreetMap contributors (via Overpass API)                    | The data included in this document is from www.openstreetmap.org. The data is made available under ODbL. |              109 | 2026-08-12 18:22:58.534+00
+ usgs-nhd-waterbodies     | rock-island | U.S. Geological Survey — The National Map                        | USGS TNM – National Hydrography Dataset.  Data Refreshed July, 2026.                                     |             2505 | 2026-08-12 18:20:52.456+00
+(7 rows)
+
+
+== TRACK: property_improvements (the kit's permit landing table) ==
+ rows 
+------
+    0
+(1 row)
+
+property_improvements holds 0 rows, and that zero is a real fact with a stated reason, not a
+hidden failure: ISSUE-019's permit records were loaded into the county-scoped table
+permits_rock_island_city, which carries the permit-to-parcel link columns (matched_pin,
+match_method, unmatched_reason) that WI-6 reports on. No permit record was dropped.
+
+== TRACKS THAT PRODUCED NOTHING, with their reason (never a silent zero) ==
+permits, Moline (eTRAKiT)      : 0 records loaded — search-only portal, no bulk export; not harvested. (permits.json source moline-etrakit-permit-search, decision runtime-fetch)
+permits, East Moline (iWorQ)   : 0 records loaded — search-only portal, no bulk export; not harvested. (east-moline-iworq-permit-search, runtime-fetch)
+permits, Milan (GovBuilt)      : 0 records loaded — portal unreachable from this egress; undetermined. (milan-govbuilt-permit-portal, undetermined-unreachable)
+permits, Carbon Cliff          : 0 records loaded — permitting contracted to East Moline; delegated records unconfirmed. (carbon-cliff-permits-delegated)
+permits, 11 further jurisdictions: 0 records loaded — no online permit lookup exists at all. Enumerated verbatim in data/manifests/permits.json gaps[].
+A parcel with no permits in this table is NOT a parcel with no permits.

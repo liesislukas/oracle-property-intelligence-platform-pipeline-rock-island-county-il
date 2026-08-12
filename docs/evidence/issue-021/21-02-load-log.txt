@@ -1,0 +1,52 @@
+ISSUE-021 WI-2 — query DB load log
+captured_at: 2026-08-12T20:06:10Z
+
+DECISION, STATED PLAINLY: ISSUE-021 RAN NO BULK LOAD.
+
+The plan's WI-2 was written to run 'npm run load:bulk --tracks appraisal' itself. By the time
+ISSUE-021 executed, ISSUE-018's per-parcel ingest was ALREADY loading the same artifacts into
+the same table as a durable Restate workflow that is still running. Starting a second writer
+against the same source_system would be a concurrent double-load of the exact rows ISSUE-018 is
+upserting, and the skill's own rule is a single-writer Loader per county. ISSUE-021 therefore
+verifies the load rather than duplicating it, and reconciles owner entities over the FULL
+county mirror (65,955 records) instead of over the partially-loaded parcels table.
+
+=== reconcile-before-load (skill rule: reconcile BEFORE loading) ===
+$ node scripts/reconcile-before-load.mjs
+captured_at: 2026-08-12T20:06:11.069Z
+live_source_count: 65955  (https://services9.arcgis.com/6FnscPPlUa9DXXOk/arcgis/rest/services/Parcels/FeatureServer/0/query?where=1%3D1&returnCountOnly=true&f=json, 1.761 s)
+source_mirror_files: 65955  (/Users/lukas/Developer/ateam/elephant-pipeline/data/source-mirror/rock-island)
+transform_artifacts_with_transformed_zip: 2576  (/Users/lukas/Developer/ateam/elephant-pipeline/data/artifacts/appraisal/rock-island)
+transform_artifacts_with_ready_json: 2567
+  run full-2026-08-12: 2550 parcel dirs, 2550 transformed.zip, 2541 ready.json
+  run pilot-2026-08-12: 25 parcel dirs, 25 transformed.zip, 25 ready.json
+  run smoke-1: 1 parcel dirs, 1 transformed.zip, 1 ready.json
+mirror_vs_live_difference: 0
+artifacts_vs_live_difference: -63379
+MIRROR COMPLETE: the per-parcel mirror covers all 65955 live features. ISSUE-021 reconciles over the mirror, so every metric below is full-county.
+ARTIFACTS IN PROGRESS: 2576 of 65955 parcels transformed. ISSUE-018's durable Restate workflow is still running; this is progress, not a collapse. ISSUE-021 does NOT run the bulk load and does NOT treat this number as the county total.
+exit: 0
+
+=== parcels table state at capture time (ISSUE-018 is writing to it concurrently) ===
+     source_system     |   jurisdiction_key    | rows | distinct_folios |        first_loaded_at        |        last_loaded_at         
+-----------------------+-----------------------+------+-----------------+-------------------------------+-------------------------------
+ rock_island_appraiser | rock_island_appraiser | 2545 |            2545 | 2026-08-12 19:31:35.466628+00 | 2026-08-12 20:06:12.827174+00
+(1 row)
+
+
+The row count above is a MOVING number. It was 1,930, then 2,059, then 2,196, then 2,379, then
+2,479 across this session at roughly 1.5 parcels/s. It is never reported as the county total.
+
+=== merge semantics actually in force (skill non-negotiable: ON CONFLICT DO UPDATE only) ===
+                      conname                       |             pg_get_constraintdef              
+----------------------------------------------------+-----------------------------------------------
+ parcels_jurisdiction_key_request_identifier_unique | UNIQUE (jurisdiction_key, request_identifier)
+(1 row)
+
+
+=== source_payload provenance is preserved, never dropped ===
+ rows | with_payload | payload_carries_source_http_request | with_record_hash | with_artifact_uri 
+------+--------------+-------------------------------------+------------------+-------------------
+ 2545 |         2545 |                                2545 |             2545 |              2545
+(1 row)
+

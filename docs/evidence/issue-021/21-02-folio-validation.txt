@@ -1,0 +1,36 @@
+ISSUE-021 WI-2 — folio validation (kit validator, not hand-rolled SQL)
+captured_at: 2026-08-12T20:04:59Z
+parcels rows in the query DB for source_system=rock_island_appraiser at capture time: 2479
+
+STATED PLAINLY: ISSUE-018's per-parcel ingest is STILL RUNNING as a durable Restate workflow
+and is writing to this table while this validation runs. The row count above is the count at
+2026-08-12T20:04:59Z and is NOT the county total. The county total is 65,955, measured live at the
+FeatureServer and mirrored to 65,955 JSON files at
+elephant-pipeline/data/source-mirror/rock-island/. This issue's reconciliation is computed over
+that FULL mirror, not over the partially-loaded parcels table (see 21-04/21-05/21-06).
+
+=== RUN A — the plan's exact command: EXPECTED_PARCELS=65955 (the county total) ===
+$ JURISDICTION_KEY=rock_island_appraiser EXPECTED_PARCELS=65955 EXPECT_LETTER_STRAPS=false npx tsx scripts/validate-appraisal-folio.ts
+{"event":"validate_appraisal_folio","sourceSystem":"rock_island_appraiser","totalParcels":2479,"distinctFolios":2479,"letterStraps":1,"orphanedProperties":0,"expectedExact":65955,"expectLetterStraps":false,"passed":false,"failures":["distinct_folios 2479 != source_distinct_folios 65955 (incomplete vs source)"]}
+exit: 1
+
+Run A is EXPECTED to fail assertion 1a right now, and it must not be papered over: the load is
+in flight, so distinct_folios is below 65,955 by exactly the parcels ISSUE-018 has not reached
+yet. It is an incompleteness report, not a collapse report.
+
+=== RUN B — the collapse assertions this issue exists to guard (2 and 3), floor lowered ===
+Assertion 2 (total_parcels == distinct_folios) and assertion 3 (orphaned_properties == 0) are
+the trap-T1 guards and are independent of how far the load has progressed.
+$ JURISDICTION_KEY=rock_island_appraiser EXPECTED_MIN_PARCELS=1 EXPECT_LETTER_STRAPS=false npx tsx scripts/validate-appraisal-folio.ts
+{"event":"validate_appraisal_folio","sourceSystem":"rock_island_appraiser","totalParcels":2479,"distinctFolios":2479,"letterStraps":1,"orphanedProperties":0,"expectedExact":null,"expectedMin":1,"expectLetterStraps":false,"passed":true,"failures":[]}
+exit: 0
+
+=== Key contract in the loaded rows (board-sweep contract 4) ===
+ rows | distinct_request_identifier | distinct_parcel_identifier | request_identifier_is_decimal_objectid | parcel_identifier_non_numeric_preserved_verbatim 
+------+-----------------------------+----------------------------+----------------------------------------+--------------------------------------------------
+ 2479 |                        2479 |                       2476 |                                   2479 |                                                1
+(1 row)
+
+request_identifier is the OBJECTID as a decimal string; parcel_identifier is the PIN verbatim.
+normalizeParcelIdentifier (digits-only) is NEVER used as a key here — that is the Lee County
+collapse (~31,242 parcels) the kit routing note warns about.

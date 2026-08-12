@@ -1,0 +1,147 @@
+ISSUE-021 WI-5 — owner mailing city/state/ZIP parse
+run_started_at: 2026-08-12T20:13:09.478Z
+run_finished_at: 2026-08-12T20:13:13.973Z
+
+COMPUTED OVER all 65955 records of the per-parcel source mirror
+  (elephant-pipeline/data/source-mirror/rock-island/), which equals the live FeatureServer
+  count. NOT over the query DB's parcels table, which ISSUE-018's still-running ingest is
+  filling and which held only a partial subset at this timestamp.
+
+SOURCE FIELD: taxbill_csz. owner1_csz was NOT used — it is blank on 14,150 of 65,955 records
+  (21.45%), against 202 (0.31%) for taxbill_csz.
+REGEX: /^(.+?)\s+([A-Z]{2})\s+(\d{5})(?:-?(\d{4}))?$/ over trim -> uppercase -> collapse spaces.
+NOT USED: extractPostalCodeFromAddress — it is Florida-biased and returns null on this
+  county's 9-digit run-on ZIP+4 (trap T2, measured).
+
+== record-level outcomes (three distinct facts, never folded together) ==
+parsed    65743  (99.68%)
+blank     202  (0.31%)   source field empty ("" or " ", never NULL)
+unparsed  10  (0.02%)   source present but malformed; city/state/ZIP left NULL
+sum       65955  (must equal 65955)
+
+records carrying a 9-digit run-on ZIP+4  64388  (97.94% of parsed)
+
+== EVERY UNPARSED VALUE, VERBATIM (counted and listed, never guessed) ==
+    2 x  "CARBON CLIFF IL 61239333"
+    1 x  "00000"
+    1 x  "CARBON CLIFF IL 6123997"
+    1 x  "COAL VALLEY IL 6124039"
+    1 x  "GENESEO IL 61254."
+    1 x  "HAMPTON IL 61256434"
+    1 x  "HAMPTON IL 61256498"
+    1 x  "MIDVALE UT 84047+"
+    1 x  "ROCK ISLAND IL 612010"
+  (9 distinct values over 10 records)
+
+== cross-check against the source's own pre-split fields (a disagreement is a regression) ==
+Taxbill_CS  agreement  65743 / 65743  (100.00%)
+Taxbill_Zip agreement  65743 / 65743  (100.00%)
+  No disagreement on either field.
+
+== mailing geography (of the parsed records) ==
+distinct states  53
+in Illinois      60394  (91.86%)
+out of state     5349  (8.14%)
+top out-of-state mailing states:
+  IA  3069
+  CA  294
+  TX  278
+  FL  268
+  MN  137
+  WI  133
+  MO  122
+  CO  106
+  AZ  78
+  TN  69
+  GA  63
+  NY  61
+  PA  50
+  IN  49
+  NV  46
+
+== owner-entity level (the column ISSUE-024's regional-owner question reads) ==
+entities parsed    49895
+entities blank     10
+entities unparsed  9
+ mailing_parse_status | count 
+----------------------+-------
+ blank                |    10
+ parsed               | 49895
+ unparsed             |     9
+(3 rows)
+
+
+ mailing_state | entities | parcels 
+---------------+----------+---------
+ IA            |     1353 |    3070
+ CA            |      188 |     296
+ TX            |      163 |     275
+ FL            |      166 |     269
+ MN            |       49 |     139
+ WI            |       70 |     133
+ MO            |       63 |     119
+ CO            |       57 |     103
+ AZ            |       48 |      82
+ TN            |       39 |      68
+(10 rows)
+
+
+owner_state / owner_city are queryable per parcel through the view parcel_owner_location:
+ owner_state | parcels 
+-------------+---------
+ IL          |   60397
+ IA          |    3070
+ CA          |     296
+ TX          |     275
+ FL          |     269
+ MN          |     139
+ WI          |     133
+ MO          |     119
+(8 rows)
+
+
+
+wrote data/records/reconciliation-mailing-summary.json
+
+=== ACCEPTANCE: all three parse statuses present on owner_entities ===
+ mailing_parse_status | count 
+----------------------+-------
+ blank                |    10
+ parsed               | 49895
+ unparsed             |     9
+(3 rows)
+
+=== unparsed entities keep NULL city/state/ZIP — never a guess, never folded into 'blank' ===
+         owner_entity_id          |             canonical_name             | mailing_city | mailing_state | mailing_postal_code | mailing_parse_status 
+----------------------------------+----------------------------------------+--------------+---------------+---------------------+----------------------
+ 5002e3b2713887afe62003bc46026826 | ALIME INC                              |              |               |                     | blank
+ dbe2df3e59927e3d822b193d25b5141f | BOLYARD TIMOTHY N/KIM J                |              |               |                     | blank
+ b0088425823f0f4afa8c903e181b620d | FLORES EDUARDO SANCHEZ                 |              |               |                     | blank
+ 7627acb805494b210365c80ea54d40af | OVERNIGHT TRANS CO                     |              |               |                     | blank
+ f8131124a377e47fcbfd0f2b7f0d6961 | PARCHERT ANNETTE I                     |              |               |                     | blank
+ 7d4cd0c5d25b80c4f6623a462d352e6a | PRESBYTERIAN CHURCH OF EDGINGTON       |              |               |                     | blank
+ 3bfa6085ea8ec6a0c11bbd3dd1919df1 | ROCK ISLAND ARSENAL                    |              |               |                     | blank
+ 8f8f9c2f7e5d367910f293fcf7a8f2e0 | SALEHZAI ABDUL & NAQIBA                |              |               |                     | blank
+ b73cc32b9670bbb391a884bc94b6c721 | TECHO BLOC MIDWEST CORP                |              |               |                     | blank
+ 23759997b3c59884dc4c0ff5320d6301 | UNKNOWN                                |              |               |                     | blank
+ 27c7ea6d7a169fdbed2424b5361f7ac4 | EDWARDS ROBERT                         |              |               |                     | unparsed
+ 139e203727c8f53fe233d96234745491 | FEDERAL HOME LOAN MORTGAGE CORPORATION |              |               |                     | unparsed
+ f2c23467f34d06b76e2da46c3b721922 | FLAUGH JASON P REVOCABLE TRUST         |              |               |                     | unparsed
+ 1a5031d45db96243e938fca093d16608 | GAINEY CATHARINE                       |              |               |                     | unparsed
+ 8fc79e19411dfe219ad8d9857429c3ed | MORRISSEY HANNAH                       |              |               |                     | unparsed
+ b90488f78fe37673113bdbf4b4a593f7 | NOMAD PROPERTIES LLC SERIES 9          |              |               |                     | unparsed
+ 156e52f2d155a44a86639b7cc90c6493 | PEREZ DANIEL                           |              |               |                     | unparsed
+ 5c0e2d7c7e4f8bc288f6c44b801e3920 | USX 1172 ACCOMMODATION LLC             |              |               |                     | unparsed
+ 9843e4be2667a9f48d9d7120c40ad095 | VYNCKE NOAH D                          |              |               |                     | unparsed
+(19 rows)
+
+=== MATCH AGAINST plan.md's EXPECTED VALUES ===
+parsed 65,743 expected / 65,743 measured    exact
+blank      202 expected /     202 measured  exact
+unparsed    10 expected /      10 measured  exact
+run-on ZIP+4 64,388 expected / 64,388 measured  exact
+pre-split agreement 100.00% expected / 100.00% measured on BOTH Taxbill_CS and Taxbill_Zip
+distinct states 53 expected / 53 measured  exact
+out-of-state 5,349 (8.14%) expected / 5,349 (8.14%) measured  exact
+The plan listed 10 unparsed values with '(and one repeat of a listed value)'. Measured: 9
+distinct values over 10 records, the repeat being CARBON CLIFF IL 61239333 (x2). Identical set.

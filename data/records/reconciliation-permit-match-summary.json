@@ -1,0 +1,33 @@
+{
+  "computed_over": {
+    "parcel_corpus": "per-parcel source mirror",
+    "parcel_record_count": 65955,
+    "permit_table": "permits_rock_island_city",
+    "permit_record_count": 25354,
+    "computed_at": "2026-08-12T20:15:33.914Z",
+    "wrote_links": false
+  },
+  "method": "sha256 of buildNormalizedAddressKey(street)|city|state|zip5 (elephant-query-db normalizers); only keys resolving to exactly one parcel are linked; PO Box keys excluded. Permit side reduced to street|rock island|il with no ZIP5 component because the City of Rock Island permit reports publish a street line only.",
+  "total": 25354,
+  "matched": 24949,
+  "matched_by_issue_019": 24949,
+  "matched_by_address_hash_here": 0,
+  "matched_by_prior_method": {
+    "legacy-key-exact": 24688,
+    "address-hash-sha256-1to1": 20,
+    "address-normalized": 102,
+    "pin-exact": 139
+  },
+  "unmatchable_no_address": 0,
+  "unmatched_no_parcel": 398,
+  "unmatched_ambiguous": 7,
+  "match_rate_of_total": 0.9840261891614736,
+  "match_rate_of_addressable": 0.9840261891614736,
+  "ceiling": {
+    "parcels_without_site_address": 7316,
+    "distinct_site_address_keys": 58111,
+    "ambiguous_keys": 361,
+    "parcels_on_ambiguous_keys": 889,
+    "unambiguous_candidates": 57750
+  }
+}

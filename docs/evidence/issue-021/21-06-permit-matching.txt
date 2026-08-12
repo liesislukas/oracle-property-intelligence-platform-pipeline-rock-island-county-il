@@ -1,0 +1,142 @@
+ISSUE-021 WI-6 — permit-to-parcel cross-match
+run_started_at: 2026-08-12T20:15:26.832Z
+run_finished_at: 2026-08-12T20:15:30.256Z
+mode: MEASURE AND WRITE (fills matched_pin only where it is NULL)
+
+PARCEL SIDE computed over all 65955 records of the per-parcel source mirror
+  (elephant-pipeline/data/source-mirror/rock-island/) — full county, not the partially-loaded
+  parcels table.
+PERMIT SIDE computed over all 25354 rows of permits_rock_island_city, loaded by ISSUE-019.
+
+METHOD, named: sha256 of buildNormalizedAddressKey(street)|city|state|zip5, the kit's
+  documented component list (elephant-query-db docs/data-load-and-matching-plan.md). A permit
+  links to a parcel only when the key resolves to exactly ONE parcel. PO Box keys are excluded
+  so a mailing address can never match a site address.
+
+== structural ceiling, county-wide, on the FULL four-component key ==
+parcels total                       65955
+parcels without a site_address      7316  (11.09%) — never matchable by address
+distinct site-address keys          58111
+ambiguous keys (>1 parcel)          361
+parcels sitting on ambiguous keys   889
+unambiguous 1:1 match candidates    57750  (87.56% of all parcels)
+
+== the key actually used for permits, and why it is reduced ==
+The City of Rock Island permit reports publish a street line only — no city, no state, no ZIP.
+The permit-side key is therefore street|rock island|il with an EMPTY ZIP5 component, matched
+against parcels whose Site_City is ROCK ISLAND. This is a real reduction in key strength and
+it is stated rather than hidden: a ZIP5 component would have made the key stronger and this
+source does not carry one.
+parcels scoped to Site_City = ROCK ISLAND   15264
+distinct reduced keys over those parcels    15052
+  of which resolve to exactly one PIN       14928
+  of which resolve to several PINs          124  (never auto-linked)
+permit rows carrying several addresses in one field  178  (every segment keyed; linked only when all resolving segments agree on one PIN)
+
+== permit buckets — four denominators, never blended, summing to the total ==
+total permits                     25354
+already linked by ISSUE-019       24929
+    via legacy-key-exact     24688
+    via pin-exact            139
+    via address-normalized   102
+newly linked here by address hash 20
+    previously recorded as legacy-key-not-in-current-parcel-layer: 17
+    previously recorded as address-ambiguous-or-absent: 3
+unmatchable_no_address            0   permit carries no address at all
+unmatched_no_parcel               398   address key hits no parcel in the county layer
+unmatched_ambiguous               7   address key resolves to more than one parcel; left unlinked on purpose
+sum of buckets                    25354  (must equal 25354)
+
+permits carrying no address_source at all, across the whole table  10
+  of which ISSUE-019 had already linked by parcel-number key       10
+  This is reported separately and is NOT added to the buckets above: a permit with no address
+  is unmatchable BY ADDRESS, which is not the same as unmatched.
+
+== match rates, both denominators stated ==
+matched / total permits                    24949 / 25354 = 98.40%
+matched / addressable permits              24949 / 25354 = 98.40%
+unmatched / total permits                  405 / 25354 = 1.60%
+
+== in the query DB after this step ==
+       match_method       | count 
+--------------------------+-------
+ legacy-key-exact         | 24688
+ (unmatched)              |   405
+ pin-exact                |   139
+ address-normalized       |   102
+ address-hash-sha256-1to1 |    20
+(5 rows)
+
+
+            unmatched_reason            | count 
+----------------------------------------+-------
+ (matched)                              | 24949
+ legacy-key-not-in-current-parcel-layer |   280
+ source-sentinel-not-a-parcel-reference |    88
+ address-ambiguous-or-absent            |    37
+(4 rows)
+
+
+ permits | matched | unmatched 
+---------+---------+-----------
+   25354 |   24949 |       405
+(1 row)
+
+
+The 88 rows recorded as source-sentinel-not-a-parcel-reference are permits whose parcel field
+holds a source sentinel (a placeholder, not a parcel reference). They are counted as unmatched,
+never as matched and never dropped.
+
+wrote data/records/reconciliation-permit-match-summary.json
+
+=== RE-RUN AFTER --write: the step is idempotent and can only ever add a link ===
+== permit buckets — four denominators, never blended, summing to the total ==
+total permits                     25354
+already linked by ISSUE-019       24949
+    via legacy-key-exact     24688
+    via pin-exact            139
+    via address-normalized   102
+    via address-hash-sha256-1to1 20
+newly linked here by address hash 0  (measured; not written — re-run with --write)
+unmatchable_no_address            0   permit carries no address at all
+unmatched_no_parcel               398   address key hits no parcel in the county layer
+unmatched_ambiguous               7   address key resolves to more than one parcel; left unlinked on purpose
+sum of buckets                    25354  (must equal 25354)
+
+permits carrying no address_source at all, across the whole table  10
+  of which ISSUE-019 had already linked by parcel-number key       10
+  This is reported separately and is NOT added to the buckets above: a permit with no address
+  is unmatchable BY ADDRESS, which is not the same as unmatched.
+
+== match rates, both denominators stated ==
+=== ACCEPTANCE: buckets sum to the permit total, and the DB agrees with the matched figure ===
+ total_permits | matched | unmatched | match_rate_pct 
+---------------+---------+-----------+----------------
+         25354 |   24949 |       405 |          98.40
+(1 row)
+
+=== the 20 links this issue added, with the address key that produced them ===
+     permit_number     |              address_source               | matched_pin |       match_method       
+-----------------------+-------------------------------------------+-------------+--------------------------
+ B170551               | 5 AVE & 8 ST; 801 6 AVE; 715 6 AVE        | 0734427007  | address-hash-sha256-1to1
+ B170706               | 1320 1 ST; 1324 2 ST                      | 1603243002  | address-hash-sha256-1to1
+ B180499               | 2604 21 AVE; 2608 21 AV                   | 1601343001  | address-hash-sha256-1to1
+ B182361               | 2604 21 AVE; 2608 21 AV                   | 1601343001  | address-hash-sha256-1to1
+ B190343               | 33 Huber Court                            | 0736360001  | address-hash-sha256-1to1
+ B191218               | 1320 1 ST; 1324 2 ST                      | 1603243002  | address-hash-sha256-1to1
+ B191488               | 2604 21 AVE; 2608 21 AV                   | 1601343001  | address-hash-sha256-1to1
+ B191732               | 3009 18 AVE; 3011 18 AV                   | 1601240003  | address-hash-sha256-1to1
+ B192426               | 2604 21 AVE; 2608 21 AV                   | 1601343001  | address-hash-sha256-1to1
+ B192599               | 2604 21 AVE; 2608 21 AV                   | 1601343001  | address-hash-sha256-1to1
+ B200542               | 4731 45 ST CT                             | 1718119002  | address-hash-sha256-1to1
+ B201092               | 2604 21 AVE; 2608 21 AV                   | 1601343001  | address-hash-sha256-1to1
+ B202067               | 4731 45 ST CT                             | 1718119002  | address-hash-sha256-1to1
+ B211992               | 1320 1 ST; 1324 2 ST                      | 1603243002  | address-hash-sha256-1to1
+ B220649               | 1320 1 ST; 1324 2 ST                      | 1603243002  | address-hash-sha256-1to1
+ B220816               | 4731 45 ST CT                             | 1718119002  | address-hash-sha256-1to1
+ B250274               | 3351 Serenity Place                       | 1613216001  | address-hash-sha256-1to1
+ BLDR-202600026        | Rock Island, IL 61201; 1306 MILL ST       | 1603105009  | address-hash-sha256-1to1
+ CFP-2026-00002        | Rock Island, IL 61201; 3249 36 1/2 Avenue | 1612414009  | address-hash-sha256-1to1
+ EXCAVATION-2026-00008 | Rock Island, IL 61201; 2950 Valley Drive  | 1613100007  | address-hash-sha256-1to1
+(20 rows)
+

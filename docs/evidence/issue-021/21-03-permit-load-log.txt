@@ -1,0 +1,52 @@
+ISSUE-021 WI-3 — permit and geo track load log
+captured_at: 2026-08-12T20:19:27Z
+
+permits_loaded_by_issue_021: 0 — with a reason, not a hidden zero.
+
+ISSUE-019 had already extracted and loaded the City of Rock Island permit archive before
+ISSUE-021 ran: 25,354 records from 112 monthly PDF reports (2017-01 through 2026-04), landed in
+the county-scoped table permits_rock_island_city with their report URL, report sha256, page
+number and extraction timestamp per record. Re-running the plan's '--tracks permits' bulk load
+would have loaded the same 25,354 records a second time into a different table.
+ISSUE-021 therefore did the part that was NOT already done: the parcel cross-match (WI-6).
+
+geo_signals_loaded_by_issue_021: 0 — ISSUE-020 loaded all 7 clipped signal sources
+(3,188 features) into geo_signal_source / geo_signal_feature before this issue ran.
+
+=== permit source provenance, per record, already queryable ===
+-[ RECORD 1 ]------+-----------------------------------------------------------------
+permit_number      | B170000
+permit_date        | 2017-01-03
+jurisdiction       | rock-island
+address_source     | 1414 32 AVE
+matched_pin        | 1611319008
+match_method       | legacy-key-exact
+report_month       | 2017-01
+report_url         | https://rigov.org/DocumentCenter/View/11935
+report_document_id | 11935
+report_sha256      | b875853dd44ac84f20c3e66f03499ffff387ca3c83cf303b6f683a31b58814a7
+report_layout      | legacy-tabular
+source_page        | 8
+extracted_at       | 2026-08-12 18:27:30.523+00
+-[ RECORD 2 ]------+-----------------------------------------------------------------
+permit_number      | B170001
+permit_date        | 2017-01-03
+jurisdiction       | rock-island
+address_source     | 2503 24 AVE
+matched_pin        | 1601332002
+match_method       | legacy-key-exact
+report_month       | 2017-01
+report_url         | https://rigov.org/DocumentCenter/View/11935
+report_document_id | 11935
+report_sha256      | b875853dd44ac84f20c3e66f03499ffff387ca3c83cf303b6f683a31b58814a7
+report_layout      | legacy-tabular
+source_page        | 8
+extracted_at       | 2026-08-12 18:27:30.523+00
+
+
+=== permit report coverage: 112 monthly reports, counted ===
+ distinct_report_months | distinct_report_documents | distinct_report_hashes |  first  |  last   | permit_records 
+------------------------+---------------------------+------------------------+---------+---------+----------------
+                    111 |                       111 |                    111 | 2017-01 | 2026-04 |          25354
+(1 row)
+

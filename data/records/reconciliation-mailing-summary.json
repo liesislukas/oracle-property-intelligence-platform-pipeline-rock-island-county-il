@@ -1,0 +1,70 @@
+{
+  "computed_over": {
+    "corpus": "per-parcel source mirror",
+    "record_count": 65955,
+    "computed_at": "2026-08-12T20:13:13.973Z"
+  },
+  "source_field": "taxbill_csz",
+  "parsed": 65743,
+  "blank": 202,
+  "unparsed": 10,
+  "unparsed_values": [
+    {
+      "value": "GENESEO IL 61254.",
+      "records": 1
+    },
+    {
+      "value": "ROCK ISLAND IL 612010",
+      "records": 1
+    },
+    {
+      "value": "COAL VALLEY IL 6124039",
+      "records": 1
+    },
+    {
+      "value": "MIDVALE UT 84047+",
+      "records": 1
+    },
+    {
+      "value": "HAMPTON IL 61256434",
+      "records": 1
+    },
+    {
+      "value": "CARBON CLIFF IL 61239333",
+      "records": 2
+    },
+    {
+      "value": "00000",
+      "records": 1
+    },
+    {
+      "value": "CARBON CLIFF IL 6123997",
+      "records": 1
+    },
+    {
+      "value": "HAMPTON IL 61256498",
+      "records": 1
+    }
+  ],
+  "run_on_plus_four_records": 64388,
+  "presplit_agreement": {
+    "taxbill_cs": {
+      "agree": 65743,
+      "comparable": 65743,
+      "rate": 1
+    },
+    "taxbill_zip": {
+      "agree": 65743,
+      "comparable": 65743,
+      "rate": 1
+    }
+  },
+  "distinct_states": 53,
+  "out_of_state_records": 5349,
+  "out_of_state_rate_of_parsed": 0.08136227431057298,
+  "entity_status": {
+    "parsed": 49895,
+    "blank": 10,
+    "unparsed": 9
+  }
+}

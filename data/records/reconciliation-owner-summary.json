@@ -1,0 +1,39 @@
+{
+  "computed_over": {
+    "corpus": "per-parcel source mirror",
+    "path": "elephant-pipeline/data/source-mirror/rock-island/",
+    "record_count": 65955,
+    "equals_live_source_count": true,
+    "computed_at": "2026-08-12T20:11:33.796Z"
+  },
+  "input_records": 65955,
+  "owner_bearing_records": 65766,
+  "owner_name_absent": 189,
+  "canonical_from_owner1_name": 65763,
+  "canonical_from_taxbill_name": 3,
+  "distinct_raw_names": 50042,
+  "distinct_entities": 49914,
+  "groups_collapsed": 128,
+  "multi_parcel_entities": 6031,
+  "parcels_in_multi_parcel_entities": 21883,
+  "name_field_disagreements_records": 15619,
+  "name_field_disagreements_entities": 12257,
+  "companies": 6461,
+  "people": 43453,
+  "tags": {
+    "TRUST": 3278,
+    "ESTATE": 114,
+    "LLC": 2062,
+    "INC": 440,
+    "GOVERNMENT": 130,
+    "CHURCH": 138
+  },
+  "canonical_rule": "canonical = owner1_name, falling back to taxbill_name only where owner1_name is blank; grouped by elephant-query-db normalizeName (uppercase, non-alphanumeric to space, whitespace collapsed); legal-entity suffixes such as TRUST and LLC are deliberately not stripped; taxbill_name is preserved but is never a merge key.",
+  "provenance": {
+    "method": "GET",
+    "url": "https://services9.arcgis.com/6FnscPPlUa9DXXOk/arcgis/rest/services/Parcels/FeatureServer/0/query?where=1%3D1&outFields=*&f=geojson&outSR=4326",
+    "retrieved_at": "2026-08-12T18:31:58.555Z",
+    "licence": "For use by the general public",
+    "agol_item_id": "9cae8a64ab0e4cea99758f741ca43b3c"
+  }
+}

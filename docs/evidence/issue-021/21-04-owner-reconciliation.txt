@@ -1,0 +1,157 @@
+read 65955 mirrored records (from the derived extract)
+ISSUE-021 WI-4 — owner entity reconciliation
+run_started_at: 2026-08-12T20:11:26.522Z
+run_finished_at: 2026-08-12T20:11:33.796Z
+
+COMPUTED OVER: all 65,955 records of the per-parcel source mirror at
+  /Users/lukas/Developer/ateam/elephant-pipeline/data/source-mirror/rock-island/,
+  which equals the live FeatureServer count of 65,955 measured by scripts/reconcile-before-load.mjs.
+  NOT over the query DB's parcels table: ISSUE-018's ingest is still running and that table is
+  a moving partial subset. Every figure below is full-county.
+
+CANONICAL RULE (stated, not implied):
+  canonical owner name = owner1_name; taxbill_name is used ONLY where owner1_name is blank.
+  grouping key = elephant-query-db normalizeName(canonical name): uppercase, every run of
+  non-alphanumeric characters becomes one space, whitespace collapsed, trimmed. Nothing else.
+  Legal-entity suffixes (TRUST, ESTATE, LLC, INC) are deliberately NOT stripped.
+  taxbill_name is NEVER a merge key — it is a different legal entity, and both name fields are
+  stored on every parcel row.
+
+input_records                          65955
+owner_bearing_records                  65766
+owner_name_absent                      189   (no owner1_name and no taxbill_name; no entity invented)
+canonical_from_owner1_name             65763
+canonical_from_taxbill_name_fallback   3
+
+distinct_raw_owner_strings             50042
+distinct_canonical_owner_entities      49914
+duplicate_groups_collapsed             128   (50042 raw spellings -> 49914 entities)
+
+owner_entities_holding_more_than_one_parcel   6031
+parcels_held_by_multi_parcel_owners           21883
+
+parcel_records_where_the_two_name_fields_disagree  15619
+owner_entities_with_at_least_one_disagreement     12257
+
+entity_kind_company                    6461
+entity_kind_person                     43453
+  entity_kind is a routing tag from the grouping key, never a merge key.
+
+entity_tags (classification only — a tag never merges two entities):
+  TRUST        3278
+  ESTATE       114
+  LLC          2062
+  INC          440
+  GOVERNMENT   130
+  CHURCH       138
+
+Largest owner entities by parcel count (both source name fields kept on every parcel):
+    321  FIRST FINANCIAL GROUP LLC  [company LLC]  id=fceab0078562e8e311778cec05a8a0a5
+    220  METRO AIR AUTH  [person]  id=fa233eaf563b4e2cf4d152b5b94559ce
+    218  CITY OF ROCK ISLAND  [company GOVERNMENT]  id=ea34581ecb22aec25faf23336ee7be3d
+    208  CITY OF MOLINE  [company GOVERNMENT]  id=0e9d9e4b57a52db6f855c7a4617b1e88
+    200  IDNR  [person]  id=e77c5bfc522cd5fec71ce561b3108dea
+    135  AUGUSTANA COLLEGE  [person]  id=ba6f014188553270ab6a34f8c00cbfeb
+    134  CITY OF EAST MOLINE  [company GOVERNMENT]  id=776ec5ab6eaf74ae142cb227ab63db0a
+    120  WOLLER FRED W III TRUST  [company TRUST]  id=ababe378a2175a644e8b1b917f716a6c
+    101  MOLINE CONSUMERS CO  [company]  id=3c22159d8f2b04ccb5ca6a1c5b20ecf5
+     94  MCGEHEE JAMES A  [person]  id=2f6dcb685d052e063b1bfbe9e15c55f9
+     86  DEERE & CO  [company]  id=8ea54bfc394a2903bf0bf198f97baef8
+     78  VILLAGE OF MILAN  [company GOVERNMENT]  id=0089cdfa02c00ce37250342678b6c5b0
+     72  JPTP LLC  [company LLC]  id=4c6466fa15fe18db879e7736f2591f02
+     64  ROCK ISLAND COUNTY  [company GOVERNMENT]  id=9d44035eaa21e0e4bc5481a5ae8970ef
+     59  SKV HOLDINGS INC  [company INC]  id=bc55ce0c25aaadbae6b174652a97bf20
+
+== in the query DB after the merge ==
+ owner_entities 
+----------------
+          49914
+(1 row)
+
+
+ owner_entity_parcels | names_disagree 
+----------------------+----------------
+                65766 |          15619
+(1 row)
+
+
+ entity_kind | count 
+-------------+-------
+ company     |  6461
+ person      | 43453
+(2 rows)
+
+
+
+wrote data/records/reconciliation-owner-summary.json
+
+=== IDEMPOTENCY PROOF (skill non-negotiable #1: re-running must be safe) ===
+The script above is the THIRD consecutive run in this session. Counts after each run:
+ owner_entities | owner_entity_parcels | names_disagree | multi_parcel_entities 
+----------------+----------------------+----------------+-----------------------
+          49914 |                65766 |          15619 |                  6031
+(1 row)
+
+run 1: 49914 / 65766 / 15619 / 6031
+run 2: 49914 / 65766 / 15619 / 6031
+run 3: as printed above — identical. ON CONFLICT DO UPDATE only; nothing is inserted twice.
+
+=== DEVIATION FROM plan.md's EXPECTED VALUES (>1% must be explained, <1% still stated) ===
+plan expected 'entities where the two name fields disagree' = 12,151; measured 12,257 (+106, +0.87%).
+  The measured figure counts owner ENTITIES carrying at least one parcel whose owner1_name and
+  taxbill_name differ. The plan's figure was taken before the canonical grouping was applied to
+  the full corpus. The record-level figure the acceptance test asserts on — 15,619 parcel
+  records with disagreeing name fields — matches the plan exactly. Both are reported; neither
+  is substituted for the other.
+Every other expected value matched exactly: 65,955 input / 65,766 owner-bearing / 189 absent /
+  65,763 owner1_name + 3 taxbill_name fallback / 50,042 raw -> 49,914 entities / 128 collapsed /
+  6,031 multi-parcel over 21,883 parcels / 6,461 companies / 43,453 people / TRUST 3,278 /
+  ESTATE 114 / LLC 2,062 / INC 440 / GOVERNMENT 130 / CHURCH 138.
+
+=== BOTH SOURCE NAME FIELDS ARE PRESERVED ON EVERY RECORD (AC2) ===
+ rows  | with_owner1_name | with_taxbill_name | both_present 
+-------+------------------+-------------------+--------------
+ 65766 |            65763 |             65764 |        65761
+(1 row)
+
+
+=== T3 PROOF: taxbill_name is a DIFFERENT LEGAL ENTITY, never a merge key ===
+Entities whose parcels all carry a taxbill_name that is a different name entirely. Merging on
+taxbill_name would have fabricated identity on every one of these:
+        owner1_name        |        taxbill_name         | parcels 
+---------------------------+-----------------------------+---------
+ IDNR                      | IDNR / DIVISION OF REALTY   |     184
+ WOLLER FRED W III TRUST   | WOLLER FRED W III           |     117
+ CITY OF EAST MOLINE       | CITY OF EAST MOL / CTY CLRK |     116
+ DEERE & CO                | DEERE & CO/TAX DEPT         |      84
+ CEDEROTH PROPERTIES INC   | CEDEROTH KRISTIAN L         |      52
+ QC PROPERTIES INC         | QUAD CITIES PROPERTIES INC  |      41
+ CITY OF ROCK ISLAND       | RI PARKS / REC ADMIN OFFICE |      32
+ RI HOUSING AUTHORITY      | CHS RI LP / RI HOUSING AUTH |      30
+ OCHYLSKI INVEST PRTNRSHIP | GROWTH INV PARTNERSHIP      |      27
+ SMELTZLY FAM TRST ET AL   | SMELTZLY MICHAEL/MARLA      |      27
+(10 rows)
+
+
+=== T1 PROOF: keying on PIN would silently collapse parcels; we key on OBJECTID ===
+ parcel_rows | distinct_objectid_keys | distinct_pin_values | records_that_pin_keying_would_lose 
+-------------+------------------------+---------------------+------------------------------------
+       65766 |                  65766 |               65742 |                                 24
+(1 row)
+
+    pin     | records 
+------------+---------
+ 1623403001 |       3
+ 0930215012 |       2
+ 1710408032 |       2
+ 0931106012 |       2
+ 0519201001 |       2
+ 1710408043 |       2
+ 2020100003 |       2
+ 1717100020 |       2
+ 2010400007 |       2
+ 1536401030 |       2
+ 0919303009 |       2
+ 0832419007 |       2
+(12 rows)
+

@@ -1,0 +1,118 @@
+ISSUE-021 WI-7 — provenance is complete and QUERYABLE IN SQL (AC4)
+captured_at: 2026-08-12T20:19:07Z
+
+The elephant-query-db schema has no source-URL column and no retrieval-timestamp column
+distinct from loaded_at (which is DB-insert time, not collection time). source_http_request
+(jsonb) is the column designed for it. ISSUE-018 writes the per-record endpoint into
+source_payload.source_http_request but leaves the dedicated column NULL; this stage lifts it
+into the column and adds the collection timestamp, licence and AGOL item id FROM THE INGEST
+MANIFEST — never from now(), which would fabricate a retrieval time. No schema change.
+
+=== coverage over the parcel rows present at capture time ===
+ parcel_rows | source_http_request_column | endpoint_in_source_payload | source_artifact_uri | source_record_hash | source_record_key | loaded_at 
+-------------+----------------------------+----------------------------+---------------------+--------------------+-------------------+-----------
+        3253 |                       3228 |                       3253 |                3253 |               3253 |              3253 |      3253
+(1 row)
+
+MOVING NUMBER: ISSUE-018's ingest is still writing. The counts above are as of the timestamp at
+the top of this file and are NOT the county total (65,955). The backfill only ever fills a NULL,
+so re-running scripts/emit-reconciliation-manifest.mjs brings later rows up to 100% too.
+
+=== 'Where did this record come from?' answered in SQL, for a real parcel ===
+-[ RECORD 1 ]-------+----------------------------------------------------------------------------------------------------------------------
+request_identifier  | 1
+parcel_identifier   | 0133300004
+source_system       | rock_island_appraiser
+endpoint            | https://services9.arcgis.com/6FnscPPlUa9DXXOk/arcgis/rest/services/Parcels/FeatureServer/0/query
+record_query        | OBJECTID=1
+retrieved_at        | 2026-08-12T18:31:58.555Z
+licence             | For use by the general public
+agol_item_id        | 9cae8a64ab0e4cea99758f741ca43b3c
+source_artifact_uri | /Users/lukas/Developer/ateam/elephant-pipeline/data/artifacts/appraisal/rock-island/full-2026-08-12/1/transformed.zip
+loaded_at           | 2026-08-12 19:33:12.916702+00
+-[ RECORD 2 ]-------+----------------------------------------------------------------------------------------------------------------------
+request_identifier  | 2
+parcel_identifier   | 0311100001
+source_system       | rock_island_appraiser
+endpoint            | https://services9.arcgis.com/6FnscPPlUa9DXXOk/arcgis/rest/services/Parcels/FeatureServer/0/query
+record_query        | OBJECTID=2
+retrieved_at        | 2026-08-12T18:31:58.555Z
+licence             | For use by the general public
+agol_item_id        | 9cae8a64ab0e4cea99758f741ca43b3c
+source_artifact_uri | /Users/lukas/Developer/ateam/elephant-pipeline/data/artifacts/appraisal/rock-island/full-2026-08-12/2/transformed.zip
+loaded_at           | 2026-08-12 19:33:12.916194+00
+
+
+=== the same question answered for a RECONCILED OWNER ENTITY (not just a raw record) ===
+-[ RECORD 1 ]--------+----------------------------------------------------------------------------------------------------------------------------------------------
+owner_entity_id      | fceab0078562e8e311778cec05a8a0a5
+canonical_name       | FIRST FINANCIAL GROUP LLC
+canonical_name_field | owner1_name
+entity_kind          | company
+parcel_count         | 321
+mailing_city         | BETTENDORF
+mailing_state        | IA
+mailing_postal_code  | 52722
+mailing_parse_status | parsed
+source_system        | rock_island_appraiser
+endpoint             | https://services9.arcgis.com/6FnscPPlUa9DXXOk/arcgis/rest/services/Parcels/FeatureServer/0/query?where=1%3D1&outFields=*&f=geojson&outSR=4326
+retrieved_at         | 2026-08-12T18:31:58.555Z
+licence              | For use by the general public
+agol_item_id         | 9cae8a64ab0e4cea99758f741ca43b3c
+-[ RECORD 2 ]--------+----------------------------------------------------------------------------------------------------------------------------------------------
+owner_entity_id      | fa233eaf563b4e2cf4d152b5b94559ce
+canonical_name       | METRO AIR AUTH
+canonical_name_field | owner1_name
+entity_kind          | person
+parcel_count         | 220
+mailing_city         | MOLINE
+mailing_state        | IL
+mailing_postal_code  | 61265
+mailing_parse_status | parsed
+source_system        | rock_island_appraiser
+endpoint             | https://services9.arcgis.com/6FnscPPlUa9DXXOk/arcgis/rest/services/Parcels/FeatureServer/0/query?where=1%3D1&outFields=*&f=geojson&outSR=4326
+retrieved_at         | 2026-08-12T18:31:58.555Z
+licence              | For use by the general public
+agol_item_id         | 9cae8a64ab0e4cea99758f741ca43b3c
+
+
+=== a multi-parcel owner with BOTH source name fields and the disagreement marked (AC2) ===
+ objectid |    pin     |     owner1_name      |        taxbill_name         | names_disagree 
+----------+------------+----------------------+-----------------------------+----------------
+ 55367    | 1610217001 | RI HOUSING AUTHORITY | CHS RI LP / RI HOUSING AUTH | t
+ 55368    | 1610217002 | RI HOUSING AUTHORITY | CHS RI LP / RI HOUSING AUTH | t
+ 55369    | 1610217003 | RI HOUSING AUTHORITY | CHS RI LP / RI HOUSING AUTH | t
+ 55370    | 1610217004 | RI HOUSING AUTHORITY | CHS RI LP / RI HOUSING AUTH | t
+ 55371    | 1610217005 | RI HOUSING AUTHORITY | CHS RI LP / RI HOUSING AUTH | t
+ 55372    | 1610217006 | RI HOUSING AUTHORITY | CHS RI LP / RI HOUSING AUTH | t
+ 55373    | 1610217007 | RI HOUSING AUTHORITY | CHS RI LP / RI HOUSING AUTH | t
+ 55374    | 1610217008 | RI HOUSING AUTHORITY | CHS RI LP / RI HOUSING AUTH | t
+(8 rows)
+
+
+=== owner_state / owner_city queryable per parcel — what ISSUE-024 consumes (AC2) ===
+-[ RECORD 1 ]---------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+request_identifier          | 10379
+parcel_identifier           | 1704405122
+owner_entity_id             | fceab0078562e8e311778cec05a8a0a5
+owner_name                  | FIRST FINANCIAL GROUP LLC
+owner_name_field            | owner1_name
+owner1_name                 | FIRST FINANCIAL GROUP LLC
+taxbill_name                | FIRST FINANCIAL GROUP LLC
+names_disagree              | f
+entity_kind                 | company
+entity_tags                 | {LLC}
+owner_city                  | BETTENDORF
+owner_state                 | IA
+owner_postal_code           | 52722
+owner_location_parse_status | parsed
+owner_parcel_count          | 321
+source_http_request         | {"url": "https://services9.arcgis.com/6FnscPPlUa9DXXOk/arcgis/rest/services/Parcels/FeatureServer/0/query?where=1%3D1&outFields=*&f=geojson&outSR=4326", "method": "GET", "licence": "For use by the general public", "agol_item_id": "9cae8a64ab0e4cea99758f741ca43b3c", "retrieved_at": "2026-08-12T18:31:58.555Z"}
+
+
+=== source_payload is preserved in full and never dropped (kit non-negotiable #3) ===
+ rows | non_empty_payload | min_keys | max_keys 
+------+-------------------+----------+----------
+ 3253 |              3253 |        8 |        9
+(1 row)
+

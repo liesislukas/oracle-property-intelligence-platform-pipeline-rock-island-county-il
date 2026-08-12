@@ -1,0 +1,123 @@
+ISSUE-021 WI-1 — query DB schema presence check
+captured_at: 2026-08-12T20:03:04Z
+DATABASE_URL: postgresql://postgres:elephant@localhost:5432/elephant (Postgres 16, elephant-pipeline-postgres-1)
+loader repo:  /Users/lukas/Developer/ateam/elephant-query-db (clone, never edited)
+
+NOTE: the seven elephant-query-db migrations were applied by ISSUE-030 via the psql -f fallback
+      and recorded in the pipeline_schema_migrations ledger. WI-1 therefore VERIFIES the schema
+      rather than re-applying it. Ledger, verbatim:
+
+             filename              |          applied_at           
+-----------------------------------+-------------------------------
+ 0000_vengeful_ezekiel_stane.sql   | 2026-08-12 18:12:32.944495+00
+ 0001_wooden_carlie_cooper.sql     | 2026-08-12 18:12:33.204879+00
+ 0002_lonely_steel_serpent.sql     | 2026-08-12 18:12:33.49681+00
+ 0003_permit_fetch_requests.sql    | 2026-08-12 18:12:33.74619+00
+ 0004_bulk_merge_perf_indexes.sql  | 2026-08-12 18:12:33.998046+00
+ 0005_parcels_folio_unique_key.sql | 2026-08-12 18:12:34.242368+00
+ 0006_oracle_dataset_coverage.sql  | 2026-08-12 18:12:34.486628+00
+(7 rows)
+
+
+== \dt (all relations) ==
+                        List of relations
+ Schema |                 Name                 | Type  |  Owner   
+--------+--------------------------------------+-------+----------
+ public | addresses                            | table | postgres
+ public | business_registration_addresses      | table | postgres
+ public | business_registration_annual_reports | table | postgres
+ public | business_registration_events         | table | postgres
+ public | business_registration_parties        | table | postgres
+ public | business_registrations               | table | postgres
+ public | business_reputation_alternate_names  | table | postgres
+ public | business_reputation_categories       | table | postgres
+ public | business_reputation_complaint_events | table | postgres
+ public | business_reputation_complaints       | table | postgres
+ public | business_reputation_contacts         | table | postgres
+ public | business_reputation_external_links   | table | postgres
+ public | business_reputation_licenses         | table | postgres
+ public | business_reputation_locations        | table | postgres
+ public | business_reputation_media            | table | postgres
+ public | business_reputation_profiles         | table | postgres
+ public | business_reputation_rating_reasons   | table | postgres
+ public | business_reputation_reviews          | table | postgres
+ public | business_reputation_service_areas    | table | postgres
+ public | companies                            | table | postgres
+ public | contractor_quality_scores            | table | postgres
+ public | deeds                                | table | postgres
+ public | fact_sheets                          | table | postgres
+ public | files                                | table | postgres
+ public | flood_storm_information              | table | postgres
+ public | geo_signal_feature                   | table | postgres
+ public | geo_signal_source                    | table | postgres
+ public | geometries                           | table | postgres
+ public | inspections                          | table | postgres
+ public | layouts                              | table | postgres
+ public | lots                                 | table | postgres
+ public | oracle_dataset_coverage              | table | postgres
+ public | ownerships                           | table | postgres
+ public | parcels                              | table | postgres
+ public | people                               | table | postgres
+ public | permit_contacts                      | table | postgres
+ public | permit_custom_fields                 | table | postgres
+ public | permit_events                        | table | postgres
+ public | permit_fees                          | table | postgres
+ public | permit_fetch_requests                | table | postgres
+ public | permit_links                         | table | postgres
+ public | permit_list_windows                  | table | postgres
+ public | permits_rock_island_city             | table | postgres
+ public | pipeline_schema_migrations           | table | postgres
+ public | properties                           | table | postgres
+ public | property_improvements                | table | postgres
+ public | property_valuations                  | table | postgres
+ public | sales_histories                      | table | postgres
+ public | structures                           | table | postgres
+ public | sunbiz_extraction_chunks             | table | postgres
+ public | taxes                                | table | postgres
+ public | unnormalized_addresses               | table | postgres
+ public | utilities                            | table | postgres
+(53 rows)
+
+
+== the seven tables this issue reads or writes ==
+       tablename       
+-----------------------
+ addresses
+ companies
+ ownerships
+ parcels
+ people
+ properties
+ property_improvements
+(7 rows)
+
+
+== parcels: the folio unique constraint the parcel key depends on ==
+                                  Table "public.parcels"
+       Column        |           Type           | Collation | Nullable |      Default      
+---------------------+--------------------------+-----------+----------+-------------------
+ parcel_id           | uuid                     |           | not null | gen_random_uuid()
+ request_identifier  | text                     |           | not null | 
+ parcel_identifier   | text                     |           | not null | 
+ county_name         | text                     |           |          | 
+ state_code          | text                     |           |          | 
+ jurisdiction_key    | text                     |           |          | 
+ source_http_request | jsonb                    |           |          | 
+ source_payload      | jsonb                    |           | not null | '{}'::jsonb
+ source_system       | text                     |           | not null | 
+ source_record_key   | text                     |           | not null | 
+ source_record_hash  | text                     |           |          | 
+ source_artifact_uri | text                     |           |          | 
+ loaded_at           | timestamp with time zone |           | not null | now()
+ created_at          | timestamp with time zone |           | not null | now()
+ updated_at          | timestamp with time zone |           | not null | now()
+Indexes:
+    "parcels_pkey" PRIMARY KEY, btree (parcel_id)
+    "parcels_identifier_idx" btree (parcel_identifier)
+    "parcels_jurisdiction_key_request_identifier_unique" UNIQUE CONSTRAINT, btree (jurisdiction_key, request_identifier)
+    "parcels_source_key_only_idx" btree (source_record_key)
+    "parcels_source_record_idx" UNIQUE, btree (source_system, source_record_key)
+Referenced by:
+    TABLE "properties" CONSTRAINT "properties_parcel_id_parcels_parcel_id_fk" FOREIGN KEY (parcel_id) REFERENCES parcels(parcel_id) ON DELETE SET NULL
+    TABLE "property_improvements" CONSTRAINT "property_improvements_parcel_id_parcels_parcel_id_fk" FOREIGN KEY (parcel_id) REFERENCES parcels(parcel_id) ON DELETE SET NULL
+
