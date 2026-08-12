@@ -329,7 +329,7 @@ if (ownerClass === "company") {
   await emitCompany("", a.owner1_name, ownerMail ?? taxbillMail);
 }
 // taxbill_name is never dropped (T7). It is the party the bill is addressed to, which diverges
-// from the owner of record on ~2/3 of records. When it is a company it gets its own entity with
+// from the owner of record on 23.7% of records (measured over all 65,955). When it is a company it gets its own entity with
 // its own mailing address — the relationship asserts only "this company has this mailing
 // address", never that it owns the parcel.
 if (

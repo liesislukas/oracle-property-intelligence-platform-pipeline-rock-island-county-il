@@ -96,7 +96,7 @@ query, and `data/source-mirror/rock-island/<OBJECTID>.json` carries `meta.retrie
 | T4 | `gross_acres` is 0 on 72.5% of parcels | `GIS_acres_num` only. `gross_acres` is never carried. |
 | T5 | `date_last_sale` null on ~30% | No `sales_history` entity at all for those parcels — unknown tenure, never a placeholder date and never "long-held". |
 | T6 | `Zoning` is a municipality code on 77.4% | Written verbatim, suffixes included. `zoning_is_municipality_code` is computed for the manifest against the fixed 13-code list, with a trailing `!`/`?` stripped for the test only. |
-| T7 | `owner1_name` ≠ `taxbill_name` on ~2/3 | `owner1_name` is canonical. `taxbill_name` is never dropped: when it is a company it gets its own entity and its own mailing address, and the relationship asserts only "this company has this mailing address", never ownership. |
+| T7 | `owner1_name` ≠ `taxbill_name` on 15,624 of 65,955 records (23.7%, measured over the whole layer — the discovery note's "~2/3" was not reproducible) | `owner1_name` is canonical. `taxbill_name` is never dropped: when it is a company it gets its own entity and its own mailing address, and the relationship asserts only "this company has this mailing address", never ownership. |
 
 ## Owner rule
 
